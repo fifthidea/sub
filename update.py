@@ -1,5 +1,6 @@
 import os
 import base64
+import re
 from telethon import TelegramClient
 from telethon.sessions import StringSession
 
@@ -22,18 +23,9 @@ CHANNELS = {
 }
 # =========================
 
-
-PROTOCOLS = (
-    "vmess://",
-    "vless://",
-    "trojan://",
-    "ss://",
-    "ssr://",
-    "hy2://",
-    "hysteria://",
-    "tuic://",
+PATTERN = re.compile(
+    r'((?:vmess|vless|trojan|ss|ssr|hy2|hysteria|tuic)://\S+)'
 )
-
 
 def extract_configs(text):
     if not text:
