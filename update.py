@@ -26,7 +26,7 @@ async def main():
 
     configs = []
 
-    async for msg in client.iter_messages(channel, limit=100):
+    async for msg in client.iter_messages(channel, limit=300):
         if not msg.text:
             continue
 
