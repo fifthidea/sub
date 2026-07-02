@@ -36,16 +36,10 @@ PROTOCOLS = (
 
 
 def extract_configs(text):
-    results = []
     if not text:
-        return results
+        return []
 
-    for line in text.splitlines():
-        line = line.strip()
-        if line.startswith(PROTOCOLS):
-            results.append(line)
-
-    return results
+    return PATTERN.findall(text)
 
 
 async def main():
