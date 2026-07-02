@@ -1,10 +1,8 @@
 import os
-import re
 import base64
 from telethon import TelegramClient
 from telethon.sessions import StringSession
 
-# Telegram credentials from GitHub Secrets
 API_ID = int(os.environ["TG_API_ID"])
 API_HASH = os.environ["TG_API_HASH"]
 SESSION = os.environ["TG_SESSION"]
@@ -15,37 +13,79 @@ client = TelegramClient(
     API_HASH
 )
 
-# Supported protocols
-PATTERN = re.compile(
-    r'(?im)^(vmess|vless|trojan|ss|ssr|hy2|hysteria|tuic)://\S+$'
+# =========================
+# CONFIG (EDIT THIS ONLY)
+# =========================
+CHANNELS = {
+    "TheFreeConfigs": 300,
+    "ConfigsHUB2": 1000,
+}
+# =========================
+
+
+PROTOCOLS = (
+    "vmess://",
+    "vless://",
+    "trojan://",
+    "ss://",
+    "ssr://",
+    "hy2://",
+    "hysteria://",
+    "tuic://",
 )
 
 
+def extract_configs(text):
+    results = []
+    if not text:
+        return results
+
+    for line in text.splitlines():
+        line = line.strip()
+        if line.startswith(PROTOCOLS):
+            results.append(line)
+
+    return results
+
+
 async def main():
-    channel = await client.get_entity("TheFreeConfigs")
 
-    configs = []
+    all_configs = {}
 
-    async for msg in client.iter_messages(channel, limit=300):
-        if not msg.text:
-            continue
+    for channel_name, limit in CHANNELS.items():
 
-        for line in msg.text.splitlines():
-            line = line.strip()
-            if PATTERN.match(line):
-                configs.append(line)
+        print(f"Processing {channel_name} (last {limit} messages)")
 
-    # Remove duplicates while preserving order
-    configs = list(dict.fromkeys(configs))
+        entity = await client.get_entity(channel_name)
 
-    # Create Base64 subscription
-    subscription = "\n".join(configs)
-    encoded = base64.b64encode(subscription.encode("utf-8")).decode("utf-8")
+        channel_configs = []
+
+        async for msg in client.iter_messages(entity, limit=limit):
+            channel_configs.extend(extract_configs(msg.text))
+
+        # dedupe per channel
+        channel_configs = list(dict.fromkeys(channel_configs))
+
+        # save per-channel file
+        with open(f"{channel_name}.txt", "w", encoding="utf-8") as f:
+            f.write("\n".join(channel_configs))
+
+        print(f"{channel_name}: {len(channel_configs)} configs")
+
+        # add to global pool
+        for c in channel_configs:
+            all_configs[c] = None
+
+    # global dedupe
+    merged = list(all_configs.keys())
+
+    # create sub.txt (base64)
+    encoded = base64.b64encode("\n".join(merged).encode()).decode()
 
     with open("sub.txt", "w", encoding="utf-8") as f:
         f.write(encoded)
 
-    print(f"Saved {len(configs)} configs to sub.txt")
+    print(f"TOTAL UNIQUE CONFIGS: {len(merged)}")
 
 
 with client:
