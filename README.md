@@ -14,6 +14,7 @@ The extractor currently supports the following proxy protocols:
 * `hy2://`
 * `hysteria://`
 * `tuic://`
+\
 Only valid protocol URLs are extracted from Telegram messages. Any surrounding text, captions, emojis, or formatting are ignored.
 
 ---
