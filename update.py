@@ -158,5 +158,5 @@ async def main():
         f.write(commit_message)
 
 
-    with client:
-        client.loop.run_until_complete(main())
+with client:
+    client.loop.run_until_complete(main())
