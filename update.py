@@ -1,3 +1,6 @@
+import jdatetime
+import pytz
+from datetime import datetime
 import os
 import base64
 import re
@@ -138,6 +141,21 @@ async def main():
         f.write(encoded)
 
     print(f"TOTAL UNIQUE CONFIGS: {len(merged)}")
+    
+    # Create commit message
+tehran = pytz.timezone("Asia/Tehran")
+now = datetime.now(tehran)
+
+jalali = jdatetime.datetime.fromgregorian(datetime=now)
+
+commit_message = (
+    f"Update subscription | "
+    f"{jalali.strftime('%Y/%m/%d %H:%M')} | "
+    f"{len(merged)} configs"
+)
+
+with open("commit_message.txt", "w", encoding="utf-8") as f:
+    f.write(commit_message)
 
 
 with client:
