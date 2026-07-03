@@ -143,20 +143,20 @@ async def main():
     print(f"TOTAL UNIQUE CONFIGS: {len(merged)}")
     
     # Create commit message
-tehran = pytz.timezone("Asia/Tehran")
-now = datetime.now(tehran)
+    tehran = pytz.timezone("Asia/Tehran")
+    now = datetime.now(tehran)
 
-jalali = jdatetime.datetime.fromgregorian(datetime=now)
+    jalali = jdatetime.datetime.fromgregorian(datetime=now)
 
-commit_message = (
-    f"Update subscription | "
-    f"{jalali.strftime('%Y/%m/%d %H:%M')} | "
-    f"{len(merged)} configs"
-)
+    commit_message = (
+        f"Update subscription | "
+        f"{jalali.strftime('%Y/%m/%d %H:%M')} | "
+        f"{len(merged)} configs"
+    )
 
-with open("commit_message.txt", "w", encoding="utf-8") as f:
-    f.write(commit_message)
+    with open("commit_message.txt", "w", encoding="utf-8") as f:
+        f.write(commit_message)
 
 
-with client:
-    client.loop.run_until_complete(main())
+    with client:
+        client.loop.run_until_complete(main())
