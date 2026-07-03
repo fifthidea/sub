@@ -1,12 +1,20 @@
 {
-    "updated": "1405/04/13 00:12",
+    "updated": "1405/04/13 00:40",
     "subscriptions": {
-        "sub": 1406,
-        "sub-medium": 1406,
+        "sub": 1411,
+        "sub-medium": 1411,
         "sub-lite": 750
     },
     "channels": {
-        "ConfigsHUB2": 637,
-        "TheFreeConfigs": 796
+        "ConfigsHUB2": {
+            "configs": 656,
+            "active": true,
+            "last_config": "2026-07-03 21:10"
+        },
+        "TheFreeConfigs": {
+            "configs": 792,
+            "active": true,
+            "last_config": "2026-07-03 21:05"
+        }
     }
 }
