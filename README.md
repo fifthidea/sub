@@ -95,7 +95,7 @@ Example:
 }
 ```
 ## ⚙️ Configuration
-Telegram channels are configured in `update.py`.\
+Telegram channels are configured in `update.py`.
 
 Example:
 ```python
@@ -107,8 +107,9 @@ CHANNELS = {
 CHANNEL_ACTIVITY_DAYS = 7
 ```
 
-The number in front of Channel ID represents how many of the latest Telegram messages will be scanned for each channel.
-`CHANNEL_ACTIVITY_DAYS` represents how many days from last config in each channel should pass before they get removed from main `sub.txt` subscription merge pool.
+The number in front of Channel ID represents how many of the latest Telegram messages will be scanned for each channel.\
+`CHANNEL_ACTIVITY_DAYS` defines how many days may pass since a channel's most recent message containing at least one valid proxy config before that channel is excluded from the merged subscriptions (`sub.txt`, `sub-medium.txt`, and `sub-lite.txt`).
+
 > If an inactive channel starts publishing configs again, it is automatically included in the merged subscriptions on the next workflow run.
 
 ---
