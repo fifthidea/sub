@@ -1,3 +1,4 @@
+import json
 import jdatetime
 import pytz
 from datetime import datetime
@@ -107,6 +108,7 @@ def deduplicate_configs(configs):
 async def main():
 
     all_configs = []
+    channel_stats = {}
 
     for channel_name, limit in CHANNELS.items():
 
@@ -121,6 +123,7 @@ async def main():
 
         # dedupe per channel
         channel_configs = deduplicate_configs(channel_configs)
+        channel_stats[channel_name] = len(channel_configs)
 
         # save per-channel file
         with open(f"{channel_name}.txt", "w", encoding="utf-8") as f:
@@ -139,6 +142,19 @@ async def main():
 
     with open("sub.txt", "w", encoding="utf-8") as f:
         f.write(encoded)
+        
+    tehran = pytz.timezone("Asia/Tehran")
+    now = datetime.now(tehran)
+    jalali = jdatetime.datetime.fromgregorian(datetime=now)
+
+    stats = {
+        "updated": jalali.strftime("%Y/%m/%d %H:%M"),
+        "total": len(merged),
+        "channels": channel_stats
+    }
+
+with open("stats.json", "w", encoding="utf-8") as f:
+    json.dump(stats, f, indent=4, ensure_ascii=False)
 
     print(f"TOTAL UNIQUE CONFIGS: {len(merged)}")
     
@@ -150,8 +166,7 @@ async def main():
 
     commit_message = (
         f"Update subscription | "
-        f"{jalali.strftime('%Y/%m/%d %H:%M')} | "
-        f"{len(merged)} configs"
+        f"{jalali.strftime('%Y/%m/%d %H:%M')}"
     )
 
     with open("commit_message.txt", "w", encoding="utf-8") as f:
