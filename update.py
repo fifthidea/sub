@@ -31,6 +31,15 @@ def extract_configs(text):
     if not text:
         return []
 
+    configs = []
+
+    for config in PATTERN.findall(text):
+        config = config.rstrip("`")      # Remove trailing backticks
+        config = config.replace("`", "") # Remove any remaining backticks
+        configs.append(config)
+
+    return configs
+
     return PATTERN.findall(text)
 
 
