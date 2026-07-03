@@ -137,11 +137,18 @@ async def main():
     # global dedupe
     merged = deduplicate_configs(all_configs)
 
-    # create sub.txt (base64)
-    encoded = base64.b64encode("\n".join(merged).encode()).decode()
+    # create sub (base64)
+    def write_subscription(filename, configs):
+        encoded = base64.b64encode(
+            "\n".join(configs).encode()
+        ).decode()
 
-    with open("sub.txt", "w", encoding="utf-8") as f:
-        f.write(encoded)
+        with open(filename, "w", encoding="utf-8") as f:
+            f.write(encoded)
+
+    write_subscription("sub.txt", merged)
+    write_subscription("sub-medium.txt", merged[:1500])
+    write_subscription("sub-lite.txt", merged[:750])
         
     tehran = pytz.timezone("Asia/Tehran")
     now = datetime.now(tehran)
@@ -149,7 +156,11 @@ async def main():
 
     stats = {
         "updated": jalali.strftime("%Y/%m/%d %H:%M"),
-        "total": len(merged),
+        "subscriptions": {
+            "sub": len(merged),
+            "sub-medium": min(1500, len(merged)),
+            "sub-lite": min(750, len(merged))
+        },
         "channels": channel_stats
     }
 
