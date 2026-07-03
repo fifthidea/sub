@@ -1,7 +1,7 @@
 import json
 import jdatetime
 import pytz
-from datetime import datetime
+from datetime import datetime, timedelta
 import os
 import base64
 import re
@@ -26,6 +26,8 @@ CHANNELS = {
     "ConfigsHUB2": 1000,
     "TheFreeConfigs": 300,
 }
+
+CHANNEL_ACTIVITY_DAYS = 7
 # =========================
 
 PATTERN = re.compile(
@@ -109,6 +111,7 @@ async def main():
 
     all_configs = []
     channel_stats = {}
+    cutoff = datetime.utcnow() - timedelta(days=CHANNEL_ACTIVITY_DAYS)
 
     for channel_name, limit in CHANNELS.items():
 
@@ -117,13 +120,32 @@ async def main():
         entity = await client.get_entity(channel_name)
 
         channel_configs = []
+        latest_config_date = None
 
         async for msg in client.iter_messages(entity, limit=limit):
-            channel_configs.extend(extract_configs(msg.text))
+
+            configs = extract_configs(msg.text)
+
+            if configs:
+                channel_configs.extend(configs)
+
+                if latest_config_date is None:
+                    latest_config_date = msg.date.replace(tzinfo=None)
 
         # dedupe per channel
         channel_configs = deduplicate_configs(channel_configs)
-        channel_stats[channel_name] = len(channel_configs)
+        channel_stats[channel_name] = {
+            "configs": len(channel_configs),
+            "active": (
+                latest_config_date is not None
+                and latest_config_date >= cutoff
+            ),
+            "last_config": (
+                latest_config_date.strftime("%Y-%m-%d %H:%M")
+                if latest_config_date
+                else None
+            )
+        }
 
         # save per-channel file
         with open(f"{channel_name}.txt", "w", encoding="utf-8") as f:
@@ -132,7 +154,14 @@ async def main():
         print(f"{channel_name}: {len(channel_configs)} configs")
 
         # add to global pool
-        all_configs.extend(channel_configs)
+        if (
+            latest_config_date is not None
+            and latest_config_date >= cutoff
+        ):
+            all_configs.extend(channel_configs)
+            print(f"{channel_name}: ACTIVE")
+        else:
+            print(f"{channel_name}: INACTIVE (not merged)")
 
     # global dedupe
     merged = deduplicate_configs(all_configs)
