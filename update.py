@@ -153,21 +153,15 @@ async def main():
         "channels": channel_stats
     }
 
-with open("stats.json", "w", encoding="utf-8") as f:
-    json.dump(stats, f, indent=4, ensure_ascii=False)
+    with open("stats.json", "w", encoding="utf-8") as f:
+        json.dump(stats, f, indent=4, ensure_ascii=False)
 
-    print(f"TOTAL UNIQUE CONFIGS: {len(merged)}")
-    
-    # Create commit message
-    tehran = pytz.timezone("Asia/Tehran")
-    now = datetime.now(tehran)
+        print(f"TOTAL UNIQUE CONFIGS: {len(merged)}")
 
-    jalali = jdatetime.datetime.fromgregorian(datetime=now)
-
-    commit_message = (
-        f"Update subscription | "
-        f"{jalali.strftime('%Y/%m/%d %H:%M')}"
-    )
+        commit_message = (
+            f"Update subscription | "
+            f"{jalali.strftime('%Y/%m/%d %H:%M')}"
+        )
 
     with open("commit_message.txt", "w", encoding="utf-8") as f:
         f.write(commit_message)
