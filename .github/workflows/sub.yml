@@ -2,7 +2,7 @@ name: Update V2Ray Subscription
 
 on:
   schedule:
-    - cron: "*/30 * * * *"
+    #disabled4now - cron: "*/30 * * * *"
   workflow_dispatch:
 
 permissions:
