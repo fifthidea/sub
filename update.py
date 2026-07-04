@@ -186,11 +186,15 @@ async def main():
 
         with open(filename, "w", encoding="utf-8") as f:
             f.write(encoded)
+            
+    def write_plaintext(filename, configs):
+        with open(filename, "w", encoding="utf-8") as f:
+            f.write("\n".join(configs))
 
     write_subscription("sub.txt", merged)
     write_subscription("sub-medium.txt", merged[:1500])
     write_subscription("sub-lite.txt", merged[:750])
-        
+    write_plaintext("sub-plaintxt.txt", merged)
 
     now = datetime.now(tehran)
     jalali = jdatetime.datetime.fromgregorian(datetime=now)
