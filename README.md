@@ -74,22 +74,27 @@ Contains update date and time, config counts and active status for the `sub.txt`
 Example:
 ```json
 {
-    "updated": "1405/04/13 01:06",
+    "updated": "1405/04/13 09:02",
     "subscriptions": {
-        "sub": 1391,
-        "sub-medium": 1391,
+        "sub": 1871,
+        "sub-medium": 1500,
         "sub-lite": 750
     },
     "channels": {
         "ConfigsHUB2": {
-            "configs": 662,
+            "configs": 971,
             "active": true,
-            "last_config": "2026-07-03 21:36"
+            "last_config": "1405/04/13 09:02"
         },
         "TheFreeConfigs": {
-            "configs": 792,
+            "configs": 809,
             "active": true,
-            "last_config": "2026-07-03 21:17"
+            "last_config": "1405/04/13 08:58"
+        },
+        "persianvpnhub": {
+            "configs": 439,
+            "active": true,
+            "last_config": "1405/04/13 04:56"
         }
     }
 }
