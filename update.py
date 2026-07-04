@@ -24,7 +24,8 @@ client = TelegramClient(
 # =========================
 CHANNELS = {
     "ConfigsHUB2": 2000,
-    "TheFreeConfigs": 350,
+    "TheFreeConfigs": 300,
+    "persianvpnhub": 500,
 }
 
 CHANNEL_ACTIVITY_DAYS = 7
