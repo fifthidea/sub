@@ -9,6 +9,9 @@ from urllib.parse import urlsplit, parse_qsl, urlencode, urlunsplit
 from telethon import TelegramClient
 from telethon.sessions import StringSession
 
+CHANNEL_OUTPUT_DIR = "channels"
+os.makedirs(CHANNEL_OUTPUT_DIR, exist_ok=True)
+
 API_ID = int(os.environ["TG_API_ID"])
 API_HASH = os.environ["TG_API_HASH"]
 SESSION = os.environ["TG_SESSION"]
@@ -149,7 +152,12 @@ async def main():
         }
 
         # save per-channel file
-        with open(f"{channel_name}.txt", "w", encoding="utf-8") as f:
+        channel_file = os.path.join(
+            CHANNEL_OUTPUT_DIR,
+            f"{channel_name}.txt"
+        )
+
+        with open(channel_file, "w", encoding="utf-8") as f:
             f.write("\n".join(channel_configs))
 
         print(f"{channel_name}: {len(channel_configs)} configs")
