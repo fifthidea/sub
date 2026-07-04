@@ -23,8 +23,8 @@ client = TelegramClient(
 # CONFIG (EDIT THIS ONLY)
 # =========================
 CHANNELS = {
-    "ConfigsHUB2": 1000,
-    "TheFreeConfigs": 300,
+    "ConfigsHUB2": 2000,
+    "TheFreeConfigs": 400,
 }
 
 CHANNEL_ACTIVITY_DAYS = 7
