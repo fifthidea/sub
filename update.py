@@ -115,8 +115,9 @@ async def main():
 
     all_configs = []
     channel_stats = {}
-    cutoff = datetime.utcnow() - timedelta(days=CHANNEL_ACTIVITY_DAYS)
-
+    tehran = pytz.timezone("Asia/Tehran")
+    cutoff = datetime.now(tehran) - timedelta(days=CHANNEL_ACTIVITY_DAYS)
+    
     for channel_name, limit in CHANNELS.items():
 
         print(f"Processing {channel_name} (last {limit} messages)")
@@ -134,7 +135,7 @@ async def main():
                 channel_configs.extend(configs)
 
                 if latest_config_date is None:
-                    latest_config_date = msg.date.replace(tzinfo=None)
+                    latest_config_date = msg.date.astimezone(tehran)
 
         # dedupe per channel
         channel_configs = deduplicate_configs(channel_configs)
@@ -145,7 +146,9 @@ async def main():
                 and latest_config_date >= cutoff
             ),
             "last_config": (
-                latest_config_date.strftime("%Y-%m-%d %H:%M")
+                jdatetime.datetime.fromgregorian(
+                datetime=latest_config_date
+                    ).strftime("%Y/%m/%d %H:%M")
                 if latest_config_date
                 else None
             )
@@ -188,7 +191,7 @@ async def main():
     write_subscription("sub-medium.txt", merged[:1500])
     write_subscription("sub-lite.txt", merged[:750])
         
-    tehran = pytz.timezone("Asia/Tehran")
+
     now = datetime.now(tehran)
     jalali = jdatetime.datetime.fromgregorian(datetime=now)
 
