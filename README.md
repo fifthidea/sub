@@ -62,10 +62,12 @@ This means different configurations pointing to the same IP address are preserve
 
 | File                          | Description                                                                         |
 | ----------------------------- | ----------------------------------------------------------------------------------- |
-| `sub.txt`                     | Every unique config from all active channels encoded in base64.                     |
+| `sub-base64.txt`              | Every unique config from all active channels encoded in base64.                     |
+| `sub-lite-base64.txt`         | Newest 750 unique configs from active channels encoded in base64.                   |
+| `sub-medium-base64.txt`       | Newest 1,500 unique configs from active channels encoded in base64.                 |
 | `sub-plaintxt.txt`            | Every unique config from all active channels in plaintext.                          |
-| `sub-medium.txt`              | Newest 1,500 unique configs from active channels encoded in base64.                 |
-| `sub-lite.txt`                | Newest 750 unique configs from active channels encoded in base64.                   |
+| `sub-lite-plaintxt.txt`       | Newest 750 unique configs from active channels in plaintext.                        |
+| `sub-medium-plaintxt.txt`     | Newest 1,500 unique configs from active channels in plaintext.                      |
 | `channels/TheFreeConfigs.txt` | All unique configs from that channel in plaintext.                                  |
 | `channels/ConfigsHUB2.txt`    | All unique configs from that channel in plaintext.                                  |
 | `stats.json`                  | Update time, subscription sizes, per-channel statistics and activity information.   |
