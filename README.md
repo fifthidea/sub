@@ -69,7 +69,7 @@ This means different configurations pointing to the same IP address are preserve
 | `stats.json`         | Update time, subscription sizes, per-channel statistics and activity information.   |
 
 ### `stats.json`
-Contains update date and time, config counts and if it's active for the merge pool.
+Contains update date and time, config counts and active status for the `sub.txt` merge pool.
 
 Example:
 ```json
