@@ -1,20 +1,25 @@
 {
-    "updated": "1405/04/13 03:40",
+    "updated": "1405/04/13 03:43",
     "subscriptions": {
-        "sub": 1803,
+        "sub": 1750,
         "sub-medium": 1500,
         "sub-lite": 750
     },
     "channels": {
         "ConfigsHUB2": {
-            "configs": 945,
+            "configs": 947,
             "active": true,
-            "last_config": "2026-07-04 00:10"
+            "last_config": "2026-07-04 00:13"
         },
         "TheFreeConfigs": {
-            "configs": 1027,
+            "configs": 795,
             "active": true,
             "last_config": "2026-07-04 00:05"
+        },
+        "persianvpnhub": {
+            "configs": 367,
+            "active": true,
+            "last_config": "2026-07-03 23:50"
         }
     }
 }
