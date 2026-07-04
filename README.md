@@ -105,11 +105,13 @@ Telegram channels are configured in `update.py`.
 Example:
 ```python
 CHANNELS = {
-    "ConfigsHUB2": 1000,
+    "ConfigsHUB2": 2000,
     "TheFreeConfigs": 300,
+    "persianvpnhub": 600,
 }
 
 CHANNEL_ACTIVITY_DAYS = 7
+# =========================
 ```
 
 The number in front of Channel ID represents how many of the latest Telegram messages will be scanned for each channel.\
