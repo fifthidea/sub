@@ -15,6 +15,7 @@ The extractor currently supports the following proxy protocols:
 * `hysteria://`
 * `tuic://`
 \
+\
 Only valid protocol URLs are extracted from Telegram messages. Any surrounding text, captions, emojis, or formatting are ignored.
 
 ---
@@ -111,7 +112,6 @@ CHANNELS = {
 }
 
 CHANNEL_ACTIVITY_DAYS = 7
-# =========================
 ```
 
 The number in front of Channel ID represents how many of the latest Telegram messages will be scanned for each channel.\
