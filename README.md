@@ -63,9 +63,11 @@ This means different configurations pointing to the same IP address are preserve
 | File                          | Description                                                                         |
 | ----------------------------- | ----------------------------------------------------------------------------------- |
 | `sub-base64.txt`              | Every unique config from all active channels encoded in base64.                     |
+| `sub-tiny-base64.txt`         | Newest 300 unique configs from active channels encoded in base64.                   |
 | `sub-lite-base64.txt`         | Newest 750 unique configs from active channels encoded in base64.                   |
 | `sub-medium-base64.txt`       | Newest 1,500 unique configs from active channels encoded in base64.                 |
 | `sub-plaintxt.txt`            | Every unique config from all active channels in plaintext.                          |
+| `sub-tiny-plaintxt.txt`       | Newest 300 unique configs from active channels in plaintext.                        |
 | `sub-lite-plaintxt.txt`       | Newest 750 unique configs from active channels in plaintext.                        |
 | `sub-medium-plaintxt.txt`     | Newest 1,500 unique configs from active channels in plaintext.                      |
 | `channels/TheFreeConfigs.txt` | All unique configs from that channel in plaintext.                                  |
