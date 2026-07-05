@@ -175,8 +175,8 @@ You will receive:
 
 > You can also use Telegram Desktop's official API
 > ```
-> API_ID = 2040
-> API_HASH = "b18441a1ff607e10a989891a5462e627"
+> TG_API_ID = 2040
+> TG_API_HASH = b18441a1ff607e10a989891a5462e627
 > ```
 
 ---
