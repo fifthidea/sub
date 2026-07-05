@@ -208,7 +208,7 @@ async def main():
         "subscriptions": {
             "sub": len(merged),
             "sub-medium": min(1500, len(merged)),
-            "sub-lite": min(750, len(merged))
+            "sub-lite": min(750, len(merged)),
             "sub-tiny": min(300, len(merged))
         },
         "channels": channel_stats
