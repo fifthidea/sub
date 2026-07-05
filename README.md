@@ -166,9 +166,10 @@ These credentials are used by Telethon to access Telegram.
 1. Fork this repo
 2. configure `update.py` (add your own channels)
 3. uncomment these two lines in `sub.yml` workflow
-
-`  #schedule:                           `\
-`    #- cron: "*/15 * * * *"            `
+```
+ #schedule:
+    #- cron: "*/15 * * * *"
+```
 
 > Note: you can change cron trigger schedule time from 15 minutes to your desired number.
 
