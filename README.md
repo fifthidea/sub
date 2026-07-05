@@ -58,7 +58,7 @@ Deduplication happens in two stages.\
 **Per-channel:** Each Telegram channel is deduplicated independently before its own `.txt` subscription file is generated.\
 **Global:** After all channels are processed, every config is merged and deduplicated again before generating `sub.txt`.
 
-> `sub-lite.txt` and `sub-medium.txt` are generated using `sub.txt` which is deduplicated before.
+> `sub-tiny.txt`, `sub-lite.txt` and `sub-medium.txt` are generated using `sub.txt` which is deduplicated before.
 
 ### Duplicate detection
 The following differences are **ignored**:
