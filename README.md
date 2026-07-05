@@ -160,3 +160,18 @@ Create the following repository secrets:
 * `TG_SESSION`
 
 These credentials are used by Telethon to access Telegram.
+
+## Want your own subscription generator?
+
+1. Fork this repo
+2. configure `update.py` (add your own channels)
+3. uncomment these two lines in `sub.yml` workflow
+   ```yaml
+  #schedule:
+    #- cron: "*/15 * * * *"
+```
+> Note: you can change cron trigger schedule time from 15 minutes to your desired number.
+
+> I recommend using Cloudflare worker with API access to your github repo for cron trigger schedule. Github's schedules are delayed because of traffic and peak-hours.
+
+4. Manually run the workflow once
