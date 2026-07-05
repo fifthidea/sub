@@ -74,6 +74,7 @@ vless://...?type=ws&sni=B.Com&host=a.com#Server B
 `sub-lite-*.txt` includes 750 newest unique configs from merge pool.
 
 `sub-medium-*.txt` includes 1500 newest unique configs from merge pool.
+\
 
 ### `stats.json`
 
