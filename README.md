@@ -152,12 +152,100 @@ The number in front of Channel ID represents how many of the latest Telegram mes
 > If an inactive channel starts publishing configs again, it is automatically included in the merged subscriptions on the next workflow run.
 
 ---
-##  Required GitHub Secrets
-Create the following repository secrets:
+##  Telethon
 
-* `TG_API_ID`
-* `TG_API_HASH`
-* `TG_SESSION`
+Telethon is mandatory to fetch telegram channels messages. if `TG_SESSION`, `TG_API_HASH` and `TG_API_ID` secrets are not present, the subscription generator will fail.
+
+## Setting up Telegram Credentials for Telethon
+
+### Step 1 — Create a Telegram API Application
+
+1. Log in to **https://my.telegram.org** using the Telegram account you want the bot/user session to use.
+2. Click **API development tools**.
+3. Fill out the form:
+   - **App title:** Any name (e.g. `MyProject`)
+   - **Short name:** Any unique short name
+   - **Platform:** Desktop (or anything you prefer)
+4. Click **Create application**.
+
+You will receive:
+
+- **API ID** → save as `TG_API_ID`
+- **API Hash** → save as `TG_API_HASH`
+
+> You can also use Telegram Desktop's official API
+> ```
+> API_ID = 2040
+> API_HASH = "b18441a1ff607e10a989891a5462e627"
+> ```
+
+---
+
+### Step 2 — Generate a Telethon Session
+
+Install Telethon:
+
+```bash
+pip install telethon
+```
+
+Create a file named `generate_session.py`:
+
+```python
+from telethon.sync import TelegramClient
+from telethon.sessions import StringSession
+
+API_ID = 12345678          # Replace with your API ID
+API_HASH = "your_api_hash" # Replace with your API Hash
+
+with TelegramClient(StringSession(), API_ID, API_HASH) as client:
+    print(client.session.save())
+```
+
+Run it:
+
+```bash
+python generate_session.py
+```
+
+The first time you run it, Telethon will ask for:
+
+- Your phone number
+- The login code sent by Telegram
+- Your 2FA password (if enabled)
+
+After logging in, it will print a long string similar to:
+
+```text
+1AQAOMT...
+```
+
+Copy this entire string.
+
+This is your `TG_SESSION`.
+
+---
+
+### Step 3 — Add GitHub Secrets
+
+Open your GitHub repository.
+
+Go to:
+
+```
+Settings
+→ Secrets and variables
+→ Actions
+→ New repository secret
+```
+
+Create these three secrets:
+
+| Secret Name   | Value                        |
+|---------------|------------------------------|
+| `TG_API_ID`   | Your API ID                  |
+| `TG_API_HASH` | Your API Hash                |
+| `TG_SESSION`  | The generated session string |
 
 These credentials are used by Telethon to access Telegram.
 
