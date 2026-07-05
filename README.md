@@ -65,7 +65,7 @@ vless://...?type=ws&sni=B.Com&host=a.com#Server B
 | File                          | Description                                                                         |
 | ----------------------------- | ----------------------------------------------------------------------------------- |
 | `sub-base64.txt`              | Every unique config from all active channels encoded in base64.                     |
-| `sub-*-base64.txt`            | Newest 300, 750 or 1500 unique configs from active channels encoded in base6        |
+| `sub-*-base64.txt`            | Newest 300, 750 or 1500 unique configs from active channels encoded in base64       |
 | `sub-plaintxt.txt`            | Every unique config from all active channels in plaintext.                          |
 | `sub-*-plaintxt.txt`          | Newest 300, 750 or 1500 unique configs from active channels in plaintext.           |
 | `channels/*.txt`              | All unique configs from that channel in plaintext.                                  |
