@@ -161,6 +161,12 @@ Create the following repository secrets:
 
 These credentials are used by Telethon to access Telegram.
 
+#### Security Notes
+
+- Never commit these values to Git.
+- Never share your `TG_SESSION` with anyone. It grants access to your Telegram account.
+- If your session is ever leaked, revoke it from **Telegram → Settings → Devices** and generate a new one.
+
 ## Want your own subscription generator?
 
 1. Fork this repo
