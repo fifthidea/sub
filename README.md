@@ -231,6 +231,61 @@ Open **Settings → Secrets and variables → Actions → New repository secret*
 13. Set **Execute Worker every** to your desired value. alternatively you can use **Cron expression**. then click Add.
 14. Click on **Edit code**.
 15. Remove all default code and paste the code below:
+    
+```javascript
+async function trigger(env) {
+  const owner = "fifthidea";
+  const repo = "sub";
+  const workflow = "sub.yml";
+  const branch = "main";
+
+  const response = await fetch(
+    `https://api.github.com/repos/${owner}/${repo}/actions/workflows/${workflow}/dispatches`,
+    {
+      method: "POST",
+      headers: {
+        Authorization: `Bearer ${env.GITHUB_TOKEN}`,
+        Accept: "application/vnd.github+json",
+        "X-GitHub-Api-Version": "2022-11-28",
+        "Content-Type": "application/json",
+        "User-Agent": "Cloudflare-Worker-GitHub-Dispatcher",
+      },
+      body: JSON.stringify({
+        ref: branch,
+      }),
+    }
+  );
+
+  const body = await response.text();
+
+  return {
+    success: response.ok,
+    status: response.status,
+    body: body || "Workflow dispatched successfully.",
+  };
+}
+
+export default {
+  // Runs according to your Cron Trigger (e.g. every 15 minutes)
+  async scheduled(event, env, ctx) {
+    const result = await trigger(env);
+
+    if (!result.success) {
+      console.error(result);
+      throw new Error(result.body);
+    }
+
+    console.log("Workflow dispatched successfully.");
+  },
+};
+```
+
+16. Click **Deploy**
+17. Remove github's workflow schedule by comenting-out or removing these two lines found at `.github/workflows/sub.yml`:
+
+```yaml
+#schedule:
+#  - cron: "*/15 * * * *"
 ```
 
 # Security Notes
