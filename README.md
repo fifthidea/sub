@@ -7,7 +7,9 @@ Every 15 minutes, the workflow fetches the latest configurable number of message
 
 #  Supported Protocols
 
-The extractor currently supports the following proxy protocols:: `vless://`, `vmess://`, `trojan://`, `ss://`, `ssr://`, `hy2://`, `hysteria://` and `tuic://`
+The extractor currently supports the following proxy protocols:
+
+`vless://`, `vmess://`, `trojan://`, `ss://`, `ssr://`, `hy2://`, `hysteria://` and `tuic://`
 
 # Validation `(validator.py)`
 
