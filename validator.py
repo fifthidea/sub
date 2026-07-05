@@ -23,6 +23,41 @@ def valid_uuid(value: str) -> bool:
         return True
     except ValueError:
         return False
+        
+VALID_TRANSPORTS = {
+    "tcp",
+    "ws",
+    "grpc",
+    "http",
+    "httpupgrade",
+    "splithttp",
+    "xhttp",
+    "kcp",
+    "quic",
+    "h2",
+    "hysteria2",
+    "mekya",
+    "meek",
+}
+
+def valid_transport(query):
+    transport = query.get("type")
+
+    # No "type=" parameter at all → OK
+    if transport is None:
+        return True
+
+    # Empty value (type=)
+    if not has_value(transport[0]):
+        return True
+
+    return transport[0].lower() in VALID_TRANSPORTS
+    
+def valid_vmess_transport(net):
+    if not has_value(net):
+        return True
+
+    return net.lower() in VALID_TRANSPORTS
     
 def validate_vless(parts):
     if "@" not in parts.netloc:
@@ -45,6 +80,9 @@ def validate_vless(parts):
         return False
 
     q = parse_qs(parts.query)
+    
+    if not valid_transport(q):
+        return False
 
     security = q.get("security", [""])[0]
 
@@ -68,6 +106,11 @@ def validate_trojan(parts):
         return False
 
     host, port = server.rsplit(":", 1)
+    
+    q = parse_qs(parts.query)
+
+    if not valid_transport(q):
+        return False
 
     return has_value(host) and valid_port(port)
     
@@ -95,6 +138,9 @@ def validate_vmess(parts):
         if obj.get("tls") == "reality":
             if not has_value(obj.get("pbk")):
                 return False
+                
+        if not valid_vmess_transport(obj.get("net", "")):
+            return False
 
         return True
 
