@@ -213,15 +213,15 @@ Open **Settings → Secrets and variables → Actions → New repository secret*
 1. Click on your Github profile and go to **Settings → Developer Settings → Personal access tokens → Fine-grained tokens**
 2. click on **Generate new token**
 3. Enter your github account password if asked
-4. Enter any name for **Token name**
-   set Expiration to **No expiration**
-   set Repository access to **Only select repositories** and select your forked repository
-   click **Add permissions** and select **Actions**
-   set **Access** for Action permission to **Access: Read and write**
+4. Enter any name for **Token name**\
+   set Expiration to **No expiration**\
+   set Repository access to **Only select repositories** and select your forked repository\
+   click **Add permissions** and select **Actions**\
+   set **Access** for Action permission to **Access: Read and write**\
 5. Click **Generate token**
-6. Copy the shown token as you will not be able to see it again.
+6. Copy the shown token as you will not be able to see it again.\
    it will be something like `github_pat_xxx...`
-7. Go to **https://dash.cloudflare.com** and login
+7. Go to **https://dash.cloudflare.com** and login\
    If you don't have account, sign-up and verify account
 8. Go to **Compute → Workers & Pages** and click **Create Application**
 9. Click **Start with Hello World** and choose any name for Worker name, then click **Deploy**
