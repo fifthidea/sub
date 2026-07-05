@@ -191,12 +191,6 @@ Open **Settings → Secrets and variables → Actions → New repository secret*
 | `TG_API_HASH` | Your API Hash                |
 | `TG_SESSION`  | The generated session string |
 
-#### Security Notes
-
-- Never commit `TG_API_ID`, `TG_API_HASH`, or `TG_SESSION` to Git.
-- Never share `TG_SESSION`; it grants access to your Telegram account.
-- If it is ever leaked, revoke the session from **Telegram → Settings → Devices** and generate a new one.
-
 # Want your own subscription generator?
 
 1. Fork this repository.
@@ -213,3 +207,35 @@ Open **Settings → Secrets and variables → Actions → New repository secret*
 > For more reliable scheduling, consider using a Cloudflare Worker with GitHub API access to trigger the workflow. GitHub's built-in scheduled workflows may be delayed during peak traffic.
 
 5. Run the workflow manually at least once.
+
+## Use Cloudflare worker for workflow schedule (Optional but more reliable)
+
+1. Click on your Github profile and go to **Settings → Developer Settings → Personal access tokens → Fine-grained tokens**
+2. click on **Generate new token**
+3. Enter your github account password if asked
+4. Enter any name for **Token name**
+   set Expiration to **No expiration**
+   set Repository access to **Only select repositories** and select your forked repository
+   click **Add permissions** and select **Actions**
+   set **Access** for Action permission to **Access: Read and write**
+5. Click **Generate token**
+6. Copy the shown token as you will not be able to see it again.
+   it will be something like `github_pat_xxx...`
+7. Go to **https://dash.cloudflare.com** and login
+   If you don't have account, sign-up and verify account
+8. Go to **Compute → Workers & Pages** and click **Create Application**
+9. Click **Start with Hello World** and choose any name for Worker name, then click **Deploy**
+10. In your woker's dashboard, go to **Settings → Variables and secrets → Add**
+11. Set **Secret** for Type. **`GITHUB_TOKEN`** for Variable name and paste your github token into **Value** field, then click **Deploy**
+12. Now click on **Trigger events → Add** and select **Cron triggers**.
+13. Set **Execute Worker every** to your desired value. alternatively you can use **Cron expression**. then click Add.
+14. Click on **Edit code**.
+15. Remove all default code and paste the code below:
+```
+
+# Security Notes
+
+- Never commit `TG_API_ID`, `TG_API_HASH`, or `TG_SESSION` to Git.
+- If you are using Cloudflare worker for workflow schedule, never commit your Github Token.
+- Never share `TG_SESSION`; it grants access to your Telegram account.
+- If it is ever leaked, revoke the session from **Telegram → Settings → Devices** and generate a new one.
