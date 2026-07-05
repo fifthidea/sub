@@ -266,7 +266,6 @@ async function trigger(env) {
 }
 
 export default {
-  // Runs according to your Cron Trigger (e.g. every 15 minutes)
   async scheduled(event, env, ctx) {
     const result = await trigger(env);
 
