@@ -230,14 +230,14 @@ Open **Settings → Secrets and variables → Actions → New repository secret*
 12. Now click on **Trigger events → Add** and select **Cron triggers**.
 13. Set **Execute Worker every** to your desired value. alternatively you can use **Cron expression**. then click Add.
 14. Click on **Edit code**.
-15. Remove all default code and paste the code below:
+15. Remove all default code and paste the code below, make sure to change `const owner` and `const repo` values according to your own:
     
 ```javascript
 async function trigger(env) {
-  const owner = "fifthidea";
-  const repo = "sub";
-  const workflow = "sub.yml";
-  const branch = "main";
+  const owner = "fifthidea";      // YOUR github username
+  const repo = "sub";             // YOUR github repo's name
+  const workflow = "sub.yml";     // workflow file name
+  const branch = "main";          // repo branch
 
   const response = await fetch(
     `https://api.github.com/repos/${owner}/${repo}/actions/workflows/${workflow}/dispatches`,
