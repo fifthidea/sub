@@ -182,4 +182,4 @@ These credentials are used by Telethon to access Telegram.
 
 > I recommend using Cloudflare worker with API access to your github repo for cron trigger schedule. Github's schedules are delayed because of traffic and peak-hours.
 
-5. Manually run the workflow once
+5. Manually run the workflow atleast once
