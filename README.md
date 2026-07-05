@@ -62,21 +62,16 @@ vless://...?type=ws&sni=B.Com&host=a.com#Server B
 
 ##  Generated Files
 
-| File                          | Description                                                                         |
-| ----------------------------- | ----------------------------------------------------------------------------------- |
-| `sub/*-base64.txt`            | Configs from merge pool encoded in base64                                           |
-| `sub/*-plaintxt.txt`          | Configs from merge pool in plaintxt                                                 |
-| `channels/*.txt`              | All unique configs from that channel in plaintext.                                  |
-| `stats.json`                  | Update time, subscription sizes, per-channel statistics and activity information.   |
-
-`sub-tiny-*.txt` includes 300 newest unique configs from merge pool.
-
-`sub-lite-*.txt` includes 750 newest unique configs from merge pool.
-
-`sub-medium-*.txt` includes 1500 newest unique configs from merge pool.
-
-`sub-full-*.txt` includes all configs from merge pool.
-
+| File                       | Description                                                                         |
+| -------------------------- | ----------------------------------------------------------------------------------- |
+| `sub/*-base64.txt`         | Configs from merge pool encoded in base64                                           |
+| `sub/*-plaintxt.txt`       | Configs from merge pool in plaintxt                                                 |
+| `channels/*.txt`           | All unique configs from that channel in plaintext.                                  |
+| `stats.json`               | Update time, subscription sizes, per-channel statistics and activity information.   |
+| `sub/sub-tiny-*.txt`       | includes 300 newest unique configs from merge pool.                                 |
+| `sub/sub-lite-*.txt`       | includes 750 newest unique configs from merge pool.                                 |
+| `sub/sub-medium-*.txt`     | includes 1500 newest unique configs from merge pool.                                |
+| `sub/sub-full-*.txt`       | includes all configs from merge pool.                                               |
 
 
 ### `stats.json`
