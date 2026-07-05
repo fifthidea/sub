@@ -164,8 +164,9 @@ These credentials are used by Telethon to access Telegram.
 ## Want your own subscription generator?
 
 1. Fork this repo
-2. configure `update.py` (add your own channels)
-3. uncomment these two lines in `sub.yml` workflow
+2. Configure `update.py` (add your own channels)
+3. Add github secrets in `Secrets and variables --> Actions` so telethon can be used.
+4. Uncomment these two lines in `sub.yml` workflow
 ```
  #schedule:
     #- cron: "*/15 * * * *"
@@ -175,4 +176,4 @@ These credentials are used by Telethon to access Telegram.
 
 > I recommend using Cloudflare worker with API access to your github repo for cron trigger schedule. Github's schedules are delayed because of traffic and peak-hours.
 
-4. Manually run the workflow once
+5. Manually run the workflow once
