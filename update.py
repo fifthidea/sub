@@ -26,7 +26,7 @@ client = TelegramClient(
 # CONFIG (EDIT THIS ONLY)
 # =========================
 CHANNELS = {
-    "ConfigsHUB2": 2000,
+    "ConfigsHUB2": 10000,
     "TheFreeConfigs": 150,
     "persianvpnhub": 100,
 }
