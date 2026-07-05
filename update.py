@@ -8,6 +8,7 @@ import re
 from urllib.parse import urlsplit, parse_qsl, urlencode, urlunsplit
 from telethon import TelegramClient
 from telethon.sessions import StringSession
+from validator import validate
 
 CHANNEL_OUTPUT_DIR = "channels"
 os.makedirs(CHANNEL_OUTPUT_DIR, exist_ok=True)
@@ -136,6 +137,8 @@ async def main():
 
                 if latest_config_date is None:
                     latest_config_date = msg.date.astimezone(tehran)
+                    
+        channel_configs = [cfg for cfg in channel_configs if validate(cfg)]
 
         # dedupe per channel
         channel_configs = deduplicate_configs(channel_configs)
