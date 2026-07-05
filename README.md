@@ -27,21 +27,21 @@ These are the required fields:
 
 * A valid `UUID` (user ID)
 * A server address (IPv4, IPv6, or domain name)
-* A valid port number
+* A valid port number (0-65535)
 * When `security=reality` is used, a non-empty REALITY public key (`pbk`)
 
 ### VMess
 
 * A valid `UUID` (user ID)
 * A server address (IPv4, IPv6, or domain name)
-* A valid port number
+* A valid port number (0-65535)
 * When `tls=reality` is used, a non-empty REALITY public key (`pbk`)
 
 ### Trojan
 
 * A non-empty password
 * A server address (IPv4, IPv6, or domain name)
-* A valid port number
+* A valid port number (0-65535)
 
 Configurations missing any of these required fields are discarded.
 
