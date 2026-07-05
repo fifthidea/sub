@@ -197,12 +197,12 @@ async def main():
         with open(filename, "w", encoding="utf-8") as f:
             f.write("\n".join(configs))
 
-    write_subscription(os.path.join(SUB_OUTPUT_DIR, "sub-base64.txt"), merged)
+    write_subscription(os.path.join(SUB_OUTPUT_DIR, "sub-full-base64.txt"), merged)
     write_subscription(os.path.join(SUB_OUTPUT_DIR, "sub-medium-base64.txt"), merged[:1500])
     write_subscription(os.path.join(SUB_OUTPUT_DIR, "sub-lite-base64.txt"), merged[:750])
     write_subscription(os.path.join(SUB_OUTPUT_DIR, "sub-tiny-base64.txt"), merged[:300])
 
-    write_plaintext(os.path.join(SUB_OUTPUT_DIR, "sub-plaintxt.txt"), merged)
+    write_plaintext(os.path.join(SUB_OUTPUT_DIR, "sub-full-plaintxt.txt"), merged)
     write_plaintext(os.path.join(SUB_OUTPUT_DIR, "sub-medium-plaintxt.txt"), merged[:1500])
     write_plaintext(os.path.join(SUB_OUTPUT_DIR, "sub-lite-plaintxt.txt"), merged[:750])
     write_plaintext(os.path.join(SUB_OUTPUT_DIR, "sub-tiny-plaintxt.txt"), merged[:300])
@@ -213,7 +213,7 @@ async def main():
     stats = {
         "updated": jalali.strftime("%Y/%m/%d %H:%M"),
         "subscriptions": {
-            "sub": len(merged),
+            "sub-full": len(merged),
             "sub-medium": min(1500, len(merged)),
             "sub-lite": min(750, len(merged)),
             "sub-tiny": min(300, len(merged))
