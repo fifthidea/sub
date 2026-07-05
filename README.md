@@ -15,11 +15,11 @@ Every extracted configuration is validated before deduplication or subscription 
 
 > Currently only **VLESS**, **VMess**, and **Trojan** are validated, as they make up the vast majority of extracted nodes.
 
-| Protocol | Required fields |
-|-----------|-----------------|
-| **VLESS** | Valid `UUID`, server address (IPv4/IPv6/domain), valid port (`0-65535`), `pbk` when `security=reality`, valid transport if `type` is present |
-| **VMess** | Valid `UUID`, server address (IPv4/IPv6/domain), valid port (`0-65535`), `pbk` when `tls=reality`, valid transport if `net` is present |
-| **Trojan** | Non-empty password, server address (IPv4/IPv6/domain), valid port (`0-65535`), valid transport if `type` is present |
+| Protocol   | Required fields                                                                                                                              |
+|------------|----------------------------------------------------------------------------------------------------------------------------------------------|
+| **VLESS**  | Valid `UUID`, server address (IPv4/IPv6/domain), valid port (`0-65535`), `pbk` when `security=reality`, valid transport if `type` is present |
+| **VMess**  | Valid `UUID`, server address (IPv4/IPv6/domain), valid port (`0-65535`), `pbk` when `tls=reality`, valid transport if `net` is present       |
+| **Trojan** | Non-empty password, server address (IPv4/IPv6/domain), valid port (`0-65535`), valid transport if `type` is present                          |
 
 Configurations missing any required field are discarded.
 
