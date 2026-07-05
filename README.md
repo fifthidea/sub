@@ -22,7 +22,7 @@ Before any deduplication or subscription generation takes place, every extracted
 
 > only VLESS, VMess, and Trojan configurations are currently validated, as these protocols account for the vast majority of extracted nodes and malformed links.
 
-These are required fields:
+These are conditions that will mark a configuration as invalid:
 
 ### VLESS
 
