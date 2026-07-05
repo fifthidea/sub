@@ -25,23 +25,23 @@ Before any deduplication or subscription generation takes place, every extracted
 These are the required fields:
 ### VLESS
 
-* A non-empty `UUID` (user ID)
+* A valid `UUID` (user ID)
 * A server address (IPv4, IPv6, or domain name)
-* A port number
+* A valid port number
 * When `security=reality` is used, a non-empty REALITY public key (`pbk`)
 
 ### VMess
 
-* A non-empty `UUID` (user ID)
+* A valid `UUID` (user ID)
 * A server address (IPv4, IPv6, or domain name)
-* A port number
+* A valid port number
 * When `tls=reality` is used, a non-empty REALITY public key (`pbk`)
 
 ### Trojan
 
 * A non-empty password
 * A server address (IPv4, IPv6, or domain name)
-* A port number
+* A valid port number
 
 Configurations missing any of these required fields are discarded.
 
