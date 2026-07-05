@@ -25,25 +25,32 @@ Before any deduplication or subscription generation takes place, every extracted
 These are the required fields:
 ### VLESS
 
-* A valid `UUID` (user ID)
-* A server address (IPv4, IPv6, or domain name)
-* A valid port number (0-65535)
-* When `security=reality` is used, a non-empty REALITY public key (`pbk`)
+- A valid `UUID` (user ID)
+- A server address (IPv4, IPv6, or domain name)
+- A valid port number (`0-65535`)
+- When `security=reality` is used, a non-empty REALITY public key (`pbk`)
+- If the `type` parameter is present and non-empty, it must be a valid transport
 
 ### VMess
 
-* A valid `UUID` (user ID)
-* A server address (IPv4, IPv6, or domain name)
-* A valid port number (0-65535)
-* When `tls=reality` is used, a non-empty REALITY public key (`pbk`)
+- A valid `UUID` (user ID)
+- A server address (IPv4, IPv6, or domain name)
+- A valid port number (`0-65535`)
+- When `tls=reality` is used, a non-empty REALITY public key (`pbk`)
+- If the `net` field is present and non-empty, it must be a valid transport
 
 ### Trojan
 
-* A non-empty password
-* A server address (IPv4, IPv6, or domain name)
-* A valid port number (0-65535)
+- A non-empty password
+- A server address (IPv4, IPv6, or domain name)
+- A valid port number (`0-65535`)
+- If the `type` parameter is present and non-empty, it must be a valid transport
 
-Configurations missing any of these required fields are discarded.
+Configurations missing any required field are discarded.
+
+The validator is intentionally conservative. It only rejects configurations that are **guaranteed to be structurally invalid**.
+
+It **does not** validate optional parameters such as `host`, `path`, `sni`, `flow`, `fp`, `sid`, or verify whether a server is online or reachable. This minimizes false positives and ensures that potentially working configurations are not discarded unnecessarily.
 
 
 ### Why Validation Exists
@@ -153,9 +160,3 @@ Create the following repository secrets:
 * `TG_SESSION`
 
 These credentials are used by Telethon to access Telegram.
-
----
-## ⚠️ Disclaimer
-
-This project **does not verify** whether a proxy is reachable or functional.
-Connectivity depends on many factors such as geographic location, ISP, routing, censorship, and network conditions. Therefore, this repository only aggregates publicly available Telegram configs, performs normalization and deduplication, and republishes them as subscription files.
