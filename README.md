@@ -154,7 +154,7 @@ Install Telethon:
 pip install telethon
 ```
 
-Create `generate_session.py`:
+Create `generate_session.py`, make sure to add your `API_ID` and `API_HASH` values :
 
 ```python
 from telethon.sync import TelegramClient
