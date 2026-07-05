@@ -165,7 +165,7 @@ These credentials are used by Telethon to access Telegram.
 
 1. Fork this repo
 2. Configure `update.py` (add your own channels)
-3. Add github secrets in `Secrets and variables --> Actions` so telethon can be used.
+3. Add required secrets in `Secrets and variables --> Actions` so telethon can be used.
 4. Uncomment these two lines in `sub.yml` workflow
 ```
  #schedule:
