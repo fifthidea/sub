@@ -208,29 +208,37 @@ Open **Settings → Secrets and variables → Actions → New repository secret*
 
 5. Run the workflow manually at least once.
 
-## Use Cloudflare worker for workflow schedule (Optional but more reliable)
+## Use a Cloudflare Worker for Scheduling (Optional)
 
-1. Click on your Github profile and go to **Settings → Developer Settings → Personal access tokens → Fine-grained tokens**
-2. click on **Generate new token**
-3. Enter your github account password if asked
-4. Enter any name for **Token name**\
-   set Expiration to **No expiration**\
-   set Repository access to **Only select repositories** and select your forked repository\
-   click **Add permissions** and select **Actions**\
-   set **Access** for Action permission to **Access: Read and write**\
-5. Click **Generate token**
-6. Copy the shown token as you will not be able to see it again.\
-   it will be something like `github_pat_xxx...`
-7. Go to **https://dash.cloudflare.com** and login\
-   If you don't have account, sign-up and verify account
-8. Go to **Compute → Workers & Pages** and click **Create Application**
-9. Click **Start with Hello World** and choose any name for Worker name, then click **Deploy**
-10. In your woker's dashboard, go to **Settings → Variables and secrets → Add**
-11. Set **Secret** for Type. **`GITHUB_TOKEN`** for Variable name and paste your github token into **Value** field, then click **Deploy**
-12. Now click on **Trigger events → Add** and select **Cron triggers**.
-13. Set **Execute Worker every** to your desired value. alternatively you can use **Cron expression**. then click Add.
-14. Click on **Edit code**.
-15. Remove all default code and paste the code below, make sure to change `const owner` and `const repo` values according to your own:
+A Cloudflare Worker provides a more reliable workflow schedule than GitHub's built-in cron.
+
+### 1. Create a GitHub Personal Access Token
+
+1. Open **GitHub → Settings → Developer settings → Personal access tokens → Fine-grained tokens**.
+2. Click **Generate new token**.
+3. Enter your password if prompted.
+4. Configure:
+   - **Token name:** Any name
+   - **Expiration:** **No expiration**
+   - **Repository access:** **Only select repositories** → select your fork
+   - **Add permissions:** **Actions → Access: Read and write**
+5. Click **Generate token**.
+6. Copy the token (for example, `github_pat_xxx...`). You won't be able to view it again.
+
+### 2. Create a Cloudflare Worker
+
+1. Log in to **https://dash.cloudflare.com** (create an account if needed).
+2. Go to **Compute → Workers & Pages → Create Application**.
+3. Select **Start with Hello World**, choose any worker name, and click **Deploy**.
+4. Open **Settings → Variables and secrets → Add**.
+5. Create a secret:
+   - **Type:** Secret
+   - **Name:** `GITHUB_TOKEN`
+   - **Value:** Your GitHub personal access token
+6. Click **Deploy**.
+7. Open **Trigger events → Add → Cron triggers**.
+8. Choose either **Execute Worker every** or enter your own **Cron expression**, then click **Add**.
+9. Open **Edit code**, replace the default code with the following, and update `owner` and `repo` to match your repository:
     
 ```javascript
 async function trigger(env) {
@@ -280,7 +288,10 @@ export default {
 ```
 
 16. Click **Deploy**
-17. Remove github's workflow schedule by comenting-out or removing these two lines found at `.github/workflows/sub.yml`:
+
+### 3. Disable GitHub's Schedule
+
+Comment out or remove the schedule from `.github/workflows/sub.yml`:
 
 ```yaml
 #schedule:
