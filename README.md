@@ -22,66 +22,36 @@ Before any deduplication or subscription generation takes place, every extracted
 
 > only VLESS, VMess, and Trojan configurations are currently validated, as these protocols account for the vast majority of extracted nodes and malformed links.
 
-A VLESS configuration is considered valid only if it contains:
+These are required fields:
 
-A non-empty UUID (user ID)
-A server address (IPv4, IPv6, or domain name)
-A port number
-When security=reality is used, a non-empty REALITY public key (pbk)
+### VLESS
 
-Configurations missing any of these required fields are discarded.
+* A non-empty `UUID` (user ID)
+* A server address (IPv4, IPv6, or domain name)
+* A port number
+* When `security=reality` is used, a non-empty REALITY public key (`pbk`)
 
-VMess
+### VMess
 
-A VMess configuration is considered valid only if it contains:
-* A non-empty id (UUID)
-* A server address (add)
-* A port number (port)
+* A non-empty `UUID` (user ID)
+* A server address (IPv4, IPv6, or domain name)
+* A port number
 * When `tls=reality` is used, a non-empty REALITY public key (`pbk`)
 
+### Trojan
 
-Trojan
-A Trojan configuration is considered valid only if it contains:
-
-A non-empty password
-A server address (IPv4, IPv6, or domain name)
-A port number
+* A non-empty password
+* A server address (IPv4, IPv6, or domain name)
+* A port number
 
 Configurations missing any of these required fields are discarded.
 
-Design Philosophy
 
-The validator is intentionally minimal. It verifies only fields that are fundamentally required for a configuration to be parsed and used by the client.
+### Why Validation Exists
 
-It does not validate optional parameters such as:
+Some V2Ray clients (such as Exclave and v2rayNG) fail to initialize **Balancer** profiles if even a single malformed outbound is present in the subscription. Although these clients allow manually selecting working nodes through URL Test or Real Delay, a malformed configuration can prevent automatic balancing from functioning correctly.
 
-type
-host
-path
-sni
-fp
-sid
-flow
-alpn
-or any other transport-specific options
 
-These parameters may be absent in perfectly valid configurations depending on the transport, security mode, or server implementation. Enforcing them would unnecessarily reject working nodes.
-
-Likewise, the validator does not check whether:
-
-the server is online,
-the UUID or password is correct,
-the port is open,
-the domain resolves,
-or the node is actually usable.
-
-Those checks are outside the scope of this project.
-
-Why Validation Exists
-
-Some V2Ray clients (such as Exclave and v2rayNG) fail to initialize Balancer profiles if even a single malformed outbound is present in the subscription. Although these clients often allow manually selecting working nodes through URL Test or Real Delay, a malformed configuration can prevent automatic balancing from functioning correctly.
-
-By removing configurations that are missing protocol-required fields before deduplication and subscription generation, the generated subscriptions are more robust and avoid many common client-side parsing errors while still preserving as many potentially working nodes as possible.
 ---
 ##  Deduplication
 Deduplication happens in two stages.\
