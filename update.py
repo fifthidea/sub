@@ -13,6 +13,9 @@ from validator import validate
 CHANNEL_OUTPUT_DIR = "channels"
 os.makedirs(CHANNEL_OUTPUT_DIR, exist_ok=True)
 
+SUB_OUTPUT_DIR = "sub"
+os.makedirs(SUB_OUTPUT_DIR, exist_ok=True)
+
 API_ID = int(os.environ["TG_API_ID"])
 API_HASH = os.environ["TG_API_HASH"]
 SESSION = os.environ["TG_SESSION"]
@@ -194,14 +197,15 @@ async def main():
         with open(filename, "w", encoding="utf-8") as f:
             f.write("\n".join(configs))
 
-    write_subscription("sub-base64.txt", merged)
-    write_subscription("sub-medium-base64.txt", merged[:1500])
-    write_subscription("sub-lite-base64.txt", merged[:750])
-    write_subscription("sub-tiny-base64.txt", merged[:300])
-    write_plaintext("sub-plaintxt.txt", merged)
-    write_plaintext("sub-medium-plaintxt.txt", merged[:1500])
-    write_plaintext("sub-lite-plaintxt.txt", merged[:750])
-    write_plaintext("sub-tiny-plaintxt.txt", merged[:300])
+    write_subscription(os.path.join(SUB_OUTPUT_DIR, "sub-base64.txt"), merged)
+    write_subscription(os.path.join(SUB_OUTPUT_DIR, "sub-medium-base64.txt"), merged[:1500])
+    write_subscription(os.path.join(SUB_OUTPUT_DIR, "sub-lite-base64.txt"), merged[:750])
+    write_subscription(os.path.join(SUB_OUTPUT_DIR, "sub-tiny-base64.txt"), merged[:300])
+
+    write_plaintext(os.path.join(SUB_OUTPUT_DIR, "sub-plaintxt.txt"), merged)
+    write_plaintext(os.path.join(SUB_OUTPUT_DIR, "sub-medium-plaintxt.txt"), merged[:1500])
+    write_plaintext(os.path.join(SUB_OUTPUT_DIR, "sub-lite-plaintxt.txt"), merged[:750])
+    write_plaintext(os.path.join(SUB_OUTPUT_DIR, "sub-tiny-plaintxt.txt"), merged[:300])
 
     now = datetime.now(tehran)
     jalali = jdatetime.datetime.fromgregorian(datetime=now)
