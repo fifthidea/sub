@@ -67,7 +67,7 @@ vless://...?type=ws&sni=B.Com&host=a.com#Server B
 | File                       | Description                                                                         |
 | -------------------------- | ----------------------------------------------------------------------------------- |
 | `sub/*-base64.txt`         | Configs from merge pool encoded in base64                                           |
-| `sub/*-plaintxt.txt`       | Configs from merge pool in plaintxt                                                 |
+| `sub/*-plaintxt.txt`       | Configs from merge pool in plaintext                                                |
 | `channels/*.txt`           | All unique configs from that channel in plaintext.                                  |
 | `stats.json`               | Update time, subscription sizes, per-channel statistics and activity information.   |
 | `sub/sub-tiny-*.txt`       | includes 300 newest unique configs from merge pool.                                 |
@@ -125,7 +125,7 @@ A config is included after validation and deduplication in `sub/ir.txt` if at le
 
 Cotanins IR IP-Ranges in CIDR format \
 Used as a fallback if APNIC and IPDeny fail to fetch IR IP-Ranges. \
-Downloaded from: https://www.ip2location.com/free/visitor-blocker \
+Downloaded from: https://www.ip2location.com/free/visitor-blocker 
 
 Last update: **07 Jul 2026 13:41:41 GMT**
 
