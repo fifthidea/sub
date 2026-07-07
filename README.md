@@ -155,7 +155,7 @@ CHANNEL_ACTIVITY_DAYS = 3
 DNS_WORKERS = 32
 ```
 
-Both Usernames and Numeric IDs are accepted for channels and groups (e.g. "`ConfigsHUB2`","`-1001234567890`"). (Required)
+Both Usernames and Numeric IDs are accepted for channels and groups (e.g. `"ConfigsHUB2"`,`-1001234567890`). (Required)
 
 > When using a numeric ID for a private channel or group, the Telegram account associated with TG_SESSION must already be a member of that chat. Otherwise, Telethon cannot access its messages.
 
