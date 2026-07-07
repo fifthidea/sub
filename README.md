@@ -140,27 +140,36 @@ Last update: **07 Jul 2026 13:41:41 GMT**
 
 ##  Configuration
 
-Telegram channels are configured in `update.py`.
+Telegram channels and groups are configured in `update.py`.
 
 Example:
 ```python
 CHANNELS = {
-    "ConfigsHUB2": 2000,
+    "ConfigsHUB2": {"limit": 1600, "name": "CFGHB2"},
     "TheFreeConfigs": 300,
-    "persianvpnhub": 600,
+    -1001234567890: {"limit": 1000, "name": "Private backup"},
+    -1009876543210: 500
 }
 
-CHANNEL_ACTIVITY_DAYS = 7
+CHANNEL_ACTIVITY_DAYS = 3
 DNS_WORKERS = 32
 ```
 
-The value for each channel specifies how many recent Telegram messages will be scanned.
+Both Usernames and Numeric IDs are accepted for channels and groups (e.g. "`ConfigsHUB2`","`-1001234567890`"). (Required)
 
-`CHANNEL_ACTIVITY_DAYS` defines how many days may pass since a channel last published at least one valid proxy configuration before it is excluded from merged subscriptions.
+> When using a numeric ID for a private channel or group, the Telegram account associated with TG_SESSION must already be a member of that chat. Otherwise, Telethon cannot access its messages.
+
+The `"limit"` value specifies the maximum number of recent Telegram messages to scan. (Required)
+
+The optional `"name"` field specifies a custom output filename. If omitted, the public username is used. If the chat has no username (private chats), the numeric ID is used instead.
+
+> Custom filenames are automatically sanitized to remove invalid filename characters, avoid reserved Windows filenames, and enforce the maximum filename length.
+
+`CHANNEL_ACTIVITY_DAYS` specifies how many days may pass since a channel or group last published at least one valid proxy configuration before it is excluded from the merged subscriptions.
 
 > Once an inactive channel publishes configs again, it is automatically included on the next workflow run.
 
-`DNS_WORKERS` defines the number of concurrent workers that resolves the domains.
+`DNS_WORKERS`specifies the maximum number of concurrent DNS lookups performed while generating `sub/ir.txt` and `sub/ir-actual.txt`.
 
 #  Telethon
 
