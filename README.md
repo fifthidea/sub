@@ -64,17 +64,17 @@ vless://...?type=ws&sni=B.Com&host=a.com#Server B
 
 ##  Generated Files
 
-| File                       | Description                                                                         |
-| -------------------------- | ----------------------------------------------------------------------------------- |
-| `sub/*-base64.txt`         | Configs from merge pool encoded in base64                                           |
-| `sub/*-plaintxt.txt`       | Configs from merge pool in plaintext                                                |
-| `channels/*.txt`           | All unique configs from that channel in plaintext.                                  |
-| `stats.json`               | Update time, subscription sizes, per-channel statistics and activity information.   |
-| `sub/sub-tiny-*.txt`       | includes 300 newest unique configs from merge pool.                                 |
-| `sub/sub-lite-*.txt`       | includes 750 newest unique configs from merge pool.                                 |
-| `sub/sub-medium-*.txt`     | includes 1500 newest unique configs from merge pool.                                |
-| `sub/sub-full-*.txt`       | includes all configs from merge pool.                                               |
-| `sub/ir.txt`               | includes configs from merge pool in plaintext, where `server`, `host`, or `sni` is an Iranian IP, a domain resolving to an Iranian IP, or a `.ir` domain. atleast one condition has to match for a config to be included in `ir.txt`             |
+| File                          | Description                                                                         |
+| ----------------------------- | ----------------------------------------------------------------------------------- |
+| `sub/*-base64.txt`            | Configs from merge pool encoded in base64                                           |
+| `sub/*-plaintxt.txt`          | Configs from merge pool in plaintext                                                |
+| `channels/*.txt`              | All unique configs from that channel in plaintext.                                  |
+| `stats.json`                  | Update time, subscription sizes, per-channel statistics and activity information.   |
+| `sub/sub-tiny-*.txt`          | includes 300 newest unique configs from merge pool.                                 |
+| `sub/sub-lite-*.txt`          | includes 750 newest unique configs from merge pool.                                 |
+| `sub/sub-medium-*.txt`        | includes 1500 newest unique configs from merge pool.                                |
+| `sub/sub-full-*.txt`          | includes all configs from merge pool.                                               |
+| `sub/ir.txt`                  | includes configs from merge pool in plaintext, where `server`, `host`, or `sni` is an Iranian IP, a domain resolving to an Iranian IP, or a `.ir` domain. atleast one condition has to match for a config to be included in `ir.txt`             |
 
 
 ### `stats.json`
