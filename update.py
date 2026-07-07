@@ -5,16 +5,26 @@ from datetime import datetime, timedelta
 import os
 import base64
 import re
-import socket
+import dns.resolver
 import ipaddress
 import urllib.request
+from concurrent.futures import ThreadPoolExecutor
 from functools import lru_cache
 from urllib.parse import urlsplit, parse_qsl, urlencode, urlunsplit
 from telethon import TelegramClient
 from telethon.sessions import StringSession
 from validator import validate
 
-socket.setdefaulttimeout(5)
+resolver = dns.resolver.Resolver()
+
+resolver.nameservers = [
+    "1.1.1.1",    # Cloudflare
+    "8.8.8.8",    # Google
+    "9.9.9.9"     # Quad9 
+]
+
+resolver.lifetime = 6
+resolver.timeout = 2
 
 CHANNEL_OUTPUT_DIR = "channels"
 os.makedirs(CHANNEL_OUTPUT_DIR, exist_ok=True)
@@ -42,6 +52,7 @@ CHANNELS = {
 }
 
 CHANNEL_ACTIVITY_DAYS = 3
+DNS_WORKERS = 32
 # =========================
 
 PATTERN = re.compile(
@@ -210,13 +221,23 @@ def is_iran_ip(value):
 @lru_cache(maxsize=4096)
 def resolves_to_iran_ip(hostname):
     try:
-        infos = socket.getaddrinfo(hostname, None)
+        # IPv4
+        try:
+            answers = resolver.resolve(hostname, "A")
+            for answer in answers:
+                if is_iran_ip(answer.to_text()):
+                    return True
+        except Exception:
+            pass
 
-        for info in infos:
-            ip = info[4][0]
-
-            if is_iran_ip(ip):
-                return True
+        # IPv6
+        try:
+            answers = resolver.resolve(hostname, "AAAA")
+            for answer in answers:
+                if is_iran_ip(answer.to_text()):
+                    return True
+        except Exception:
+            pass
 
     except Exception:
         pass
@@ -227,7 +248,7 @@ def is_iran_host(value):
     if not value:
         return False
 
-    value = value.strip().lower()
+    value = value.strip().rstrip(".").lower()
 
     if value.endswith(".ir"):
         return True
@@ -239,11 +260,16 @@ def is_iran_host(value):
         return True
 
     return False
+   
     
-def config_is_iran(config):
+def config_iran_flags(config):
+    """
+    Returns:
+        (is_ir, server_is_ir)
+    """
+
     try:
         parts = urlsplit(config)
-
         scheme = parts.scheme.lower()
 
         if scheme == "vmess":
@@ -251,31 +277,35 @@ def config_is_iran(config):
                 base64.urlsafe_b64decode(parts.netloc + "===")
             )
 
-            for key in ("add", "host", "sni"):
+            server = obj.get("add", "")
+            server_is_ir = is_iran_host(server)
+
+            if server_is_ir:
+                return True, True
+
+            for key in ("host", "sni"):
                 if is_iran_host(obj.get(key, "")):
-                    return True
+                    return True, False
 
-            return False
+            return False, False
 
-        q = parse_qsl(parts.query)
-
-        params = dict(q)
+        params = dict(parse_qsl(parts.query))
 
         server = parts.hostname or ""
+        server_is_ir = is_iran_host(server)
 
-        if is_iran_host(server):
-            return True
+        if server_is_ir:
+            return True, True
 
         for key in ("host", "sni"):
             if is_iran_host(params.get(key, "")):
-                return True
+                return True, False
 
     except Exception:
         pass
 
-    return False
+    return False, False
     
-
 
 async def main():
 
@@ -345,11 +375,20 @@ async def main():
 
     # global dedupe
     merged = deduplicate_configs(all_configs)
-    ir_configs = [
-    cfg
-    for cfg in merged
-    if config_is_iran(cfg)
-    ]
+    
+    with ThreadPoolExecutor(max_workers=DNS_WORKERS) as executor:
+
+        ir_results = executor.map(config_iran_flags, merged)
+
+        ir_configs = []
+        ir_actual_configs = []
+
+        for cfg, (is_ir, server_is_ir) in zip(merged, ir_results):
+            if is_ir:
+                ir_configs.append(cfg)
+
+            if server_is_ir:
+                ir_actual_configs.append(cfg)
 
     # create sub (base64)
     def write_subscription(filename, configs):
@@ -375,6 +414,7 @@ async def main():
     write_plaintext(os.path.join(SUB_OUTPUT_DIR, "sub-tiny-plaintxt.txt"), merged[:300])
     
     write_plaintext(os.path.join(SUB_OUTPUT_DIR, "ir.txt"), ir_configs)
+    write_plaintext(os.path.join(SUB_OUTPUT_DIR, "ir-actual.txt"), ir_actual_configs)
 
     now = datetime.now(tehran)
     jalali = jdatetime.datetime.fromgregorian(datetime=now)
@@ -386,7 +426,8 @@ async def main():
             "sub-medium": min(1500, len(merged)),
             "sub-lite": min(750, len(merged)),
             "sub-tiny": min(300, len(merged)),
-            "ir": len(ir_configs)
+            "ir": len(ir_configs),
+            "ir-actual": len(ir_actual_configs)
         },
         "channels": channel_stats
     }
