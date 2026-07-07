@@ -86,7 +86,7 @@ Example:
 {
     "updated": "1405/04/13 09:02",
     "subscriptions": {
-        "sub": 1871,
+        "sub-full": 1871,
         "sub-medium": 1500,
         "sub-lite": 750,
         "sub-tiny": 300,
