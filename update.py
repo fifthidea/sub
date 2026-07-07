@@ -35,7 +35,7 @@ CHANNELS = {
     "persianvpnhub": 120,
 }
 
-CHANNEL_ACTIVITY_DAYS = 7
+CHANNEL_ACTIVITY_DAYS = 3
 # =========================
 
 PATTERN = re.compile(
