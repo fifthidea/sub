@@ -91,7 +91,7 @@ Example:
         "sub-lite": 750,
         "sub-tiny": 300,
         "ir": 271,
-        "ir-actual": 38
+        "ir-actual": 149
     },
     "channels": {
         "ConfigsHUB2": {
