@@ -124,7 +124,6 @@ A config is included after validation and deduplication in `sub/ir.txt` if at le
 #### `ir-range.txt`
 
 Cotanins IR IP-Ranges in CIDR format
-
 Used as a fallback if APNIC and IPDeny fail to fetch IR IP-Ranges.
 
 Downloaded from: https://www.ip2location.com/free/visitor-blocker
