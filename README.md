@@ -1,5 +1,5 @@
 # Telegram V2Ray Subscription Generator
-Automatically builds V2Ray subscriptions from one or more public Telegram channels using **Telethon** and GitHub Actions.
+Automatically builds V2Ray subscriptions from one or more public/private Telegram channels/groups using **Telethon** and GitHub Actions.
 
 Every 15 minutes, the workflow fetches the latest configurable number of messages from each channel, extracts supported proxy configs, validates and deduplicates them, then generates both per-channel and merged subscriptions. Channels inactive for the configured period are automatically excluded from merged subscriptions until they publish new configs again.
 
@@ -29,7 +29,7 @@ The validator is intentionally conservative. It only rejects configurations that
 
 It does **not** validate optional fields such as `host`, `path`, `sni`, `flow`, `fp`, or `sid`, nor does it check whether servers are online. This minimizes false positives and avoids discarding potentially working configurations.
 
-To Do: validate configs through xray-core
+***To Do: validate configs through xray-core***
 
 ## Why Validation Exists
 
