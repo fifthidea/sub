@@ -29,6 +29,8 @@ The validator is intentionally conservative. It only rejects configurations that
 
 It does **not** validate optional fields such as `host`, `path`, `sni`, `flow`, `fp`, or `sid`, nor does it check whether servers are online. This minimizes false positives and avoids discarding potentially working configurations.
 
+To Do: validate configs through xray-core
+
 ## Why Validation Exists
 
 Some clients (such as **Exclave** and **v2rayNG**) fail to initialize **Balancer** profiles if even one malformed outbound exists in the subscription. Although working nodes can still be selected manually through URL Test or Real Delay, malformed configs may prevent automatic balancing from functioning correctly.
