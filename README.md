@@ -74,6 +74,7 @@ vless://...?type=ws&sni=B.Com&host=a.com#Server B
 | `sub/sub-lite-*.txt`       | includes 750 newest unique configs from merge pool.                                 |
 | `sub/sub-medium-*.txt`     | includes 1500 newest unique configs from merge pool.                                |
 | `sub/sub-full-*.txt`       | includes all configs from merge pool.                                               |
+| `sub/ir.txt`               | includes configs from merge pool, where `server`, `host`, or `sni` is an Iranian IP, a domain resolving to an Iranian IP, or a .ir domain. atleast one condition has to match for a config to be included in `ir.txt`             |
 
 
 ### `stats.json`
@@ -85,7 +86,7 @@ Example:
 {
     "updated": "1405/04/13 09:02",
     "subscriptions": {
-        "sub-full": 1871,
+        "sub": 1871,
         "sub-medium": 1500,
         "sub-lite": 750,
         "sub-tiny": 300

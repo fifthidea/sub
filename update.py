@@ -5,10 +5,16 @@ from datetime import datetime, timedelta
 import os
 import base64
 import re
+import socket
+import ipaddress
+import urllib.request
+from functools import lru_cache
 from urllib.parse import urlsplit, parse_qsl, urlencode, urlunsplit
 from telethon import TelegramClient
 from telethon.sessions import StringSession
 from validator import validate
+
+socket.setdefaulttimeout(5)
 
 CHANNEL_OUTPUT_DIR = "channels"
 os.makedirs(CHANNEL_OUTPUT_DIR, exist_ok=True)
@@ -114,6 +120,162 @@ def deduplicate_configs(configs):
 
     return result
 
+def load_ir_networks_apnic():
+    url = "https://ftp.apnic.net/stats/apnic/delegated-apnic-latest"
+
+    networks = []
+
+    with urllib.request.urlopen(url, timeout=20) as r:
+        text = r.read().decode("utf-8")
+
+    for line in text.splitlines():
+
+        if line.startswith("#"):
+            continue
+
+        parts = line.split("|")
+
+        if len(parts) < 7:
+            continue
+
+        registry, cc, typ, start, value = parts[:5]
+
+        if cc != "IR":
+            continue
+
+        if typ not in ("ipv4", "ipv6"):
+            continue
+
+        if typ == "ipv4":
+            network = ipaddress.summarize_address_range(
+                ipaddress.IPv4Address(start),
+                ipaddress.IPv4Address(
+                    int(ipaddress.IPv4Address(start)) + int(value) - 1
+                )
+            )
+        else:
+            network = [
+                ipaddress.ip_network(f"{start}/{value}")
+            ]
+
+        networks.extend(network)
+
+    return networks
+    
+def load_ir_networks_ipdeny():
+    url = "https://www.ipdeny.com/ipblocks/data/countries/ir.zone"
+
+    with urllib.request.urlopen(url) as r:
+        return [
+            ipaddress.ip_network(line.decode().strip())
+            for line in r
+            if line.strip()
+        ]
+        
+def load_ir_networks_local():
+    networks = []
+
+    with open("ir-range.txt", encoding="utf-8") as f:
+        for line in f:
+            line = line.strip()
+
+            if not line:
+                continue
+
+            if line.startswith("#"):
+                continue
+
+            networks.append(
+                ipaddress.ip_network(line)
+            )
+
+    return networks
+
+try:
+    IR_NETWORKS = load_ir_networks_apnic()
+except Exception:
+    try:
+        IR_NETWORKS = load_ir_networks_ipdeny()
+    except Exception:
+        IR_NETWORKS = load_ir_networks_local()
+
+def is_iran_ip(value):
+    try:
+        ip = ipaddress.ip_address(value)
+    except ValueError:
+        return False
+
+    return any(ip in net for net in IR_NETWORKS)
+    
+@lru_cache(maxsize=4096)
+def resolves_to_iran_ip(hostname):
+    try:
+        infos = socket.getaddrinfo(hostname, None)
+
+        for info in infos:
+            ip = info[4][0]
+
+            if is_iran_ip(ip):
+                return True
+
+    except Exception:
+        pass
+
+    return False
+    
+def is_iran_host(value):
+    if not value:
+        return False
+
+    value = value.strip().lower()
+
+    if value.endswith(".ir"):
+        return True
+
+    if is_iran_ip(value):
+        return True
+
+    if resolves_to_iran_ip(value):
+        return True
+
+    return False
+    
+def config_is_iran(config):
+    try:
+        parts = urlsplit(config)
+
+        scheme = parts.scheme.lower()
+
+        if scheme == "vmess":
+            obj = json.loads(
+                base64.urlsafe_b64decode(parts.netloc + "===")
+            )
+
+            for key in ("add", "host", "sni"):
+                if is_iran_host(obj.get(key, "")):
+                    return True
+
+            return False
+
+        q = parse_qsl(parts.query)
+
+        params = dict(q)
+
+        server = parts.hostname or ""
+
+        if is_iran_host(server):
+            return True
+
+        for key in ("host", "sni"):
+            if is_iran_host(params.get(key, "")):
+                return True
+
+    except Exception:
+        pass
+
+    return False
+    
+
 
 async def main():
 
@@ -183,6 +345,11 @@ async def main():
 
     # global dedupe
     merged = deduplicate_configs(all_configs)
+    ir_configs = [
+    cfg
+    for cfg in merged
+    if config_is_iran(cfg)
+    ]
 
     # create sub (base64)
     def write_subscription(filename, configs):
@@ -206,6 +373,8 @@ async def main():
     write_plaintext(os.path.join(SUB_OUTPUT_DIR, "sub-medium-plaintxt.txt"), merged[:1500])
     write_plaintext(os.path.join(SUB_OUTPUT_DIR, "sub-lite-plaintxt.txt"), merged[:750])
     write_plaintext(os.path.join(SUB_OUTPUT_DIR, "sub-tiny-plaintxt.txt"), merged[:300])
+    
+    write_plaintext(os.path.join(SUB_OUTPUT_DIR, "ir.txt"), ir_configs)
 
     now = datetime.now(tehran)
     jalali = jdatetime.datetime.fromgregorian(datetime=now)
@@ -216,7 +385,8 @@ async def main():
             "sub-full": len(merged),
             "sub-medium": min(1500, len(merged)),
             "sub-lite": min(750, len(merged)),
-            "sub-tiny": min(300, len(merged))
+            "sub-tiny": min(300, len(merged)),
+            "ir": len(ir_configs)
         },
         "channels": channel_stats
     }
