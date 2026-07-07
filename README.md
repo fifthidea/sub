@@ -122,13 +122,13 @@ A config is included after validation and deduplication in `sub/ir.txt` if at le
 - `sni` is a domain that resolves to at least one Iranian IPv4 or IPv6 address.
 - `sni` is a domain ending in `.ir`.
 
-> for `sub/ir-actual.txt`, only atleast one condition for the `server` parameter should be met.
+> For `sub/ir-actual.txt`, only atleast one condition for the `server` parameter should be met.
 
 > Domains are resolved using Cloudflare/Google/Quad9 domain name servers.
 
 #### `ir-range.txt`
 
-Cotanins IR IP-Ranges in CIDR format \
+Contains IR IP-Ranges in CIDR format \
 Used as a fallback if APNIC and IPDeny fail to fetch IR IP-Ranges. \
 Downloaded from: https://www.ip2location.com/free/visitor-blocker 
 
