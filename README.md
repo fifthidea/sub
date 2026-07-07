@@ -90,7 +90,8 @@ Example:
         "sub-medium": 1500,
         "sub-lite": 750,
         "sub-tiny": 300,
-        "ir": 271
+        "ir": 271,
+        "ir-actual": 38
     },
     "channels": {
         "ConfigsHUB2": {
@@ -121,6 +122,10 @@ A config is included after validation and deduplication in `sub/ir.txt` if at le
 - `sni` is a domain that resolves to at least one Iranian IPv4 or IPv6 address.
 - `sni` is a domain ending in `.ir`.
 
+> for `sub/ir-actual.txt`, only atleast one condition for the `server` parameter should be met.
+
+> Domains are resolved using Cloudflare/Google/Quad9 domain name servers.
+
 #### `ir-range.txt`
 
 Cotanins IR IP-Ranges in CIDR format \
@@ -144,6 +149,7 @@ CHANNELS = {
 }
 
 CHANNEL_ACTIVITY_DAYS = 7
+DNS_WORKERS = 32
 ```
 
 The value for each channel specifies how many recent Telegram messages will be scanned.
@@ -151,6 +157,8 @@ The value for each channel specifies how many recent Telegram messages will be s
 `CHANNEL_ACTIVITY_DAYS` defines how many days may pass since a channel last published at least one valid proxy configuration before it is excluded from merged subscriptions.
 
 > Once an inactive channel publishes configs again, it is automatically included on the next workflow run.
+
+`DNS_WORKERS` defines the number of concurrent workers that resolves the domains.
 
 #  Telethon
 
