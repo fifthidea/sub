@@ -1,10 +1,11 @@
 {
-    "updated": "1405/04/16 17:16",
+    "updated": "1405/04/16 17:32",
     "subscriptions": {
-        "sub-full": 928,
-        "sub-medium": 928,
+        "sub-full": 934,
+        "sub-medium": 934,
         "sub-lite": 750,
-        "sub-tiny": 300
+        "sub-tiny": 300,
+        "ir": 273
     },
     "channels": {
         "ConfigsHUB2": {
@@ -15,12 +16,12 @@
         "TheFreeConfigs": {
             "configs": 363,
             "active": true,
-            "last_config": "1405/04/16 17:13"
+            "last_config": "1405/04/16 17:25"
         },
         "persianvpnhub": {
-            "configs": 58,
+            "configs": 62,
             "active": true,
-            "last_config": "1405/04/16 15:11"
+            "last_config": "1405/04/16 17:29"
         }
     }
 }
