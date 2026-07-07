@@ -74,7 +74,7 @@ vless://...?type=ws&sni=B.Com&host=a.com#Server B
 | `sub/sub-lite-*.txt`       | includes 750 newest unique configs from merge pool.                                 |
 | `sub/sub-medium-*.txt`     | includes 1500 newest unique configs from merge pool.                                |
 | `sub/sub-full-*.txt`       | includes all configs from merge pool.                                               |
-| `sub/ir.txt`               | includes configs from merge pool, where `server`, `host`, or `sni` is an Iranian IP, a domain resolving to an Iranian IP, or a .ir domain. atleast one condition has to match for a config to be included in `ir.txt`             |
+| `sub/ir.txt`               | includes configs from merge pool in plaintext, where `server`, `host`, or `sni` is an Iranian IP, a domain resolving to an Iranian IP, or a `.ir` domain. atleast one condition has to match for a config to be included in `ir.txt`             |
 
 
 ### `stats.json`
@@ -89,7 +89,8 @@ Example:
         "sub": 1871,
         "sub-medium": 1500,
         "sub-lite": 750,
-        "sub-tiny": 300
+        "sub-tiny": 300,
+        "ir": 271
     },
     "channels": {
         "ConfigsHUB2": {
@@ -100,6 +101,35 @@ Example:
     }
 }
 ```
+
+### `sub/ir.txt`
+
+A config is included after validation and deduplication in `sub/ir.txt` if at least one of these is true:
+
+**`server` parameter**
+- `server` is an Iranian IPv4 or IPv6 address.
+- `server` is a domain that resolves to at least one Iranian IPv4 or IPv6 address.
+- `server` is a domain ending in `.ir`.
+
+**`host` parameter**
+- `host` is an Iranian IPv4 or IPv6 address.
+- `host` is a domain that resolves to at least one Iranian IPv4 or IPv6 address.
+- `host` is a domain ending in `.ir`.
+
+**`sni` parameter**
+- `sni` is an Iranian IPv4 or IPv6 address.
+- `sni` is a domain that resolves to at least one Iranian IPv4 or IPv6 address.
+- `sni` is a domain ending in `.ir`.
+
+#### `ir-range.txt`
+
+Cotanins IR IP-Ranges in CIDR format
+
+Used as a fallback if APNIC and IPDeny fail to fetch IR IP-Ranges.
+
+Downloaded from: https://www.ip2location.com/free/visitor-blocker
+
+Last update: 07 Jul 2026 13:41:41 GMT
 
 ---
 
