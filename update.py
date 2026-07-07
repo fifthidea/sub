@@ -53,11 +53,49 @@ CHANNELS = {
 
 CHANNEL_ACTIVITY_DAYS = 3
 DNS_WORKERS = 32
+MAX_FILENAME_LENGTH = 100
 # =========================
 
 PATTERN = re.compile(
     r'((?:vmess|vless|trojan|ss|ssr|hy2|hysteria|tuic)://\S+)'
 )
+
+WINDOWS_RESERVED_NAMES = {
+    "CON", "PRN", "AUX", "NUL",
+    "COM1", "COM2", "COM3", "COM4",
+    "COM5", "COM6", "COM7", "COM8", "COM9",
+    "LPT1", "LPT2", "LPT3", "LPT4",
+    "LPT5", "LPT6", "LPT7", "LPT8", "LPT9"
+}
+
+def sanitize_filename(name):
+    if not name:
+        return "unnamed"
+
+    # remove invalid Windows filename characters
+    invalid = '<>:"/\\|?*'
+
+    name = "".join(
+        c for c in name
+        if c not in invalid and ord(c) >= 32
+    )
+
+    # trim spaces and trailing dots
+    name = name.strip().rstrip(".")
+
+    # prevent empty filename
+    if not name:
+        return "unnamed"
+
+    # Windows reserved names
+    if name.upper() in WINDOWS_RESERVED_NAMES:
+        name += "_"
+
+    # cap length
+    if len(name) > MAX_FILENAME_LENGTH:
+        name = name[:MAX_FILENAME_LENGTH]
+
+    name = name.rstrip(" .")
 
 def extract_configs(text):
     if not text:
@@ -314,11 +352,30 @@ async def main():
     tehran = pytz.timezone("Asia/Tehran")
     cutoff = datetime.now(tehran) - timedelta(days=CHANNEL_ACTIVITY_DAYS)
     
-    for channel_name, limit in CHANNELS.items():
+    for channel_ref, info in CHANNELS.items():
 
-        print(f"Processing {channel_name} (last {limit} messages)")
+        if isinstance(info, int):
+            limit = info
+            custom_name = None
 
-        entity = await client.get_entity(channel_name)
+        else:
+            limit = info.get("limit")
+
+            if limit is None:
+                raise ValueError(
+                    f"{channel_ref}: missing 'limit'"
+                )
+                
+            custom_name = info.get("name")
+
+        print(f"Processing {channel_ref} (last {limit} messages)")
+
+        entity = await client.get_entity(channel_ref)
+        
+        if getattr(entity, "username", None):
+            channel_display = entity.username
+        else:
+            channel_display = entity.title
 
         channel_configs = []
         latest_config_date = None
@@ -337,7 +394,7 @@ async def main():
 
         # dedupe per channel
         channel_configs = deduplicate_configs(channel_configs)
-        channel_stats[channel_name] = {
+        channel_stats[channel_display] = {
             "configs": len(channel_configs),
             "active": (
                 latest_config_date is not None
@@ -353,15 +410,26 @@ async def main():
         }
 
         # save per-channel file
+        if custom_name:
+            filename = custom_name
+
+        elif getattr(entity, "username", None):
+            filename = entity.username
+
+        else:
+            filename = str(entity.id)
+
+        filename = sanitize_filename(filename)
+
         channel_file = os.path.join(
             CHANNEL_OUTPUT_DIR,
-            f"{channel_name}.txt"
+            f"{filename}.txt"
         )
 
         with open(channel_file, "w", encoding="utf-8") as f:
             f.write("\n".join(channel_configs))
 
-        print(f"{channel_name}: {len(channel_configs)} configs")
+        print(f"{channel_display}: {len(channel_configs)} configs")
 
         # add to global pool
         if (
@@ -369,9 +437,9 @@ async def main():
             and latest_config_date >= cutoff
         ):
             all_configs.extend(channel_configs)
-            print(f"{channel_name}: ACTIVE")
+            print(f"{channel_display}: ACTIVE")
         else:
-            print(f"{channel_name}: INACTIVE (not merged)")
+            print(f"{channel_display}: INACTIVE (not merged)")
 
     # global dedupe
     merged = deduplicate_configs(all_configs)
