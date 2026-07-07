@@ -12,6 +12,13 @@ from concurrent.futures import ThreadPoolExecutor
 from functools import lru_cache
 from urllib.parse import urlsplit, parse_qsl, urlencode, urlunsplit
 from telethon import TelegramClient
+from telethon.errors import (
+    ChannelPrivateError,
+    ChannelInvalidError,
+    UsernameInvalidError,
+    UsernameNotOccupiedError,
+    FloodWaitError,
+)
 from telethon.sessions import StringSession
 from validator import validate
 
@@ -96,6 +103,8 @@ def sanitize_filename(name):
         name = name[:MAX_FILENAME_LENGTH]
 
     name = name.rstrip(" .")
+    
+    return name
 
 def extract_configs(text):
     if not text:
@@ -353,93 +362,113 @@ async def main():
     cutoff = datetime.now(tehran) - timedelta(days=CHANNEL_ACTIVITY_DAYS)
     
     for channel_ref, info in CHANNELS.items():
-
-        if isinstance(info, int):
-            limit = info
-            custom_name = None
-
-        else:
-            limit = info.get("limit")
-
-            if limit is None:
-                raise ValueError(
-                    f"{channel_ref}: missing 'limit'"
-                )
-                
-            custom_name = info.get("name")
-
-        print(f"Processing {channel_ref} (last {limit} messages)")
-
-        entity = await client.get_entity(channel_ref)
         
-        if getattr(entity, "username", None):
-            channel_display = entity.username
-        else:
-            channel_display = entity.title
+        try:
 
-        channel_configs = []
-        latest_config_date = None
+            if isinstance(info, int):
+                limit = info
+                custom_name = None
 
-        async for msg in client.iter_messages(entity, limit=limit):
-
-            configs = extract_configs(msg.text)
-
-            if configs:
-                channel_configs.extend(configs)
-
-                if latest_config_date is None:
-                    latest_config_date = msg.date.astimezone(tehran)
+            else:
+                try:
+                    limit = int(info["limit"])
+                except KeyError:
+                    raise ValueError(f"{channel_ref}: missing 'limit'")
                     
-        channel_configs = [cfg for cfg in channel_configs if validate(cfg)]
+                custom_name = info.get("name")
+                    
+            if limit <= 0:
+                raise ValueError(
+                    f"{channel_ref}: 'limit' must be greater than 0"
+                )
 
-        # dedupe per channel
-        channel_configs = deduplicate_configs(channel_configs)
-        channel_stats[channel_display] = {
-            "configs": len(channel_configs),
-            "active": (
+            print(f"Processing {channel_ref} (last {limit} messages)")
+
+            entity = await client.get_entity(channel_ref)
+        
+            if getattr(entity, "username", None):
+                channel_display = entity.username
+            else:
+                channel_display = entity.title
+
+            channel_configs = []
+            latest_config_date = None
+
+            async for msg in client.iter_messages(entity, limit=limit):
+
+                configs = extract_configs(msg.text)
+
+                if configs:
+                    channel_configs.extend(configs)
+
+                    if latest_config_date is None:
+                        latest_config_date = msg.date.astimezone(tehran)
+                    
+            channel_configs = [cfg for cfg in channel_configs if validate(cfg)]
+
+            # dedupe per channel
+            channel_configs = deduplicate_configs(channel_configs)
+            channel_stats[channel_display] = {
+                "configs": len(channel_configs),
+                "active": (
+                    latest_config_date is not None
+                    and latest_config_date >= cutoff
+                ),
+                "last_config": (
+                    jdatetime.datetime.fromgregorian(
+                    datetime=latest_config_date
+                        ).strftime("%Y/%m/%d %H:%M")
+                    if latest_config_date
+                    else None
+                )
+            }
+
+            # save per-channel file
+            if custom_name:
+                filename = custom_name
+
+            elif getattr(entity, "username", None):
+                filename = entity.username
+
+            else:
+                filename = str(entity.id)
+
+            filename = sanitize_filename(filename)
+
+            channel_file = os.path.join(
+                CHANNEL_OUTPUT_DIR,
+                f"{filename}.txt"
+            )
+
+            with open(channel_file, "w", encoding="utf-8") as f:
+                f.write("\n".join(channel_configs))
+
+            print(f"{channel_display}: {len(channel_configs)} configs")
+
+            # add to global pool
+            if (
                 latest_config_date is not None
                 and latest_config_date >= cutoff
-            ),
-            "last_config": (
-                jdatetime.datetime.fromgregorian(
-                datetime=latest_config_date
-                    ).strftime("%Y/%m/%d %H:%M")
-                if latest_config_date
-                else None
-            )
-        }
-
-        # save per-channel file
-        if custom_name:
-            filename = custom_name
-
-        elif getattr(entity, "username", None):
-            filename = entity.username
-
-        else:
-            filename = str(entity.id)
-
-        filename = sanitize_filename(filename)
-
-        channel_file = os.path.join(
-            CHANNEL_OUTPUT_DIR,
-            f"{filename}.txt"
-        )
-
-        with open(channel_file, "w", encoding="utf-8") as f:
-            f.write("\n".join(channel_configs))
-
-        print(f"{channel_display}: {len(channel_configs)} configs")
-
-        # add to global pool
-        if (
-            latest_config_date is not None
-            and latest_config_date >= cutoff
-        ):
-            all_configs.extend(channel_configs)
-            print(f"{channel_display}: ACTIVE")
-        else:
-            print(f"{channel_display}: INACTIVE (not merged)")
+           ):
+                all_configs.extend(channel_configs)
+                print(f"{channel_display}: ACTIVE")
+            else:
+                print(f"{channel_display}: INACTIVE (not merged)")
+                
+        except (
+            ChannelPrivateError,
+            ChannelInvalidError,
+            UsernameInvalidError,
+            UsernameNotOccupiedError,
+            ValueError,
+            TypeError,
+            FloodWaitError,
+        ) as e:
+            print("=" * 60)
+            print(f"Skipping: {channel_ref}")
+            print(f"Reason: {type(e).__name__}: {e}")
+            print("=" * 60)
+            continue
 
     # global dedupe
     merged = deduplicate_configs(all_configs)
