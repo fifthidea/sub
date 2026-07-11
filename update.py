@@ -56,6 +56,7 @@ CHANNELS = {
     -1001996629183: {"limit": 2600, "name": "ConfigsHUB2"},
     -1002641485940: {"limit": 150, "name": "TheFreeConfigs"},
     -1003744627358: {"limit": 120, "name": "persianvpnhub"},
+    -1002094972529: {"limit": 750, "name": "FarahVPN" },
 }
 
 CHANNEL_ACTIVITY_DAYS = 3
