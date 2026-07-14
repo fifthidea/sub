@@ -71,7 +71,7 @@ CHANNELS = {
     -1001900257871: {"limit": 1800, "name": "SOSkeyNET" },
     -1002687996628: {"limit": 150, "name": "V2rayBaaz" },
     -1003712982226: {"limit": 1800, "name": "chillguy_vpn" },
-    -1002025442005: {"limit": 850, "name" "filembad" },
+    -1002025442005: {"limit": 850, "name": "filembad" },
     -1003613216743: {"limit": 1800, "name": "iranconnecting" },
     -1003922859496: {"limit": 1800, "name": "CafeTweetFa" },
     -1001315011151: {"limit": 1800, "name": "iraniroid" },
