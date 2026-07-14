@@ -78,7 +78,7 @@ CHANNELS = {
 }
 
 CHANNEL_ACTIVITY_DAYS = 3
-DNS_WORKERS = 32
+DNS_WORKERS = 64
 MAX_FILENAME_LENGTH = 100
 # =========================
 
