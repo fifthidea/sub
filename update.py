@@ -75,6 +75,13 @@ CHANNELS = {
     -1003613216743: {"limit": 850, "name": "iranconnecting" },
     -1003922859496: {"limit": 850, "name": "CafeTweetFa" },
     -1001315011151: {"limit": 850, "name": "iraniroid" },
+    -1002427483854: {"limit": 250, "name": "lebertad" },
+    -1001615776338: {"limit": 150, "name": "meliproxyy" },
+    -1002168955033: {"limit": 850, "name": "v2ray_Extractor" },
+    -1001512034774: {"limit": 250, "name": "v2ray_dalghak" },
+    -1001943224011: {"limit": 400, "name": "v2ray_free_conf" },
+    -1001887960839: {"limit": 400, "name": "vpnfail_v2ray" },
+    -1002057756809: {"limit": 300, "name": "v2ray_configs_pool" },
 }
 
 CHANNEL_ACTIVITY_DAYS = 3
