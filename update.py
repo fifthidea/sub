@@ -54,6 +54,7 @@ client = TelegramClient(
 # =========================
 CHANNELS = {
     -1001996629183: {"limit": 1000, "name": "ConfigsHUB2"},
+    -1001235816045: {"limit": 1000, "name": "ConfigsHUB"},
     -1002641485940: {"limit": 250, "name": "TheFreeConfigs"},
     -1003744627358: {"limit": 400, "name": "persianvpnhub"},
     -1002094972529: {"limit": 850, "name": "FarahVPN" },
@@ -66,11 +67,11 @@ CHANNELS = {
     -1001429830007: {"limit": 200, "name": "DeamNet_Proxy" },
     -1002080689208: {"limit": 850, "name": "Farah_VPN" },
     -1001836809801: {"limit": 200, "name": "FreakConfig" },
-    -1002435709781: {"limit": 450, "name": "GalaxyMVPN" },
+    -1002435709781: {"limit": 300, "name": "GalaxyMVPN" },
     -1001986763169: {"limit": 850, "name": "NamazVPN" },
-    -1001900257871: {"limit": 450, "name": "SOSkeyNET" },
+    -1001900257871: {"limit": 300, "name": "SOSkeyNET" },
     -1002687996628: {"limit": 150, "name": "V2rayBaaz" },
-    -1003712982226: {"limit": 850, "name": "chillguy_vpn" },
+    -1003712982226: {"limit": 450, "name": "chillguy_vpn" },
     -1002025442005: {"limit": 850, "name": "filembad" },
     -1003613216743: {"limit": 850, "name": "iranconnecting" },
     -1003922859496: {"limit": 850, "name": "CafeTweetFa" },
