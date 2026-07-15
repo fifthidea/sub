@@ -1,7 +1,7 @@
 # Telegram V2Ray Subscription Generator
 Automatically builds V2Ray subscriptions from one or more public/private Telegram channels/groups using **Telethon** and GitHub Actions.
 
-Every 15 minutes, the workflow fetches the latest configurable number of messages from each channel, extracts supported proxy configs, validates and deduplicates them, then generates both per-channel and merged subscriptions. Channels inactive for the configured period are automatically excluded from merged subscriptions until they publish new configs again.
+Every 25 minutes, the workflow fetches the latest configurable number of messages from each channel, extracts supported proxy configs, validates and deduplicates them, then generates both per-channel and merged subscriptions. Channels inactive for the configured period are automatically excluded from merged subscriptions until they publish new configs again.
 
 ---
 
