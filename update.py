@@ -1,3 +1,4 @@
+import time
 import json
 import jdatetime
 import pytz
@@ -88,6 +89,8 @@ CHANNELS = {
 CHANNEL_ACTIVITY_DAYS = 3
 DNS_WORKERS = 64
 MAX_FILENAME_LENGTH = 100
+LIMIT_MODE = "MESSAGES"  # MESSAGES or CONFIGS
+CONFIGS_MODE_MAX_MESSAGES_SCAN_BEFORE_EXHAUSTION = 3000
 # =========================
 
 PATTERN = re.compile(
@@ -101,6 +104,90 @@ WINDOWS_RESERVED_NAMES = {
     "LPT1", "LPT2", "LPT3", "LPT4",
     "LPT5", "LPT6", "LPT7", "LPT8", "LPT9"
 }
+
+def collect_domains(configs):
+
+    domains = set()
+
+    for config in configs:
+
+        try:
+            parts = urlsplit(config)
+
+            if parts.scheme.lower() == "vmess":
+
+                obj = json.loads(
+                    parts.netloc + "=" * (-len(parts.netloc) % 4)
+                    )
+                )
+
+                values = [
+                    obj.get("add", ""),
+                    obj.get("host", ""),
+                    obj.get("sni", "")
+                ]
+
+            else:
+
+                params = dict(parse_qsl(parts.query))
+
+                values = [
+                    parts.hostname or "",
+                    params.get("host", ""),
+                    params.get("sni", "")
+                ]
+
+            for value in values:
+
+                if not value:
+                    continue
+
+                value = value.strip().lower().rstrip(".")
+
+                if (
+                    "." in value
+                    and not value.endswith(".ir")
+                    and not is_iran_ip(value)
+                ):
+                    domains.add(value)
+
+        except Exception:
+            pass
+
+    return domains
+
+def remove_ech_parameter(config):
+    """
+    Remove only the ech query parameter from proxy URLs.
+    Keeps everything else unchanged.
+    """
+
+    try:
+        parts = urlsplit(config)
+
+        if not parts.query:
+            return config
+
+        params = parse_qsl(parts.query, keep_blank_values=True)
+
+        params = [
+            (key, value)
+            for key, value in params
+            if key.lower() != "ech"
+        ]
+
+        new_query = urlencode(params)
+
+        return urlunsplit((
+            parts.scheme,
+            parts.netloc,
+            parts.path,
+            new_query,
+            parts.fragment
+        ))
+
+    except Exception:
+        return config
 
 def sanitize_filename(name):
     if not name:
@@ -276,6 +363,8 @@ def load_ir_networks_local():
 
     return networks
 
+DNS_CACHE = {}
+
 try:
     IR_NETWORKS = load_ir_networks_apnic()
 except Exception:
@@ -292,7 +381,6 @@ def is_iran_ip(value):
 
     return any(ip in net for net in IR_NETWORKS)
     
-@lru_cache(maxsize=4096)
 def resolves_to_iran_ip(hostname):
     try:
         # IPv4
@@ -330,8 +418,12 @@ def is_iran_host(value):
     if is_iran_ip(value):
         return True
 
-    if resolves_to_iran_ip(value):
-        return True
+    if "." in value:
+
+        if value not in DNS_CACHE:
+            DNS_CACHE[value] = resolves_to_iran_ip(value)
+
+        return DNS_CACHE[value]
 
     return False
    
@@ -382,13 +474,20 @@ def config_iran_flags(config):
     
 
 async def main():
+    
+    start = time.time()
 
     all_configs = []
     channel_stats = {}
     tehran = pytz.timezone("Asia/Tehran")
+    
+    telegram_start = time.time() ##might remove later
+    
     cutoff = datetime.now(tehran) - timedelta(days=CHANNEL_ACTIVITY_DAYS)
     
     for channel_ref, info in CHANNELS.items():
+        
+        channel_start = time.time() ##might remove later
         
         try:
 
@@ -409,7 +508,16 @@ async def main():
                     f"{channel_ref}: 'limit' must be greater than 0"
                 )
 
-            print(f"Processing {channel_ref} (last {limit} messages)")
+            if LIMIT_MODE == "MESSAGES":
+                print(
+                    f"Processing {channel_ref} "
+                    f"(last {limit} messages)"
+                )
+            else:
+                print(
+                    f"Processing {channel_ref} "
+                    f"(until {limit} configs found)"
+                )
 
             entity = await client.get_entity(channel_ref)
         
@@ -421,17 +529,52 @@ async def main():
             channel_configs = []
             latest_config_date = None
 
-            async for msg in client.iter_messages(entity, limit=limit):
 
-                configs = extract_configs(msg.text)
+            if LIMIT_MODE == "MESSAGES":
 
-                if configs:
-                    channel_configs.extend(configs)
+                async for msg in client.iter_messages(
+                    entity,
+                    limit=limit
+                ):
 
-                    if latest_config_date is None:
-                        latest_config_date = msg.date.astimezone(tehran)
-                    
+                    configs = extract_configs(msg.text)
+
+                    if configs:
+                        channel_configs.extend(configs)
+
+                        if latest_config_date is None:
+                            latest_config_date = msg.date.astimezone(tehran)
+
+
+            elif LIMIT_MODE == "CONFIGS":
+
+                async for msg in client.iter_messages(
+                    entity,
+                    limit=CONFIGS_MODE_MAX_MESSAGES_SCAN_BEFORE_EXHAUSTION
+                ):
+
+                    configs = extract_configs(msg.text)
+
+                    if configs:
+                        channel_configs.extend(configs)
+
+                        if latest_config_date is None:
+                            latest_config_date = msg.date.astimezone(tehran)
+
+                    if len(channel_configs) >= limit:
+                        break
+
+
+            else:
+                raise ValueError(
+                    "LIMIT_MODE must be MESSAGES or CONFIGS"
+                )
+                
+            channel_configs = channel_configs[:limit]
+            
+            x = time.time() ##might remove later
             channel_configs = [cfg for cfg in channel_configs if validate(cfg)]
+            print(f"{channel_display}: Validation took {time.time()-x:.2f}s") ##might remove later
 
             # dedupe per channel
             channel_configs = deduplicate_configs(channel_configs)
@@ -481,6 +624,8 @@ async def main():
                 print(f"{channel_display}: ACTIVE")
             else:
                 print(f"{channel_display}: INACTIVE (not merged)")
+            
+            print(f"Channel took {time.time()-channel_start:.2f}s") ##might remove later
                 
         except (
             ChannelPrivateError,
@@ -498,23 +643,54 @@ async def main():
             continue
 
     # global dedupe
-    merged = deduplicate_configs(all_configs)
     
+    print(f"Telegram processing took {time.time()-telegram_start:.2f}s") ##might remove later
+    
+    x = time.time() ##might remove later
+    merged = deduplicate_configs(all_configs)
+    print(f"Global dedupe took {time.time()-x:.2f}s") ##might remove later
+    
+    x = time.time() ##might remove later
+    domains = collect_domains(merged)
+    print(f"collect_domains took {time.time()-x:.2f}s") ##might remove later
+
+    print(
+        f"Unique domains requiring DNS lookup: {len(domains)}"
+    )
+
+    x = time.time() ##might remove later
+    with ThreadPoolExecutor(max_workers=DNS_WORKERS) as executor:
+
+        dns_results = executor.map(
+            lambda d: (d, resolves_to_iran_ip(d)),
+            domains
+        )
+
+        DNS_CACHE.update(dict(dns_results))
+    print(f"DNS lookup took {time.time()-x:.2f}s") ##might remove later
+    
+    x = time.time() ##might remove later
     with ThreadPoolExecutor(max_workers=DNS_WORKERS) as executor:
 
         ir_results = executor.map(config_iran_flags, merged)
 
         ir_configs = []
         ir_actual_configs = []
+        
+        merged_echless = []
+        ir_configs_echless = []
 
         for cfg, (is_ir, server_is_ir) in zip(merged, ir_results):
             if is_ir:
                 ir_configs.append(cfg)
+                ir_configs_echless.append(remove_ech_parameter(cfg))
 
             if server_is_ir:
                 ir_actual_configs.append(cfg)
-
+    print(f"config_iran_flags took {time.time()-x:.2f}s") ##might remove later
+    
     # create sub (base64)
+    write_start = time.time() ##might remove later
     def write_subscription(filename, configs):
         encoded = base64.b64encode(
             "\n".join(configs).encode()
@@ -532,12 +708,19 @@ async def main():
     write_subscription(os.path.join(SUB_OUTPUT_DIR, "sub-lite-base64.txt"), merged[:750])
     write_subscription(os.path.join(SUB_OUTPUT_DIR, "sub-tiny-base64.txt"), merged[:300])
 
+    merged_echless = [
+        remove_ech_parameter(cfg)
+        for cfg in merged
+    ]
+
     write_plaintext(os.path.join(SUB_OUTPUT_DIR, "sub-full-plaintxt.txt"), merged)
+    write_plaintext(os.path.join(SUB_OUTPUT_DIR, "sub-full-plaintxt-echless.txt"), merged_echless)
     write_plaintext(os.path.join(SUB_OUTPUT_DIR, "sub-medium-plaintxt.txt"), merged[:1500])
     write_plaintext(os.path.join(SUB_OUTPUT_DIR, "sub-lite-plaintxt.txt"), merged[:750])
     write_plaintext(os.path.join(SUB_OUTPUT_DIR, "sub-tiny-plaintxt.txt"), merged[:300])
     
     write_plaintext(os.path.join(SUB_OUTPUT_DIR, "ir.txt"), ir_configs)
+    write_plaintext(os.path.join(SUB_OUTPUT_DIR, "ir-echless.txt"), ir_configs_echless)
     write_plaintext(os.path.join(SUB_OUTPUT_DIR, "ir-actual.txt"), ir_actual_configs)
 
     now = datetime.now(tehran)
@@ -565,9 +748,11 @@ async def main():
             f"Update subscription | "
             f"{jalali.strftime('%Y/%m/%d %H:%M')}"
         )
-
+    
+    print(f"Writing files took {time.time()-write_start:.2f}s") ##might remove later
     with open("commit_message.txt", "w", encoding="utf-8") as f:
         f.write(commit_message)
+    print(f"TOTAL update.py runtime: {time.time()-start:.2f}s") ##might remove later
 
 
 with client:
