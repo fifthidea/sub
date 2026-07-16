@@ -87,7 +87,7 @@ CHANNELS = {
 }
 
 CHANNEL_ACTIVITY_DAYS = 3
-DNS_WORKERS = 64
+DNS_WORKERS = 32
 MAX_FILENAME_LENGTH = 100
 LIMIT_MODE = "MESSAGES"  # MESSAGES or CONFIGS
 CONFIGS_MODE_MAX_MESSAGES_SCAN_BEFORE_EXHAUSTION = 3000
@@ -362,7 +362,16 @@ def load_ir_networks_local():
 
     return networks
 
+DNS_CACHE_FILE = "dns_cache.json"
 DNS_CACHE = {}
+
+if os.path.exists(DNS_CACHE_FILE):
+    try:
+        with open(DNS_CACHE_FILE, "r", encoding="utf-8") as f:
+            DNS_CACHE = json.load(f)
+        print(f"Loaded {len(DNS_CACHE)} cached DNS entries")
+    except Exception:
+        DNS_CACHE = {}
 
 try:
     IR_NETWORKS = load_ir_networks_apnic()
@@ -658,11 +667,19 @@ async def main():
     )
 
     x = time.time() ##might remove later
+    new_domains = [
+        d for d in domains
+        if d not in DNS_CACHE
+    ]
+
+    print(f"Cached domains : {len(DNS_CACHE)}")
+    print(f"New domains    : {len(new_domains)}")
+
     with ThreadPoolExecutor(max_workers=DNS_WORKERS) as executor:
 
         dns_results = executor.map(
             lambda d: (d, resolves_to_iran_ip(d)),
-            domains
+            new_domains
         )
 
         DNS_CACHE.update(dict(dns_results))
@@ -675,8 +692,6 @@ async def main():
 
         ir_configs = []
         ir_actual_configs = []
-        
-        merged_echless = []
         ir_configs_echless = []
 
         for cfg, (is_ir, server_is_ir) in zip(merged, ir_results):
@@ -687,6 +702,10 @@ async def main():
             if server_is_ir:
                 ir_actual_configs.append(cfg)
     print(f"config_iran_flags took {time.time()-x:.2f}s") ##might remove later
+    
+    if new_domains:
+        with open(DNS_CACHE_FILE, "w", encoding="utf-8") as f:
+            json.dump(DNS_CACHE, f, indent=2, sort_keys=True)
     
     # create sub (base64)
     write_start = time.time() ##might remove later
