@@ -31,8 +31,8 @@ resolver.nameservers = [
     "9.9.9.9"     # Quad9 
 ]
 
-resolver.lifetime = 6
-resolver.timeout = 2
+resolver.lifetime = 4.5
+resolver.timeout = 1.5
 
 CHANNEL_OUTPUT_DIR = "channels"
 os.makedirs(CHANNEL_OUTPUT_DIR, exist_ok=True)
