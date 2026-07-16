@@ -117,8 +117,7 @@ def collect_domains(configs):
             if parts.scheme.lower() == "vmess":
 
                 obj = json.loads(
-                    parts.netloc + "=" * (-len(parts.netloc) % 4)
-                    )
+                    base64.urlsafe_b64decode(parts.netloc + "===")
                 )
 
                 values = [
