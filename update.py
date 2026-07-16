@@ -31,8 +31,8 @@ resolver.nameservers = [
     "9.9.9.9"     # Quad9 
 ]
 
-resolver.lifetime = 4.5
-resolver.timeout = 1.5
+resolver.lifetime = 6
+resolver.timeout = 2
 
 CHANNEL_OUTPUT_DIR = "channels"
 os.makedirs(CHANNEL_OUTPUT_DIR, exist_ok=True)
@@ -362,6 +362,7 @@ def load_ir_networks_local():
 
     return networks
 
+DNS_CACHE_TTL = 30 * 24 * 60 * 60   # 30 days
 DNS_CACHE_FILE = "dns_cache.json"
 DNS_CACHE = {}
 
@@ -369,6 +370,14 @@ if os.path.exists(DNS_CACHE_FILE):
     try:
         with open(DNS_CACHE_FILE, "r", encoding="utf-8") as f:
             DNS_CACHE = json.load(f)
+            now = time.time()
+
+            for domain, value in list(DNS_CACHE.items()):
+                if isinstance(value, bool):
+                    DNS_CACHE[domain] = {
+                        "is_ir": value,
+                        "checked": time.time()
+                    }
         print(f"Loaded {len(DNS_CACHE)} cached DNS entries")
     except Exception:
         DNS_CACHE = {}
@@ -391,23 +400,11 @@ def is_iran_ip(value):
     
 def resolves_to_iran_ip(hostname):
     try:
-        # IPv4
-        try:
-            answers = resolver.resolve(hostname, "A")
-            for answer in answers:
-                if is_iran_ip(answer.to_text()):
-                    return True
-        except Exception:
-            pass
+        answers = resolver.resolve(hostname, "A")    #IPv4 only
 
-        # IPv6
-        try:
-            answers = resolver.resolve(hostname, "AAAA")
-            for answer in answers:
-                if is_iran_ip(answer.to_text()):
-                    return True
-        except Exception:
-            pass
+        for answer in answers:
+            if is_iran_ip(answer.to_text()):
+                return True
 
     except Exception:
         pass
@@ -428,10 +425,17 @@ def is_iran_host(value):
 
     if "." in value:
 
-        if value not in DNS_CACHE:
-            DNS_CACHE[value] = resolves_to_iran_ip(value)
+        entry = DNS_CACHE.get(value)
 
-        return DNS_CACHE[value]
+        if entry is None:
+            result = resolves_to_iran_ip(value)
+            DNS_CACHE[value] = {
+                "is_ir": result,
+                "checked": time.time()
+            }
+            return result
+
+        return entry["is_ir"]
 
     return False
    
@@ -483,7 +487,7 @@ def config_iran_flags(config):
 
 async def main():
     
-    start = time.time()
+    start = time.time() ##might remove later
 
     all_configs = []
     channel_stats = {}
@@ -661,19 +665,26 @@ async def main():
     x = time.time() ##might remove later
     domains = collect_domains(merged)
     print(f"collect_domains took {time.time()-x:.2f}s") ##might remove later
-
-    print(
-        f"Unique domains requiring DNS lookup: {len(domains)}"
-    )
-
+    
     x = time.time() ##might remove later
-    new_domains = [
-        d for d in domains
-        if d not in DNS_CACHE
-    ]
+    
+    now = time.time()
 
-    print(f"Cached domains : {len(DNS_CACHE)}")
-    print(f"New domains    : {len(new_domains)}")
+    new_domains = []
+
+    for domain in domains:
+        entry = DNS_CACHE.get(domain)
+
+        if entry is None:
+            new_domains.append(domain)
+            continue
+
+        if now - entry["checked"] > DNS_CACHE_TTL:
+            new_domains.append(domain)
+
+    print(f"Unique domains found: {len(domains)}")
+    print(f"Cached domains      : {len(DNS_CACHE)}")
+    print(f"New domains         : {len(new_domains)}")
 
     with ThreadPoolExecutor(max_workers=DNS_WORKERS) as executor:
 
@@ -682,7 +693,14 @@ async def main():
             new_domains
         )
 
-        DNS_CACHE.update(dict(dns_results))
+        now = time.time()
+
+        for domain, result in dns_results:
+            DNS_CACHE[domain] = {
+                "is_ir": result,
+                "checked": now
+            }
+            
     print(f"DNS lookup took {time.time()-x:.2f}s") ##might remove later
     
     x = time.time() ##might remove later
