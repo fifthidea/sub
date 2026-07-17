@@ -1,3 +1,8 @@
+vless://3a10b931-1f4e-4d51-9b03-1921b5afb6ff@ipv6-test1288282.th3team.ir:44059?encryption=none&headerType=http&host=paly.google.com&path=/&security=none&type=tcp#Config
+vless://68d3fcbe-f025-2710-82d6-9455c5e5f6b5@secget.ru:8443?security=reality&encryption=none&pbk=vV3mxSgZ-8x3Gp373AXdMDM3FAdmLP0v5zIfI486SDI&headerType=none&fp=chrome&type=tcp&flow=xtls-rprx-vision&sni=&sid=f8a8ee8381529673#Config
+vless://68d3fcbe-f025-1f40-82d6-9455c5e5f6b5@secget.ru:8443?security=reality&encryption=none&pbk=vV3mxSgZ-8x3Gp373AXdMDM3FAdmLP0v5zIfI486SDI&headerType=none&fp=chrome&type=tcp&flow=xtls-rprx-vision&sni=&sid=f8a8ee8381529673#Config
+vless://68d3fcbe-f025-1f40-82d6-9455c5e5f6b5@secget.ru:8443?type=tcp&security=reality&flow=xtls-rprx-vision&encryption=none&sni=secget.ru&pbk=vV3mxSgZ-8x3Gp373AXdMDM3FAdmLP0v5zIfI486SDI&sid=f8a8ee8381529673&fp=firefox#Config
+vless://68d3fcbe-f025-1f40-82d6-9455c5e5f6b5@secget.ru:8443?security=reality&encryption=none&pbk=vV3mxSgZ-8x3Gp373AXdMDM3FAdmLP0v5zIfI486SDI&headerType=none&fp=firefox&type=tcp&flow=xtls-rprx-vision&sni=&sid=f8a8ee8381529673#Config
 vless://1073a3f2-dc7c-46fb-aa7c-4378d4b27785@asl3.feeliran.org:449?encryption=none&security=tls&sni=v2rayNplus--v2rayNplus--v2rayNplus&alpn=h2,http/1.1&insecure=0&allowInsecure=0&type=tcp&headerType=none#Config
 vless://d79c5260-e0a1-4b44-be6c-87d035877f3b@bot.sobhanpor.ir:443?encryption=none&security=tls&sni=bot.sobhanpor.ir&insecure=0&allowInsecure=0&type=tcp&headerType=none#Config
 vless://f387e32c-a8ab-4adf-9c5c-fe371cf78f6b@26bc92586944.apruxdomain.online:80?type=ws&sni=26bc92586944.apruxdomain.online#Config
@@ -233,4 +238,3 @@ vless://3f646f4d-b96e-4ba4-b562-0fd4854391a8@c.bazardam.shop:2056?mode=auto&path
 vless://3f646f4d-b96e-4ba4-b562-0fd4854391a8@cd2.phoneshop98.ir:2053?path=/ws?ed=2560&security=tls&encryption=none&insecure=0&host=panel.farsdns.com&type=ws&allowInsecure=0&sni=panel.farsdns.com#Config
 vless://3f646f4d-b96e-4ba4-b562-0fd4854391a8@c.bazardam.shop:8080?security=none&encryption=none&headerType=http&type=tcp#Config
 vless://3f646f4d-b96e-4ba4-b562-0fd4854391a8@a.bazardam.shop:8080?security=none&encryption=none&headerType=http&type=tcp#Config
-vless://3f646f4d-b96e-4ba4-b562-0fd4854391a8@a.bazardam.shop:2056?mode=auto&path=/path&security=reality&encryption=none&extra={"xPaddingBytes":"100-1000"}&pbk=qXZfqpQScWQea7Kpr69if9iHhiA7IMLwUgZflIvuWh8&host=hostname&fp=chrome&type=xhttp&sni=yahoo.com&sid=4eee3ae71639f189#Config
