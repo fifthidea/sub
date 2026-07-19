@@ -1,3 +1,8 @@
+vless://13b55e8e-fbea-4ee1-b6b7-115fa3043182@sw.srv.anti-zapret.com:443?encryption=none&flow=xtls-rprx-vision&security=reality&sni=sw.srv.anti-zapret.com&pbk=0AVsyS7udTbxKRdSyQ2rtFC63icDQOVWq8FvAhhU-WY&sid=17faf32cb516c9cb&type=tcp&headerType=none#Config
+vless://86208db7-8bbc-42c2-9eb2-ffe5675502c3@media.oneokgames.com:443?encryption=none&security=reality&sni=media.oneokgames.com&fp=firefox&pbk=aDNsk312UNfOEh0RiyGZdK6opt__mMyKBSglqFKFP38&sid=dbdbeaf4aa6e1a5c&type=grpc&authority=&serviceName=api.v2.ObjectService&mode=gun#Config
+vless://86208db7-8bbc-42c2-9eb2-ffe5675502c3@static.oneoneok.com:443?security=reality&encryption=none&pbk=oVbonPGBPZ_qGyhHPe-LwsyPc0oobby2YknsPE90iRo&fp=firefox&type=grpc&serviceName=api.v1.StreamService&sni=static.oneoneok.com&sid=0b46e0908285b078#Config
+vless://3757a383-ca03-4d85-a4f0-5c9602a8949a@webb.gdsrguydsrghj.ir:1010?security=&encryption=none&headerType=http&type=tcp#Config
+vless://73e08fcb-a0c7-45d0-b55d-f78c903c64a6@dl2.gooniforoshi.fun:443?path=/download.php&security=tls&encryption=none&insecure=0&host=dl2.gooniforoshi.fun&type=ws&allowInsecure=0&sni=dl2.gooniforoshi.fun#Config
 vless://8ad6f598-cd8d-4fca-848e-05fc9be15ff3@love.ns.cloudflare.com:443?security=tls&type=ws&path=/sea&host=deicl.redstone-vex.sbs&sni=deicl.redstone-vex.sbs&fp=chrome&encryption=none#Config
 vless://12df1018-93b2-49dd-9f79-6cf3d11155cf@interchange.proxy.rlwy.net:23602?mode=auto&path=/&security=reality&encryption=none&extra={"mode":"auto","xPaddingBytes":"100-1000"}&pbk=GSRi6BImx3CVq5ZVhAlp0VLwu1io6b2e8M_E4nVMll4&fp=firefox&spx=/SUmA51avvTKkm7F&type=xhttp&sni=is1-ssl.mzstatic.com&sid=64#Config
 vless://aebe5a70-0ca3-46ce-8208-8b5bab1346ce@mybb.com:443?path=/&security=tls&encryption=none&insecure=1&host=rayan-007.nastaran.dpdns.org&fp=chrome&type=ws&allowInsecure=1&sni=rAyAn-007.nAsTaRaN.DpDnS.OrG#Config
@@ -230,8 +235,3 @@ vless://a34b5e88-cf0d-4c01-8199-2d1002d3c787@meow-warsaw.nethcloud.top:443?encry
 vless://361faea2-99b7-4d62-b11f-f2471f75ab12@england.lion-game.ir:443?path=/&security=none&encryption=none&host=lion-game.ir&type=ws#Config
 vless://361faea2-99b7-4d62-b11f-f2471f75ab12@german2.tehran-game.ir:443?path=/&security=none&encryption=none&host=tehran-game.ir&type=ws#Config
 vless://361faea2-99b7-4d62-b11f-f2471f75ab12@holand2.tehran-game.ir:443?path=/&security=none&encryption=none&host=tehran-game.ir&type=ws#Config
-vless://4f5a379d-45e5-49e3-9f0e-d1303ddc9628@at-google.mobileemdad.top:443?security=reality&encryption=none&pbk=PjR-SM4fOm2fY4mTqWoqZDRyxontvpailM0gBqUxlUQ&headerType=none&fp=qq&type=tcp&sni=play.google.com&sid=f88610dd#Config
-vless://14b62416-547e-49c1-818a-510218ab101e@w9kbq.pastilbastani.ir:443?security=none&encryption=none&host=play.google.com&headerType=http&type=tcp#Config
-vless://c387b0f2-5d9e-4c95-882d-1d5eeb443ce2@varzesh3.com:443?path=/movie&security=tls&alpn=h2,http/1.1&encryption=none&insecure=0&host=nginx-3b1e7ed824-abol.apps.ir-central1.arvancaas.ir&fp=chrome&type=ws&allowInsecure=0&sni=nginx-3b1e7ed824-abol.apps.ir-central1.arvancaas.ir#Config
-vless://86208db7-8bbc-42c2-9eb2-ffe5675502c3@eu.oneokgames.com:443?mode=gun&security=reality&encryption=none&authority=&pbk=0ffnN7CdnOgEEFJ3AY1lnuTtsOPDL059UaTTxGxDjTA&fp=firefox&type=grpc&serviceName=home.v1.ApiService&sni=eu.oneokgames.com&sid=66ffd800ba2ec7c3#Config
-vless://86208db7-8bbc-42c2-9eb2-ffe5675502c3@eu.oneokgames.com:443?encryption=none&security=reality&sni=eu.oneokgames.com&pbk=0ffnN7CdnOgEEFJ3AY1lnuTtsOPDL059UaTTxGxDjTA&sid=66ffd800ba2ec7c3&type=grpc&authority=&serviceName=home.v1.ApiService&mode=gun#Config
