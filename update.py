@@ -22,6 +22,9 @@ from telethon.errors import (
 )
 from telethon.sessions import StringSession
 from validator import validate
+from threading import Lock
+
+dns_lock = Lock()
 
 resolver = dns.resolver.Resolver()
 
@@ -370,7 +373,6 @@ if os.path.exists(DNS_CACHE_FILE):
     try:
         with open(DNS_CACHE_FILE, "r", encoding="utf-8") as f:
             DNS_CACHE = json.load(f)
-            now = time.time()
 
             for domain, value in list(DNS_CACHE.items()):
                 if isinstance(value, bool):
@@ -429,10 +431,11 @@ def is_iran_host(value):
 
         if entry is None:
             result = resolves_to_iran_ip(value)
-            DNS_CACHE[value] = {
-                "is_ir": result,
-                "checked": time.time()
-            }
+            with dns_lock:
+                DNS_CACHE[value] = {
+                    "is_ir": result,
+                    "checked": time.time()
+                }
             return result
 
         return entry["is_ir"]
@@ -696,10 +699,11 @@ async def main():
         now = time.time()
 
         for domain, result in dns_results:
-            DNS_CACHE[domain] = {
-                "is_ir": result,
-                "checked": now
-            }
+            with dns_lock:
+                DNS_CACHE[domain] = {
+                    "is_ir": result,
+                    "checked": now
+                }
             
     print(f"DNS lookup took {time.time()-x:.2f}s") ##might remove later
     

@@ -5,7 +5,25 @@ from urllib.parse import urlsplit, parse_qs
 
 def has_value(value):
     return value is not None and str(value).strip() != ""
-    
+
+def valid_reality_key(q):
+    pbk = q.get("pbk", [""])[0]
+    password = q.get("password", [""])[0]
+
+    has_pbk = has_value(pbk)
+    has_password = has_value(password)
+
+    # both exist = invalid
+    if has_pbk and has_password:
+        return False
+
+    # one exists = valid
+    if has_pbk or has_password:
+        return True
+
+    # none exist = invalid
+    return False
+
 def valid_port(port: str) -> bool:
     if not has_value(port):
         return False
@@ -15,7 +33,7 @@ def valid_port(port: str) -> bool:
     except ValueError:
         return False
 
-    return 0 <= port <= 65535
+    return 1 <= port <= 65535
     
 def valid_uuid(value: str) -> bool:
     try:
@@ -84,12 +102,12 @@ def validate_vless(parts):
     if not valid_transport(q):
         return False
 
-    security = q.get("security", [""])[0]
+    security = q.get("security", [""])[0].lower()
+    tls = q.get("tls", [""])[0].lower()
 
-    if security == "reality":
-        for key in ("pbk",):
-            if not has_value(q.get(key, [""])[0]):
-                return False
+    if security == "reality" or tls == "reality":
+        if not valid_reality_key(q):
+            return False
 
     return True
     
@@ -135,8 +153,14 @@ def validate_vmess(parts):
         if not valid_port(str(obj.get("port"))):
             return False
 
-        if obj.get("tls") == "reality":
-            if not has_value(obj.get("pbk")):
+        if str(obj.get("tls", "")).lower() == "reality":
+            pbk = obj.get("pbk")
+            password = obj.get("password")
+
+            if has_value(pbk) and has_value(password):
+                return False
+
+            if not has_value(pbk) and not has_value(password):
                 return False
                 
         if not valid_vmess_transport(obj.get("net", "")):
