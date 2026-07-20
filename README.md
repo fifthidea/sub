@@ -1,7 +1,7 @@
 # Telegram V2Ray Subscription Generator
 Automatically builds V2Ray subscriptions from one or more public/private Telegram channels/groups using **Telethon** and GitHub Actions.
 
-Every 25 minutes, the workflow fetches the latest configurable number of messages from each channel, extracts supported proxy configs, validates and deduplicates them, then generates both per-channel and merged subscriptions. Channels inactive for the configured period are automatically excluded from merged subscriptions until they publish new configs again.
+Every 15 minutes, the workflow fetches the latest configurable number of messages from each channel, extracts supported proxy configs, validates and deduplicates them, then generates both per-channel and merged subscriptions. Channels inactive for the configured period are automatically excluded from merged subscriptions until they publish new configs again.
 
 ---
 
@@ -19,9 +19,9 @@ Every extracted configuration is validated before deduplication or subscription 
 
 | Protocol   | Required fields                                                                                                                              |
 |------------|----------------------------------------------------------------------------------------------------------------------------------------------|
-| **VLESS**  | Valid `UUID`, existance of server field, valid port (`1-65535`), `pbk` when `security=reality`, valid transport if `type` is present |
-| **VMess**  | Valid `UUID`, existance of server field, valid port (`1-65535`), `pbk` when `tls=reality`, valid transport if `net` is present       |
-| **Trojan** | Non-empty password, existance of server field, valid port (`1-65535`), valid transport if `type` is present                          |
+| **VLESS**  | Valid `UUID`, Non-Empty server field, valid port (`1-65535`), `pbk` when `security=reality`, valid transport if `type` is present |
+| **VMess**  | Valid `UUID`, Non-Empty server field, valid port (`1-65535`), `pbk` when `tls=reality`, valid transport if `net` is present       |
+| **Trojan** | Non-empty password, Non-Empty server field, valid port (`1-65535`), valid transport if `type` is present                          |
 
 Configurations missing any required field are discarded.
 
@@ -29,7 +29,7 @@ The validator is intentionally conservative. It only rejects configurations that
 
 It does **not** validate optional fields such as `host`, `path`, `sni`, `flow`, `fp`, or `sid`, nor does it check whether servers are online. This minimizes false positives and avoids discarding potentially working configurations.
 
-***To Do: validate configs through xray-core***
+***To Do Later: validate configs through xray-core***
 
 ## Why Validation Exists
 
@@ -126,7 +126,9 @@ A config is included after validation and deduplication in `sub/ir.txt` if at le
 
 > For `sub/ir-actual.txt`, only atleast one condition for the `server` parameter should be met.
 
-> Domains are resolved using Cloudflare/Google/Quad9 domain name servers.
+> Domains are resolved using Cloudflare/Google/Quad9 domain name servers. For now only `A` record lookups happen (IPv4 Only).
+
+> nslookup results are stored in `dns_cache.json` for future runs (with expiry date of 30 days).
 
 #### `ir-range.txt`
 
@@ -153,13 +155,28 @@ CHANNELS = {
 
 CHANNEL_ACTIVITY_DAYS = 3
 DNS_WORKERS = 32
+MAX_FILENAME_LENGTH = 100
+LIMIT_MODE = "CONFIGS"         # MESSAGES or CONFIGS or UNIQUE
+CONFIGS_MODE_MAX_MESSAGES_SCAN_BEFORE_EXHAUSTION = 2000
+UNIQUE_MODE_MAX_MESSAGES_SCAN_BEFORE_EXHAUSTION = 4000
+DNS_CACHE_TTL = 30 * 24 * 60 * 60   # 30 days
 ```
 
 Both Usernames and Numeric IDs are accepted for channels and groups (e.g. `"ConfigsHUB2"`,`-1001234567890`). (Required)
 
 > When using a numeric ID for a private channel or group, the Telegram account associated with TG_SESSION must already be a member of that chat. Otherwise, Telethon cannot access its messages.
 
-The `"limit"` value specifies the maximum number of recent Telegram messages to scan. (Required)
+When `LIMIT_MODE` is set to `MESSAGES`, `"limit"` value means scan n number of recent messages for configs.
+
+When `LIMIT_MODE` is set to `CONFIGS`, `"limit"` value means scan recent messages until n number of configs have been found.
+
+`CONFIGS_MODE_MAX_MESSAGES_SCAN_BEFORE_EXHAUSTION` defines after how many messages, the scan should. this is used for `LIMIT_MODE = "CONFIGS"`
+
+When `LIMIT_MODE` is set to `UNIQUE`, `"limit"` value means scan recent messages until n number of unique configs (valid and not duplicate) have been found.
+
+`UNIQUE_MODE_MAX_MESSAGES_SCAN_BEFORE_EXHAUSTION` defines after how many messages, the scan should. this is used for `LIMIT_MODE = "CONFIGS"`
+
+> `limit` value is Required.
 
 The optional `"name"` field specifies a custom output filename. If omitted, the public username is used. If the chat has no username (private chats), the numeric ID is used instead.
 
@@ -169,7 +186,9 @@ The optional `"name"` field specifies a custom output filename. If omitted, the 
 
 > Once an inactive channel publishes configs again, it is automatically included on the next workflow run.
 
-`DNS_WORKERS`specifies the maximum number of concurrent DNS lookups performed while generating `sub/ir.txt` and `sub/ir-actual.txt`.
+`DNS_WORKERS` specifies the maximum number of concurrent DNS lookups performed while generating `sub/ir.txt` and `sub/ir-actual.txt`.
+
+`DNS_CACHE_TTL` defines the ammount of time should pass before cache result is ignored and new nslookup happens.
 
 #  Telethon
 
