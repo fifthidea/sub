@@ -19,9 +19,9 @@ Every extracted configuration is validated before deduplication or subscription 
 
 | Protocol   | Required fields                                                                                                                              |
 |------------|----------------------------------------------------------------------------------------------------------------------------------------------|
-| **VLESS**  | Valid `UUID`, server address (IPv4/IPv6/domain), valid port (`0-65535`), `pbk` when `security=reality`, valid transport if `type` is present |
-| **VMess**  | Valid `UUID`, server address (IPv4/IPv6/domain), valid port (`0-65535`), `pbk` when `tls=reality`, valid transport if `net` is present       |
-| **Trojan** | Non-empty password, server address (IPv4/IPv6/domain), valid port (`0-65535`), valid transport if `type` is present                          |
+| **VLESS**  | Valid `UUID`, existance of server field, valid port (`0-65535`), `pbk` when `security=reality`, valid transport if `type` is present |
+| **VMess**  | Valid `UUID`, existance of server field, valid port (`0-65535`), `pbk` when `tls=reality`, valid transport if `net` is present       |
+| **Trojan** | Non-empty password, existance of server field, valid port (`0-65535`), valid transport if `type` is present                          |
 
 Configurations missing any required field are discarded.
 
