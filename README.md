@@ -43,6 +43,7 @@ Deduplication happens in two stages:
 
 - **Per-channel:** each Telegram channel is deduplicated before its own subscription is generated.
 - **Global:** all channels are merged and deduplicated again before generating the combined subscriptions.
+- **On Extraction** if `LIMIT_MODE = "UNIQUE"`
 
 > `sub-tiny`, `sub-lite`, and `sub-medium` are generated from the already deduplicated merged subscription.
 
