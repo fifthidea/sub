@@ -77,6 +77,10 @@ vless://...?type=ws&sni=B.Com&host=a.com#Server B
 | `sub/sub-medium-*.txt`        | includes 1500 newest unique configs from merge pool.                                |
 | `sub/sub-full-*.txt`          | includes all configs from merge pool.                                               |
 | `sub/ir.txt`                  | includes configs from merge pool in plaintext, where `server`, `host`, or `sni` is an Iranian IP, a domain resolving to an Iranian IP, or a `.ir` domain. atleast one condition has to match for a config to be included in `ir.txt`             |
+| `sub/ir-actual.txt`           | includes configs from merge pool in plaintext, where only `server` is an Iranian IP, a domain resolving to an Iranian IP, or a `.ir` domain. atleast one condition has to match for a config to be included in `ir-actual.txt`             |
+| `sub/ir-echless.txt`          | same as `sub/ir.txt` except included configs does not have `ech` parameter.         |
+| `sub/sub-full-plaintxt-echless.txt`          | same as `sub/sub-full-plaintxt.txt` except included configs does not have `ech` parameter.         |
+
 
 
 ### `stats.json`
