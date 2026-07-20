@@ -94,6 +94,7 @@ DNS_WORKERS = 32
 MAX_FILENAME_LENGTH = 100
 LIMIT_MODE = "CONFIGS"  # MESSAGES or CONFIGS
 CONFIGS_MODE_MAX_MESSAGES_SCAN_BEFORE_EXHAUSTION = 1500
+DNS_CACHE_TTL = 30 * 24 * 60 * 60   # 30 days
 # =========================
 
 PATTERN = re.compile(
@@ -365,7 +366,6 @@ def load_ir_networks_local():
 
     return networks
 
-DNS_CACHE_TTL = 30 * 24 * 60 * 60   # 30 days
 DNS_CACHE_FILE = "dns_cache.json"
 DNS_CACHE = {}
 
