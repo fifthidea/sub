@@ -1,7 +1,9 @@
 # Telegram V2Ray Subscription Generator
 Automatically builds V2Ray subscriptions from one or more public/private Telegram channels/groups using **Telethon** and GitHub Actions.
 
-Every 15 minutes, the workflow fetches the latest configurable number of messages from each channel, extracts supported proxy configs, validates and deduplicates them, then generates both per-channel and merged subscriptions. Channels inactive for the configured period are automatically excluded from merged subscriptions until they publish new configs again.
+Every 15 minutes, the workflow fetches configurations from each configured Telegram channel/group using Telethon. Depending on the selected `LIMIT_MODE`, it can scan a fixed number of messages, stop after collecting a target number of extracted configs, or stop after collecting a target number of unique valid configs.
+
+Extracted proxy configs are validated, deduplicated, filtered, and then used to generate both per-channel and merged subscriptions. Channels inactive for the configured period are automatically excluded from merged subscriptions until they publish new configs again.
 
 ---
 
@@ -70,16 +72,16 @@ vless://...?type=ws&sni=B.Com&host=a.com#Server B
 | ----------------------------- | ----------------------------------------------------------------------------------- |
 | `sub/*-base64.txt`            | Configs from merge pool encoded in base64                                           |
 | `sub/*-plaintxt.txt`          | Configs from merge pool in plaintext                                                |
-| `channels/*.txt`              | All unique configs from that channel in plaintext.                                  |
+| `channels/*.txt`              | Validated and deduplicated configs collected from that channel.                     |
 | `stats.json`                  | Update time, subscription sizes, per-channel statistics and activity information.   |
 | `sub/sub-tiny-*.txt`          | includes 300 newest unique configs from merge pool.                                 |
 | `sub/sub-lite-*.txt`          | includes 750 newest unique configs from merge pool.                                 |
 | `sub/sub-medium-*.txt`        | includes 1500 newest unique configs from merge pool.                                |
 | `sub/sub-full-*.txt`          | includes all configs from merge pool.                                               |
 | `sub/ir.txt`                  | includes configs from merge pool in plaintext, where `server`, `host`, or `sni` is an Iranian IP, a domain resolving to an Iranian IP, or a `.ir` domain. atleast one condition has to match for a config to be included in `ir.txt`             |
-| `sub/ir-actual.txt`           | includes configs from merge pool in plaintext, where only `server` is an Iranian IP, a domain resolving to an Iranian IP, or a `.ir` domain. atleast one condition has to match for a config to be included in `ir-actual.txt`             |
-| `sub/ir-echless.txt`          | same as `sub/ir.txt` except included configs does not have `ech` parameter.         |
-| `sub/sub-full-plaintxt-echless.txt`          | same as `sub/sub-full-plaintxt.txt` except included configs does not have `ech` parameter.         |
+| `sub/ir-actual.txt`           | includes configs from merge pool in plaintext, where only `server` is an Iranian IP, a domain resolving to an Iranian IP, or a `.ir` domain. atleast one condition has to match for a config to be included in `ir-actual.txt`   |
+| `sub/ir-echless.txt`          | same as `sub/ir.txt` except included configs does not have `ech` parameter. All other parameters remain unchanged.         |
+| `sub/sub-full-plaintxt-echless.txt`          | same as `sub/sub-full-plaintxt.txt` except included configs does not have `ech` parameter. All other parameters remain unchanged.         |
 
 
 
@@ -130,7 +132,7 @@ A config is included after validation and deduplication in `sub/ir.txt` if at le
 
 > For `sub/ir-actual.txt`, only atleast one condition for the `server` parameter should be met.
 
-> Domains are resolved using Cloudflare/Google/Quad9 domain name servers. For now only `A` record lookups happen (IPv4 Only).
+> DNS lookups currently use only `A` records (IPv4). Direct IPv4 and IPv6 addresses inside configurations are both checked against Iranian IP ranges.
 
 > nslookup results are stored in `dns_cache.json` for future runs (with expiry date of 30 days).
 
@@ -170,23 +172,25 @@ Both Usernames and Numeric IDs are accepted for channels and groups (e.g. `"Conf
 
 > When using a numeric ID for a private channel or group, the Telegram account associated with TG_SESSION must already be a member of that chat. Otherwise, Telethon cannot access its messages.
 
-When `LIMIT_MODE` is set to `MESSAGES`, `"limit"` value means scan n number of recent messages for configs.
+When `LIMIT_MODE` is set to `MESSAGES`, `"limit"` value represents the number of recent Telegram messages to scan for configs.
 
-When `LIMIT_MODE` is set to `CONFIGS`, `"limit"` value means scan recent messages until n number of configs have been found.
+When `LIMIT_MODE` is set to `CONFIGS`, `"limit"` value represents the number of extracted recent configs to collect before stopping.
 
-`CONFIGS_MODE_MAX_MESSAGES_SCAN_BEFORE_EXHAUSTION` defines after how many messages, the scan should. this is used for `LIMIT_MODE = "CONFIGS"`
+`CONFIGS_MODE_MAX_MESSAGES_SCAN_BEFORE_EXHAUSTION` prevents endless scanning on inactive or low-volume channels. this is used for `LIMIT_MODE = "CONFIGS"`. It means Stop scanning after `x` messages even if `y` configs have not been found.
 
-When `LIMIT_MODE` is set to `UNIQUE`, `"limit"` value means scan recent messages until n number of unique configs (valid and not duplicate) have been found.
+When `LIMIT_MODE` is set to `UNIQUE`, `"limit"` value represents the number of recent unique configs to collect (not duplicate).
 
-`UNIQUE_MODE_MAX_MESSAGES_SCAN_BEFORE_EXHAUSTION` defines after how many messages, the scan should. this is used for `LIMIT_MODE = "CONFIGS"`
+`UNIQUE_MODE_MAX_MESSAGES_SCAN_BEFORE_EXHAUSTION` prevents endless scanning on inactive or low-volume channels. this is used for `LIMIT_MODE = "UNIQUE"`. It means Stop scanning after `x` messages even if `y` unique configs have not been found.
 
-> `limit` value is Required.
+> even if `LIMIT_MODE = "UNIQUE"`, The final number reported in stats.json can still be lower because validation happens afterward and invalid configs are removed.
+
+> The `limit` value is required for every channel entry.
 
 The optional `"name"` field specifies a custom output filename. If omitted, the public username is used. If the chat has no username (private chats), the numeric ID is used instead.
 
 > Custom filenames are automatically sanitized to remove invalid filename characters, avoid reserved Windows filenames, and enforce the maximum filename length.
 
-`CHANNEL_ACTIVITY_DAYS` specifies how many days may pass since a channel or group last published at least one valid proxy configuration before it is excluded from the merged subscriptions.
+`CHANNEL_ACTIVITY_DAYS` specifies how many days may pass since a channel or group last published at least one valid proxy configuration before it is excluded from the merged subscriptions. This is independent of `LIMIT_MODE`.
 
 > Once an inactive channel publishes configs again, it is automatically included on the next workflow run.
 
