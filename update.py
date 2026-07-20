@@ -10,7 +10,6 @@ import dns.resolver
 import ipaddress
 import urllib.request
 from concurrent.futures import ThreadPoolExecutor
-from functools import lru_cache
 from urllib.parse import urlsplit, parse_qsl, urlencode, urlunsplit
 from telethon import TelegramClient
 from telethon.errors import (
@@ -92,8 +91,9 @@ CHANNELS = {
 CHANNEL_ACTIVITY_DAYS = 3
 DNS_WORKERS = 32
 MAX_FILENAME_LENGTH = 100
-LIMIT_MODE = "CONFIGS"  # MESSAGES or CONFIGS
-CONFIGS_MODE_MAX_MESSAGES_SCAN_BEFORE_EXHAUSTION = 1500
+LIMIT_MODE = "CONFIGS"  # MESSAGES or CONFIGS or UNIQUE
+CONFIGS_MODE_MAX_MESSAGES_SCAN_BEFORE_EXHAUSTION = 2000
+UNIQUE_MODE_MAX_MESSAGES_SCAN_BEFORE_EXHAUSTION = 4000
 DNS_CACHE_TTL = 30 * 24 * 60 * 60   # 30 days
 # =========================
 
@@ -294,6 +294,17 @@ def deduplicate_configs(configs):
             result.append(config)
 
     return result
+
+def add_unique_config(config, configs, seen):
+    key = normalize_config(config)
+
+    if key in seen:
+        return False
+
+    seen.add(key)
+    configs.append(config)
+
+    return True
 
 def load_ir_networks_apnic():
     url = "https://ftp.apnic.net/stats/apnic/delegated-apnic-latest"
@@ -528,10 +539,16 @@ async def main():
                     f"Processing {channel_ref} "
                     f"(last {limit} messages)"
                 )
-            else:
+            elif LIMIT_MODE == "CONFIGS":
                 print(
                     f"Processing {channel_ref} "
-                    f"(until {limit} configs found)"
+                    f"(until {limit} extracted configs found)"
+                )
+
+            elif LIMIT_MODE == "UNIQUE":
+                print(
+                    f"Processing {channel_ref} "
+                    f"(until {limit} unique configs found)"
                 )
 
             entity = await client.get_entity(channel_ref)
@@ -580,9 +597,40 @@ async def main():
                         break
 
 
+            elif LIMIT_MODE == "UNIQUE":
+
+                seen_configs = set()
+
+                async for msg in client.iter_messages(
+                    entity,
+                    limit=UNIQUE_MODE_MAX_MESSAGES_SCAN_BEFORE_EXHAUSTION
+                ):
+
+                    configs = extract_configs(msg.text)
+
+                    if configs:
+
+                        if latest_config_date is None:
+                            latest_config_date = msg.date.astimezone(tehran)
+
+                        for cfg in configs:
+
+                            add_unique_config(
+                                cfg,
+                                channel_configs,
+                                seen_configs
+                            )
+
+                            if len(channel_configs) >= limit:
+                                break
+
+                    if len(channel_configs) >= limit:
+                        break
+
+
             else:
                 raise ValueError(
-                    "LIMIT_MODE must be MESSAGES or CONFIGS"
+                    "LIMIT_MODE must be MESSAGES or CONFIGS or UNIQUE"
                 )
                 
             channel_configs = channel_configs[:limit]
