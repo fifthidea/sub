@@ -250,6 +250,8 @@ Open **Settings → Secrets and variables → Actions → New repository secret*
 #  - cron: "*/15 * * * *"
 ```
 
+> also change `timeout-minutes:` value which indicate after how many minutes, the workflow should be killed.
+
 > You can change the cron expression to any schedule you prefer.
 
 > For more reliable scheduling, consider using a Cloudflare Worker with GitHub API access to trigger the workflow. GitHub's built-in scheduled workflows may be delayed during peak traffic.
@@ -345,6 +347,8 @@ Comment out or remove the schedule from `.github/workflows/sub.yml`:
 #schedule:
 #  - cron: "*/15 * * * *"
 ```
+
+> also change `timeout-minutes:` value which indicate after how many minutes, the workflow should be killed.
 
 # Security Notes
 
