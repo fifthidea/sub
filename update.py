@@ -834,7 +834,7 @@ async def main():
         "updated": jalali.strftime("%Y/%m/%d %H:%M"),
         "ir_filter": {
             "source": IR_NETWORK_SOURCE,
-            "cidr_network_count": len(IR_NETWORKS)
+            "cidr_network_count": len(IR_NETWORKS),
             "ipv4_network_count": sum(
                 1 for n in IR_NETWORKS
                 if isinstance(n, ipaddress.IPv4Network)
@@ -842,7 +842,7 @@ async def main():
             "ipv6_network_count": sum(
                 1 for n in IR_NETWORKS
                 if isinstance(n, ipaddress.IPv6Network)
-            )
+            ),
         },
         "subscriptions": {
             "sub-full": len(merged),
