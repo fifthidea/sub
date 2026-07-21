@@ -308,8 +308,8 @@ def add_unique_config(config, configs, seen):
 
     return True
 
-def load_ir_networks_apnic():
-    url = "https://ftp.apnic.net/stats/apnic/delegated-apnic-latest"
+def load_ir_networks_ripe():
+    url = "https://ftp.ripe.net/pub/stats/ripencc/delegated-ripencc-latest"
 
     networks = []
 
@@ -327,6 +327,9 @@ def load_ir_networks_apnic():
             continue
 
         registry, cc, typ, start, value = parts[:5]
+
+        cc = cc.strip().upper()
+        typ = typ.strip().lower()
 
         if cc != "IR":
             continue
@@ -353,7 +356,7 @@ def load_ir_networks_apnic():
 def load_ir_networks_ipdeny():
     url = "https://www.ipdeny.com/ipblocks/data/countries/ir.zone"
 
-    with urllib.request.urlopen(url) as r:
+    with urllib.request.urlopen(url, timeout=20) as r:
         return [
             ipaddress.ip_network(line.decode().strip())
             for line in r
@@ -400,12 +403,22 @@ if os.path.exists(DNS_CACHE_FILE):
 IR_NETWORK_SOURCE = None
 
 try:
-    IR_NETWORKS = load_ir_networks_apnic()
-    IR_NETWORK_SOURCE = "APNIC"
+    IR_NETWORKS = load_ir_networks_ripe()
+
+    if not IR_NETWORKS:
+        raise Exception("RIPE returned zero networks")
+
+    IR_NETWORK_SOURCE = "RIPE"
+
 except Exception:
     try:
         IR_NETWORKS = load_ir_networks_ipdeny()
+
+        if not IR_NETWORKS:
+            raise Exception("IPDeny returned zero networks")
+
         IR_NETWORK_SOURCE = "IPDeny"
+
     except Exception:
         IR_NETWORKS = load_ir_networks_local()
         IR_NETWORK_SOURCE = "local ir-range.txt"
