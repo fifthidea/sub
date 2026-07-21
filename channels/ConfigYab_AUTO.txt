@@ -1,3 +1,5 @@
+vless://bb83cd54-e6c0-441d-823a-71443ff34686@203.28.8.85:2052?path=%2F&security=none&encryption=none&host=tau.configs.sbs&type=ws#AntiAbani
+trojan://3723507166611775488@195.133.93.81:443?type=tcp&security=tls&sni=sensible-ocelot.boa152.lol&fp=chrome&alpn=http%2F1.1#AntiAbani
 vless://5c5a466e-f2e0-4211-8963-742afac24948@185.247.226.138:443?allow_insecure=0&fp=chrome&host=netmelivip.dpdns.org&path=%2Fxiron&security=tls&sni=netmelivip.dpdns.org&type=ws#AntiAbani
 vless://8673cea6-211f-45cf-88e7-09d61a98e33f@stream.noneok.com:443?mode=gun&security=reality&encryption=none&pbk=0DwrY31Tr1wowEKo8Q2dSUYHuwBPhQ2OGWlcpBOVrks&type=grpc&serviceName=api.v1.StreamService&sni=stream.noneok.com&sid=c18304806fa688bd#AntiAbani
 trojan://humanity@104.19.229.21:443?path=%2F%2Fassignment&security=tls&insecure=0&host=www.multiplydose.com&type=ws&allowInsecure=0&sni=www.multiplydose.com#AntiAbani
@@ -1621,5 +1623,3 @@ vless://48ff2b70-e180-582f-8866-d9a2edeed5f5@15.204.97.214:23576/?type=tcp&encry
 vless://48ff2b70-e180-582f-8866-d9a2edeed5f5@15.204.97.206:23576/?type=tcp&encryption=none&flow=xtls-rprx-vision&sni=fuck.rkn&fp=chrome&security=reality&pbk=1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s&sid=01#AntiAbani
 vless://20d0a81f-da70-44dc-b9bf-5a5ddab644db@172.66.200.130:8880?encryption=none&host=crimson-lab-6cab.402-311.workers.dev&path=%2Fpyip%3DProxyIP.SG.CMLiussss.net&security=none&type=ws#AntiAbani
 vless://1ad37675-b4cf-42fa-9dc5-83fd35cd63cb@ad-020.limaklhc6.info:8443?encryption=none&fp=chrome&host=ad-020.limaklhc6.info&path=%2F&security=tls&sni=ad-020.limaklhc6.info&type=ws#AntiAbani
-vless://1560c0b2-3cb8-45a3-988b-7103b031a815@104.16.8.66:8880?encryption=none&host=delicate-wood-49a8.214-451.workers.dev&path=%2Fpyip%3DProxyIP.JP.CMLiussss.net&security=none&type=ws#AntiAbani
-vless://21b93e91-5bb1-4d6d-9093-1fd09ae06903@172.67.152.71:8880?encryption=none&host=morning-silence-7b1b.222-46c.workers.dev&path=%2Fpyip%3DProxyIP.JP.CMLiussss.net&security=none&type=ws#AntiAbani
