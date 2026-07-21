@@ -1,3 +1,4 @@
+vless://0b8dfc50-9e2d-4b3c-85cd-870b478312a0@45.192.2.115:443?security=reality&encryption=none&pbk=1oUeBtHH4DskTM_jCh-6enWRkFMDX9l1OU5kWYl4kxA&headerType=none&type=tcp&flow=xtls-rprx-vision&sni=yandex.net&sid=f34818a561dfd1fe#AntiAbani
 vless://e4514801-0d5a-42ba-869f-39bd605aef9e@52.28.111.206:22224?encryption=none&security=none&type=tcp#AntiAbani
 vless://e4514801-0d5a-42ba-869f-39bd605aef9e@52.28.111.206:22223?encryption=none&security=none&type=tcp#AntiAbani
 vless://e4514801-0d5a-42ba-869f-39bd605aef9e@52.28.111.206:22222?encryption=none&security=none&type=tcp#AntiAbani
@@ -161,7 +162,6 @@ vless://1b611f89-c650-492b-89ce-71926f9ff1f8@sg.sv.temas-bor.ir:22025?security=r
 vless://00a84cc6-073c-454b-9487-f0b7238e715f@31.56.178.216:443?encryption=none&flow=xtls-rprx-vision&fp=firefox&pbk=pT_PrAFYHWWJgyX4E4srGf-LKN_CzIsO26btnNmWDTo&security=reality&sid=cedac586f85bb33e&sni=huggingface.co&type=tcp#AntiAbani
 vless://ae86f68e-84c7-41de-b69f-87285451fb71@45.86.159.131:2085?mode=gun&security=none&encryption=none&fp=firefox&type=grpc&serviceName=vless#AntiAbani
 vless://2a12bb81-f3a3-0065-99ab-36febf676b4a@130.78.216.194:443?security=reality&type=tcp&sni=panel.tehno.store&fp=firefox&flow=xtls-rprx-vision&pbk=X44VAj_y9MabQeF7ZgssR57zaf2Rx5bX#AntiAbani
-vless://0b8dfc50-9e2d-4b3c-85cd-870b478312a0@45.192.2.115:443?encryption=none&flow=xtls-rprx-vision&security=reality&sni=yandex.net&pbk=1oUeBtHH4DskTM_jCh-6enWRkFMDX9l1OU5kWYl4kxA&sid=f34818a561dfd1fe&type=tcp&headerType=none#AntiAbani
 vless://c416332e-2bde-4806-ac02-8f021c6e8f68@cf.levikogjgfdd.ir:443?path=%2F&security=tls&encryption=none&insecure=0&host=bbc.zjxc.de5.net&type=ws&allowInsecure=0&sni=bbc.zjxc.de5.net#AntiAbani
 trojan://humanity@188.114.97.7:443?path=%2Fassignment&security=tls&insecure=0&ech=ip.gs%2Budp%3A%2F%2F8.8.8.8&type=ws&allowInsecure=0&sni=www.ignitelimit.com#AntiAbani
 trojan://humanity@104.16.7.70:443?type=ws&security=tls&path=%2Fassignment&host=www.calmlunch.com&sni=www.calmlunch.com&insecure=1&allowInsecure=1#AntiAbani
