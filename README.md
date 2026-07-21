@@ -167,6 +167,7 @@ LIMIT_MODE = "CONFIGS"         # MESSAGES or CONFIGS or UNIQUE
 CONFIGS_MODE_MAX_MESSAGES_SCAN_BEFORE_EXHAUSTION = 2000
 UNIQUE_MODE_MAX_MESSAGES_SCAN_BEFORE_EXHAUSTION = 4000
 DNS_CACHE_TTL = 30 * 24 * 60 * 60   # 30 days
+CHANNEL_WORKERS = 3
 ```
 
 Both Usernames and Numeric IDs are accepted for channels and groups (e.g. `"ConfigsHUB2"`,`-1001234567890`). (Required)
@@ -198,6 +199,8 @@ The optional `"name"` field specifies a custom output filename. If omitted, the 
 `DNS_WORKERS` specifies the maximum number of concurrent DNS lookups performed while generating `sub/ir.txt` and `sub/ir-actual.txt`.
 
 `DNS_CACHE_TTL` defines the ammount of time should pass before cache result is ignored and new nslookup happens.
+
+`CHANNEL_WORKERS` defines number of cocurrent Telegram channel workers that fetch channels messages/configs. Keep in mind that if you large values you will meet FloodWaitError from Telegram.
 
 #  Telethon
 
