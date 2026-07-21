@@ -22,6 +22,7 @@ from telethon.errors import (
 from telethon.sessions import StringSession
 from validator import validate
 from threading import Lock
+import asyncio
 
 dns_lock = Lock()
 
@@ -95,6 +96,7 @@ LIMIT_MODE = "UNIQUE"  # MESSAGES or CONFIGS or UNIQUE
 CONFIGS_MODE_MAX_MESSAGES_SCAN_BEFORE_EXHAUSTION = 2500
 UNIQUE_MODE_MAX_MESSAGES_SCAN_BEFORE_EXHAUSTION = 6000
 DNS_CACHE_TTL = 30 * 24 * 60 * 60   # 30 days
+CHANNEL_WORKERS = 3
 # =========================
 
 PATTERN = re.compile(
@@ -499,6 +501,171 @@ def config_iran_flags(config):
     return False, False
     
 
+channel_lock = Lock()
+
+
+async def process_channel(channel_ref, info, cutoff, tehran):
+
+    channel_start = time.time()
+
+    try:
+        if isinstance(info, int):
+            limit = info
+            custom_name = None
+        else:
+            limit = int(info["limit"])
+            custom_name = info.get("name")
+
+        entity = await client.get_entity(channel_ref)
+
+        if getattr(entity, "username", None):
+            channel_display = entity.username
+        else:
+            channel_display = entity.title
+
+        channel_configs = []
+        latest_config_date = None
+
+
+        if LIMIT_MODE == "MESSAGES":
+
+            async for msg in client.iter_messages(entity, limit=limit):
+
+                configs = extract_configs(msg.text)
+
+                if configs:
+                    channel_configs.extend(configs)
+
+                    if latest_config_date is None:
+                        latest_config_date = msg.date.astimezone(tehran)
+
+
+        elif LIMIT_MODE == "CONFIGS":
+
+            async for msg in client.iter_messages(
+                entity,
+                limit=CONFIGS_MODE_MAX_MESSAGES_SCAN_BEFORE_EXHAUSTION
+            ):
+
+                configs = extract_configs(msg.text)
+
+                if configs:
+                    channel_configs.extend(configs)
+
+                    if latest_config_date is None:
+                        latest_config_date = msg.date.astimezone(tehran)
+
+                if len(channel_configs) >= limit:
+                    break
+
+
+        elif LIMIT_MODE == "UNIQUE":
+
+            seen_configs = set()
+
+            async for msg in client.iter_messages(
+                entity,
+                limit=UNIQUE_MODE_MAX_MESSAGES_SCAN_BEFORE_EXHAUSTION
+            ):
+
+                configs = extract_configs(msg.text)
+
+                if configs:
+
+                    if latest_config_date is None:
+                        latest_config_date = msg.date.astimezone(tehran)
+
+                    for cfg in configs:
+                        add_unique_config(
+                            cfg,
+                            channel_configs,
+                            seen_configs
+                        )
+
+                        if len(channel_configs) >= limit:
+                            break
+
+                if len(channel_configs) >= limit:
+                    break
+
+
+        channel_configs = channel_configs[:limit]
+
+        channel_configs = [
+            cfg for cfg in channel_configs
+            if validate(cfg)
+        ]
+
+        channel_configs = deduplicate_configs(channel_configs)
+
+
+        # filename
+        if custom_name:
+            filename = custom_name
+        elif getattr(entity, "username", None):
+            filename = entity.username
+        else:
+            filename = str(entity.id)
+
+        filename = sanitize_filename(filename)
+
+        with open(
+            os.path.join(CHANNEL_OUTPUT_DIR, f"{filename}.txt"),
+            "w",
+            encoding="utf-8"
+        ) as f:
+            f.write("\n".join(channel_configs))
+
+
+        active = (
+            latest_config_date is not None
+            and latest_config_date >= cutoff
+        )
+
+
+        print(
+            f"{channel_display}: "
+            f"{len(channel_configs)} configs "
+            f"{'ACTIVE' if active else 'INACTIVE'} "
+            f"({time.time()-channel_start:.2f}s)"
+        )
+
+
+        return {
+            "display": channel_display,
+            "configs": channel_configs,
+            "stats": {
+                "configs": len(channel_configs),
+                "active": active,
+                "last_config": (
+                    jdatetime.datetime.fromgregorian(
+                        datetime=latest_config_date
+                    ).strftime("%Y/%m/%d %H:%M")
+                    if latest_config_date else None
+                )
+            }
+        }
+
+
+    except (
+        ChannelPrivateError,
+        ChannelInvalidError,
+        UsernameInvalidError,
+        UsernameNotOccupiedError,
+        ValueError,
+        TypeError,
+        FloodWaitError,
+    ) as e:
+        print(f"Skipping {channel_ref}: {type(e).__name__}: {e}")
+        return None
+
+    except Exception as e:
+        print(
+            f"Unexpected error in {channel_ref}: "
+            f"{type(e).__name__}: {e}"
+        )
+        return None
+
 async def main():
     
     start = time.time() ##might remove later
@@ -511,199 +678,43 @@ async def main():
     
     cutoff = datetime.now(tehran) - timedelta(days=CHANNEL_ACTIVITY_DAYS)
     
-    for channel_ref, info in CHANNELS.items():
-        
-        channel_start = time.time() ##might remove later
-        
-        try:
-
-            if isinstance(info, int):
-                limit = info
-                custom_name = None
-
-            else:
-                try:
-                    limit = int(info["limit"])
-                except KeyError:
-                    raise ValueError(f"{channel_ref}: missing 'limit'")
-                    
-                custom_name = info.get("name")
-                    
-            if limit <= 0:
-                raise ValueError(
-                    f"{channel_ref}: 'limit' must be greater than 0"
-                )
-
-            if LIMIT_MODE == "MESSAGES":
-                print(
-                    f"Processing {channel_ref} "
-                    f"(last {limit} messages)"
-                )
-            elif LIMIT_MODE == "CONFIGS":
-                print(
-                    f"Processing {channel_ref} "
-                    f"(until {limit} extracted configs found)"
-                )
-
-            elif LIMIT_MODE == "UNIQUE":
-                print(
-                    f"Processing {channel_ref} "
-                    f"(until {limit} unique configs found)"
-                )
-
-            entity = await client.get_entity(channel_ref)
-        
-            if getattr(entity, "username", None):
-                channel_display = entity.username
-            else:
-                channel_display = entity.title
-
-            channel_configs = []
-            latest_config_date = None
+    sem = asyncio.Semaphore(CHANNEL_WORKERS)
 
 
-            if LIMIT_MODE == "MESSAGES":
+    async def limited_process(channel_ref, info):
 
-                async for msg in client.iter_messages(
-                    entity,
-                    limit=limit
-                ):
-
-                    configs = extract_configs(msg.text)
-
-                    if configs:
-                        channel_configs.extend(configs)
-
-                        if latest_config_date is None:
-                            latest_config_date = msg.date.astimezone(tehran)
-
-
-            elif LIMIT_MODE == "CONFIGS":
-
-                async for msg in client.iter_messages(
-                    entity,
-                    limit=CONFIGS_MODE_MAX_MESSAGES_SCAN_BEFORE_EXHAUSTION
-                ):
-
-                    configs = extract_configs(msg.text)
-
-                    if configs:
-                        channel_configs.extend(configs)
-
-                        if latest_config_date is None:
-                            latest_config_date = msg.date.astimezone(tehran)
-
-                    if len(channel_configs) >= limit:
-                        break
-
-
-            elif LIMIT_MODE == "UNIQUE":
-
-                seen_configs = set()
-
-                async for msg in client.iter_messages(
-                    entity,
-                    limit=UNIQUE_MODE_MAX_MESSAGES_SCAN_BEFORE_EXHAUSTION
-                ):
-
-                    configs = extract_configs(msg.text)
-
-                    if configs:
-
-                        if latest_config_date is None:
-                            latest_config_date = msg.date.astimezone(tehran)
-
-                        for cfg in configs:
-
-                            add_unique_config(
-                                cfg,
-                                channel_configs,
-                                seen_configs
-                            )
-
-                            if len(channel_configs) >= limit:
-                                break
-
-                    if len(channel_configs) >= limit:
-                        break
-
-
-            else:
-                raise ValueError(
-                    "LIMIT_MODE must be MESSAGES or CONFIGS or UNIQUE"
-                )
-                
-            channel_configs = channel_configs[:limit]
-            
-            x = time.time() ##might remove later
-            channel_configs = [cfg for cfg in channel_configs if validate(cfg)]
-            print(f"{channel_display}: Validation took {time.time()-x:.2f}s") ##might remove later
-
-            # dedupe per channel
-            channel_configs = deduplicate_configs(channel_configs)
-            channel_stats[channel_display] = {
-                "configs": len(channel_configs),
-                "active": (
-                    latest_config_date is not None
-                    and latest_config_date >= cutoff
-                ),
-                "last_config": (
-                    jdatetime.datetime.fromgregorian(
-                    datetime=latest_config_date
-                        ).strftime("%Y/%m/%d %H:%M")
-                    if latest_config_date
-                    else None
-                )
-            }
-
-            # save per-channel file
-            if custom_name:
-                filename = custom_name
-
-            elif getattr(entity, "username", None):
-                filename = entity.username
-
-            else:
-                filename = str(entity.id)
-
-            filename = sanitize_filename(filename)
-
-            channel_file = os.path.join(
-                CHANNEL_OUTPUT_DIR,
-                f"{filename}.txt"
+        async with sem:
+            return await process_channel(
+                channel_ref,
+                info,
+                cutoff,
+                tehran
             )
 
-            with open(channel_file, "w", encoding="utf-8") as f:
-                f.write("\n".join(channel_configs))
 
-            print(f"{channel_display}: {len(channel_configs)} configs")
+    tasks = [
+        limited_process(channel_ref, info)
+        for channel_ref, info in CHANNELS.items()
+    ]
 
-            # add to global pool
-            if (
-                latest_config_date is not None
-                and latest_config_date >= cutoff
-           ):
-                all_configs.extend(channel_configs)
-                print(f"{channel_display}: ACTIVE")
-            else:
-                print(f"{channel_display}: INACTIVE (not merged)")
-            
-            print(f"Channel took {time.time()-channel_start:.2f}s") ##might remove later
-                
-        except (
-            ChannelPrivateError,
-            ChannelInvalidError,
-            UsernameInvalidError,
-            UsernameNotOccupiedError,
-            ValueError,
-            TypeError,
-            FloodWaitError,
-        ) as e:
-            print("=" * 60)
-            print(f"Skipping: {channel_ref}")
-            print(f"Reason: {type(e).__name__}: {e}")
-            print("=" * 60)
+
+    results = await asyncio.gather(*tasks)
+
+
+    for result in results:
+
+        if result is None:
             continue
+
+        channel_display = result["display"]
+
+        channel_stats[channel_display] = result["stats"]
+
+        if result["stats"]["active"]:
+            all_configs.extend(result["configs"])
+        else:
+            print(f"{channel_display}: INACTIVE (not merged)")
+
 
     # global dedupe
     
