@@ -408,7 +408,7 @@ try:
     if not IR_NETWORKS:
         raise Exception("RIPE returned zero networks")
 
-    IR_NETWORK_SOURCE = "RIPE"
+    IR_NETWORK_SOURCE = "RIPE NCC"
 
 except Exception:
     try:
@@ -457,6 +457,12 @@ def is_iran_host(value):
         return True
 
     if "." in value:
+        
+        try:
+            ipaddress.ip_address(value)
+            return False
+        except ValueError:
+            pass
 
         entry = DNS_CACHE.get(value)
 
