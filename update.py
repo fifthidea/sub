@@ -397,13 +397,18 @@ if os.path.exists(DNS_CACHE_FILE):
     except Exception:
         DNS_CACHE = {}
 
+IR_NETWORK_SOURCE = None
+
 try:
     IR_NETWORKS = load_ir_networks_apnic()
+    IR_NETWORK_SOURCE = "APNIC"
 except Exception:
     try:
         IR_NETWORKS = load_ir_networks_ipdeny()
+        IR_NETWORK_SOURCE = "IPDeny"
     except Exception:
         IR_NETWORKS = load_ir_networks_local()
+        IR_NETWORK_SOURCE = "local ir-range.txt"
 
 def is_iran_ip(value):
     try:
@@ -827,6 +832,18 @@ async def main():
 
     stats = {
         "updated": jalali.strftime("%Y/%m/%d %H:%M"),
+        "ir_filter": {
+            "source": IR_NETWORK_SOURCE,
+            "cidr_network_count": len(IR_NETWORKS)
+            "ipv4_network_count": sum(
+                1 for n in IR_NETWORKS
+                if isinstance(n, ipaddress.IPv4Network)
+            ),
+            "ipv6_network_count": sum(
+                1 for n in IR_NETWORKS
+                if isinstance(n, ipaddress.IPv6Network)
+            )
+        },
         "subscriptions": {
             "sub-full": len(merged),
             "sub-medium": min(1500, len(merged)),
