@@ -450,29 +450,30 @@ def is_iran_host(value):
 
     value = value.strip().rstrip(".").lower()
 
+    # direct IP check
+    try:
+        ip = ipaddress.ip_address(value.strip("[]"))
+        return is_iran_ip(str(ip))
+    except ValueError:
+        pass
+
+    # .ir domains are always considered Iranian
     if value.endswith(".ir"):
         return True
 
-    if is_iran_ip(value):
-        return True
-
     if "." in value:
-        
-        try:
-            ipaddress.ip_address(value)
-            return False
-        except ValueError:
-            pass
 
         entry = DNS_CACHE.get(value)
 
         if entry is None:
             result = resolves_to_iran_ip(value)
+
             with dns_lock:
                 DNS_CACHE[value] = {
                     "is_ir": result,
                     "checked": time.time()
                 }
+
             return result
 
         return entry["is_ir"]
