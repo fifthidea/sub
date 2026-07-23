@@ -200,7 +200,7 @@ The optional `"name"` field specifies a custom output filename. If omitted, the 
 
 `DNS_CACHE_TTL` defines the ammount of time should pass before cache result is ignored and new nslookup happens.
 
-`CHANNEL_WORKERS` defines number of cocurrent Telegram channel workers that fetch channels messages/configs. Keep in mind that if you large values you will meet FloodWaitError from Telegram.
+`CHANNEL_WORKERS` defines number of cocurrent Telegram channel workers that fetch channels messages/configs. Keep in mind that if you use large values you will meet FloodWaitError from Telegram.
 
 #  Telethon
 
