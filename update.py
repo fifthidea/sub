@@ -149,11 +149,14 @@ def collect_domains(configs):
 
                 value = value.strip().lower().rstrip(".")
 
-                if (
-                    "." in value
-                    and not value.endswith(".ir")
-                    and not is_iran_ip(value)
-                ):
+                if "." in value and not value.endswith(".ir"):
+
+                    try:
+                        ipaddress.ip_address(value.strip("[]"))
+                        continue   # skip all IP addresses
+                    except ValueError:
+                        pass
+
                     domains.add(value)
 
         except Exception:
