@@ -1,3 +1,10 @@
+vless://5e243126-4a2a-84b6-782a-73b14797fb5f@170.168.97.3:8443?mode=gun&security=reality&encryption=none&authority=&pbk=D2SXHZRRYM0WcFChGWd57XB-U73aIsGfMpe2-Gq5XSs&fp=chrome&type=grpc&serviceName=TunService&sni=download.nvidia.com#AntiAbani
+vless://e4514801-0d5a-42ba-869f-39bd605aef9e@15.188.1.105:22223?security=none&encryption=none&headerType=none&type=tcp#AntiAbani
+vless://e0957d5a-9b3f-436a-b059-fa62622cd68d@tr.lorzema.ir:2050?security=reality&encryption=none&pbk=EEW92Mj1CouW71R3yWrxcMZwId8CKMvHvcC4BApwvzs&headerType=none&fp=chrome&type=tcp&sni=wechat.com&sid=3caee576df4f7621#AntiAbani
+vless://e0957d5a-9b3f-436a-b059-fa62622cd68d@us.jojefrosishahri.ir:2050?security=reality&encryption=none&pbk=EEW92Mj1CouW71R3yWrxcMZwId8CKMvHvcC4BApwvzs&headerType=none&fp=chrome&type=tcp&sni=www.wechat.com&sid=3caee576df4f7621#AntiAbani
+vless://d342d11e-d424-4583-b36e-524ab1f0afa4@45.80.110.230:2053?security=tls&sni=a.ssll.gay&type=ws&path=twitterfreecodessecurity#AntiAbani
+vless://e4514801-0d5a-42ba-869f-39bd605aef9e@13.37.81.227:22224?encryption=none&security=none&type=tcp#AntiAbani
+vless://c9380ef8-23f8-422e-81fe-ebbb032202cf@151.101.193.54:80?encryption=none&type=ws&host=BankMelat.glObal.ssl.faStly.nEt.&path=%2F&security=none#AntiAbani
 vless://e0957d5a-9b3f-436a-b059-fa62622cd68d@tr.lorzema.ir:2050?security=reality&type=tcp&headerType=none&path=&host=&sni=wechat.com&fp=chrome&pbk=EEW92Mj1CouW71R3yWrxcMZwId8CKMvHvcC4BApwvzs&sid=3caee576df4f7621#AntiAbani
 vless://e996abc7-cff3-4d9f-a9dc-0d717048a345@t.avrilon.us:443?security=reality&encryption=mlkem768x25519plus.native.0rtt.W3jtn31noFtT345Wnc8qHneslfsv5jHyqQ9Vpx-TBTw&pbk=wn5rNzAvTsOpmc6hHkw_woqwYGkFml8Uv2Klx9iydXI&headerType=none&fp=chrome&spx=/a3fb14fd6e302be&type=tcp&flow=xtls-rprx-vision&sni=g.co&sid=4356bd47#AntiAbani
 vless://e0957d5a-9b3f-436a-b059-fa62622cd68d@gr.lorzema.ir:2050?security=reality&type=tcp&headerType=none&path=&host=&sni=wechat.com&fp=chrome&pbk=EEW92Mj1CouW71R3yWrxcMZwId8CKMvHvcC4BApwvzs&sid=3caee576df4f7621#AntiAbani
@@ -6,8 +13,6 @@ vless://e0957d5a-9b3f-436a-b059-fa62622cd68d@us.jojefrosishahri.ir:2050?security
 vless://e4f229c9-bd67-45d4-873b-b85a43a2be54@165.154.247.187:2053?security=reality&encryption=none&pbk=TdKxVjGKYJt4GU5cEXvsOplgYwji6ac7ryCUBBwr-kw&headerType=none&fp=chrome&spx=%2F926d66b01e29824&type=tcp&sni=www.amazon.com&sid=e3b9f430320df1#AntiAbani
 vless://f75814f6-8f81-4847-b792-168c41f2dc85@45.196.201.169:443?encryption=none&flow=xtls-rprx-vision&security=reality&sni=storage.yandex.net&fp=firefox&pbk=zii4nGNapnFKL6SN8GzWNqFlElBvUCUFUThEP0kFH04&sid=c6ef72e4635d15a5&type=tcp&headerType=none#AntiAbani
 vless://f75814f6-8f81-4847-b792-168c41f2dc85@45.196.201.231:443?encryption=none&flow=xtls-rprx-vision&security=reality&sni=storage.yandex.net&fp=firefox&pbk=zii4nGNapnFKL6SN8GzWNqFlElBvUCUFUThEP0kFH04&sid=c6ef72e4635d15a5&type=tcp&headerType=none#AntiAbani
-vless://5e243126-4a2a-84b6-782a-73b14797fb5f@170.168.97.3:8443?encryption=none&security=reality&sni=download.nvidia.com&fp=chrome&pbk=D2SXHZRRYM0WcFChGWd57XB-U73aIsGfMpe2-Gq5XSs&type=grpc&authority=&serviceName=TunService&mode=gun#AntiAbani
-vless://e4514801-0d5a-42ba-869f-39bd605aef9e@15.188.1.105:22223?encryption=none&security=none&type=tcp&headerType=none#AntiAbani
 vless://5e243126-4a2a-84b6-782a-73b14797fb5f@89.47.55.3:8443?encryption=none&security=reality&sni=dl.google.com&fp=chrome&pbk=iVDh09Vm2DqZMNQoUdf-LCZ6TqVGb9mLXnClAK2LRj4&type=grpc&authority=&serviceName=TunService&mode=gun#AntiAbani
 vless://1b73f053-2709-4698-bbec-cb20e8a5f288@gov.viranix.ir:10043?encryption=none&security=reality&sni=play.google.com&fp=chrome&pbk=RsO3PRzPHqGLfioO6C1kQOWatqjo15KnUUbkdE7VKEs&sid=8ffa8cbc6d67cffa&type=tcp&headerType=none#AntiAbani
 vless://e4514801-0d5a-42ba-869f-39bd605aef9e@13.37.81.227:22223?encryption=none&security=none&type=tcp&headerType=none#AntiAbani
@@ -1589,9 +1594,3 @@ vless://d9eb0df3-3190-4447-86b6-656fe5ff1119@162.159.252.236:443/?type=ws&encryp
 vless://08bc2f46-c8ae-421e-93cc-e1225923fa50@199.232.78.150:443?encryption=none&extra=%7B%22xPaddingBytes%22%3A%22100-1000%22%7D&fp=chrome&host=Vistitrohamfastvipnexttt.net&mode=auto&path=%2F&security=tls&sni=global.fastly.com&type=xhttp&x_padding_bytes=100-1000#AntiAbani
 vless://18e20d7b-f475-4e8e-b65a-da8e31931d29@31.57.63.207:2054?encryption=none&extra=%7B%22mode%22%3A%22auto%22%2C%22xPaddingBytes%22%3A%22100-1000%22%7D&host=&mode=auto&path=%2F&security=none&type=xhttp&x_padding_bytes=100-1000#AntiAbani
 vless://6cb6773a-4661-43aa-b2df-2e8fa6586917@137.74.136.147:42584?type=grpc&encryption=none&serviceName=zula.ir&authority=zula.ir&mode=multi&security=none#AntiAbani
-vless://18e20d7b-f475-4e8e-b65a-da8e31931d29@31.57.63.207:2052?alpn=h2%2Chttp%2F1.1&encryption=none&fp=chrome&security=tls&sni=&type=tcp#AntiAbani
-vless://18e20d7b-f475-4e8e-b65a-da8e31931d29@31.57.63.207:8443?encryption=none&host=&path=%2F&security=none&type=ws#AntiAbani
-vless://08bc2f46-c8ae-421e-93cc-e1225923fa50@199.232.77.215:443?encryption=none&extra=%7B%22xPaddingBytes%22%3A%22100-1000%22%7D&fp=chrome&host=Vistitrohamfastvipnexttt.net&mode=auto&path=%2F&security=tls&sni=global.fastly.com&type=xhttp&x_padding_bytes=100-1000#AntiAbani
-vless://db7e1b02-06d9-4d81-894e-5576d534d5ec@hollowcon.boxd.sh:47896?encryption=none&security=reality&sni=cdn.samsung.com&fp=chrome&pbk=2fm5tm-ONZ__S4istflOp6fJsuEqgt118vX_mFKThhw&sid=3f1a1bfb&spx=%2Fb48d9d655f3f5de&type=tcp&headerType=none#AntiAbani
-vless://164c8843-94af-44cd-800f-671efb3f41be@104.16.11.133:80?security=none&type=httpupgrade&host=Vpn_Mikey-speedtest.net.Amir-Mikey.Tech.&path=/@Vpn_Mikey،@Vpn_Mikey#AntiAbani
-vless://89e2646a-41c1-44bf-9892-3b80e40da72b@fastly.videobazi.com:80?mode=auto&path=%2F&security=none&encryption=none&host=blueb.global.ssl.fastly.net&type=xhttp#AntiAbani
