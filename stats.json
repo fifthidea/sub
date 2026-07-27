@@ -1,5 +1,5 @@
 {
-    "updated": "1405/05/05 06:19",
+    "updated": "1405/05/05 06:34",
     "ir_filter": {
         "source": "RIPE NCC",
         "cidr_network_count": 2522,
@@ -7,12 +7,12 @@
         "ipv6_network_count": 570
     },
     "subscriptions": {
-        "sub-full": 9196,
+        "sub-full": 9189,
         "sub-medium": 1500,
         "sub-lite": 750,
         "sub-tiny": 300,
-        "ir": 1874,
-        "ir-actual": 1442
+        "ir": 1873,
+        "ir-actual": 1441
     },
     "channels": {
         "ConfigsHUB2": {
@@ -21,14 +21,14 @@
             "last_config": "1405/04/15 20:37"
         },
         "ConfigsHUB": {
-            "configs": 1442,
+            "configs": 1437,
             "active": true,
-            "last_config": "1405/05/05 06:13"
+            "last_config": "1405/05/05 06:28"
         },
         "TheFreeConfigs": {
             "configs": 1192,
             "active": true,
-            "last_config": "1405/05/05 06:09"
+            "last_config": "1405/05/05 06:21"
         },
         "persianvpnhub": {
             "configs": 477,
@@ -36,14 +36,14 @@
             "last_config": "1405/05/05 06:13"
         },
         "FarahVPN": {
-            "configs": 710,
+            "configs": 708,
             "active": true,
-            "last_config": "1405/05/05 06:15"
+            "last_config": "1405/05/05 06:30"
         },
         "NamiraConfigs": {
             "configs": 256,
             "active": true,
-            "last_config": "1405/05/05 06:13"
+            "last_config": "1405/05/05 06:18"
         },
         "vpnfreev2rayconfig": {
             "configs": 281,
@@ -68,7 +68,7 @@
         "ConfigYab_AUTO": {
             "configs": 1625,
             "active": true,
-            "last_config": "1405/05/05 06:09"
+            "last_config": "1405/05/05 06:21"
         },
         "DeamNet_proxy": {
             "configs": 0,
@@ -76,9 +76,9 @@
             "last_config": null
         },
         "Farah_VPN": {
-            "configs": 879,
+            "configs": 880,
             "active": true,
-            "last_config": "1405/05/05 06:16"
+            "last_config": "1405/05/05 06:31"
         },
         "FreakConfig": {
             "configs": 944,
@@ -86,19 +86,19 @@
             "last_config": "1405/05/05 06:17"
         },
         "GalaxyMVPN": {
-            "configs": 1633,
+            "configs": 1627,
             "active": true,
-            "last_config": "1405/05/05 05:58"
+            "last_config": "1405/05/05 06:27"
         },
         "NamazVPN": {
             "configs": 1788,
             "active": true,
-            "last_config": "1405/05/05 06:16"
+            "last_config": "1405/05/05 06:22"
         },
         "SOSkeyNET": {
-            "configs": 1633,
+            "configs": 1627,
             "active": true,
-            "last_config": "1405/05/05 05:58"
+            "last_config": "1405/05/05 06:27"
         },
         "V2rayBaaz": {
             "configs": 278,
@@ -116,9 +116,9 @@
             "last_config": "1405/05/05 06:12"
         },
         "iranconnecting": {
-            "configs": 780,
+            "configs": 773,
             "active": true,
-            "last_config": "1405/05/05 06:15"
+            "last_config": "1405/05/05 06:31"
         },
         "CafeTweetFa": {
             "configs": 897,
@@ -133,7 +133,7 @@
         "lebertad": {
             "configs": 497,
             "active": true,
-            "last_config": "1405/05/05 04:16"
+            "last_config": "1405/05/05 06:31"
         },
         "meliproxyy": {
             "configs": 476,
@@ -153,12 +153,12 @@
         "v2ray_free_conf": {
             "configs": 380,
             "active": true,
-            "last_config": "1405/05/05 06:00"
+            "last_config": "1405/05/05 06:26"
         },
         "vpnfail_v2ray": {
-            "configs": 933,
+            "configs": 932,
             "active": true,
-            "last_config": "1405/05/05 06:17"
+            "last_config": "1405/05/05 06:33"
         },
         "v2ray_configs_pool": {
             "configs": 952,
