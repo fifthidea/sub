@@ -1,3 +1,5 @@
+vless://2be1964b-51c6-4b41-91d5-27824c981db1@176.124.200.40:445?security=&encryption=none&headerType=&type=tcp#AntiAbani
+vless://511c1563-2cb6-4064-abc6-a59ee49818a8@45.89.105.74:40443?security=reality&encryption=none&pbk=cwmcqsfS7klQlkcoUNuATEk0NiPY-NnRb9z8rCJDQw0&headerType=none&fp=chrome&type=tcp&flow=xtls-rprx-vision&sni=deepl.com&sid=88b6#AntiAbani
 vless://7c74b0e4-f132-5583-4692-622a7d6b71a4@88.218.44.4:993?security=reality&type=tcp&flow=xtls-rprx-vision&sni=dl.google.com&fp=chrome&pbk=Rt2wltCWOxIroFggNWMudZDBJXls8DsF4icaWqxKDk8#AntiAbani
 vless://fa43d04b-7137-e060-44b0-be6872ed72d7@x4g-production-ca5f.up.railway.app:443?encryption=none&security=tls&type=ws&host=x4g-production-ca5f.up.railway.app&path=/ws/fa43d04b-7137-e060-44b0-be6872ed72d7&sni=x4g-production-ca5f.up.railway.app&fp=ios&alpn=http/1.1#AntiAbani
 vless://2da61edf-538c-48d6-bef3-2480a2237441@199.232.78.159:443?encryption=none&type=ws&security=tls&host=BankMelat.glObal.ssl.faStly.nEt.&sni=ssl.fastly.com&insecure=0&allowInsecure=0#AntiAbani
@@ -1614,5 +1616,3 @@ vless://e4514801-0d5a-42ba-869f-39bd605aef9e@18.192.255.62:22224?security=none&e
 vless://875d3876-ab9a-4dd6-8a8d-bf57f03403aa@104.26.13.40:8880?path=%2Fpyip%3DProxyIP.JP.CMLiussss.net&security=&encryption=none&host=square-sea-01d1.339-be3.workers.dev&type=ws#AntiAbani
 vless://70f28a55-1e6c-4082-aef4-2dc2cfa78fca@51.68.166.178:2053?encryption=none&security=reality&sni=play.google.com&pbk=GS0dfvzX-bVKBDl2brVxsrE6T2WyXXkfgP3x-mQC7BY&sid=524efc1f88592266&type=grpc&authority=&serviceName=api.v1.data&mode=gun#AntiAbani
 vless://70f28a55-1e6c-4082-aef4-2dc2cfa78fca@51.89.226.11:2053?mode=gun&security=reality&encryption=none&authority=&pbk=GS0dfvzX-bVKBDl2brVxsrE6T2WyXXkfgP3x-mQC7BY&fp=chrome&type=grpc&serviceName=api.v1.data&sni=play.google.com&sid=524efc1f88592266#AntiAbani
-vless://b0aeb6f0-ff78-4316-ba8f-673d8bedd94b@89.124.108.27:443?type=ws&host=&path=/rw#AntiAbani
-vless://9aa22854-b213-44c1-b966-14284fce33df@89.110.84.36:31067?encryption=none&security=none&type=tcp&headerType=none#AntiAbani
