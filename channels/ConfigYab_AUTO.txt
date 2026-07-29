@@ -1,3 +1,4 @@
+vless://431fe973-a43a-4fac-bf83-2a772e0d0625@60.249.101.16:10000?encryption=none&security=none&type=tcp#AntiAbani
 vless://8f273bcc-15f2-4c96-8942-8aae51eddd8e@144.31.129.9:443?encryption=none&flow=xtls-rprx-vision&pbk=gF0oeN2ndJ1hDZynSUu504hiXzUI6oioEerdyG7yMVQ&security=reality&sid=0bc73dd1f045&sni=qwins-mirrorconv.ru&type=tcp#AntiAbani
 vless://d312730d-e1f3-4fe4-a907-f9077ba62b5d@212.60.4.188:26146?encryption=none&security=reality&sni=www.vk.ru&fp=firefox&pbk=gX3_zVtbvWNZH7lXyrsBBCcyCVKkkr_LMw9JRqpAmmQ&sid=d4f2a3a536b962&spx=%2FUQmrtcbSPy1IqFX#AntiAbani
 vless://d38fb586-bec2-4892-f774-7789068e32d5@191.101.130.131:38001?security=&encryption=none&host=varzesh3.com&headerType=http&type=tcp#AntiAbani
@@ -1624,4 +1625,3 @@ vless://a8c2b2a5-dd17-40c0-8a18-d5a76ec43449@www.udemy.com:443?alpn=h3%2Ch2%2Cht
 vless://a8c2b2a5-dd17-40c0-8a18-d5a76ec43449@173.245.58.84:443?alpn=h3%2Ch2%2Chttp%2F1.1&encryption=none&fp=random&host=khozestan.dpdns.org&path=%2Fws&security=tls&sni=khozestan.dpdns.org&type=ws#AntiAbani
 vless://a8c2b2a5-dd17-40c0-8a18-d5a76ec43449@172.67.220.1:443?alpn=h3%2Ch2%2Chttp%2F1.1&encryption=none&fp=safari&host=khozestan.dpdns.org&path=%2Fws&security=tls&sni=khozestan.dpdns.org&type=ws#AntiAbani
 vless://a8c2b2a5-dd17-40c0-8a18-d5a76ec43449@www.speedtest.net:2083?alpn=h2%2Chttp%2F1.1&encryption=none&extra=%7B%22mode%22%3A%22auto%22%2C%22xPaddingBytes%22%3A%22100-1000%22%7D&fp=chrome&host=stream.download2upload.dpdns.org&mode=auto&path=%2Fsec-stream-2026&security=tls&sni=stream.download2upload.dpdns.org&type=xhttp&x_padding_bytes=100-1000#AntiAbani
-vless://a8c2b2a5-dd17-40c0-8a18-d5a76ec43449@www.udemy.com:2087?alpn=h2%2Chttp%2F1.1&encryption=none&extra=%7B%22mode%22%3A%22auto%22%2C%22xPaddingBytes%22%3A%22100-1000%22%7D&fp=firefox&host=stream.download2upload.dpdns.org&mode=auto&path=%2Fone-stream-1405&security=tls&sni=stream.download2upload.dpdns.org&type=xhttp&x_padding_bytes=100-1000#AntiAbani
