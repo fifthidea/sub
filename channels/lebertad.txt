@@ -1,3 +1,8 @@
+vmess://eyJ2IjoiMiIsImFkZCI6IjE3Mi42Ny4xNzAuMTEiLCJwb3J0IjoiNDQzIiwiaWQiOiJlZGJiMTA1OS0xNjMzLTQyNzEtYjY2ZS1lZDRmYmE0N2ExYmYiLCJhaWQiOjAsInNjeSI6ImF1dG8iLCJuZXQiOiJ3cyIsImhvc3QiOiJsaW5kZTA2LmluZGlhdmlkZW8uc2JzIiwicGF0aCI6IlwvbGlua3dzIiwidGxzIjoidGxzIiwic25pIjoibGluZGUwNi5pbmRpYXZpZGVvLnNicyIsImZwIjoiY2hyb21lIiwicHMiOiJDb25maWcgMSAtIEBsZWJlcnRhZCJ9
+vless://6e460362-58db-44ea-ab5f-168fddf34da1@185.206.170.29:8080?security=reality&encryption=none&pbk=YiTSRYtl4fSP1SJpLbpJE83TR_bTVfBkh9IUqvrjGXw&headerType=none&fp=chrome&type=tcp&sni=play.google.com&sid=1ee54e39fc1a78a1#Config
+vless://ad5ff95a-81a8-4006-8771-8e33f0bcd9aa@get.noneok.com:443?security=reality&type=grpc&serviceName=api.v1.StreamService&sid=0768452b5e736e7f&pbk=8foPheDUi9ULJfe5UuxfspzwQ7J5JZg-2J1XkhL1B1I&encryption=none&sni=get.noneok.com&fp=chrome#Config
+vless://63f96e98-f83f-48d0-9cd0-f31e8071f67f@64.188.77.22:9443?type=grpc&security=reality&fp=firefox&pbk=2p65iLhJgMXoswUfcKqh-bcVRzGN_KwnPpNThu4g-2w&sid=f73f&sni=www.amd.com#Config
+vless://ad5ff95a-81a8-4006-8771-8e33f0bcd9aa@get.noneok.com:443?mode=gun&security=reality&encryption=none&pbk=8foPheDUi9ULJfe5UuxfspzwQ7J5JZg-2J1XkhL1B1I&fp=chrome&type=grpc&serviceName=api.v1.StreamService&sni=get.noneok.com&sid=0768452b5e736e7f#Config
 vless://7c0cc1e3-5b38-4d08-b39c-de69199bd4fc@unlimiteddev-vpn.sabadyt.ir:8880?path=/Telegram:@UnlimitedDev-Telegram:@UnlimitedDev-Telegram:@UnlimitedDev&security=none&encryption=none&host=unlimiteddev-vpn.unlimiteddev.Community.&type=httpupgrade#Config
 vless://1484e77e-30ea-460b-8d24-5f612890d206@66.235.200.32:80?security=&type=ws&path=/Telegram:@vmessorg-Telegram:@vmessorg-Telegram:@vmessorg?ed=80&host=join-to.vmessorg.Community.&encryption=none#Config
 vmess://eyJ2IjoiMiIsInBzIjoiQ29uZmlnIDMgLSBAbGViZXJ0YWQiLCJhZGQiOiJyYm9ib3N6LnRrIiwicG9ydCI6IjQwNzYyIiwidHlwZSI6Im5vbmUiLCJpZCI6IjUxMTVmNTUwLTNmOGMtNDRmZS1hMDY0LWViMDJlMmZiYjg5YiIsImFpZCI6IjAiLCJuZXQiOiJ0Y3AiLCJwYXRoIjoiXC8iLCJob3N0IjoicmJvYm9zei50ayIsInRscyI6IiJ9
@@ -491,8 +496,3 @@ vless://322137af-0ecd-48a9-9bab-ef5754331437@de.unit-digital.com:443?encryption=
 vless://d342d11e-d424-4583-b36e-524ab1f0afa4@124.80.75.68:15772?security=tls&sni=a.ssll.gay&type=ws&path=/?ed#Config
 vless://48198295-b7ba-4b5c-8d85-085d55a6c869@69.84.182.116:443?security=tls&sni=yx.ylks.xyz&type=ws&path=/blue#Config
 vless://17e31708-0517-4687-998f-e54951a1139a@104.21.94.168:80?type=ws&host=join-to.vmessorg.Community.&path=/Telegram:@vmessorg-Telegram:@vmessorg-Telegram:@vmessorg?ed=80#Config
-vless://93b99881-df03-4597-9146-0c11e46387f7@124.80.20.114:25177?security=tls&sni=cfv.cscfwoker.fun&type=ws&path=/?ed&fp=random#Config
-vless://e4514801-0d5a-42ba-869f-39bd605aef9e@51.44.136.17:22223?encryption=none&security=none&type=tcp#Config
-vless://a3bf5677-eaa6-42c5-959c-38cfdcd58d48@104.252.53.195:32060?encryption=none&fp=chrome&pbk=GSpAiLgZ-6A9NENbg5Rnx_Eba051Lh4NvLhFu_hohlA&security=reality&sid=1f&sni=fr-ca.rogers.yahoo.com&spx=/Fvrzz4VpHZFDaiF&type=tcp#Config
-vless://e4514801-0d5a-42ba-869f-39bd605aef9e@51.44.136.17:22222?encryption=none&security=none&type=tcp#Config
-vless://db7a2a32-84d9-5ccf-bb19-e15e47dcce42@104.17.148.22:2086?security=none&type=ws&host=www.digikala.com.joinTelegram.mosiv2.cz2.vless.Sitespeedtest.net.&path=join-@mosiv2-@mosiv2-?ed=2048#Config
