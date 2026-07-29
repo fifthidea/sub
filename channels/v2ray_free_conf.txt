@@ -1,3 +1,4 @@
+vless://e4514801-0d5a-42ba-869f-39bd605aef9e@13.36.44.201:22223?encryption=none&security=none&type=tcp&headerType=none#filembad-498
 vless://f379f28e-c535-4d03-a1ca-0f413429e9ac@130.185.121.169:18269?path=%2F&security=none&encryption=none&type=ws#ProxyMtpVPN-587
 vless://64a28ed6-2238-42d9-8452-b83674f741e5@141.193.213.30:2053?security=tls&type=ws&headerType=&path=%2F%3Fed%3D2053&host=sunny-comet-55.curiocar.com&sni=sunny-comet-55.curiocar.com&fp=edge&alpn=h2%2Chttp%2F1.1&allowInsecure=1#canfingV2rayNG-281
 vless://5835d646-e713-89be-00a5-5567ec246abc@69.46.46.3:443?path=%2Fws%2F5835d646-e713-89be-00a5-5567ec246abc&security=tls&alpn=http%2F1.1&encryption=none&insecure=0&host=rvg-production-3100.up.railway.app&fp=ios&type=ws&allowInsecure=0&sni=rvg-production-3100.up.railway.app#ProxyMtpVPN-254
@@ -32,7 +33,6 @@ vless://92e236d4-0541-4e6e-8889-015758d51469@m2client.tabloo-face.ir:47832?secur
 vless://0a268813-7200-4d23-9851-74568928fc82@xn--dash-4o53c.xn--ir-nz82a.netbazshop.ir:2095?encryption=none&security=none&type=tcp&headerType=http&host=play.google.com#NormanV2ray-134
 vless://deb9c015-1ffe-4e41-9d21-310eb0422a4c@5.180.173.248:25198?path=%2Fxray&security=none&encryption=none&type=ws#filembad-541
 vless://1fe455ab-ef5a-4e51-9015-709f8f019aaf@naseza.tarfiq.ir:80?encryption=none&security=none&type=ws&headerType=none&path=%2F&host=teranko.global.ssl.fastly.net#filembad-200
-vless://e4514801-0d5a-42ba-869f-39bd605aef9e@13.36.44.201:22223?security=none&encryption=none&headerType=none&type=tcp#filembad-564
 vless://326f45c1-0a69-4150-a3b9-42f282a3c34c@185.204.170.235:2053?security=reality&encryption=none&pbk=N2H6Y5aEVwq2yUY1GL5fL6HKaiYUvve-tgImQAIAT0U&headerType=none&type=tcp&flow=xtls-rprx-vision&sni=npav.havray2025.ir&sid=0d77f881#filembad-242
 trojan://hGGbs2T6hf@mmd.asan9720.ir:8880?security=reality&sni=www.aparat.com&fp=chrome&pbk=6f4gYYvBFM7iGf9zfFhUWRMoRTrK4zUl7soYqsEDMHI&sid=d2e5e6aed56c393b&spx=%2FkOxL13CTwtXvSvU&allowinsecure=0&type=xhttp&mode=auto&path=%2F&extra=%7B%22xPaddingBytes%22%3A%22100-1000%22%7D#ProxyMtpVPN-117
 vless://e2d69ba7-dbce-442d-b5d7-c07f7944f7e0@167.82.101.159:80?encryption=none&security=none&type=xhttp&headerType=none&path=%2F&host=erfanyosyour-name.global.ssl.fastly.net&mode=auto#NormanV2ray-551
@@ -356,4 +356,3 @@ trojan://IH4t6apt3J28-5LWuiLr1slytzxtIyac@ho.apexi.shop:443?security=reality&pbk
 vless://7e5e2a1d-6234-4ad0-ab9a-4d918368cbd8@90.156.255.166:36100#filembad-282
 vless://ab51054f-de76-4a0f-9f3a-b44c8df86a6c@62.60.159.137:50443?security=reality&encryption=none&pbk=hp9ht_jsxocTnQEbChb1G3JoDF50x-xDT8UYr66D1TQ&headerType=none&type=tcp&flow=xtls-rprx-vision&sni=www.icloud.com#filembad-360
 vless://0c5853e1-a606-4aa2-bbfa-86a7b58d43b1@fr2-azad.0xoddity.ir:5666?security=reality&encryption=none&pbk=0qp2ibLJZMNQfIQYAbYmZzhyeeKRgVjm2AGxgbNDWhg&headerType=none&fp=chrome&spx=%2Fc35feea118504ea&type=tcp&sni=s.yimg.com&sid=2539f132f20e7271#filembad-121
-vless://c381ed79-f3c9-4028-85ae-687795d89ece@DE.IPSENTER.ORG:443?security=reality&encryption=none&pbk=4-ou3SyJYZ2ptF0vXFdc02yIRTF4VF8m2XcUKJPsUyQ&headerType=none&fp=chrome&type=tcp&flow=xtls-rprx-vision&sni=play.google.com&sid=1128da54b05ec30c#canfingV2rayNG-403
