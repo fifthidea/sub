@@ -109,9 +109,10 @@ DECODE_ENABLED = True
 SUPPORTED_DECODE_EXTENSIONS = {
     ".npvt"
 }
-MAX_DECODED_FILES_PER_CHANNEL = 1
+MAX_DECODED_FILES_PER_CHANNEL = 15
 PANTEGNOS_BINARY = "./pantegnos-bin"
 MAX_NPVT_SIZE_MB = 2
+PANTEGNOS_DEBUG = False
 # =========================
 
 PATTERN = re.compile(
@@ -242,7 +243,96 @@ def sanitize_filename(name):
     name = name.rstrip(" .")
     
     return name
-    
+
+def convert_pantegnos_json_to_configs(text):
+
+    configs = []
+
+    try:
+        data = json.loads(text)
+
+    except Exception:
+        return configs
+
+
+    profiles = []
+
+
+    # possible formats
+    if isinstance(data, dict):
+
+        if "v2rayProfile" in data:
+            profiles.append(data["v2rayProfile"])
+
+        elif "outbounds" in data:
+            profiles.append(data)
+
+        else:
+            profiles.append(data)
+
+
+    elif isinstance(data, list):
+
+        profiles.extend(data)
+
+
+
+    for profile in profiles:
+
+        try:
+
+            protocol = profile.get("protocol")
+
+            if not protocol:
+                continue
+
+
+            protocol = protocol.lower()
+
+
+            if protocol != "vless":
+                continue
+
+
+            address = (
+                profile.get("address")
+                or profile.get("server")
+                or profile.get("host")
+            )
+
+
+            port = profile.get("port")
+
+            uuid = (
+                profile.get("id")
+                or profile.get("uuid")
+                or profile.get("user")
+            )
+
+
+            if not all([
+                address,
+                port,
+                uuid
+            ]):
+                continue
+
+
+
+            url = (
+                f"vless://{uuid}@{address}:{port}"
+            )
+
+
+            configs.append(url)
+
+
+        except Exception:
+            continue
+
+
+    return configs
+
 def decode_file_with_pantegnos(file_path):
 
     results = []
@@ -275,8 +365,8 @@ def decode_file_with_pantegnos(file_path):
                     "-output",
                     output_dir
                 ],
-                stdout=None, #previously: stdout=subprocess.DEVNULL,
-                stderr=None, #previously: stderr=subprocess.DEVNULL,
+                stdout=None if PANTEGNOS_DEBUG else subprocess.DEVNULL,
+                stderr=None if PANTEGNOS_DEBUG else subprocess.DEVNULL,
                 timeout=60
             )
 
@@ -289,9 +379,18 @@ def decode_file_with_pantegnos(file_path):
                     errors="ignore"
                 )
 
-                results.extend(
-                    extract_configs(text)
-                )
+                decoded_configs = extract_configs(text)
+
+
+                if decoded_configs:
+
+                    results.extend(decoded_configs)
+
+                else:
+
+                    results.extend(
+                        convert_pantegnos_json_to_configs(text)
+                    )
 
 
     except Exception as e:
