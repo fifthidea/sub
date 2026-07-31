@@ -1,4 +1,3 @@
-import shutil
 import time
 import json
 import jdatetime
@@ -24,9 +23,6 @@ from telethon.sessions import StringSession
 from validator import validate
 from threading import Lock
 import asyncio
-import tempfile
-import subprocess
-from pathlib import Path
 
 dns_lock = Lock()
 
@@ -40,9 +36,6 @@ resolver.nameservers = [
 
 resolver.lifetime = 6
 resolver.timeout = 2
-
-TEMP_DECODE_DIR = "temp_decode"
-os.makedirs(TEMP_DECODE_DIR, exist_ok=True)
 
 CHANNEL_OUTPUT_DIR = "channels"
 os.makedirs(CHANNEL_OUTPUT_DIR, exist_ok=True)
@@ -101,18 +94,9 @@ DNS_WORKERS = 32
 MAX_FILENAME_LENGTH = 100
 LIMIT_MODE = "UNIQUE"  # MESSAGES or CONFIGS or UNIQUE
 CONFIGS_MODE_MAX_MESSAGES_SCAN_BEFORE_EXHAUSTION = 2500
-UNIQUE_MODE_MAX_MESSAGES_SCAN_BEFORE_EXHAUSTION = 3000
+UNIQUE_MODE_MAX_MESSAGES_SCAN_BEFORE_EXHAUSTION = 6000
 DNS_CACHE_TTL = 30 * 24 * 60 * 60   # 30 days
 CHANNEL_WORKERS = 3
-
-DECODE_ENABLED = True
-SUPPORTED_DECODE_EXTENSIONS = {
-    ".npvt"
-}
-MAX_DECODED_FILES_PER_CHANNEL = 15
-PANTEGNOS_BINARY = "./pantegnos-bin"
-MAX_NPVT_SIZE_MB = 2
-PANTEGNOS_DEBUG = False
 # =========================
 
 PATTERN = re.compile(
@@ -243,182 +227,6 @@ def sanitize_filename(name):
     name = name.rstrip(" .")
     
     return name
-
-def convert_pantegnos_json_to_configs(text):
-
-    configs = []
-
-    try:
-        data = json.loads(text)
-
-    except Exception:
-        return configs
-
-
-    profiles = []
-
-
-    # possible formats
-    if isinstance(data, dict):
-
-        if "v2rayProfile" in data:
-            profiles.append(data["v2rayProfile"])
-
-        elif "outbounds" in data:
-            profiles.append(data)
-
-        else:
-            profiles.append(data)
-
-
-    elif isinstance(data, list):
-
-        profiles.extend(data)
-
-
-
-    for profile in profiles:
-
-        try:
-
-            protocol = profile.get("protocol")
-
-            if not protocol:
-                continue
-
-
-            protocol = protocol.lower()
-
-
-            if protocol != "vless":
-                continue
-
-
-            address = (
-                profile.get("address")
-                or profile.get("server")
-                or profile.get("host")
-            )
-
-
-            port = profile.get("port")
-
-            uuid = (
-                profile.get("id")
-                or profile.get("uuid")
-                or profile.get("user")
-            )
-
-
-            if not all([
-                address,
-                port,
-                uuid
-            ]):
-                continue
-
-
-
-            url = (
-                f"vless://{uuid}@{address}:{port}"
-            )
-
-
-            configs.append(url)
-
-
-        except Exception:
-            continue
-
-
-    return configs
-
-def decode_file_with_pantegnos(file_path):
-
-    results = []
-
-    try:
-
-        with tempfile.TemporaryDirectory() as tmp:
-
-            input_dir = os.path.join(tmp, "input")
-            output_dir = os.path.join(tmp, "output")
-
-            os.makedirs(input_dir, exist_ok=True)
-            os.makedirs(output_dir, exist_ok=True)
-
-
-            # copy npvt file into input directory
-            import shutil
-
-            shutil.copy(
-                file_path,
-                input_dir
-            )
-
-
-            subprocess.run(
-                [
-                    PANTEGNOS_BINARY,
-                    "-input",
-                    input_dir,
-                    "-output",
-                    output_dir
-                ],
-                stdout=None if PANTEGNOS_DEBUG else subprocess.DEVNULL,
-                stderr=None if PANTEGNOS_DEBUG else subprocess.DEVNULL,
-                timeout=60
-            )
-
-
-            # read decoded txt files
-            for decoded_file in Path(output_dir).glob("*.txt"):
-
-                text = decoded_file.read_text(
-                    encoding="utf-8",
-                    errors="ignore"
-                )
-
-                decoded_configs = extract_configs(text)
-
-
-                if decoded_configs:
-
-                    results.extend(decoded_configs)
-
-                else:
-
-                    results.extend(
-                        convert_pantegnos_json_to_configs(text)
-                    )
-
-
-    except Exception as e:
-
-        print(
-            f"Pantegnos failed for {file_path}: {type(e).__name__}: {e}"
-        )
-
-
-    return results
-    
-def get_file_extension(msg):
-
-    try:
-
-        if not msg.file:
-            return None
-
-        name = msg.file.name
-
-        if not name:
-            return None
-
-        return Path(name).suffix.lower()
-
-    except Exception:
-
-        return None
 
 def extract_configs(text):
     if not text:
@@ -745,36 +553,11 @@ async def process_channel(channel_ref, info, cutoff, tehran):
 
         channel_configs = []
         latest_config_date = None
-        
-        decoded_files_count = 0
-        decoded_config_count = 0
 
 
         if LIMIT_MODE == "MESSAGES":
 
             async for msg in client.iter_messages(entity, limit=limit):
-                  
-                if msg.file:
-                    
-                    filename = msg.file.name or ""
-
-                    if filename.lower().endswith(".npvt"):
-
-                        path = await msg.download_media(
-                            file=TEMP_DECODE_DIR
-                        )
-
-                        print(
-                            "DOWNLOADED NPVT:",
-                            path
-                        )
-                    
-                    print(
-                        "FILE FOUND:",
-                        msg.file.name,
-                        "caption:",
-                        bool(msg.text)
-                    )
 
                 configs = extract_configs(msg.text)
 
@@ -813,81 +596,26 @@ async def process_channel(channel_ref, info, cutoff, tehran):
                 limit=UNIQUE_MODE_MAX_MESSAGES_SCAN_BEFORE_EXHAUSTION
             ):
 
-                message_configs = []
+                configs = extract_configs(msg.text)
 
-
-                # 1. normal text configs
-                message_configs.extend(
-                    extract_configs(msg.text)
-                )
-
-
-                # 2. attached files (.npvt etc)
-                if (
-                    DECODE_ENABLED
-                    and decoded_files_count < MAX_DECODED_FILES_PER_CHANNEL
-                ):
-
-                    extension = get_file_extension(msg)
-
-                    if (
-                        extension in SUPPORTED_DECODE_EXTENSIONS
-                        and msg.file.size
-                        and msg.file.size <= MAX_NPVT_SIZE_MB * 1024 * 1024
-                    ):
-
-                        try:
-
-                            with tempfile.TemporaryDirectory() as tmp:
-
-                                file_path = await msg.download_media(
-                                    file=tmp
-                                )
-
-                                decoded_files_count += 1
-
-
-                                decoded_configs = (
-                                    decode_file_with_pantegnos(
-                                        file_path
-                                    )
-                                )
-
-
-                                message_configs.extend(
-                                    decoded_configs
-                                )
-
-
-                        except Exception as e:
-
-                            print(
-                                f"Decode failed {extension}: {e}"
-                            )
-
-
-                if message_configs:
-
+                if configs:
 
                     if latest_config_date is None:
                         latest_config_date = msg.date.astimezone(tehran)
 
-
-                    for cfg in message_configs:
-
+                    for cfg in configs:
                         add_unique_config(
                             cfg,
                             channel_configs,
                             seen_configs
                         )
 
-
                         if len(channel_configs) >= limit:
                             break
 
-
                 if len(channel_configs) >= limit:
                     break
+
 
         channel_configs = channel_configs[:limit]
 
@@ -1165,8 +893,6 @@ async def main():
         f.write(commit_message)
     print(f"TOTAL update.py runtime: {time.time()-start:.2f}s") ##might remove later
 
-if os.path.exists(TEMP_DECODE_DIR):
-    shutil.rmtree(TEMP_DECODE_DIR)
 
 with client:
     client.loop.run_until_complete(main())
