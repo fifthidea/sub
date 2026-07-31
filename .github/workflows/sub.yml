@@ -35,6 +35,11 @@ jobs:
         run: |
           go build -o ../pantegnos-bin
 
+      - name: Test Pantegnos
+        run: |
+          ls -lh pantegnos-bin
+          ./pantegnos-bin -help
+
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
