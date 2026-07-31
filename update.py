@@ -641,6 +641,9 @@ async def process_channel(channel_ref, info, cutoff, tehran):
 
         channel_configs = []
         latest_config_date = None
+        
+        decoded_files_count = 0
+        decoded_config_count = 0
 
 
         if LIMIT_MODE == "MESSAGES":
