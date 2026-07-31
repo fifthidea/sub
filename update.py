@@ -23,6 +23,9 @@ from telethon.sessions import StringSession
 from validator import validate
 from threading import Lock
 import asyncio
+import tempfile
+import subprocess
+from pathlib import Path
 
 dns_lock = Lock()
 
@@ -96,7 +99,7 @@ LIMIT_MODE = "UNIQUE"  # MESSAGES or CONFIGS or UNIQUE
 CONFIGS_MODE_MAX_MESSAGES_SCAN_BEFORE_EXHAUSTION = 2500
 UNIQUE_MODE_MAX_MESSAGES_SCAN_BEFORE_EXHAUSTION = 6000
 DNS_CACHE_TTL = 30 * 24 * 60 * 60   # 30 days
-CHANNEL_WORKERS = 3
+CHANNEL_WORKERS = 5
 
 DECODE_ENABLED = True
 SUPPORTED_DECODE_EXTENSIONS = {
@@ -234,6 +237,58 @@ def sanitize_filename(name):
     name = name.rstrip(" .")
     
     return name
+    
+def decode_file_with_pantegnos(file_path):
+
+    results = []
+
+    try:
+
+        with tempfile.TemporaryDirectory() as tmp:
+
+            output_dir = os.path.join(tmp, "output")
+
+            os.makedirs(output_dir, exist_ok=True)
+
+
+            subprocess.run(
+                [
+                    PANTEGNOS_BINARY,
+                    "-input",
+                    os.path.dirname(file_path),
+                    "-output",
+                    output_dir
+                ],
+                stdout=subprocess.DEVNULL,
+                stderr=subprocess.DEVNULL,
+                timeout=60
+            )
+
+
+            for file in Path(output_dir).glob("*"):
+
+                try:
+                    text = file.read_text(
+                        encoding="utf-8",
+                        errors="ignore"
+                    )
+
+                    results.extend(
+                        extract_configs(text)
+                    )
+
+                except Exception:
+                    pass
+
+
+    except Exception as e:
+
+        print(
+            f"Pantegnos decode failed: {e}"
+        )
+
+
+    return results
 
 def extract_configs(text):
     if not text:
