@@ -1,3 +1,4 @@
+import traceback
 import time
 import json
 import jdatetime
@@ -829,11 +830,8 @@ async def process_channel(channel_ref, info, cutoff, tehran):
         print(f"Skipping {channel_ref}: {type(e).__name__}: {e}")
         return None
 
-    except Exception as e:
-        print(
-            f"Unexpected error in {channel_ref}: "
-            f"{type(e).__name__}: {e}"
-        )
+    except Exception:
+        traceback.print_exc()
         return None
 
 async def main():
