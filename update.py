@@ -246,16 +246,27 @@ def decode_file_with_pantegnos(file_path):
 
         with tempfile.TemporaryDirectory() as tmp:
 
+            input_dir = os.path.join(tmp, "input")
             output_dir = os.path.join(tmp, "output")
 
+            os.makedirs(input_dir, exist_ok=True)
             os.makedirs(output_dir, exist_ok=True)
+
+
+            # copy npvt file into input directory
+            import shutil
+
+            shutil.copy(
+                file_path,
+                input_dir
+            )
 
 
             subprocess.run(
                 [
                     PANTEGNOS_BINARY,
                     "-input",
-                    os.path.dirname(file_path),
+                    input_dir,
                     "-output",
                     output_dir
                 ],
@@ -265,30 +276,45 @@ def decode_file_with_pantegnos(file_path):
             )
 
 
-            for file in Path(output_dir).glob("*"):
+            # read decoded txt files
+            for decoded_file in Path(output_dir).glob("*.txt"):
 
-                try:
-                    text = file.read_text(
-                        encoding="utf-8",
-                        errors="ignore"
-                    )
+                text = decoded_file.read_text(
+                    encoding="utf-8",
+                    errors="ignore"
+                )
 
-                    results.extend(
-                        extract_configs(text)
-                    )
-
-                except Exception:
-                    pass
+                results.extend(
+                    extract_configs(text)
+                )
 
 
     except Exception as e:
 
         print(
-            f"Pantegnos decode failed: {e}"
+            f"Pantegnos failed: {e}"
         )
 
 
     return results
+    
+def get_file_extension(msg):
+
+    try:
+
+        if not msg.file:
+            return None
+
+        name = msg.file.name
+
+        if not name:
+            return None
+
+        return Path(name).suffix.lower()
+
+    except Exception:
+
+        return None
 
 def extract_configs(text):
     if not text:
@@ -658,26 +684,77 @@ async def process_channel(channel_ref, info, cutoff, tehran):
                 limit=UNIQUE_MODE_MAX_MESSAGES_SCAN_BEFORE_EXHAUSTION
             ):
 
-                configs = extract_configs(msg.text)
+                message_configs = []
 
-                if configs:
+
+                # 1. normal text configs
+                message_configs.extend(
+                    extract_configs(msg.text)
+                )
+
+
+                # 2. attached files (.npvt etc)
+                if (
+                    DECODE_ENABLED
+                    and len(decoded_files_count) < MAX_DECODED_FILES_PER_CHANNEL
+                ):
+
+                    extension = get_file_extension(msg)
+
+                    if extension in SUPPORTED_DECODE_EXTENSIONS:
+
+                        try:
+
+                            with tempfile.TemporaryDirectory() as tmp:
+
+                                file_path = await msg.download_media(
+                                    file=tmp
+                                )
+
+                                decoded_files_count += 1
+
+
+                                decoded_configs = (
+                                    decode_file_with_pantegnos(
+                                        file_path
+                                    )
+                                )
+
+
+                                message_configs.extend(
+                                    decoded_configs
+                                )
+
+
+                        except Exception as e:
+
+                            print(
+                                f"Decode failed {extension}: {e}"
+                            )
+
+
+                if message_configs:
+
 
                     if latest_config_date is None:
                         latest_config_date = msg.date.astimezone(tehran)
 
-                    for cfg in configs:
+
+                    for cfg in message_configs:
+
                         add_unique_config(
                             cfg,
                             channel_configs,
                             seen_configs
                         )
 
+
                         if len(channel_configs) >= limit:
                             break
 
+
                 if len(channel_configs) >= limit:
                     break
-
 
         channel_configs = channel_configs[:limit]
 
