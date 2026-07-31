@@ -109,8 +109,9 @@ DECODE_ENABLED = True
 SUPPORTED_DECODE_EXTENSIONS = {
     ".npvt"
 }
-MAX_DECODED_FILES_PER_CHANNEL = 50
+MAX_DECODED_FILES_PER_CHANNEL = 1
 PANTEGNOS_BINARY = "./pantegnos-bin"
+MAX_NPVT_SIZE_MB = 2
 # =========================
 
 PATTERN = re.compile(
@@ -274,8 +275,8 @@ def decode_file_with_pantegnos(file_path):
                     "-output",
                     output_dir
                 ],
-                stdout=subprocess.DEVNULL,
-                stderr=subprocess.DEVNULL,
+                stdout=None, #previously: stdout=subprocess.DEVNULL,
+                stderr=None, #previously: stderr=subprocess.DEVNULL,
                 timeout=60
             )
 
@@ -296,7 +297,7 @@ def decode_file_with_pantegnos(file_path):
     except Exception as e:
 
         print(
-            f"Pantegnos failed: {e}"
+            f"Pantegnos failed for {file_path}: {type(e).__name__}: {e}"
         )
 
 
@@ -730,7 +731,11 @@ async def process_channel(channel_ref, info, cutoff, tehran):
 
                     extension = get_file_extension(msg)
 
-                    if extension in SUPPORTED_DECODE_EXTENSIONS:
+                    if (
+                        extension in SUPPORTED_DECODE_EXTENSIONS
+                        and msg.file.size
+                        and msg.file.size <= MAX_NPVT_SIZE_MB * 1024 * 1024
+                    ):
 
                         try:
 
