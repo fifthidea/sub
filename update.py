@@ -1,3 +1,4 @@
+import shutil
 import time
 import json
 import jdatetime
@@ -39,6 +40,9 @@ resolver.nameservers = [
 
 resolver.lifetime = 6
 resolver.timeout = 2
+
+TEMP_DECODE_DIR = "temp_decode"
+os.makedirs(TEMP_DECODE_DIR, exist_ok=True)
 
 CHANNEL_OUTPUT_DIR = "channels"
 os.makedirs(CHANNEL_OUTPUT_DIR, exist_ok=True)
@@ -649,6 +653,28 @@ async def process_channel(channel_ref, info, cutoff, tehran):
         if LIMIT_MODE == "MESSAGES":
 
             async for msg in client.iter_messages(entity, limit=limit):
+                  
+                if msg.file:
+                    
+                    filename = msg.file.name or ""
+
+                    if filename.lower().endswith(".npvt"):
+
+                        path = await msg.download_media(
+                            file=TEMP_DECODE_DIR
+                        )
+
+                        print(
+                            "DOWNLOADED NPVT:",
+                            path
+                        )
+                    
+                    print(
+                        "FILE FOUND:",
+                        msg.file.name,
+                        "caption:",
+                        bool(msg.text)
+                    )
 
                 configs = extract_configs(msg.text)
 
@@ -1035,6 +1061,8 @@ async def main():
         f.write(commit_message)
     print(f"TOTAL update.py runtime: {time.time()-start:.2f}s") ##might remove later
 
+if os.path.exists(TEMP_DECODE_DIR):
+    shutil.rmtree(TEMP_DECODE_DIR)
 
 with client:
     client.loop.run_until_complete(main())
