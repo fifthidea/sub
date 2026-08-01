@@ -1,3 +1,5 @@
+vless://381247e0-5a14-461b-8a87-19df5f53a172@45.38.170.239:8080?encryption=none&security=reality&type=tcp&headerType=none&sni=www.amazon.com&fp=chrome&pbk=BcqGprogb7tICPbJq-UDG3w4NlZVeS8vrtlXKmMq-0c&sid=46ecc6630f0a9e55#filembad-151
+vless://f75814f6-8f81-4847-b792-168c41f2dc85@45.196.201.169:443?encryption=none&flow=xtls-rprx-vision&security=reality&sni=storage.yandex.net&fp=firefox&pbk=zii4nGNapnFKL6SN8GzWNqFlElBvUCUFUThEP0kFH04&sid=c6ef72e4635d15a5&type=tcp&headerType=none#ProxyMtpVPN-493
 vless://8b6eb5b2-69bd-4d1f-b596-36666171f299@95.182.101.189:443?alpn=h2%2Chttp%2F1.1&encryption=none&extra=%7B%22mode%22%3A%22auto%22%2C%22xPaddingBytes%22%3A%22100-1000%22%7D&fp=chrome&host=&mode=auto&path=%2F&security=tls&sni=&type=xhttp&x_padding_bytes=100-1000#NormanV2ray-275
 vless://5aab0d40-c509-4560-b048-ade921fdfb6a@70.39.197.13:46197?security=reality&encryption=none&pbk=npJEB6VpYJ9iYTZ-z0IL06Xs7PEz0N3fZU_IRwftQ00&headerType=none&fp=chrome&spx=%2F2Ffdded5f9698d939&type=tcp&sni=updates.cdn-apple.com&sid=f24c17bb7fc284#filembad-203
 vless://ea1c5e6c-4c03-4e8b-9c8b-cee6e50ba8ac@107.189.22.49:443?mode=auto&path=%2F&security=reality&encryption=none&extra=%7B%22scMaxEachPostBytes%22%3A%221000000%22%2C%22xPaddingBytes%22%3A%22100-1000%22%7D&pbk=MmOHgwoJG-k3b7uWc33b64croB1KF68oQDrllKGJdT8&fp=chrome&spx=%2Ft4owydc0eeLGoYA&type=xhttp&sni=www.intel.com&sid=e1e6c5#ProxyMtpVPN-443
@@ -240,7 +242,6 @@ vless://eeb6823c-b926-4ea2-866a-5542edd26e59@162.159.38.119:443?encryption=none&
 vless://02082a02-50f6-4bae-ac34-5c8ab413c427@cdn.akbarvpn.dpdns.org:48756?security=reality&encryption=none&pbk=5gZ1L8V29DcZ3iGutNil8NzxuKzln_Se7cODgQqcTGY&headerType=&fp=chrome&spx=%2Fd399b7090c2849d&type=tcp&sni=google.com&sid=41c8#filembad-79
 vless://3b715892-8610-4fdc-9086-647b36af5443@html.iranpood.com:2086?mode=auto&path=%2F%3Fed%3D2082&security=&encryption=none&host=h.cafearen.ir&type=xhttp#canfingV2rayNG-182
 vless://b96d18f1-eb38-47e9-ae79-42e78fcc0ff8@kia.ipsafe2.site:24329?security=&encryption=none&host=play.google.com&headerType=http&type=tcp#canfingV2rayNG-384
-vless://f75814f6-8f81-4847-b792-168c41f2dc85@45.196.201.169:443?encryption=none&flow=xtls-rprx-vision&security=reality&sni=storage.yandex.net&fp=firefox&pbk=zii4nGNapnFKL6SN8GzWNqFlElBvUCUFUThEP0kFH04&sid=c6ef72e4635d15a5&type=tcp&headerType=none#ProxyMtpVPN-535
 trojan://---------BanV2ray---------@179.237.74.104:5841?mode=gun&security=reality&pbk=STMSSr7TuNNj8icCvugzrXFg_OCQz7EinmUnSl8__yE&fp=firefox&spx=%2F69fd01d52663d39&type=grpc&sni=world.yahoo.com%3A443&sid=c9d8#ProxyMtpVPN-53
 vless://6d6b7a8d-a9fa-4889-a5f4-d112c6b6f494@104.17.58.113:8880?type=ws&security=none&path=/pyip=ProxyIP.SG.CMLiussss.net&host=small-cake-e99b.390-a20.workers.dev#filembad-261
 vless://2b699155-5e96-4d14-8d49-70b4c0b24392@164.92.234.92:443?encryption=none&fp=chrome&pbk=EH6JKWjq8iLel3vKii-jlt8yZxA5KxGQoCWiq8Wvvzs&security=reality&sid=291572923ce9d5&sni=timeline.www.cloudflare.com&spx=%2F7632de601adb910&type=tcp#filembad-150
@@ -352,4 +353,3 @@ vless://5e243126-4a2a-84b6-782a-73b14797fb5f@170.168.97.3:8443?mode=gun&security
 vless://45c045da-36e5-4b2f-bb82-66641733a3ac@undef.network:2052?path=%2F%40BlueKnight_net--%40BlueKnight_net--%40BlueKnight_net--&security=&encryption=none&host=uwu.blueknightnet.qzz.io&type=ws#filembad-251
 vless://e4514801-0d5a-42ba-869f-39bd605aef9e@51.45.37.42:22224?security=none&encryption=none&headerType=none&type=tcp#filembad-524
 vless://0a268813-7200-4d23-9851-74568928fc82@xn--dash-4o53c.xn--ir-nz82a.netbazshop.ir:2095?encr…#NormanV2ray-132
-vless://1f61ccc1-cd38-49cd-97aa-a71771433976@cctvhikvision.center:2052?path=api-v1&security=&encryption=none&host=uwu.blueknightnet.qzz.io&type=ws#canfingV2rayNG-177
