@@ -1,3 +1,13 @@
+vmess://eyJ2IjoiMiIsImFkZCI6IjEwNC4yNi4wLjU2IiwicG9ydCI6MjA4NiwiaWQiOiJlOWUzY2MxMy1kYjQ4LTRjYzEtOGMyNC03NjI2NDM5YTUzMzkiLCJhaWQiOjAsInNjeSI6ImF1dG8iLCJuZXQiOiJ3cyIsImhvc3QiOiJpcDE0LmZyZWVncmFkZWx5Lnh5eiIsInBhdGgiOiJnaXRodWIuY29tXC9BbHZpbjk5OTkiLCJ0bHMiOiIiLCJwcyI6IkNvbmZpZyAxIC0gQGxlYmVydGFkIn0=
+vmess://eyJ2IjoiMiIsImFkZCI6IjEwNC4xOS40NS4xNSIsInBvcnQiOjIwODYsImlkIjoiZTllM2NjMTMtZGI0OC00Y2MxLThjMjQtNzYyNjQzOWE1MzM5IiwiYWlkIjowLCJzY3kiOiJhdXRvIiwibmV0Ijoid3MiLCJ0bHMiOiIiLCJwcyI6IkNvbmZpZyAyIC0gQGxlYmVydGFkIn0=
+vmess://eyJ2IjoiMiIsImFkZCI6IjE3Mi42NC4xOTguMjQ5IiwicG9ydCI6MjA4NiwiaWQiOiJlOWUzY2MxMy1kYjQ4LTRjYzEtOGMyNC03NjI2NDM5YTUzMzkiLCJhaWQiOjAsInNjeSI6ImF1dG8iLCJuZXQiOiJ3cyIsInRscyI6IiIsInBzIjoiQ29uZmlnIDMgLSBAbGViZXJ0YWQifQ==
+vless://a481265c-a4d8-4d1a-9ae1-48eb3f7fccb4@167.233.47.127:1234?security=&encryption=none&host=play.google.com&headerType=http&type=tcp#Config
+vless://0103cdc9-3927-44f0-88aa-e1162b7fedaf@learngerman.torexa.ir:2090?security=&encryption=none&host=play.google.com&headerType=http&type=tcp#Config
+vless://511c1563-2cb6-4064-abc6-a59ee49818a8@5.253.30.99:40443?security=reality&sni=deepl.com&fp=qq&pbk=cwmcqsfS7klQlkcoUNuATEk0NiPY-NnRb9z8rCJDQw0&sid=88b6&type=tcp&flow=xtls-rprx-vision&packetEncoding=xudp&encryption=none#Config
+vless://7f1548ae-3c31-45a4-9150-727e5d08e068@104.21.20.68:80/?type=ws&encryption=none&host=Fi3.vless.site.&path=/vless#Config
+vless://89b3cbba-e6ac-485a-9481-976a0415eab9@104.24.196.20:2053?path=/TELEGRAM-PROXY_MTM/?ed=2048&security=tls&encryption=none&alpn=h2,http/1.1&host=936a99B4.vDE5-MLx81LANeO.pAgeS.DEV&fp=randomized&type=ws&sni=936a99B4.Vde5-MlX81LANeo.pAgES.dEv#Config
+vless://a13df940-020c-465f-bc89-ee5279b5cd6a@47.236.10.182:8443?security=tls&sni=hkf.ylks.xyz&type=ws&path=/#Config
+vless://951733af-3f29-4b63-8bef-24d2b6e3d9d2@188.114.96.3:443?path=24d2b6e3d9d2&security=tls&encryption=none&host=amir.irani.host&type=ws&sni=amir.irani.host#Config
 vless://bf374adf-61b9-4d5a-9814-37be02bcb8a6@159.69.193.221:1234?encryption=none&type=tcp&headerType=http&path=/&host=play.google.com#Config
 vless://d6dc1358-1bb5-4a9d-92fd-3e255567e3fc@94.126.206.29:443?security=reality&sni=apple.com&fp=safari&pbk=6ycuxfrEPsqE9eXZ5_Osbnx4g6hXWmkc8pFuAJkJ4jY&type=tcp&flow=xtls-rprx-vision&packetEncoding=xudp&encryption=none#Config
 vless://322137af-0ecd-48a9-9bab-ef5754331437@91.132.162.218:443?security=reality&sni=www.intel.com&fp=&pbk=VnuqDFzedJka4uGk7uMHady2p48E_f-zqiZItFF2pEY&sid=b536806a&type=grpc&packetEncoding=xudp&encryption=none#Config
@@ -486,13 +496,3 @@ vless://8d0718bd-5b4b-4e6a-92af-669a65740869@h.telegram-tirexnet.kdns.fr:26596?s
 vless://8d0718bd-5b4b-4e6a-92af-669a65740869@h.telegram-tirexnet.kdns.fr:56364?path=/&security=&encryption=none&host=www.amd.com&type=httpupgrade#Config
 vless://8d0718bd-5b4b-4e6a-92af-669a65740869@h.telegram-tirexnet.kdns.fr:45656?mode=auto&path=/&security=reality&encryption=none&extra={"mode":"auto","xPaddingBytes":"100-1000"}&pbk=_4KrTe8D0sC9GkMAcS2WHZcnAOanp7Xg3IBM32Qe82A&fp=chrome&spx=/89088bd1d58d978&type=xhttp&sni=creators.radeon.com&sid=d6a5ab99064e#Config
 vless://8d0718bd-5b4b-4e6a-92af-669a65740869@h.telegram-tirexnet.kdns.fr:24508?mode=auto&path=/&security=&encryption=mlkem768x25519plus.native.0rtt.jg5htI_yozFJXcRSD4U2vql00DwtQWPYDbYlG-o4ozs&extra={"mode":"auto","xPaddingBytes":"100-1000"}&type=xhttp#Config
-vless://8d0718bd-5b4b-4e6a-92af-669a65740869@h.telegram-tirexnet.kdns.fr:53321?security=&encryption=mlkem768x25519plus.native.0rtt.Z-GmMfGRMaWQ8GbtqU2tOqrc8cRG-LR7vzvpBE2rgXU&fm={"udp":[{"settings":{"domains":["H.telegram-tirexnet.kdns.fr"]},"type":"xdns"}]}&tti=20&headerType=&type=kcp&mtu=1350#Config
-vless://8d0718bd-5b4b-4e6a-92af-669a65740869@h.telegram-tirexnet.kdns.fr:57007?security=reality&encryption=none&pbk=W_AQ6mLupg8aA-wY9MTz62koCho203yxroJg5R-DmXw&headerType=&fp=chrome&spx=/d2431f5e88b31d6&type=tcp&sni=music.youtube.com&sid=84fc3063c9#Config
-vless://8d0718bd-5b4b-4e6a-92af-669a65740869@h.telegram-tirexnet.kdns.fr:57635?security=&encryption=mlkem768x25519plus.native.0rtt.vPSiQXsYhYeKAOuG4EIi3ds5D_k6E034FH5LUMKNGAc&fm={"udp":[{"settings":{"header":"","value":""},"type":"mkcp-legacy"}]}&tti=20&headerType=&type=kcp&mtu=1350#Config
-vless://8d0718bd-5b4b-4e6a-92af-669a65740869@h.telegram-tirexnet.kdns.fr:24056?path=/&security=&encryption=mlkem768x25519plus.native.0rtt.zg1XBH9b1RNBaHlNXSNQh6N3o-JIEvFaRe7nZGSEImY&type=ws#Config
-vless://8d0718bd-5b4b-4e6a-92af-669a65740869@h.telegram-tirexnet.kdns.fr:18674?security=reality&encryption=none&pbk=ALoP3WlMghHlJ5rg6JZo_Yu18Gv1XuAPIaWj4Dx610A&headerType=&fp=chrome&spx=/aa73058035e4a3e&type=tcp&sni=download.amd.com&sid=69d4b6#Config
-vless://8d0718bd-5b4b-4e6a-92af-669a65740869@h.telegram-tirexnet.kdns.fr:23961?mode=multi&security=&encryption=none&type=grpc#Config
-vless://14b48651-3738-4926-bc09-4c04e87ff80b@static.lotussec.com:443?mode=stream-one&path=/Join-JavidnamanIran-on-Telegram&security=tls&alpn=h2&encryption=none&insecure=0&fp=firefox&type=xhttp&allowInsecure=0&sni=static.lotussec.com#Config
-vless://29ca503d-e6b8-4509-b666-48133f450857@one-for-all.levikogjgfdd.ir:443?path=/fdip&security=tls&encryption=none&insecure=0&host=learn00.evany.de5.net&fp=chrome&type=ws&allowInsecure=0&sni=learn00.evany.de5.net#Config
-vless://5eecb34f-c905-4c77-b7fb-d830b451cd11@141.133.172.222:20342?security=&encryption=none&host=/?JOIN_TELEGRAM@MARAMBASHI_MARAMBASHI_MARAMBASHI_MARAMBASHI&headerType=none&type=tcp#Config
-vless://8dc7722c-2767-4eea-a28b-2f8daacc07e3@151.115.167.6:8880?mode=gun&security=none&encryption=none&type=grpc#Config
