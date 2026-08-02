@@ -1,3 +1,4 @@
+vless://f75814f6-8f81-4847-b792-168c41f2dc85@45.196.201.129:443?security=reality&encryption=none&pbk=zii4nGNapnFKL6SN8GzWNqFlElBvUCUFUThEP0kFH04&headerType=none&type=tcp&flow=xtls-rprx-vision&sni=storage.yandex.net&sid=c6ef72e4635d15a5#%40filembad
 vless://312eed52-b74a-41d7-a399-62efdc8f0122@tr.cdn.doctor-alan.ir:8080?security=none&type=ws&headerType=&path=%2Fv-ws&host=tr.cdn.doctor-alan.ir#%40filembad
 vless://f50822b7-02ec-4611-83bd-ff29411e0e10@98.142.251.31:8443?type=grpc&security=reality&fp=firefox&pbk=BLEVlyhgrYYDwsqJjm5wi1yUC7z6MBH_eM6vvYUdUQY&sid=530db35e324c3aa5&sni=addons.mozilla.org&serviceName=api.v1.telemetry.EventStream#%40filembad
 vless://312eed52-b74a-41d7-a399-62efdc8f0122@158.94.216.196:2056?security=none&type=ws&headerType=&path=%2Fwarp&host=#%40filembad
@@ -35,7 +36,6 @@ vmess://eyJhZGQiOiJ0dW4xLndpemFyZHgxLmNvbSIsImFpZCI6IjAiLCJhbHBuIjoiIiwiZnAiOiIi
 vless://e4514801-0d5a-42ba-869f-39bd605aef9e@15.224.118.170:22223?security=none&encryption=none&headerType=none&type=tcp#%40filembad
 vless://e4514801-0d5a-42ba-869f-39bd605aef9e@15.224.118.170:22222?security=none&encryption=none&headerType=none&type=tcp#%40filembad
 vless://e4514801-0d5a-42ba-869f-39bd605aef9e@15.224.118.170:22224?security=none&encryption=none&headerType=none&type=tcp#%40filembad
-vless://f75814f6-8f81-4847-b792-168c41f2dc85@45.196.201.129:443?security=reality&encryption=none&pbk=zii4nGNapnFKL6SN8GzWNqFlElBvUCUFUThEP0kFH04&headerType=none&type=tcp&flow=xtls-rprx-vision&sni=storage.yandex.net&sid=c6ef72e4635d15a5#%40filembad
 vless://c532eb8f-0ee6-4b9b-b258-3cc22dfd7130@165.245.255.43:43376?security=reality&encryption=none&pbk=wao7fuBMCR6po9PtLR1eRQjH7McA17SHoh95JudXaUI&headerType=&fp=chrome&type=tcp&sni=www.m.amazon.com&sid=0937ffd874d1#%40filembad
 vless://6f5fd2f9-a1e5-49af-91eb-08f51930d4e5@31.57.46.171:33529?security=reality&encryption=none&pbk=DkWYS-quFFoytc-5UaxmJO7LfWvxXaeHnae5Cir1vFQ&headerType=none&fp=firefox&spx=%2F4567f42f68f33fc&type=tcp&sni=speedtest.org&sid=b650d78ca27e25#%40filembad
 vless://e4514801-0d5a-42ba-869f-39bd605aef9e@15.224.118.170:22224?encryption=none&security=none&type=tcp#%40filembad
@@ -864,4 +864,3 @@ vless://1f29762d-3f23-4207-9e39-f774de5d49ba@95.85.228.161:8443?encryption=none&
 vless://05e7abc2-46e1-4a23-9cdc-173ce17eb0d4@172.67.68.240:8880?path=%2Fpyip&security=none&encryption=none&host=round-term-947c.41-332.workers.dev&type=ws#%40filembad
 vless://35699c54-9188-4f43-972e-e8e42dbb104e@ruded1.onlinestreamself.com:443?security=reality&encryption=none&pbk=m_Xgh5XeqmN9JaDxkct4yTup2YPVxCV5fGnUnMZ3pWE&headerType=none&fp=qq&type=tcp&flow=xtls-rprx-vision&sni=apple.com#%40filembad
 vless://7b81d175-d180-4ec8-bbc5-dfe80e8d3b68@2.27.26.51:443?mode=gun&security=reality&encryption=none&authority=&pbk=CxMPFpwhcR9Ocp-Xy_1J08mo-atdHKUf58WLOy_XlgM&fp=qq&type=grpc&serviceName=nexusGrpc&sni=draftnest-rrew.ru&sid=d9662905#%40filembad
-vless://1f29762d-3f23-4207-9e39-f774de5d49ba@95.85.228.161:8443?mode=gun&security=none&encryption=none&authority=&type=grpc&serviceName=grpc#%40filembad
