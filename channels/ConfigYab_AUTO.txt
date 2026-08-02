@@ -1,3 +1,5 @@
+vless://06d44c57-8e1a-41f4-b9c4-65d35869e078@dev-ops-notes.blog:443?encryption=none&flow=xtls-rprx-vision&fp=&pbk=5qYuPXdx_1i6bBOUJRKCSv2vBxdWxSZcct_Cxd-W0hc&security=reality&sid=65c55164c5e88da1&sni=dev-ops-notes.blog&type=tcp#AntiAbani
+vless://0cd25ad8-8b62-4943-9bab-96941b1d9401@188.211.233.228:443?security=reality&encryption=none&pbk=QQZQVGy8uV4JSgPJ6a8jA56bptsSifntKDJjhSvOl2I&headerType=none&fp=firefox&type=tcp&flow=xtls-rprx-vision&sni=musicboss.eu&sid=197e9c7abe#AntiAbani
 vless://48198295-b7ba-4b5c-8d85-085d55a6c869@103.169.142.64:443?security=tls&sni=xing.ylks.xyz&type=ws&path=%2Fblue#AntiAbani
 vless://c46e2605-be24-4555-b7db-0fc6773ad004@77.110.127.89:30160?type=xhttp&security=reality&fp=firefox&pbk=vqr3sFlSCpzBjw61NnufMWLDfevzkuT24qo1SaEhp1k&sni=github.com&mode=auto&extra={#AntiAbani
 vless://5de3f60c-7cc2-4f66-9177-706a2693dc19@82.40.62.103:1234?security=none&encryption=none&host=play.google.com&headerType=http&type=tcp#AntiAbani
@@ -9,8 +11,6 @@ vless://c8cc8656-67e5-4567-bc3c-cf91b5c3ba0d@10uk112sdfadf21321.clonecloudcenter
 trojan://521314@5.10.215.9:443?security=tls&sni=tjplay.lxdxo.kdns.fr&insecure=1&allowInsecure=1&type=ws&host=tjplay.lxdxo.kdns.fr&path=%2FTelegram%F0%9F%87%A8%F0%9F%87%B3%2B%40WangCai2#AntiAbani
 vless://12a87229-3370-44af-bfe3-bc33caefde97@tezol2.ozanver.ir:443?alpn=h2%2Chttp%2F1.1&encryption=none&extra=%7B%22mode%22%3A%22auto%22%2C%22xPaddingBytes%22%3A%22100-1000%22%7D&fp=chrome&host=&mode=auto&path=%2F&security=tls&sni=&type=xhttp&x_padding_bytes=100-1000#AntiAbani
 vless://6a248b82-ad33-4a8f-8ef7-cdd0ac26c261@31.56.178.59:443?type=tcp&security=reality&encryption=none&flow=xtls-rprx-vision&fp=firefox&pbk=rg_sl-tQIau_CXdjpo-BvLmlZMmlbq2KMrH5K4kdyCY&sni=us.boxypn.com#AntiAbani
-vless://0cd25ad8-8b62-4943-9bab-96941b1d9401@188.211.233.228:443?security=reality&encryption=none&pbk=QQZQVGy8uV4JSgPJ6a8jA56bptsSifntKDJjhSvOl2I&headerType=none&fp=firefox&type=tcp&flow=xtls-rprx-vision&sni=musicboss.eu&sid=197e9c7abe#AntiAbani
-vless://06d44c57-8e1a-41f4-b9c4-65d35869e078@dev-ops-notes.blog:443?encryption=none&flow=xtls-rprx-vision&fp=&pbk=5qYuPXdx_1i6bBOUJRKCSv2vBxdWxSZcct_Cxd-W0hc&security=reality&sid=65c55164c5e88da1&sni=dev-ops-notes.blog&type=tcp#AntiAbani
 vless://7216b4e8-e935-4d68-b959-73d145accdee@154.83.246.50:443?encryption=none&flow=xtls-rprx-vision&security=reality&sni=storage.yandex.net&fp=firefox&pbk=pPi-WO8qQFFZ9UJWNLW9YClbjcoAAZWJQ2_FM3Kjhz8&sid=500aec9e9e5e2212&type=tcp&headerType=none#AntiAbani
 vless://66314bb2-0218-4e1f-8bf0-516b30de08f4@liverpool.goldping.org:8443?encryption=none&security=reality&sni=www.icloud.com&fp=chrome&pbk=BaqUr7Bq8RcxTAqQ2yXPff3-fbwAb1hgilgey08PKHM&sid=ab2289b7e24b&spx=%2F%23De17x-854858&type=tcp&headerType=none#AntiAbani
 vless://e3c56988-5261-400f-b21b-6af5fa6efae1@130.49.185.196:443?encryption=none&flow=xtls-rprx-vision&security=reality&sni=site.rumedia-cdn.com&pbk=4ndg8TcyXMWmnEvthjh9mIWJ9mc85jzy_G9D4D5xGxM&sid=808a7e8a2e32c697&type=tcp&headerType=none#AntiAbani
@@ -1636,4 +1636,3 @@ vless://d8b42cd5-a149-4356-9e61-111111111111@78.154.108.51:1446?security=none&en
 vless://d8b42cd5-a149-4356-9e61-111111111111@78.154.108.26:1447?security=&encryption=none&headerType=&type=tcp#AntiAbani
 vless://d8b42cd5-a149-4356-9e61-000000000000@78.154.108.200:2551?security=&encryption=none&headerType=&type=tcp#AntiAbani
 vless://d8b42cd5-a149-4356-9e61-000000000000@195.21.129.117:2552?security=&encryption=none&headerType=&type=tcp#AntiAbani
-vless://d8b42cd5-a149-4356-9e61-000000000000@195.21.129.117:2553?security=&encryption=none&headerType=&type=tcp#AntiAbani
