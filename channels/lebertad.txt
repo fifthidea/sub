@@ -1,3 +1,13 @@
+vmess://eyJhZGQiOiI4Mi4xOTguMjQ2Ljk3IiwiYWlkIjoiMCIsImFscG4iOiIiLCJmcCI6IiIsImhvc3QiOiIiLCJpZCI6ImQxM2ZjMmY1LTNlMDUtNDc5NS04MWViLTQ0MTQzYTA5ZTU1MiIsIm5ldCI6InRjcCIsInBhdGgiOiIiLCJwb3J0IjoiMTgwIiwicHMiOiJDb25maWcgMSAtIEBsZWJlcnRhZCIsInNjeSI6ImF1dG8iLCJzbmkiOiIiLCJ0bHMiOiIiLCJ0eXBlIjoibm9uZSIsInYiOiIyIn0=
+vmess://eyJhZGQiOiIxNjUuMTQwLjIxNi4xNDIiLCJhaWQiOiIwIiwiYWxwbiI6IiIsImZwIjoiIiwiaG9zdCI6IiIsImlkIjoiYjY1YTJkNjktNTYzNC00MmEyLWU0YmUtNTRlOGE2MTc2OTAwIiwibmV0IjoidGNwIiwicGF0aCI6IiIsInBvcnQiOiI0NDMiLCJwcyI6IkNvbmZpZyAyIC0gQGxlYmVydGFkIiwic2N5IjoiYXV0byIsInNuaSI6IiIsInRscyI6IiIsInR5cGUiOiJub25lIiwidiI6IjIifQ==
+vless://b9b1e7c9-4160-49b4-85a4-2f096706509a@v-de-node-03.bot-auth.com:8443?security=reality&encryption=none&pbk=dNfk0sOCzOlmE61B7ur7YzU2i08RqXIBcGVBA2Ne1Ck&headerType=none&type=tcp&sni=www.oracle.com&sid=7548bc#Config
+vless://78c6ed8f-fa0f-4ae4-80a8-68b080c4cd90@88.216.73.48:443?flow=xtls-rprx-vision&fp=firefox&pbk=26_EC0jKyFwjkVBQmCJkIwlZwiNCC3Uzl5j6ur6QUwM&security=reality&sid=d2e7fddd2450b86a&sni=ads.x5.ru#Config
+vless://03707fb7-0990-440f-88f6-b0e0f7242a38@104.16.75.44:443?path=/&security=tls&encryption=none&insecure=0&type=ws&allowInsecure=0&sni=de-new-1.ariyuz.org#Config
+vless://d7bbfe83-b037-48ae-996c-b98ed0441ba2@45.12.31.20:443?security=tls&sni=e10c0e4b.oodaeq2.pages.dev&type=ws&path=telegram-proxy_mtm/?ed#Config
+vless://a13df940-020c-465f-bc89-ee5279b5cd6a@159.112.235.222:443?security=tls&sni=hkf.ylks.xyz&type=ws&path=/?proxyip#Config
+vless://b2e2f4d1-57fb-4bf2-b7a1-2fb65c10784c@104.16.225.78:8080?security=none&type=ws&host=join-to.vmessorg.Community.&path=/Telegram:@vmessorg-Telegram:@vmessorg-Telegram:@vmessorg?ed=8080#Config
+trojan://e8781c66-aeec-4655-984f-2aca65a64766@hnyd.52147.top:30080?allowInsecure=1&sni=download.windowsupdate1.com#Config
+vmess://eyJhZGQiOiIxNjUuMTQwLjIxNi4xNDEiLCJhaWQiOiIwIiwiYWxwbiI6IiIsImZwIjoiIiwiaG9zdCI6IiIsImlkIjoiZTdkNzJhOGQtMjZmMi00YjU0LWIzNjYtMGM0M2UwYmNiYTdkIiwibmV0IjoidGNwIiwicGF0aCI6IiIsInBvcnQiOiI0NDMiLCJwcyI6IkNvbmZpZyA1IC0gQGxlYmVydGFkIiwic2N5IjoiYXV0byIsInNuaSI6IiIsInRscyI6IiIsInR5cGUiOiJub25lIiwidiI6IjIifQ==
 vless://c762549b-bdab-4bde-a9e2-6964ae03ede5@185.84.158.244:5050?encryption=mlkem768x25519plus.native.0rtt.s-BDhnygNNfpTm9vvc2dfAFLI3SeyjdejZyx-Q2Bc18&security=none&type=tcp#Config
 vless://cd8c8f5c-f102-0064-8ade-238b874fcf65@151.243.18.115:443?type=tcp&security=reality&encryption=none&flow=xtls-rprx-vision&fp=firefox&pbk=EltWI8AOqkN8lMjRycweRRoFRah5hu6xiKtgBmQOdE8&sni=premium-us.geodema.network#Config
 vless://48ff2b70-e180-582f-8866-d9a2edeed5f5@51.158.206.26:23576?security=reality&encryption=none&pbk=1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s&headerType=none&fp=chrome&type=tcp&flow=xtls-rprx-vision&sni=fuck.rkn&sid=01#Config
@@ -484,13 +494,3 @@ vless://136a87e1-c414-4010-b73b-18d0fca70d68@pi.paydar.site:80?security=none&enc
 vless://d81a73a0-1173-452c-b64f-22497b44f96f@0in.pin.spaidan.ir:51370?encryption=none&extra={"mode":"auto","xPaddingBytes":"100-1000"}&host=&mode=auto&path=/&security=none&type=xhttp&x_padding_bytes=100-1000#Config
 vless://8b0c48db-c228-47d9-b634-6ea6edf81e22@167.233.233.187:1234?encryption=none&security=none&type=tcp&headerType=http&path=/&host=play.google.com#Config
 vless://d81a73a0-1173-452c-b64f-22497b44f96f@0in.pin.spaidan.ir:32073?encryption=none&host=&path=/&security=none&type=httpupgrade#Config
-vless://3199211a-ffc2-4227-a594-2eccbfeaf619@77.42.44.74:41291?encryption=none&type=tcp&headerType=http&host=play.google.com&security=none#Config
-vless://8b0c48db-c228-47d9-b634-6ea6edf81e22@62.238.53.197:1234?encryption=none&security=none&type=tcp&headerType=http&path=/&host=play.google.com#Config
-vless://8b0c48db-c228-47d9-b634-6ea6edf81e22@159.69.193.221:1234?encryption=none&security=none&type=tcp&headerType=http&path=/&host=play.google.com#Config
-vless://8b0c48db-c228-47d9-b634-6ea6edf81e22@159.69.192.171:1234?encryption=none&security=none&type=tcp&headerType=http&path=/&host=play.google.com#Config
-vless://8b0c48db-c228-47d9-b634-6ea6edf81e22@94.130.179.44:1234?encryption=none&security=none&type=tcp&headerType=http&path=/&host=play.google.com#Config
-vless://d81a73a0-1173-452c-b64f-22497b44f96f@0in.pin.spaidan.ir:56051?encryption=none&fm={"udp":[{"settings":{"header":"","value":""},"type":"mkcp-legacy"}]}&mtu=1350&security=none&tti=20&type=kcp#Config
-vless://d81a73a0-1173-452c-b64f-22497b44f96f@0in.pin.spaidan.ir:27594?encryption=none&security=none&type=tcp#Config
-vless://0103cdc9-3927-44f0-88aa-e1162b7fedaf@86.38.214.33:80?mode=auto&path=/?ed=2048&security=none&encryption=none&host=cdn.torexa.ir&type=xhttp#Config
-vless://42713553-c2e5-408a-8a1b-651b2facf01e@72.56.73.78:443?encryption=none&flow=xtls-rprx-vision&type=tcp&security=reality&sni=www.nvidia.com&fp=firefox&pbk=KlybaLW0-grtjEATyTVFIYoWIaoW-Duxi4lcM54_t2U#Config
-vless://f75814f6-8f81-4847-b792-168c41f2dc85@45.196.201.129:443?security=reality&encryption=none&pbk=zii4nGNapnFKL6SN8GzWNqFlElBvUCUFUThEP0kFH04&host=/?BIA_TELEGRAM@MARAMBASHI_MARAMBASHI_MARAMBASHI_MARAMBASHI&headerType=none&type=tcp&flow=xtls-rprx-vision&sni=storage.yandex.net&sid=c6ef72e4635d15a5#Config
