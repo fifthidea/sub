@@ -1,3 +1,7 @@
+vless://309c4bd0-7430-b8aa-2238-1075e9e29370@16.16.170.253:27775?encryption=none&security=none&type=tcp&headerType=none#AntiAbani
+vless://621fb502-7cde-429e-9dcf-ec7dc2679772@185.146.173.50:8080?security=none&type=ws&host=dailyCONFIGS-DAILYconfigs-DAILYconfigs.speedtest.net.vigilantecollection.com.&path=DAILYConfigs%3Fed%3D8080#AntiAbani
+vless://39248a56-c0fa-4246-8b1b-84c9e57126d2@185.146.173.52:2052?security=none&sni=fr1.vless.site&type=ws&host=Fr1.vless.site.&path=/vless#AntiAbani
+vless://dc780e62-11b3-4360-9401-56d3326acc2f@myip.montago-shop.ir:42542?encryption=none&security=none&type=tcp&headerType=http&path=%2F&host=myip.montago-shop.ir#AntiAbani
 vless://431fe973-a43a-4fac-bf83-2a772e0d0625@182.16.61.3:45647?security=&encryption=none&headerType=none&type=tcp#AntiAbani
 vless://92d95e05-3f69-43ef-a303-36f03c3094e0@nim.server-dev2.ir:443?mode=stream-up&path=%2Fassets&security=&encryption=mlkem768x25519plus.native.0rtt.5lwUdtz9PDNG66SGRzZ3U_rpKzYToZbGHRSIucorPzA&extra=%7B%22mode%22%3A%22stream-up%22%2C%22seqKey%22%3A%22part%22%2C%22sessionIDKey%22%3A%22sid%22%2C%22xPaddingBytes%22%3A%2210-100%22%7D&host=myket.ir&type=xhttp#AntiAbani
 vless://278e25d4-7ecf-4bbf-a215-92137bc3a8cb@184.tradeip.store:443?security=reality&encryption=none&pbk=aJZZHw8BiVQMsFDsMrujF5ah2uH2FOfXd_YhjmbiyCA&headerType=none&fp=chrome&spx=%2Ffff14fd667ba011&type=tcp&flow=xtls-rprx-vision&sni=play.google.com&sid=b2559b4d21#AntiAbani
@@ -12,9 +16,6 @@ vless://29ca503d-e6b8-4509-b666-48133f450857@one-for-all.levikogjgfdd.ir:443?pat
 trojan://521314@millionaire.levikogjgfdd.ir:443?path=%2FLeviko_v2ray&security=tls&insecure=0&host=tjplay.lxdxo.kdns.fr&type=ws&allowInsecure=0&sni=tjplay.lxdxo.kdns.fr#AntiAbani
 vless://daa63137-0b76-4752-8041-0ba177eea1bb@ip6-free.shakhle.ir:52525?security=&encryption=none&host=MTMVPN--MTMVPN--MTMVPN&headerType=http&type=tcp#AntiAbani
 vless://511c1563-2cb6-4064-abc6-a59ee49818a8@5.253.30.99:40443?security=reality&encryption=none&pbk=cwmcqsfS7klQlkcoUNuATEk0NiPY-NnRb9z8rCJDQw0&headerType=none&fp=qq&spx=%2F&type=tcp&flow=xtls-rprx-vision&sni=deepl.com&sid=88b6#AntiAbani
-vless://621fb502-7cde-429e-9dcf-ec7dc2679772@185.146.173.50:8080?security=none&type=ws&host=dailyCONFIGS-DAILYconfigs-DAILYconfigs.speedtest.net.vigilantecollection.com.&path=DAILYConfigs%3Fed%3D8080#AntiAbani
-vless://39248a56-c0fa-4246-8b1b-84c9e57126d2@185.146.173.52:2052?security=none&sni=fr1.vless.site&type=ws&host=Fr1.vless.site.&path=/vless#AntiAbani
-vless://309c4bd0-7430-b8aa-2238-1075e9e29370@16.16.170.253:27775?security=none&encryption=none&headerType=none&type=tcp#AntiAbani
 vless://e4514801-0d5a-42ba-869f-39bd605aef9e@15.237.234.170:22222?encryption=none&security=none&type=tcp#AntiAbani
 vless://e4514801-0d5a-42ba-869f-39bd605aef9e@15.188.16.112:22222?encryption=none&security=none&type=tcp#AntiAbani
 vless://eb78e1f0-d921-4ca9-a889-261fcc5a0547@78.159.250.214:443?security=reality&encryption=none&pbk=drY21DHNOr6ezJLA2B10mzTExeJ9-gVBfTBNLwVBtWI&headerType=none&fp=chrome&type=tcp&flow=xtls-rprx-vision&sni=qq.utiltools.ru#AntiAbani
@@ -1675,4 +1676,3 @@ vless://98d8b8cb-19d0-4823-b13b-b47a2fe0a82b@93.114.98.216:443?encryption=none&s
 vless://1407ea2c-d6db-40c5-98e9-ab6d1fd416f3@188.72.103.3:443?alpn=h2,http/1.1&encryption=none&extra={#AntiAbani
 vless://bc3196bf-f551-4390-978c-d76407550fbe@pk-play.mobileemdad.top:443?security=reality&encryption=none&pbk=PjR-SM4fOm2fY4mTqWoqZDRyxontvpailM0gBqUxlUQ&headerType=none&fp=qq&type=tcp&sni=play.google.com&sid=9ed2fa#AntiAbani
 vless://092b1805-1cfc-4aa1-86e9-83047ec465e2@188.72.103.3:443?alpn=h2,http/1.1&encryption=none&extra={#AntiAbani
-vless://e8d4be37-2993-4f26-b21d-4864b89b0c68@188.72.103.3:443?alpn=h2&encryption=none&extra={#AntiAbani
