@@ -1,3 +1,9 @@
+vless://9150748b-fa2b-4ef1-a7f1-7c4a76e2dc0b@64.188.62.138:40443?security=reality&encryption=none&pbk=U1ABwLTij71fW63nwMukZBezSQKADiBRuKCATiNUxUw&headerType=none&type=tcp&flow=xtls-rprx-vision&sni=deepl.com&sid=27bb#%40filembad
+vless://e6d41d6f-d58a-7650-bba4-d7f0dde3ba4d@64.49.38.6:993?security=reality&encryption=none&pbk=JeVpfwIwteGa8xfysPJUzrbHgmOPyLGomRqyH8Pi7W0&headerType=none&fp=firefox&type=tcp&flow=xtls-rprx-vision&sni=download.nvidia.com#%40filembad
+vless://68b4b16e-2759-47a4-8a69-33118edf5ce6@185.65.202.156:443?security=reality&encryption=none&pbk=gtKMi9Q9ZMYxe-ZvzmbpPI-uE6YcFM84xYSw7bpKF3w&headerType=none&fp=chrome&type=tcp&flow=xtls-rprx-vision&sni=ger.leontunel.ru&sid=52c579ed2ce06c26#%40filembad
+vless://f128bc2c-8018-43a1-8ed7-66eabc8f157c@142.111.244.75:448?security=reality&encryption=none&pbk=r8ljXJO_4yLUonHdkPeWbD9A__XqoudwWAiXx9fbcj8&headerType=&fp=chrome&type=tcp&sni=www.samsung.com&sid=39a997621a3598c9#%40filembad
+vless://02a3132c-6a0d-4c02-b715-95e704e0e96a@185.31.200.243:47301?encryption=none&security=none&type=tcp#%40filembad
+vless://4b80834b-1691-4fe2-9730-4cb4fe6fedcb@158.94.216.239:20000?security=none&encryption=none&headerType=none&type=tcp#%40filembad
 vless://e41f1455-24f5-4d28-9588-a2cba790171c@91.107.157.137:40124?security=none&encryption=none&headerType=none&type=tcp#%40filembad
 vmess://eyJhZGQiOiI5MS4xMDcuMTU3LjEzNyIsImFpZCI6IjAiLCJhbHBuIjoiIiwiZnAiOiIiLCJob3N0IjoiIiwiaWQiOiJlNDFmMTQ1NS0yNGY1LTRkMjgtOTU4OC1hMmNiYTc5MDE3MWMiLCJpbnNlY3VyZSI6IjAiLCJuZXQiOiJ0Y3AiLCJwYXRoIjoiIiwicGNzIjoiIiwicG9ydCI6IjE4MDAzIiwicHMiOiJAZmlsZW1iYWQiLCJzY3kiOiJhdXRvIiwic25pIjoiIiwidGxzIjoiIiwidHlwZSI6Im5vbmUiLCJ2IjoiMiIsInZjbiI6IiJ9
 vless://e6d41d6f-d58a-7650-bba4-d7f0dde3ba4d@64.49.38.6:993?security=reality&encryption=none&pbk=92KJ-ibs1qTy8nODGrHTW8T0b_trG7McLYv8My9o2EE&headerType=none&fp=firefox&type=tcp&flow=xtls-rprx-vision&sni=dl.google.com#%40filembad
@@ -6,7 +12,6 @@ vless://48987d2a-b236-4c3b-9bc3-f8560c572779@87.76.179.123:443?mode=gun&security
 vless://48987d2a-b236-4c3b-9bc3-f8560c572779@171.25.158.148:443?mode=gun&security=reality&encryption=none&pbk=5LiqzlkRzy43AkNdWbfk2advPCYrTcSZ1mZUVrlo8TI&fp=firefox&type=grpc&serviceName=AuthService&sni=visitsweden.com&sid=071bf4eb478d39ea#%40filembad
 vless://70df38ff-5a22-4ffc-a3f9-1725515e0ea5@205.237.109.215:448?security=reality&encryption=none&pbk=IuB1jsALd-wN_8jRTGxVLBbVG5eSxNbOXjvFyZlm3UU&headerType=none&type=tcp&sni=www.samsung.com&sid=113241ad01e99a2d#%40filembad
 vless://867bac5c-b78e-4f5c-ac03-4ec4b18141aa@book2.korzelo.ir:2083?path=%2F&security=none&encryption=none&host=play.google.com&type=ws#%40filembad
-vless://e6d41d6f-d58a-7650-bba4-d7f0dde3ba4d@64.49.38.6:993?security=reality&encryption=none&pbk=JeVpfwIwteGa8xfysPJUzrbHgmOPyLGomRqyH8Pi7W0&headerType=none&fp=firefox&type=tcp&flow=xtls-rprx-vision&sni=download.nvidia.com#%40filembad
 vless://50414e45-4c5f-5a45-5553-b52a90ada6ab@104.20.37.53:8080?encryption=none&security=none&sni=trex-panel-ew6n46.zeus-e0oqfp.workers.dev&fp=ios&type=ws&host=trex-panel-ew6n46.zeus-e0oqfp.workers.dev&path=%2Fstream%2FTrexBridge%2Fb52a90ada6ab#%40filembad
 vless://50414e45-4c5f-5a45-5553-b52a90ada6ab@104.20.37.53:80?encryption=none&security=none&sni=trex-panel-ew6n46.zeus-e0oqfp.workers.dev&fp=ios&type=ws&host=trex-panel-ew6n46.zeus-e0oqfp.workers.dev&path=%2Fstream%2FTrexBridge%2Fb52a90ada6ab#%40filembad
 vless://50414e45-4c5f-5a45-5553-b52a90ada6ab@104.19.110.205:80?encryption=none&security=none&sni=trex-panel-ew6n46.zeus-e0oqfp.workers.dev&fp=ios&type=ws&host=trex-panel-ew6n46.zeus-e0oqfp.workers.dev&path=%2Fstream%2FTrexBridge%2Fb52a90ada6ab#%40filembad
@@ -191,7 +196,6 @@ vless://2181d0c8-448a-4f75-b848-1718029baef9@89.125.13.67:8443?security=reality&
 vless://e4514801-0d5a-42ba-869f-39bd605aef9e@15.188.109.137:22223?encryption=none&security=none&type=tcp#%40filembad
 vless://e4514801-0d5a-42ba-869f-39bd605aef9e@15.188.109.137:22222?encryption=none&security=none&type=tcp#%40filembad
 vless://7fc1ee8b-3abf-4b4e-ab73-007460d767bd@91.107.182.197:25520?security=reality&encryption=none&pbk=CdbZitEgBioklscSAiU8eGR_sRvzLPrH3davu5DrNBc&headerType=none&type=tcp&sni=yahoo.com&sid=a8de8bc1e9f5ef#%40filembad
-vless://68b4b16e-2759-47a4-8a69-33118edf5ce6@185.65.202.156:443?security=reality&encryption=none&pbk=gtKMi9Q9ZMYxe-ZvzmbpPI-uE6YcFM84xYSw7bpKF3w&headerType=none&fp=chrome&type=tcp&flow=xtls-rprx-vision&sni=ger.leontunel.ru&sid=52c579ed2ce06c26#%40filembad
 vless://8fb65472-5957-4f64-ba2d-b5812b2f155a@158.178.153.95:62145?encryption=none&security=none&type=tcp#%40filembad
 vless://8fb65472-5957-4f64-ba2d-b5812b2f155a@84.235.173.150:62145?encryption=none&security=none&type=tcp#%40filembad
 vless://8fb65472-5957-4f64-ba2d-b5812b2f155a@158.178.149.146:62145?encryption=none&security=none&type=tcp#%40filembad
@@ -875,5 +879,3 @@ vless://90235096-9296-3d36-c77c-715577598fd5@104.24.165.148:2087?encryption=none
 vless://979083f7-5d83-49c3-8fd6-08000d38e29e@62.60.148.98:28391?encryption=none&security=reality&sni=www.nvidia.com&fp=chrome&pbk=7c_7bP_-pYQp2xtVQqYSj3W_GX40i3oRxwmvVgf6B3Y&sid=5a&spx=%2F&type=tcp&headerType=none#%40filembad
 vless://1504b333-dffc-4bb7-8deb-1f4c2302ba4f@62.60.148.98:52831?encryption=none&security=reality&sni=www.amazon.com&fp=chrome&pbk=4wuTwwR5QD6KiG_nJ13BFgV9fXzvdPCt6pvE8UM9nlU&sid=01&spx=%2F&type=xhttp&path=%2F&mode=auto&extra=%7B%22xPaddingBytes%22%3A%22100-1000%22%7D#%40filembad
 vless://bc5164c5-1239-43d3-ba0f-3f5e11c0dd4a@62.60.148.98:12101?encryption=none&security=reality&sni=www.icloud.com&fp=chrome&pbk=NdZjCMAOUjvv5oubFQ28Y0lbI1WNUwqN0dLV0jdJX2U&sid=44a7&spx=%2F&type=xhttp&path=%2F&mode=auto&extra=%7B%22xPaddingBytes%22%3A%22100-1000%22%7D#%40filembad
-vless://2d08094d-cc4e-4fe6-9561-44d4a2b590e2@62.60.148.98:49152?encryption=none&security=reality&sni=www.nvidia.com&fp=chrome&pbk=m3w4rxCNp4Icti5jpACBXimD4UytaUP_mGKAnfwvoHI&sid=f9ca6756&spx=%2F&type=xhttp&path=%2F&mode=auto&extra=%7B%22xPaddingBytes%22%3A%22100-1000%22%7D#%40filembad
-trojan://SAmzXv7K2X@62.60.148.98:35958?security=reality&sni=aws.amazon.com&fp=chrome&pbk=21g0wjiTmSuPEwQDEXpDWKVJaNCCvpTpxnw4fK5PHmA&sid=8aca7a49&spx=%2F&type=tcp&headerType=none#%40filembad
