@@ -1,3 +1,8 @@
+vless://a13df940-020c-465f-bc89-ee5279b5cd6a@217.163.76.55:443?security=tls&sni=hkx.ylks.xyz&type=ws&path=%2F%3Fproxyip#AntiAbani
+vless://f71e29f8-0608-4705-99b9-33e0e128ca6d@gb1.azmov.ru:443?mode=gun&security=tls&alpn=h2%2Chttp%2F1.1&encryption=none&insecure=0&type=grpc&serviceName=media.session.poll&allowInsecure=0&sni=gb1.azmov.ru#AntiAbani
+vless://68b4b16e-2759-47a4-8a69-33118edf5ce6@ang.leontunel.ru:443?security=reality&encryption=none&pbk=5RK9ivB7UF_89vkywwpZjW3jAJqsEGskRSS7c0OUOXM&headerType=none&fp=firefox&type=tcp&flow=xtls-rprx-vision&sni=ang.leontunel.ru&sid=2f4761809cf9fbfb#AntiAbani
+vless://68b4b16e-2759-47a4-8a69-33118edf5ce6@194.147.35.83:443?security=reality&encryption=none&pbk=5RK9ivB7UF_89vkywwpZjW3jAJqsEGskRSS7c0OUOXM&headerType=none&fp=firefox&type=tcp&flow=xtls-rprx-vision&sni=ang.leontunel.ru&sid=2f4761809cf9fbfb#AntiAbani
+vless://d65cc14c-f53f-4fe2-b262-97856601319c@82.39.171.131:443?encryption=none&flow=xtls-rprx-vision&fp=&pbk=e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg&security=reality&sid=c39cc7310a&sni=yahoo.com&type=tcp#AntiAbani
 vless://622de396-fcbe-4004-af19-af010c85e8cc@tk.degeris.ir:2083?path=%2Fjansbsbsbeejdb&security=tls&encryption=none&insecure=0&host=vip.degeris.ir&fp=chrome&type=ws&allowInsecure=0&sni=vip.degeris.ir#AntiAbani
 vless://b0aedaa2-02dd-462b-9537-3991111e46a9@crm.3e6.ir:9443?encryption=none&security=reality&type=tcp&headerType=none&flow=xtls-rprx-vision&sni=play.google.com&fp=firefox&pbk=HIpWuR10q4YjE2Zh0UhbJU6RgQ8xakri5ZJWJ-3BPHY&sid=addf0055faebdaaa#AntiAbani
 vless://622de396-fcbe-4004-af19-af010c85e8cc@tk.degeris.ir:2053?security=&encryption=none&headerType=none&type=tcp#AntiAbani
@@ -62,8 +67,6 @@ vless://4d10c997-4781-4cd9-82c3-15453523e12c@162.159.137.54:443?path=%2Fsg-melbi
 vless://4d10c997-4781-4cd9-82c3-15453523e12c@172.66.44.97:443?path=%2Fsg-melbi&security=tls&encryption=none&insecure=0&host=support.zoom.us.yxls.eu.cc&fp=chrome&type=ws&allowInsecure=0&sni=support.zoom.us.yxls.eu.cc#AntiAbani
 vless://359b9ad3-0009-4655-8872-d0ab566751d3@31.43.179.111:2096?path=%2Fws%3Fed%3D2560&security=tls&encryption=none&insecure=0&host=newgen14.hozheen.ir&fp=chrome&type=ws&allowInsecure=0&sni=d03298146e8e2fe6.hozheen.ir#AntiAbani
 vless://4d10c997-4781-4cd9-82c3-15453523e12c@172.66.44.97:443?encryption=none&security=tls&sni=support.zoom.us.yxls.eu.cc&insecure=0&allowInsecure=0&ech=ip.gs%2Budp%3A%2F%2F8.8.8.8&type=ws&host=support.zoom.us.yxls.eu.cc&path=%2Fsg-melbi#AntiAbani
-vless://68b4b16e-2759-47a4-8a69-33118edf5ce6@194.147.35.83:443?encryption=none&flow=xtls-rprx-vision&security=reality&sni=ang.leontunel.ru&fp=firefox&pbk=5RK9ivB7UF_89vkywwpZjW3jAJqsEGskRSS7c0OUOXM&sid=2f4761809cf9fbfb&type=tcp&headerType=none#AntiAbani
-vless://68b4b16e-2759-47a4-8a69-33118edf5ce6@ang.leontunel.ru:443?encryption=none&flow=xtls-rprx-vision&security=reality&sni=ang.leontunel.ru&fp=firefox&pbk=5RK9ivB7UF_89vkywwpZjW3jAJqsEGskRSS7c0OUOXM&sid=2f4761809cf9fbfb&type=tcp&headerType=none#AntiAbani
 vless://6202b230-417c-4d8e-b624-0f71afa9c75d@195.85.59.30:8880?encryption=none&host=vms.lifetime58.workers.dev&path=%2F&security=none&type=ws#AntiAbani
 vless://67c637be-a972-4e5c-8426-2255a22b1343@france1.net.spaidan.ir:13933?encryption=mlkem768x25519plus.native.0rtt.HnfdBEPSB4Y7yt5DLebVaf9VawDuw_QHATMoTKgubwU&extra=%7B%22mode%22%3A%22auto%22%2C%22xPaddingBytes%22%3A%22100-1000%22%7D&host=&mode=auto&path=%2F&security=none&type=xhttp&x_padding_bytes=100-1000#AntiAbani
 trojan://ND91608427@13.36.175.151:443?fp=chrome&sni=classic-gator.rooster465.autos#AntiAbani
@@ -1568,6 +1571,3 @@ vless://54bb59cf-96fc-4a66-8488-fa2391f2e650@190.97.165.84:448/?type=tcp&encrypt
 vless://54bb59cf-96fc-4a66-8488-fa2391f2e650@190.97.165.84:448?encryption=none&flow=xtls-rprx-vision&fp=&pbk=XxCsLlJ3kJJa2MiPHS3FlF0DyAS9TkQkn8lfCVZgDQw&security=reality&sid=cd2d4a8f08aa985d&sni=www.cloudflare.com&type=tcp#AntiAbani
 vless://882ad889-423a-41d6-8145-5eeec13d2082@178.104.10.203:1234?encryption=none&type=tcp&headerType=http&path=%2F&host=play.google.com#AntiAbani
 vless://882ad889-423a-41d6-8145-5eeec13d2082@46.225.208.199:1234?encryption=none&type=tcp&headerType=http&path=%2F&host=play.google.com#AntiAbani
-vless://dc8eccdb-ecfa-435f-9ac1-5dc4882e7b51@162.19.228.119:80?security=none&type=ws&host=Telegram%2Bid%3A%2B@V2raySeven&path=%2Fhttp#AntiAbani
-trojan://ND91608427@nearby-egret.rooster465.autos:443?allowInsecure=1&sni=nearby-egret.rooster465.autos#AntiAbani
-trojan://ND91608427@internal-sunbird.rooster465.autos:443?allowInsecure=1&sni=internal-sunbird.rooster465.autos#AntiAbani
