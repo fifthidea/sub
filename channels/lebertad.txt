@@ -1,3 +1,13 @@
+vless://435bda4c-fe5e-42c9-a3ad-15334943b38a@104.21.235.55:80?security=none&type=ws&host=us3.rtacg.com&path=/#Config
+vless://1b25e81f-98d6-4c69-b9db-3df6c58a7500@rhn.codmaxx.ir:8181?encryption=none&security=tls&type=ws&headerType=none&path=live&host=vip.dokhtaroune.ir&sni=vip.dokhtaroune.ir#Config
+vless://1b25e81f-98d6-4c69-b9db-3df6c58a7500@rhn.codmaxx.ir:8585?encryption=none&security=tls&type=ws&headerType=none&path=live&host=vip.dokhtaroune.ir&sni=vip.dokhtaroune.ir#Config
+vless://1b25e81f-98d6-4c69-b9db-3df6c58a7500@rhn.codmaxx.ir:8383?encryption=none&security=tls&type=ws&headerType=none&path=live&host=vip.dokhtaroune.ir&sni=vip.dokhtaroune.ir#Config
+vless://1b25e81f-98d6-4c69-b9db-3df6c58a7500@rhn.codmaxx.ir:8282?encryption=none&security=tls&type=ws&headerType=none&path=live&host=vip.dokhtaroune.ir&sni=vip.dokhtaroune.ir#Config
+vless://42632980-9f42-4762-a313-a31e8ec88da4@77.42.125.134:1234?security=none&encryption=none&host=play.google.com&headerType=http&type=tcp#Config
+vless://056c2a0a-a8be-4c9b-8e3a-f7e1466267dc@188.114.97.3:80?path=/PROXY_MTM-PROXY_MTM-PROXY_MTM-PROXY_MTM-PROXY_MTM-PROXY_MTM-PROXY_MTM-PROXY_MTM-PROXY_MTM-PROXY_MTM-PROXY_MTM-PROXY_MTM-PROXY_MTM-PROXY_MTM?ed=2048&security=none&encryption=none&host=1.www.speedtest.net.zula.ir.zemestanil.ir&type=ws#Config
+vless://435bda4c-fe5e-42c9-a3ad-15334943b38a@104.21.234.165:80?security=none&type=ws&host=us3.rtacg.com&path=/#Config
+vless://d9eb0df3-3190-4447-86b6-656fe5ff1119@172.67.73.169:443?security=tls&sni=mmdv2.pages.dev&type=ws&host=mmdv2.pages.dev#Config
+vless://435bda4c-fe5e-42c9-a3ad-15334943b38a@104.18.190.93:80?security=none&type=ws&host=us3.rtacg.com&path=/#Config
 vless://bb3545d4-bb68-4792-ac67-0f4c226104bd@gr1.fifapes.monster:8882?security=none&encryption=none&host=play.google.com&headerType=http&type=tcp#Config
 vless://bb3545d4-bb68-4792-ac67-0f4c226104bd@nl.fifapes.monster:2090?security=none&encryption=none&host=play.google.com&headerType=none&type=tcp#Config
 vless://24d49ddd-67c1-4821-b5b9-f12107366978@151.101.3.147:80?encryption=none&security=none&type=xhttp&host=baharishomalyour-name.global.ssl.fastly.net&path=/api&mode=auto&extra={"scMaxEachPostBytes":"1000000","scMinPostsIntervalMs":"30","xPaddingBytes":"0"}#Config
@@ -128,7 +138,6 @@ vless://d7aa0522-d0a5-447c-a630-54ae3d5c7c47@172.66.47.198:443?security=tls&sni=
 vless://48198295-b7ba-4b5c-8d85-085d55a6c869@47.76.37.57:2083?security=tls&sni=xinx.ylks.xyz&type=ws&host=xinx.ylks.xyz#Config
 vless://a7903f91-918b-48e7-878f-e16a2b33ef0f@213.176.120.62:8443?security=none&encryption=none&host=telewebion.com&headerType=http&type=tcp#Config
 vless://a8e3155b-ceb1-4fcb-bc0c-2e77ec005401@88.216.220.88:443?encryption=none&security=reality&sni=files.noneok.com&fp=firefox&pbk=q3kOYHdjmqWLLYj8oikvna1bTjofk45ktegGaJE611g&sid=d3b394558cfe0266&allowinsecure=0&type=grpc&mode=gun&authority=&serviceName=api.v1.StreamService#Config
-vless://42632980-9f42-4762-a313-a31e8ec88da4@77.42.125.134:1234?encryption=none&type=tcp&headerType=http&host=play.google.com&security=none#Config
 vless://435bda4c-fe5e-42c9-a3ad-15334943b38a@104.17.194.126:80?security=none&type=ws&host=us3.rtacg.com&path=/#Config
 vless://46785cd1-8bb6-41e4-9775-9da1c5d382c1@104.21.69.44:8880?security=none&type=ws&host=8.v.v.y.www.speedtest.net.ftp.debian.org.bklink.ir.&path=/telegram-NUFiLTER,telegram-NUFiLTER,telegram-NUFiLTER,telegram-NUFiLTER,telegram-NUFiLTER,telegram-NUFiLTER,telegram-NUFiLTER,telegram-NUFiLTER,telegram-NUFiLTER,telegram-NUFiLTER,telegram-NUFiLTER,telegram-NUFiLTER?ed#Config
 trojan://f7d7e66a-b293-4108-861b-4d41dcf8fd3b@ezaccess1-luffy-ezaccess1-658c.up.railway.app:443?path=/ws/trojan/f7d7e66a-b293-4108-861b-4d41dcf8fd3b?ed=2048&security=tls&alpn=h3&insecure=0&host=ezaccess1-luffy-ezaccess1-658c.up.railway.app&fp=chrome&type=ws&allowInsecure=0&sni=ezaccess1-luffy-ezaccess1-658c.up.railway.app#Config
@@ -487,12 +496,3 @@ vless://8ad6f598-cd8d-4fca-848e-05fc9be15ff3@104.16.118.43:443?encryption=none&s
 vless://96955608-9bb7-4f1a-8500-a5d0ee4925a2@104.167.199.245:1234?security=none&encryption=none&host=play.google.com&headerType=http&type=tcp#Config
 vless://48987d2a-b236-4c3b-9bc3-f8560c572779@2.27.23.228:443?mode=gun&security=reality&encryption=none&pbk=_6sITPMQDPlR-G-lH9YLjBshdRY6ytvLQ18h9wd0Dm4&fp=firefox&type=grpc&serviceName=AuthService&sni=plsw.krusofiya.fun&sid=071bf4eb478d39ea#Config
 vless://48987d2a-b236-4c3b-9bc3-f8560c572779@minet.krusofiya.fun:443?security=reality&encryption=none&pbk=JyGEUBH6kxI1gt_8zjN_g6XvHGJCx85LQhNHjSX0HQY&headerType=none&fp=firefox&type=tcp&flow=xtls-rprx-vision&sni=minet.krusofiya.fun&sid=6e65d5722d5f9d16#Config
-vless://48987d2a-b236-4c3b-9bc3-f8560c572779@87.76.179.123:443?mode=gun&security=reality&encryption=none&pbk=f5Wc7wP7ZnHvCU1FDlK_BDrG2vKF4pvRYY9TKQvEEBM&fp=firefox&type=grpc&serviceName=APIv1&sni=tradingview.com&sid=34c0b21a15584c9a#Config
-vless://d1ca6c5b-31d7-47d2-973e-f76ab614c0a1@sw.edge-cache.onavinet.ir:3946?security=reality&alpn=h3&encryption=none&pbk=tbQi9Zn0FPJkgvvAQjTOv86X2r9TSh2Df2Wh-Heh0As&headerType=none&fp=safari&type=tcp&sni=play.google.com&sid=13020d9d20469d78#Config
-vless://056c2a0a-a8be-4c9b-8e3a-f7e1466267dc@188.114.97.3:80?security=none&type=ws&host=1.www.speedtest.net.zula.ir.zemestanil.ir&path=/PROXY_MTM-PROXY_MTM-PROXY_MTM-PROXY_MTM-PROXY_MTM-PROXY_MTM-PROXY_MTM-PROXY_MTM-PROXY_MTM-PROXY_MTM-PROXY_MTM-PROXY_MTM-PROXY_MTM-PROXY_MTM?ed=2048#Config
-vless://435bda4c-fe5e-42c9-a3ad-15334943b38a@104.18.200.69:80?security=none&type=ws&host=us3.rtacg.com&path=/#Config
-vless://89b3cbba-e6ac-485a-9481-976a0415eab9@104.21.68.89:8080?security=none&type=ws&host=ExTeRnaLNET.EXtErnAL-NEt.woRKeRs.DeV#Config
-vless://435bda4c-fe5e-42c9-a3ad-15334943b38a@104.21.235.45:80?security=none&type=ws&host=us3.rtacg.com&path=/#Config
-vless://795d5f5b-318c-49a6-844f-ee2ab63bbe94@35.180.187.82:12228?security=reality&encryption=none&pbk=hvyaRhFtrj3cGv1Ya5uXpE256i2PoUi2fOgU0KlvKmI&headerType=none&fp=chrome&type=tcp&flow=xtls-rprx-vision&sni=www.tesla.com&sid=59625eb3275249ca#Config
-vless://a967fcf9-ebd0-487e-82ed-49ea1329d8b6@tstbot.paydar.site:80?security=none&encryption=none&host=play.google.com&headerType=http&type=tcp#Config
-vless://4d10c997-4781-4cd9-82c3-15453523e12c@162.159.137.54:443?path=/sg-melbi&security=tls&encryption=none&host=support.zoom.us.yxls.eu.cc&fp=chrome&type=ws&sni=support.zoom.us.yxls.eu.cc#Config
