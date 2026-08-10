@@ -1,3 +1,8 @@
+vless://c04bf2df-2b7f-44da-a893-3792d3910fd8@185.232.117.113:443?type=tcp&security=reality&encryption=none&flow=xtls-rprx-vision&fp=firefox&pbk=aBNWkd8CVkuimbtzgsDNsIUIENI-PQuKkpUInLncz2o&sid=fdda9806fe5d8584&sni=vl03.skorostnet.space#Config
+vless://b543c35e-ec44-4979-849b-84099ca8a3d8@193.84.255.89:2095?security=none&encryption=none&host=play.google.com&headerType=http&type=tcp#Config
+vless://b543c35e-ec44-4979-849b-84099ca8a3d8@109.248.162.22:8080?security=none&encryption=none&host=play.google.com&headerType=http&type=tcp#Config
+vless://b543c35e-ec44-4979-849b-84099ca8a3d8@91.99.12.14:8080?security=none&encryption=none&host=play.google.com&headerType=http&type=tcp#Config
+vless://b543c35e-ec44-4979-849b-84099ca8a3d8@178.104.121.227:8080?security=none&encryption=none&host=play.google.com&headerType=http&type=tcp#Config
 vless://50414e45-4c5f-5a45-5553-a84ff0bc14f1@104.24.33.28:443?encryption=none&security=tls&sni=web-app-nm50pq.hamedalirajabi.workers.dev&fp=ios&insecure=0&allowInsecure=0&type=ws&host=web-app-nm50pq.hamedalirajabi.workers.dev&path=/api/ws#Config
 vless://50414e45-4c5f-5a45-5553-a84ff0bc14f1@104.24.33.28:80?encryption=none&security=none&sni=web-app-nm50pq.hamedalirajabi.workers.dev&fp=ios&type=ws&host=web-app-nm50pq.hamedalirajabi.workers.dev&path=/api/ws#Config
 vless://50414e45-4c5f-5a45-5553-a84ff0bc14f1@api-tr-one-hs.hajsafarinetwork.ir:443?encryption=none&security=tls&sni=web-app-nm50pq.hamedalirajabi.workers.dev&fp=ios&insecure=0&allowInsecure=0&type=ws&host=web-app-nm50pq.hamedalirajabi.workers.dev&path=/api/ws#Config
@@ -490,8 +495,3 @@ vless://f61025f4-7973-4e3e-883c-a0fe85f0489c@31.76.111.91:443?security=reality&e
 vmess://eyJhZGQiOiIxNzIuNjYuNDQuOTciLCJhaWQiOiIwIiwiYWxwbiI6IiIsImZwIjoiIiwiaG9zdCI6IlBvbDEubE9vbE9vbG9PbE9vLkNPTS4iLCJpZCI6IjczMTA2NzM5LThiZmItNGY1OS04ZDk1LTA4NmVkMjA3Y2M0ZiIsImluc2VjdXJlIjoiMCIsIm5ldCI6Imh0dHB1cGdyYWRlIiwicGF0aCI6IlwvZWQ9PzIwNDgiLCJwb3J0IjoiODA4MCIsInBzIjoiQ29uZmlnIDMgLSBAbGViZXJ0YWQiLCJzY3kiOiJhdXRvIiwic25pIjoiIiwidGxzIjoiIiwidHlwZSI6Ii0tLSIsInYiOiIyIn0=
 vless://e13123f8-5b2e-4d86-a63a-806fb905000f@5.202.13.69:80?security=none&encryption=none&headerType=none&type=tcp#Config
 vless://3525100e-ef3e-4236-9173-819c82634feb@78.39.47.165:30000?path=/&security=none&encryption=none&type=ws#Config
-vless://26c0589f-79e5-4789-8ff7-914f2e26e8e5@okb.lorqina.ir:40813?security=&encryption=none&headerType=&type=tcp#Config
-vless://26c0589f-79e5-4789-8ff7-914f2e26e8e5@galm.lorqina.ir:49530?security=none&encryption=none&headerType=none&type=tcp#Config
-vless://00b41e07-68e6-46b0-928f-a02becd4e398@awex.awextr.ir:2020?security=reality&encryption=mlkem768x25519plus.native.0rtt.UNkb_9hbRrHHw0NYmGJ1y_LfjNsIAKoFATteTiM8i2Y&pbk=e0cX3oFZmjV2A0WzpsvnnxtvL7qfwpdzv4xpJpT7xEk&headerType=none&fp=chrome&type=tcp&sni=www.cloudflare.com&sid=6114263f10c4be1b#Config
-vless://00b41e07-68e6-46b0-928f-a02becd4e398@awex.awexio.ir:2086?security=reality&encryption=mlkem768x25519plus.native.0rtt.kiIXwl9gSvYqmjZeIrX-bwUypJA1Mdj2aEdJ_TFPMDw&pbk=bzcsde9yya7qtM_50rHMD9vO9R11PkpRPCXFAvGn2VI&headerType=none&fp=chrome&type=tcp&sni=www.cloudflare.com&sid=d1bce33d398e9503#Config
-vless://00b41e07-68e6-46b0-928f-a02becd4e398@awex.awexio.ir:2095?security=reality&encryption=mlkem768x25519plus.native.0rtt.MNNa9T6Ni834ZN52GiBXBcxroeUk3OQ_cWk1G0altA0&pbk=xd-lPn3TLWAO4ta8nNN6taPbsGuI36blB8i1d0Xhrw8&headerType=none&fp=chrome&type=tcp&sni=www.cloudflare.com&sid=275a066de91de361#Config
