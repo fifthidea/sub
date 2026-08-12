@@ -1,3 +1,6 @@
+vless://fbb74aa8-b89a-4f20-9504-6b25aadf6681@83.168.108.200:443?encryption=none&flow=xtls-rprx-vision&fp=&pbk=bZpzmeWiEJyJQy0W2hHc34Nr6BuFXj1UDd80Cbwh1Fk&security=reality&sid=ff776ff77be48b88&sni=pol3.freeinternat.com&type=tcp#AntiAbani
+vless://551955b3-46e9-5129-95c9-e7474c15ed6b@95.85.253.5:443?alpn=http%2F1.1&encryption=none&flow=xtls-rprx-vision&fp=firefox&security=tls&sni=pl4.fast-connect-service.site&type=tcp#AntiAbani
+vless://551955b3-46e9-5129-95c9-e7474c15ed6b@95.85.253.134:443?alpn=http%2F1.1&encryption=none&flow=xtls-rprx-vision&fp=firefox&security=tls&sni=pl5.fast-connect-service.site&type=tcp#AntiAbani
 vless://551955b3-46e9-5129-95c9-e7474c15ed6b@95.85.246.138:443?alpn=http%2F1.1&encryption=none&flow=xtls-rprx-vision&fp=firefox&security=tls&sni=pl9.fast-connect-service.site&type=tcp#AntiAbani
 vless://2001e98b-e06e-4244-910f-7ff640746eda@168.222.202.15:4100?encryption=none&security=none&type=ws&path=%2Fv1#AntiAbani
 vless://55009b9b-7b9c-4830-86c6-cb058a7a2e2f@147.45.235.14:2200?encryption=none&security=none&type=ws&host=rzd.ru&path=%2Fv1#AntiAbani
@@ -1653,6 +1656,3 @@ vless://512a764b-846f-4d51-b337-74aabfa13663@panel.northforex.ir:997?path=%2Fmmd
 vless://512a764b-846f-4d51-b337-74aabfa13663@panel.northforex.ir:998?path=%2Fmmd&security=none&encryption=none&type=ws#AntiAbani
 vless://f2f723f5-b97d-4414-997c-d2925013af28@150.241.83.159:443?type=tcp&security=reality&encryption=none&flow=xtls-rprx-vision&fp=chrome&pbk=Bp5PnujrPK50eE_28vIWSyBjdIPLXCLGYPjRKx0pqgI&sid=845ac2739143b71d&sni=express-bot-service.ru#AntiAbani
 vless://68b4b16e-2759-47a4-8a69-33118edf5ce6@194.147.35.83:443?encryption=none&flow=xtls-rprx-vision&security=reality&sni=ang.leontunel.ru&fp=chrome&pbk=5RK9ivB7UF_89vkywwpZjW3jAJqsEGskRSS7c0OUOXM&sid=2f4761809cf9fbfb&type=tcp&headerType=none#AntiAbani
-vless://03707fb7-0990-440f-88f6-b0e0f7242a38@104.16.75.44:443?path=%2F&security=tls&encryption=none&insecure=0&type=ws&allowInsecure=0&sni=de-new-1.ariyuz.org#AntiAbani
-vless://e4514801-0d5a-42ba-869f-39bd605aef9e@63.186.16.216:22223?security=none&encryption=none&headerType=none&type=tcp#AntiAbani
-vless://6fcc0657-e780-4a31-a614-0287b5c5807b@69.46.46.67:443?path=%2Fws%2Fvless%2F6fcc0657-e780-4a31-a614-0287b5c5807b%3Fed%3D2048&security=tls&alpn=http%2F1.1&encryption=none&insecure=0&host=web-production-0d497.up.railway.app&fp=ios&type=ws&allowInsecure=0&sni=web-production-0d497.up.railway.app#AntiAbani
