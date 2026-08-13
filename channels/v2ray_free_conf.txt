@@ -1,3 +1,5 @@
+vless://841be8d9-964f-4183-9e99-a65e41c3a018@40.66.33.31:2042?security=&encryption=none&headerType=none&type=tcp#filembad-273
+vless://5c5f21f2-8527-4d45-95d0-0c72871d22e7@40.66.33.31:2053?encryption=none&security=none&type=tcp&headerType=none#filembad-207
 vless://3ff87a18-6801-49ee-85d6-42662b5abfa0@193.39.9.240:1200?encryption=none&extra=%7B%22scMaxEachPostBytes%22%3A%221000000%22%2C%22xPaddingBytes%22%3A%22100-1000%22%7D&fp=chrome&host=&mode=auto&path=%2F&pbk=m8hOnhxPNmdXtfOky4MHI9FhArP3qqfH7lxcopcQfQA&security=reality&sid=d2e98c9d0cf7&sni=www.intel.com&spx=%2F2neNIybyvGjzNDp&type=xhttp&x_padding_bytes=100-1000#filembad-151
 vless://d0eca1e1-c4ec-43dc-a6e9-25e5d29d9fe5@193.39.9.240:1300?encryption=none&security=reality&sni=www.intel.com&fp=chrome&pbk=NFsIgOxjsTyqP45-UF_42xOsQH6u6vZSJ90JQYDtuSo&sid=15629d&spx=%2F66Q11ymQVGjJQY0&type=tcp&headerType=none#v2ray_configs_pool-416
 vless://f1f47653-d57b-5917-fa47-c80823a8b7f3@rvg-production-8249.up.railway.app:443?path=%2Fws%2Ff1f47653-d57b-5917-fa47-c80823a8b7f3&security=tls&alpn=http%2F1.1&encryption=none&insecure=0&host=rvg-production-8249.up.railway.app&fp=chrome&type=ws&allowInsecure=0&sni=rvg-production-8249.up.railway.app#canfingV2rayNG-493
@@ -70,7 +72,6 @@ vless://e4514801-0d5a-42ba-869f-39bd605aef9e@63.186.162.237:22223?security=&encr
 vless://f12cc297-c9ce-4cdb-98d4-8e47c3f09644@172.64.153.11:8880?security=none&type=ws&host=weathered-union-5358.101-262.workers.dev#filembad-497
 vless://5865fb7c-59e0-0b23-9dfe-0c4e76cecb6d@69.46.46.16:443?path=%2Fws%2F5865fb7c-59e0-0b23-9dfe-0c4e76cecb6d&security=tls&alpn=http%2F1.1&encryption=none&host=rvg-production-6e30.up.railway.app&fp=ios&type=ws&sni=rvg-production-6e30.up.railway.app#NormanV2ray-206
 vless://4d10c997-4781-4cd9-82c3-15453523e12c@172.66.44.97:443?path=%2Fsg-melbi&security=tls&encryption=none&insecure=0&host=support.zoom.us.yxls.eu.cc&ech=ip.gs%2Budp%3A%2F%2F8.8.8.8&type=ws&allowInsecure=0&sni=support.zoom.us.yxls.eu.cc#ProxyMtpVPN-187
-vless://5c5f21f2-8527-4d45-95d0-0c72871d22e7@40.66.33.31:2053?security=none&encryption=none&headerType=none&type=tcp#filembad-215
 vless://2a12bb81-f3a3-41bb-99ab-36febf676b4a@109.69.218.215:443?security=reality&encryption=none&pbk=8hse7wRRL-F66rQ-aAeetKTw0MSeJC7Rr6EaDeLzdCU&headerType=none&type=tcp&flow=xtls-rprx-vision&sni=bold-kestrel.cdn.cachefleet.com#ProxyMtpVPN-122
 vless://dbeffc3c-529b-4c25-9fd9-9f0969380534@37.77.105.11:445?security=none&encryption=none&headerType=none&type=tcp#ProxyMtpVPN-437
 vless://02e2d68f-9982-4467-ad47-00cbeeae30e6@132.243.231.93:443?security=reality&encryption=none&pbk=nF_kEdHan2dgl2tlQ_dtNaKZ4oORhuiFrXHbtEDcT2Q&headerType=none&type=tcp&flow=xtls-rprx-vision&sni=se-cdn.ru&sid=2d6d073dc88f22a8#ProxyMtpVPN-64
@@ -374,4 +375,3 @@ vless://f106648e-0644-40bc-974c-6edc966fe18d@45.130.125.162:8443?mode=auto&path=
 trojan://RTjaF02TgK@77.110.110.146:26656?security=reality&sni=www.sony.com&fp=chrome&pbk=2-ZAsbvq_xISvWRLKgROd4Vvzlr7Wztf6KWYUchk82c&sid=e7&spx=%2F&type=tcp&headerType=none#filembad-65
 trojan://humanity@45.80.111.7:443?path=%2Fassignment&security=tls&insecure=0&type=ws&allowInsecure=0&sni=www.calmlunch.com#canfingV2rayNG-83
 trojan://AGJxU3gylJ@138.124.92.103:28629?security=reality&sni=www.nvidia.com&fp=chrome&pbk=OGaO9Uzk0hbMcLrNjV7bfLVHZR3Zf34ArRFfKBT-onA&sid=b62432&spx=%2F&type=xhttp&path=%2F&mode=auto&extra=%7B%22xPaddingBytes%22%3A%22100-1000%22%7D#v2ray_configs_pool-50
-vless://adf1fac3-cf57-ff40-574c-cf514457eb3f@62.233.39.6:8443?mode=gun&security=reality&encryption=none&pbk=lDi6FDdd5qUFMjjR1JDidfUU2qE_U1L90VjNTzPyQhs&fp=chrome&type=grpc&serviceName=TunService&sni=download.nvidia.com#filembad-446

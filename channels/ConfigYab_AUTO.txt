@@ -1,3 +1,5 @@
+vless://431fe973-a43a-4fac-bf83-2a772e0d0625@220.130.75.247:10000?encryption=none&security=none&type=tcp&headerType=none#AntiAbani
+vless://431fe973-a43a-4fac-bf83-2a772e0d0625@220.130.75.247:10000?&type=tcp&headerType=none&path=%2F#AntiAbani
 vless://5aafc2be-9348-4dec-b896-f4a91253bbca@202.37.33.80:443?path=%2Fid-tksi%3Fed%3D2048_%2F%40sil3nt_network&security=tls&encryption=none&insecure=0&host=support.zoom.us.yxls.eu.cc&ech=encryptedsni.com%2Budp%3A%2F%2F8.8.8.8&type=ws&allowInsecure=0&sni=support.zoom.us.yxls.eu.cc#AntiAbani
 vless://5aafc2be-9348-4dec-b896-f4a91253bbca@202.37.33.80:443?ed=2048&eh=Sec-WebSocket-Protocol&encryption=none&host=support.zoom.us.yxls.eu.cc&path=%2Fid-tksi&security=tls&sni=support.zoom.us.yxls.eu.cc&type=ws#AntiAbani
 vless://5aafc2be-9348-4dec-b896-f4a91253bbca@202.37.33.80:443?path=%2Fid-tksi%3Fed%3D2048&security=tls&encryption=none&insecure=0&host=support.zoom.us.yxls.eu.cc&ech=encryptedsni.com%2Budp%3A%2F%2F8.8.8.8&type=ws&allowInsecure=0&sni=support.zoom.us.yxls.eu.cc#AntiAbani
@@ -14,8 +16,6 @@ vless://8d8c8511-27fd-42ef-b696-4bee4a3af4e5@204.168.198.37:443?security=reality
 vless://14f19724-de91-4285-a633-aa8e2caaf812@46.246.92.109:443?security=reality&encryption=none&pbk=JwL5KoiWkCJI2vMJxyTEplfv-zBAtwxOH8SMbw6QHzY&headerType=none&fp=safari&type=tcp&flow=xtls-rprx-vision&sni=www.rumedia-cdn.com&sid=cd40c992fe4b10c2#AntiAbani
 vless://ff1b0b50-70dc-4bae-866e-55cff86f4d6d@38.49.208.29:443?security=reality&encryption=none&pbk=N1KH15LltY-On3flp6KhR0VOouBqNrcFNktOnptsOTs&headerType=none&fp=firefox&type=tcp&flow=xtls-rprx-vision&sni=fqub.falsemirrov.com&sid=9c2378562188c3cb#AntiAbani
 vless://8975546a-375c-4966-8064-19fc0f66f30a@31.76.80.69:2083?mode=auto&path=%2F&security=reality&encryption=none&extra=%7B%22mode%22%3A%22auto%22%7D&pbk=zq3gOJkXi6laNuxMohL3lr-wFOKi4Z9oG7QuMMiTDAk&fp=firefox&spx=%2Fy52f8gp4rv1il6u&type=xhttp&sni=www.amd.com&sid=29b21343ab4d#AntiAbani
-vless://431fe973-a43a-4fac-bf83-2a772e0d0625@220.130.75.247:10000?&type=tcp&headerType=none&path=%2F#AntiAbani
-vless://431fe973-a43a-4fac-bf83-2a772e0d0625@220.130.75.247:10000?encryption=none&security=none&type=tcp&headerType=none#AntiAbani
 vless://1365d474-01c0-1c34-5206-3e7ceca5b178@69.46.46.40:443?path=%2Fws%2F1365d474-01c0-1c34-5206-3e7ceca5b178&security=tls&alpn=http%2F1.1&encryption=none&insecure=0&host=rvg-production-ccf4.up.railway.app&fp=ios&type=ws&allowInsecure=0&sni=rvg-production-ccf4.up.railway.app#AntiAbani
 vless://d8523317-503e-43ad-b2c3-e5f77d725848@31.76.46.138:20422?security=reality&encryption=none&pbk=ZUQTvwYk_hDqSrw36uc18MkeEIXIGZZGsf5XWVwdqAQ&headerType=none&fp=random&spx=%2F&type=tcp&sni=yahoo.com&sid=90#AntiAbani
 vless://814bd064-544d-4255-a070-5705c03f6da9@67.220.73.204:18662?security=reality&encryption=none&pbk=k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0&headerType=none&type=tcp&flow=xtls-rprx-vision&sni=www.apple.com&sid=48050fab#AntiAbani
