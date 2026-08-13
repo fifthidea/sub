@@ -1,3 +1,5 @@
+vless://10c3b62f-59da-55cb-b24f-2072ecb4348c@ffwrhtttmt-tnfdf4df-ff683b-production.up.railway.app:443?path=%2Fws%2FDefault&security=tls&alpn=http%2F1.1&encryption=none&insecure=0&host=ffwrhtttmt-tnfdf4df-ff683b-production.up.railway.app&fp=ios&type=ws&allowInsecure=0&sni=ffwrhtttmt-tnfdf4df-ff683b-production.up.railway.app#ProxyMtpVPN-85
+vless://1e280316-0408-47c4-b058-05b8f1f17f02@57.131.32.191:80?path=%2Fvless%2F&security=&encryption=none&type=ws#v2ray_configs_pool-116
 vless://02ecbb81-7e6b-485d-be68-d1f78f864210@31.56.222.59:19869?security=none&encryption=none&headerType=none&type=tcp#filembad-67
 vless://5e042049-f74d-4ccc-a3ac-db27bca2ce99@hyst.purplrose.ir:8443?security=tls&alpn=h2%2Chttp%2F1.1&encryption=none&insecure=0&host=bastani.purplrose.ir&fp=random&type=ws&allowInsecure=0&sni=bastani.purplrose.ir#canfingV2rayNG-239
 vless://02e2d68f-9982-4467-ad47-00cbeeae30e6@132.243.231.93:443?security=reality&encryption=none&pbk=nF_kEdHan2dgl2tlQ_dtNaKZ4oORhuiFrXHbtEDcT2Q&headerType=none&type=tcp&flow=xtls-rprx-vision&sni=se-cdn.ru&sid=2d6d073dc88f22a8#ProxyMtpVPN-66
@@ -446,7 +448,6 @@ vless://8fdf6dde-a1ca-456d-9b18-86b74d5768e6@193.233.255.21:443?security=reality
 vless://501b6afa-f955-473f-8440-1010110a1548@85.234.100.49:7443?security=reality&encryption=none&pbk=UJASCPCy2vuNWu3q2C7vVte-HxG0r0XI83pgxBFBv1E&headerType=none&type=tcp&flow=xtls-rprx-vision&sni=images.apple.com&sid=9c56af76#filembad-218
 vless://47b3baf9-e1f7-4fc7-b720-fc96b570afd9@193.39.9.241:2087?security=none&encryption=none&headerType=none&type=tcp#filembad-198
 vless://aefcf667-37b4-4983-b18d-ab4ba50bd8c2@91.98.168.59:8880?path=%2F%3Fed%3D2560&type=ws&encryption=none&security=none&host=play.google.com#filembad-401
-vless://10c3b62f-59da-55cb-b24f-2072ecb4348c@ffwrhtttmt-tnfdf4df-ff683b-production.up.railway.app:443?path=%2Fws%2FDefault&security=tls&alpn=http%2F1.1&encryption=none&insecure=0&host=ffwrhtttmt-tnfdf4df-ff683b-production.up.railway.app&fp=ios&type=ws&allowInsecure=0&sni=ffwrhtttmt-tnfdf4df-ff683b-production.up.railway.app#ProxyMtpVPN-95
 vless://06d44c57-8e1a-41f4-b9c4-65d35869e078@193.124.36.178:13868?security=reality&encryption=none&pbk=8SX8GXMe3lXOyY_acO4HFXXYJn_rOOf4zkYFrifV1Tk&headerType=&fp=firefox&type=tcp&flow=xtls-rprx-vision&sni=www.epicgames.com&sid=e852dc#filembad-63
 vless://c28ee61d-0d43-4e69-8e6a-6397ed0ffc03@31.43.191.39:443?security=reality&encryption=none&pbk=SHDdd617KLHHb0qlQFOHepeHFl_Ch2i-K7o891uyo2M&host=%2F%3FJOIN_bede_TELEGRAM%40MARAMBASHI_MARAMBASHI_MARAMBASHI_MARAMBASHI&headerType=none&fp=qq&type=tcp&flow=xtls-rprx-vision&sni=luminous-vortex.cdn.cachefleet.com#filembad-441
 vless://e4514801-0d5a-42ba-869f-39bd605aef9e@13.38.221.117:22222?encryption=none&security=none&type=tcp#filembad-495
@@ -920,4 +921,3 @@ vless://cfc7cf07-8f95-4d20-a349-77aaf201cf6a@vip.biscuitnazari.ir:900?encryption
 vless://e4514801-0d5a-42ba-869f-39bd605aef9e@15.224.127.219:22222?encryption=none&security=none&type=tcp#filembad-376
 vless://e4514801-0d5a-42ba-869f-39bd605aef9e@3.125.59.35:22223?encryption=none&security=none&type=tcp#filembad-383
 vless://b2a21714-fd64-461f-9364-49ea2ddc8b59@UAE1.ZAG-FA.SOLVETA.IR:7710?security=reality&encryption=none&pbk=mPYP_E1bJqvNXD-uKRU4QFyXk6B9lweXX5cqgbq3l3M&headerType=none&fp=edge&type=tcp&flow=xtls-rprx-vision&sni=www.aparat.com&sid=16b3713dce93ee0c#filembad-318
-trojan://MiTiVPN@91.193.58.201:443?path=%2FMiTiVPN%3DfL&security=tls&alpn=http%2F1.1&insecure=0&host=Fl.App-Cloud.ir&fp=firefox&type=ws&allowInsecure=0&sni=fl.App-Cloud.ir#canfingV2rayNG-53
