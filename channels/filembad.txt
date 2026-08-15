@@ -1,3 +1,8 @@
+vless://39ad12ba-914a-4aa1-a825-3ee4db7c0a52@89.167.12.115:22579?security=none&encryption=none&headerType=none&type=tcp#%40filembad
+vless://e4514801-0d5a-42ba-869f-39bd605aef9e@18.153.151.72:22223?encryption=none&security=none&type=tcp#%40filembad
+vless://e4514801-0d5a-42ba-869f-39bd605aef9e@18.153.151.72:22224?encryption=none&security=none&type=tcp#%40filembad
+vless://e4514801-0d5a-42ba-869f-39bd605aef9e@18.153.151.72:22222?encryption=none&security=none&type=tcp#%40filembad
+vless://851ed0d8-a37b-452d-8ef2-5b6c2d28a060@151.236.114.179:2027?security=reality&encryption=none&pbk=ISa-DZOI4LRRb9DHMFYm5oFqBXDjYzz0hVWUfWvzLmo&headerType=none&fp=firefox&type=tcp&flow=xtls-rprx-vision&sni=storage.yandex.net&sid=8d3293f0066e129a#%40filembad
 vless://daa34529-5219-4323-d26a-2c395b25a56d@185.126.236.181:2052?path=%2F&security=none&encryption=none&host=www.icloud.com&type=ws#%40filembad
 vless://91d0fa43-e557-43e7-a731-f0c3d1fb306a@89.105.208.126:443?security=reality&encryption=none&pbk=ivgTfLR13A6xBsicIA28OPoav2tXlsstTTmGuETfnSk&headerType=none&fp=chrome&type=tcp&flow=xtls-rprx-vision&sni=n1.cloudgaming.one&sid=6d6f13013d3e1d0c#%40filembad
 vless://e586c19d-2f64-4a11-8f13-a21186ce6cca@157.22.176.96:3001?security=reality&encryption=none&pbk=0wHK7-VJ5ich3gTaQbBhMyyEtXpNGmVNskbIsnLBTQ8&headerType=none&fp=chrome&type=tcp&sni=www.google.com&sid=0000008795147229#%40filembad
@@ -10,7 +15,6 @@ vmess://eyJhZGQiOiIyMDIuNDcuODkuMTMzIiwiYWlkIjoiMCIsImFscG4iOiIiLCJmcCI6IiIsImhv
 vless://a382aa45-22d5-4a8c-86cc-ad11d1f2800f@45.65.112.228:20513?security=reality&encryption=none&pbk=CTfSuRE6fUPYVBJGsmOYnP3UketmmTJSQP45OcoGI2k&headerType=none&fp=qq&type=tcp&sni=updates.cdn-apple.com&sid=9f3921483225ccf8#%40filembad
 vless://9d01e9f2-1569-48cd-beb3-36f706f5ad5b@45.146.131.154:8452?type=tcp&security=reality&encryption=none&flow=xtls-rprx-vision&fp=firefox&pbk=neW65LaKi88zH-X9gRQPhl5YqQLz9E4IrVnOpS4BnkU&sid=45b10e93bc618c2c&sni=www.cloudflare.com#%40filembad
 vless://97ee39cc-cb22-42fd-9476-0c1a5f5a9621@5.75.197.25:1000?security=&encryption=none&headerType=none&type=tcp#%40filembad
-vless://39ad12ba-914a-4aa1-a825-3ee4db7c0a52@89.167.12.115:22579?security=none&encryption=none&headerType=none&type=tcp#%40filembad
 vless://302c2e89-6f2d-4500-90ce-26d075c7e84f@66.78.40.202:443?security=reality&encryption=none&pbk=8zJkTehTmhmgKWUIj-CyJP4gtMjNxLgBxPjHC1wwW3A&headerType=none&fp=firefox&spx=%2Fb46a29a208a37d1&type=tcp&flow=xtls-rprx-vision&sni=www.samsung.com&sid=61#%40filembad
 vless://14fb52d9-aaab-4994-9b4d-f77c5b73b127@5.129.206.54:443?security=none&encryption=none&headerType=none&type=tcp#%40filembad
 vless://8975546a-375c-4966-8064-19fc0f66f30a@31.76.80.69:2083?mode=auto&path=%2F&security=reality&encryption=none&extra=%7B%22mode%22%3A%22auto%22%7D&pbk=zq3gOJkXi6laNuxMohL3lr-wFOKi4Z9oG7QuMMiTDAk&fp=chrome&spx=%2Fy52f8gp4rv1il6u&type=xhttp&sni=www.amd.com&sid=29b21343ab4d#%40filembad
@@ -907,8 +911,3 @@ vless://501b6afa-f955-473f-8440-1010110a1548@85.234.100.49:7443?security=reality
 vless://06d44c57-8e1a-41f4-b9c4-65d35869e078@193.124.36.178:13868?security=reality&encryption=none&pbk=8SX8GXMe3lXOyY_acO4HFXXYJn_rOOf4zkYFrifV1Tk&headerType=&fp=firefox&type=tcp&flow=xtls-rprx-vision&sni=www.epicgames.com&sid=e852dc#%40filembad
 vless://06d44c57-8e1a-41f4-b9c4-65d35869e078@78.17.105.52:13868?security=reality&encryption=none&pbk=XxzDVidmyjuPnBKrFDwCpowaIdLth4-kJsqrDvdPPx8&headerType=&fp=firefox&type=tcp&flow=xtls-rprx-vision&sni=amd.com&sid=e852dc#%40filembad
 vless://e4514801-0d5a-42ba-869f-39bd605aef9e@18.197.75.14:22224?security=&encryption=none&headerType=&type=tcp#%40filembad
-vless://501b6afa-f955-473f-8440-1010110a1548@85.234.100.49:8443?security=reality&encryption=none&pbk=UJASCPCy2vuNWu3q2C7vVte-HxG0r0XI83pgxBFBv1E&headerType=&type=tcp&flow=xtls-rprx-vision&sni=www.python.org&sid=9c56af76#%40filembad
-vless://e4514801-0d5a-42ba-869f-39bd605aef9e@18.197.75.14:22223?security=none&encryption=none&headerType=none&type=tcp#%40filembad
-vless://e4514801-0d5a-42ba-869f-39bd605aef9e@18.197.75.14:22224?encryption=none&security=none&type=tcp#%40filembad
-vless://e4514801-0d5a-42ba-869f-39bd605aef9e@18.197.75.14:22223?encryption=none&security=none&type=tcp#%40filembad
-vless://06d44c57-8e1a-41f4-b9c4-65d35869e078@193.124.36.178:13868?encryption=none&flow=xtls-rprx-vision&fp=firefox&pbk=8SX8GXMe3lXOyY_acO4HFXXYJn_rOOf4zkYFrifV1Tk&security=reality&sid=e852dc&sni=www.epicgames.com&type=tcp#%40filembad
