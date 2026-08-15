@@ -1,3 +1,8 @@
+vless://53be9ec9-397c-4c4d-b3bb-5351fc43df8f@134.122.109.19:13214?type=tcp&encryption=none&path=/&host=store.steampowered.com&headerType=http&security=none#Config
+vless://11af1c47-865a-47c6-92ff-118013655d78@40.160.69.75:8080?encryption=none&security=&sni=&type=ws&alpn=&host=&path=/?ed=2048#Config
+vmess://eyJhZGQiOiIxMDQuMTYuMzIuMTQiLCJhaWQiOiIwIiwiYWxwbiI6IiIsImZwIjoiIiwiaG9zdCI6IiIsImlkIjoiMDNmY2M2MTgtYjkzZC02Nzk2LTZhZWQtOGEzOGM5NzVkNTgxIiwibmV0Ijoid3MiLCJwYXRoIjoibGlua3Z3cyIsInBvcnQiOiI0NDMiLCJwcyI6IkNvbmZpZyAzIC0gQGxlYmVydGFkIiwic2N5IjoiYXV0byIsInNuaSI6InZzcGVlZGZhc3Qub3JnIiwidGxzIjoiIiwidHlwZSI6IndzIiwidiI6IjIifQ==
+vless://8c4cfb87-09f7-4755-8c9b-224f5d968ef0@18.134.31.72:53762?security=none&encryption=none&host=store.steampowered.com&headerType=http&type=tcp#Config
+vless://a720e1df-68c9-4c51-b2e9-732444a36f76@91.98.154.118:57775?path=/&security=none&encryption=none&host=play.google.com&type=ws#Config
 vless://7fc903d4-5ccc-4c3b-9557-d104b7364aad@91.98.154.118:57775?path=/&security=none&encryption=none&host=play.google.com&type=ws#Config
 vless://d2aeb078-90db-4f90-b334-623bcbea8d31@144.31.237.76:443?security=reality&encryption=none&pbk=xxqv2JF09vb9H5GUrGXvXZx46-dlNtNvdTNgOe_W1A0&headerType=none&fp=firefox&type=tcp&flow=xtls-rprx-vision&sni=cdnjs.cloudflare.com&sid=da8198896a34e6ec#Config
 vless://01f441ab-00e1-4865-90ca-6b2eff143506@68.183.41.47:36180?type=tcp&encryption=none&path=/&host=store.steampowered.com&headerType=http&security=none#Config
@@ -492,8 +497,3 @@ vless://e4514801-0d5a-42ba-869f-39bd605aef9e@13.37.191.103:22224?security=none&e
 vless://a5eddeef-737a-4126-8d1e-527f85d7ed18@2.26.135.197:443?type=tcp&flow=xtls-rprx-vision&security=reality&pbk=09O8bAlIWm9AGnNyxBtHwpYNQxlXPSQeQeKzS3ZMwGE&fp=qq&sni=smorodina.mycdn-me.ru&sid=a1f9c0e21d7b6485&spx=/#Config
 vless://a5eddeef-737a-4126-8d1e-527f85d7ed18@2.26.135.197:443?security=reality&encryption=none&pbk=09O8bAlIWm9AGnNyxBtHwpYNQxlXPSQeQeKzS3ZMwGE&headerType=none&fp=qq&spx=/&type=tcp&flow=xtls-rprx-vision&sni=smorodina.mycdn-me.ru&sid=a1f9c0e21d7b6485#Config
 vmess://eyJhZGQiOiI4Mi4xOTguMjQ2LjI1MCIsImFpZCI6IjAiLCJob3N0IjoiYWRzLng1LnJ1IiwiaWQiOiJkMTNmYzJmNS0zZTA1LTQ3OTUtODFlYi00NDE0M2EwOWU1NTIiLCJuZXQiOiJ0Y3AiLCJwYXRoIjoiXC8iLCJwb3J0IjoiMTgwIiwicHMiOiJDb25maWcgMyAtIEBsZWJlcnRhZCIsInNjeSI6ImF1dG8iLCJ0eXBlIjoibm9uZSIsInYiOiIyIn0=
-vless://2b24afbe-7582-43bf-8034-1d1e83574ad2@185.143.233.235:80?path=/&security=none&encryption=none&host=katashi.ir&type=ws#Config
-vless://bc527d04-6272-41d0-8c48-aa0e83638c94@164.90.165.38:46569?security=none&encryption=none&headerType=none&type=tcp#Config
-vless://d65cc14c-f53f-4fe2-b262-97856601319c@us3.levikogjgfdd.ir:443?security=reality&encryption=none&pbk=e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg&host=Telegram-Leviko_v2ray&headerType=none&type=tcp&flow=xtls-rprx-vision&sni=yahoo.com&sid=c39cc7310a#Config
-vless://d49e6f64-2a62-4fc6-8dde-9ab1bdf12c02@rm1.levikogjgfdd.ir:443?mode=auto&path=/&security=reality&encryption=none&pbk=v_s3GW5_7jvB081tdUeyoDUUTq6fZwqKbVS7CdvLFA0&host=Telegram-Leviko_v2ray&type=xhttp&sni=google.com&sid=72cd47c079c0a3df#Config
-vless://4e7eb9d5-022a-4b0a-ba37-2d1be458947b@gr1.levikogjgfdd.ir:443?security=reality&encryption=none&pbk=YkcQyTOh9YpZmilRob-eVxwoo4uwBAa9oHmURMTFzEM&host=Telegram-Leviko_v2ray&headerType=none&type=tcp&flow=xtls-rprx-vision&sni=www.cloudflare.com&sid=a7#Config
