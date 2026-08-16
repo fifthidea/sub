@@ -1,3 +1,10 @@
+vless://e1e26ef7-3291-45ac-b821-a11dcdbfdb4d@109.73.193.169:4100?path=%2Fv1&security=&encryption=none&type=ws#@ConfigYab_AUTO
+vless://2a88091e-e3f8-4478-9751-6ce0557a7f2e@82.117.87.199:4100?path=%2Fv1&security=&encryption=none&host=live.ok.ru&type=ws#@ConfigYab_AUTO
+vless://e38a8d62-0c3a-4f6b-b341-0429b7df1f5b@95.163.232.183:443?encryption=none&fp=&pbk=V6FabatADtcX7aO9KMjGCadJC4LuQ_5nRViab-z-nFQ&security=reality&serviceName=5post.gate.v1&sid=abcd&sni=5post-gate.x5.ru&type=grpc#@ConfigYab_AUTO
+vless://9b44bfb4-9d28-4870-9fc3-5154d6d462ff@194.87.161.60:4100?path=%2Fv1&security=&encryption=none&type=ws#@ConfigYab_AUTO
+vless://e7c3374c-f8b8-490c-aee8-11e3bdab67bc@109.73.193.169:2200?path=%2Fv1&security=&encryption=none&host=rzd.ru&type=ws#@ConfigYab_AUTO
+vless://5d0fbb28-3be3-4044-bc5b-e4b7ca1916c7@31.177.82.106:4100?encryption=none&security=none&type=ws&host=live.ok.ru&path=%2Fv1#@ConfigYab_AUTO
+vless://0f6ecc1c-4cd4-4f69-970e-a385d9c5afe3@nl-04.vacvps.com:443?security=reality&encryption=none&pbk=LyVBHJ_qK2ron24Qfw_mhZ8n-T94xHCzXPrFM02EaQw&headerType=none&fp=chrome&type=tcp&flow=xtls-rprx-vision&sni=nl-04.vacvps.com#@ConfigYab_AUTO
 vless://dcdf114b-e2db-4cc1-bfa4-f30a0a47da7a@164.37.100.59:443/?type=grpc&encryption=none&flow=&serviceName=rpc.v1.SyncService&security=tls&sni=edge1.numberoneok.com&fp=firefox#@ConfigYab_AUTO
 vless://166ef05e-8ab5-43b7-8910-d1bb0a4326a5@188.72.103.3:443?path=%2Fapi%2Fv1%2Frooms%2F63368e3dbb%2Fsync&security=tls&encryption=none&insecure=0&host=sync.watchwave.link&fp=chrome&type=ws&allowInsecure=0&sni=cdn.tracker.yandex.net#@ConfigYab_AUTO
 vless://5aafc2be-9348-4dec-b896-f4a91253bbca@202.37.33.80:443?path=%2Fid-tksi%3Fed%3D2048&security=tls&encryption=none&insecure=0&host=support.zoom.us.yxls.eu.cc&ech=encryptedsni.com%2Budp%3A%2F%2F8.8.8.8&type=ws&allowInsecure=0&sni=support.zoom.us.yxls.eu.cc#@ConfigYab_AUTO
@@ -12,10 +19,8 @@ trojan://humanity@2.144.21.150:2000?path=%2Fassignment&security=tls&insecure=0&t
 trojan://humanity@2.144.21.112:40443?path=%2Fassignment&security=tls&insecure=0&type=ws&allowInsecure=0&sni=www.ignitelimit.com#@ConfigYab_AUTO
 vless://a6f6d9c9-9d43-4d0e-bf95-4b87cc5bbaac@gb1.murhost.network:443?security=reality&encryption=none&pbk=-nB-tCeZ4Zr72ArHUKnbUphbs4PlBS6iId6PkrPQQTE&headerType=none&type=tcp&flow=xtls-rprx-vision&sni=gb1.murhost.network&sid=84f9881951050a30#@ConfigYab_AUTO
 vless://9e20b04d-5a81-4e16-b421-01e502f0aac6@57.129.132.223:80?path=%2Fvless%2F&security=none&encryption=none&host=google.com&type=ws#@ConfigYab_AUTO
-vless://2a88091e-e3f8-4478-9751-6ce0557a7f2e@82.117.87.199:4100?path=%2Fv1&security=&encryption=none&host=live.ok.ru&type=ws#@ConfigYab_AUTO
 vless://2a650f3b-d95b-4bd6-aadf-16ccc0717155@45.151.30.127:9873?encryption=none&security=reality&sni=dl.google.com&fp=qq&pbk=bnRIb3Er1i-K6NGGByCO9UbGfOvu43ZoiK7ulPd1SzU&type=grpc&authority=&serviceName=grpc-tunnel&mode=gun#@ConfigYab_AUTO
 vless://77fd4d9e-c314-4203-b3e0-b836a1d969b4@188.225.27.238:2200?path=%2Fv1&security=&encryption=none&host=rzd.ru&type=ws#@ConfigYab_AUTO
-vless://5d0fbb28-3be3-4044-bc5b-e4b7ca1916c7@31.177.82.106:4100?encryption=none&security=none&type=ws&host=live.ok.ru&path=%2Fv1#@ConfigYab_AUTO
 vless://3aabd489-04af-42fb-87e2-363d1b83d335@193.233.244.15:8443/?type=grpc&encryption=none&flow=&serviceName=your-custom-path&sni=maps.apple.com&fp=qq&security=reality&pbk=OMlQAFrCMZ3DX0xlnbEZiByLBFzpUE8XJHJsrBzLdlY&sid=2da4299da566b7#@ConfigYab_AUTO
 vless://e7961655-9674-4cbd-a36f-ec0d5d7d660c@one-for-all.levikogjgfdd.ir:2053?path=%2F&security=tls&alpn=h3%2Ch2&encryption=none&host=po.fastbrokencompony.com&fp=chrome&type=ws&sni=po.fastbrokencompony.com#@ConfigYab_AUTO
 vless://a3a98818-757f-41a1-82b0-baad2d6a3807@dl2dl2dl2.lornavps.ir:8855?security=none&encryption=none&host=play.google.com&headerType=http&type=tcp#@ConfigYab_AUTO
@@ -106,7 +111,6 @@ vless://e97ab92c-6067-44d8-a8ea-c8c07d33e99a@159.89.111.250:12899?security=&encr
 vless://e97ab92c-6067-44d8-a8ea-c8c07d33e99a@161.35.194.85:12899?security=&encryption=none&host=store.steampowered.com&headerType=http&type=tcp#@ConfigYab_AUTO
 vless://e97ab92c-6067-44d8-a8ea-c8c07d33e99a@207.154.253.46:12899?security=&encryption=none&host=store.steampowered.com&headerType=http&type=tcp#@ConfigYab_AUTO
 vless://e97ab92c-6067-44d8-a8ea-c8c07d33e99a@165.232.118.133:12899?security=&encryption=none&host=store.steampowered.com&headerType=http&type=tcp#@ConfigYab_AUTO
-vless://e38a8d62-0c3a-4f6b-b341-0429b7df1f5b@95.163.232.183:443?encryption=none&fp=&pbk=V6FabatADtcX7aO9KMjGCadJC4LuQ_5nRViab-z-nFQ&security=reality&serviceName=5post.gate.v1&sid=abcd&sni=5post-gate.x5.ru&type=grpc#@ConfigYab_AUTO
 vless://cd60668d-28d0-4070-8179-47ad0d151dd5@82.202.247.181:443?security=reality&encryption=none&pbk=vZ22ThhkpXUd5-tY-v5TTrouLHjgYYmeQgqeLt7HRz0&headerType=none&fp=firefox&type=tcp&flow=xtls-rprx-vision&sni=yandex.ru#@ConfigYab_AUTO
 vless://14fb52d9-aaab-4994-9b4d-f77c5b73b127@5.129.206.54:443?security=none&encryption=none&headerType=none&type=tcp#@ConfigYab_AUTO
 vless://885999c8-ff75-4df3-9165-e97ec7798115@xray1-direct-mci1-fs-ce.freesocks.work:443?encryption=none&flow=xtls-rprx-vision&type=tcp&security=reality&sni=dl.google.com&fp=unsafe&pbk=7j3hmlHrEDk3Kjx-dFG3E3jf0c6PZF45trIPFsuKWmI#@ConfigYab_AUTO
@@ -1655,5 +1659,3 @@ vless://e4514801-0d5a-42ba-869f-39bd605aef9e@63.180.222.124:22222?encryption=non
 vless://f75814f6-8f81-4847-b792-168c41f2dc85@45.196.201.232:443?security=reality&encryption=none&pbk=zii4nGNapnFKL6SN8GzWNqFlElBvUCUFUThEP0kFH04&headerType=none&fp=chrome&type=tcp&flow=xtls-rprx-vision&sni=storage.yandex.net&sid=c6ef72e4635d15a5#AntiAbani
 vless://74ed8b25-5ff1-40bf-bcd7-3db03be19f53@31.220.86.213:443?encryption=none&security=reality&sni=status.play.google.com&fp=ios&pbk=VHidBoU58xA5kEh8pmXf0gQYzvz-KVH9-XAuM4TrMUs&sid=49bcf0de6392f0&spx=%2F&type=xhttp&host=status.play.google.com&path=%2F&mode=auto&extra=%7B%22scMaxEachPostBytes%22%3A%224194304-8388608%22%2C%22uplinkHTTPMethod%22%3A%22POST%22%2C%22seqPlacement%22%3A%22query%22%2C%22uplinkChunkSize%22%3A%2232768-65536%22%7D#AntiAbani
 vless://bf58f3cd-7c8c-4650-bd7a-028df18b3ba0@odc-wdscx.appcodes.ir:2026?encryption=none&security=reality&type=tcp&headerType=none&sni=updates.cdn-apple.com&fp=chrome&pbk=484wYbkS2hs2WSdXmk2-bOeKZkdBbzdD7uZ1WmRIEj8&sid=ca930e5d4a603c6a#AntiAbani
-vless://b112787f-1a42-449b-bd26-a45a532a4e41@170.39.216.98:1005?mode=stream-one&path=%2F%3Fed%3D2048&security=none&encryption=none&host=www.samanehha.io&type=xhttp#AntiAbani
-vless://83afd88f-200f-4d89-bfc7-66eff160c1d8@104.18.37.228:443?path=musiclovers85%3Fed&security=tls&encryption=none&host=josni.hoyes.cloudns.ch&type=ws&sni=josni.hoyes.cloudns.ch#AntiAbani
