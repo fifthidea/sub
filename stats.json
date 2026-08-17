@@ -1,5 +1,5 @@
 {
-    "updated": "1405/05/26 09:03",
+    "updated": "1405/05/26 09:18",
     "ir_filter": {
         "source": "RIPE NCC",
         "cidr_network_count": 2528,
@@ -11,8 +11,8 @@
         "sub-medium": 1500,
         "sub-lite": 750,
         "sub-tiny": 300,
-        "ir": 1270,
-        "ir-actual": 993
+        "ir": 1269,
+        "ir-actual": 992
     },
     "channels": {
         "ConfigsHUB2": {
@@ -23,12 +23,12 @@
         "ConfigsHUB": {
             "configs": 1396,
             "active": true,
-            "last_config": "1405/05/26 09:00"
+            "last_config": "1405/05/26 09:15"
         },
         "TheFreeConfigs": {
             "configs": 1184,
             "active": true,
-            "last_config": "1405/05/26 08:51"
+            "last_config": "1405/05/26 09:03"
         },
         "persianvpnhub": {
             "configs": 465,
@@ -38,7 +38,7 @@
         "FarahVPN": {
             "configs": 634,
             "active": true,
-            "last_config": "1405/05/26 09:00"
+            "last_config": "1405/05/26 09:13"
         },
         "NamiraConfigs": {
             "configs": 269,
@@ -68,7 +68,7 @@
         "ConfigYab_AUTO": {
             "configs": 1652,
             "active": true,
-            "last_config": "1405/05/26 08:52"
+            "last_config": "1405/05/26 09:16"
         },
         "DeamNet_proxy": {
             "configs": 112,
@@ -76,14 +76,14 @@
             "last_config": "1405/05/25 21:50"
         },
         "Farah_VPN": {
-            "configs": 844,
+            "configs": 845,
             "active": true,
-            "last_config": "1405/05/26 09:00"
+            "last_config": "1405/05/26 09:12"
         },
         "FreakConfig": {
             "configs": 942,
             "active": true,
-            "last_config": "1405/05/26 06:01"
+            "last_config": "1405/05/26 09:04"
         },
         "GalaxyMVPN": {
             "configs": 1799,
@@ -91,9 +91,9 @@
             "last_config": "1405/05/26 09:01"
         },
         "NamazVPN": {
-            "configs": 1606,
+            "configs": 1602,
             "active": true,
-            "last_config": "1405/05/26 08:45"
+            "last_config": "1405/05/26 09:16"
         },
         "SOSkeyNET": {
             "configs": 1799,
@@ -108,22 +108,22 @@
         "chillguy_vpn": {
             "configs": 956,
             "active": true,
-            "last_config": "1405/05/26 09:00"
+            "last_config": "1405/05/26 09:15"
         },
         "filembad": {
             "configs": 909,
             "active": true,
-            "last_config": "1405/05/26 08:51"
+            "last_config": "1405/05/26 09:10"
         },
         "iranconnecting": {
-            "configs": 881,
+            "configs": 879,
             "active": true,
-            "last_config": "1405/05/26 09:01"
+            "last_config": "1405/05/26 09:15"
         },
         "CafeTweetFa": {
             "configs": 904,
             "active": true,
-            "last_config": "1405/05/26 08:58"
+            "last_config": "1405/05/26 09:16"
         },
         "iraniroid": {
             "configs": 882,
@@ -133,7 +133,7 @@
         "lebertad": {
             "configs": 487,
             "active": true,
-            "last_config": "1405/05/26 09:02"
+            "last_config": "1405/05/26 09:09"
         },
         "meliproxyy": {
             "configs": 464,
@@ -148,7 +148,7 @@
         "v2ray_dalghak": {
             "configs": 948,
             "active": true,
-            "last_config": "1405/05/26 08:45"
+            "last_config": "1405/05/26 09:14"
         },
         "v2ray_free_conf": {
             "configs": 365,
@@ -158,12 +158,12 @@
         "vpnfail_v2ray": {
             "configs": 917,
             "active": true,
-            "last_config": "1405/05/26 08:56"
+            "last_config": "1405/05/26 09:12"
         },
         "v2ray_configs_pool": {
             "configs": 928,
             "active": true,
-            "last_config": "1405/05/26 09:01"
+            "last_config": "1405/05/26 09:17"
         }
     }
 }
