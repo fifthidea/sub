@@ -1,3 +1,6 @@
+vless://a16a3336-c9ab-489f-9b85-c973f5e2cfa4@137.220.221.179:443?security=none&type=tcp&fp=chrome#@ConfigYab_AUTO
+trojan://AE62539071@18.179.200.238:443?sni=safe-frog.rooster465.autos&type=tcp&fp=chrome#@ConfigYab_AUTO
+trojan://fg20mtCFHy@157.245.99.215:5750?allowInsecure=1&sni=inyct.southbyte.xyz#@ConfigYab_AUTO
 vless://7d2bac5e-6ff9-45c9-844e-6bfc5a384a42@146.103.122.129:443?security=reality&encryption=none&pbk=lHCkAu_DOVFtE-iL2JGrPt44QeTCFijXuRfuGaSni3Q&headerType=none&fp=firefox&type=tcp&flow=xtls-rprx-vision&sni=nl1.orpheous.ru&sid=9e4eced6e98ed4d4#@ConfigYab_AUTO
 vless://f6facd31-c0f7-444f-8b7d-be754eaea9cc@43.224.150.210:443?security=reality&encryption=none&pbk=cQ4VTKqrqqCRqcfMx9F4rOV56w7KmOXAyv_FlEZy7C4&headerType=none&fp=firefox&type=tcp&flow=xtls-rprx-vision&sni=www.cloudflare.com&sid=5f8bf82edbd1569b#@ConfigYab_AUTO
 vless://3b5fddd1-b156-4544-80fb-7c3071e63bc1@fardad-no.berzema.ir:6800?security=reality&encryption=none&pbk=lQbgwNDYw6Zbjdim0JtXUarzb-3GSjDvtX6FJYZD9Qo&headerType=none&fp=qq&type=tcp&sni=play.google.com#@ConfigYab_AUTO
@@ -11,7 +14,6 @@ vless://0a31984d-b06f-4e79-b255-0dc64ee5d419@43.224.150.71:443?security=reality&
 vless://04565637-f19b-444f-809d-17139155e90d@static.onevanet.ir:28239?security=reality&alpn=h2%2Chttp%2F1.1&encryption=none&pbk=RVqny9xY821kUGqKQMzAWHeWjt_OrYw2Hn5poqH0lAs&headerType=none&fp=chrome&type=tcp&sni=token.safebrowsing.apple&sid=6318bc577da67e29#@ConfigYab_AUTO
 vless://04565637-f19b-444f-809d-17139155e90d@static.onevanet.ir:2128?security=reality&alpn=h2%2Chttp%2F1.1&encryption=none&pbk=RVqny9xY821kUGqKQMzAWHeWjt_OrYw2Hn5poqH0lAs&headerType=none&fp=chrome&type=tcp&sni=adl.windows.com&sid=6318bc577da67e29#@ConfigYab_AUTO
 vless://431fe973-a43a-4fac-bf83-2a772e0d0625@220.130.75.248:10000?&type=tcp&headerType=none&path=%2F#@ConfigYab_AUTO
-trojan://fg20mtCFHy@157.245.99.215:5750?allowInsecure=1&sni=inyct.southbyte.xyz#@ConfigYab_AUTO
 vless://b34aaf5c-10f9-4085-a21e-1ea063555bcd@a8.maxriser.ir:5900?security=reality&encryption=none&pbk=yV9VmgrkLvObgUYv0YIYPczou2LrEZk9fSBcXllIDAw&headerType=none&fp=firefox&spx=%2F&type=tcp&sni=a8.maxriser.ir&sid=10ce18f6#@ConfigYab_AUTO
 vless://83afd88f-200f-4d89-bfc7-66eff160c1d8@172.66.44.97:443?path=%3Fed%3D2048&security=tls&encryption=none&insecure=0&host=josni.hoyes.cloudns.ch&ech=ip.gs%2Budp%3A%2F%2F8.8.8.8&type=ws&allowInsecure=0&sni=josni.hoyes.cloudns.ch#@ConfigYab_AUTO
 vless://b34aaf5c-10f9-4085-a21e-1ea063555bcd@45.82.121.201:5900?security=reality&encryption=none&pbk=yV9VmgrkLvObgUYv0YIYPczou2LrEZk9fSBcXllIDAw&headerType=none&fp=firefox&spx=%2F&type=tcp&sni=a8.maxriser.ir&sid=10ce18f6#@ConfigYab_AUTO
@@ -1666,5 +1668,3 @@ vless://fbcef3f5-12d0-4f97-8309-c70ddf5c00b0@130.185.122.175:8585?encryption=non
 vless://fbcef3f5-12d0-4f97-8309-c70ddf5c00b0@130.185.122.175:8585?security=tls&alpn=h2%2Chttp%2F1.1&encryption=none&insecure=0&headerType=none&fp=chrome&ech=AGL%2BDQBeAAAgACCSYFpzACsAAwtF6BV7RiLXO1%2BPT3HLqxmYP9xjf7nmHgAkAAEAAQABAAIAAQADAAIAAQACAAIAAgADAAMAAQADAAIAAwADAA8xMzAuMTg1LjEyMi4xNzUAAA%3D%3D&type=tcp&allowInsecure=0&sni=130.185.122.175#@ConfigYab_AUTO
 vless://37a098ab-8fec-4352-8ee8-294ae5bca68f@193.233.126.82:9443?security=reality&encryption=none&pbk=Te5lrfzw_MytTzQJB92DhWw7fk1qTK3mhzz7Bz41gVc&headerType=none&fp=qq&type=tcp&flow=xtls-rprx-vision&sni=www.amd.com&sid=0240e83f65a25e#@ConfigYab_AUTO
 vless://931dd7d0-3e04-4a7a-b8d1-cb4c4465c932@emarat.internetazad.com:2044?security=&encryption=none&host=play.google.com&headerType=http&type=tcp#@ConfigYab_AUTO
-vless://dc8eccdb-ecfa-435f-9ac1-5dc4882e7b51@de.vpnbase.net:80?type=ws&path=%2Fhttp&host=de.vpnbase.net#@ConfigYab_AUTO
-vless://83afd88f-200f-4d89-bfc7-66eff160c1d8@172.66.44.97:443?encryption=none&security=tls&sni=josni.hoyes.cloudns.ch&ech=ip.gs%2Budp%3A%2F%2F8.8.8.8&type=ws&host=josni.hoyes.cloudns.ch&path=%2Fsg-melbi#@ConfigYab_AUTO
