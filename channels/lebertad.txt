@@ -1,3 +1,8 @@
+vless://532d46c5-7625-4aab-887b-200c5da2849a@91.195.240.94:80?security=none&type=ws&host=media.rubika.bio&path=/backup#Config
+vless://b85b1e90-b5ed-0002-b433-bf9d2eca0e42@ru9.aimodelhub.top:443?flow=xtls-rprx-vision&fp=chrome&pbk=jwT3lcIzJQMjzBKRNsmyRGrgaa1qNfE7pQF_nAKu0GA&security=reality&sid=a73cf719b624&sni=ru9.aimodelhub.top&encryption=none#Config
+vless://2e9d3568-f977-4cea-800d-fd9a876e7252@ai.riotvpn.eu:8443?security=reality&encryption=none&pbk=sgFFdQvfeujBKh6g7N7klU_u0mKYlr800MFbko5FzUg&fp=qq&type=grpc&serviceName=grpc-yandex&sni=static.vkimages.io&sid=844352756c1fabba#Config
+vless://ac7fb60f-0b7a-465d-a002-05160ec04ed6@85.155.230.58:443?security=tls&alpn=h2,http/1.1&encryption=none&insecure=0&headerType=none&fp=firefox&type=tcp&allowInsecure=0&flow=xtls-rprx-vision&sni=lapa7.api3-max.ru#Config
+vless://1b627e4d-4ea4-4dce-8bd8-fc2d3ffbeaba@auth.sso.anti-zapret.com:443?security=reality&encryption=none&pbk=0AVsyS7udTbxKRdSyQ2rtFC63icDQOVWq8FvAhhU-WY&headerType=none&fp=chrome&type=tcp&flow=xtls-rprx-vision&sni=cdnjs.com&sid=cbb0a5c1dc905505#Config
 vless://a13df940-020c-465f-bc89-ee5279b5cd6a@194.76.18.116:443?security=tls&sni=jpf.ylks01.eu.org&type=ws&path=/blue#Config
 vless://11e5b771-1d4d-4362-b4b5-e39e75981f01@172.67.198.111:443?security=tls&sni=3e8B07A5.PUb000bpB.PAGes.Dev&type=ws&host=3e8B07A5.PUb000bpB.PAGes.Dev&path=/Telegram-@V2ray_Alpha/?ed=2560#Config
 vless://d8efe321-d43c-4245-acc4-daf6d7e4489c@198.41.202.5:2087?security=tls&sni=LiV2ry.lightning1.ir&type=ws&host=LiV2ry.lightning1.ir&path=@mehrosaboran,@mehrosaboran&fp=chrome&alpn=h2,http/1.1#Config
@@ -490,8 +495,3 @@ vless://e4514801-0d5a-42ba-869f-39bd605aef9e@3.70.33.197:22224?encryption=none&s
 vless://e4514801-0d5a-42ba-869f-39bd605aef9e@3.70.33.197:22222?encryption=none&security=none&type=tcp#Config
 vless://e4514801-0d5a-42ba-869f-39bd605aef9e@3.70.33.197:22223?encryption=none&security=none&type=tcp#Config
 vless://7f337090-baa7-4702-a307-4b0a8f9a4659@199.232.78.159:443?path=/&security=tls&encryption=none&host=lsjaoijji.global.ssl.fastly.neT&type=ws&sni=ssl.fastly.com#Config
-vless://83afd88f-200f-4d89-bfc7-66eff160c1d8@188.114.97.6:8080?encryption=none&security=none&type=ws&host=josni.hoyes.cloudns.ch&path=musiclovers85_musiclovers85?ed=512&fm={"tcp":
-vless://03707fb7-0990-440f-88f6-b0e0f7242a38@104.18.139.67:443?type=ws&security=tls&fp=chrome&sni=de-new.ariyuz.org#Config
-vless://03707fb7-0990-440f-88f6-b0e0f7242a38@188.114.97.6:443?type=ws&security=tls&path=/&sni=de-new.ariyuz.org#Config
-vless://32f58dd7-a12f-47f7-b74a-1abb3ecfae61@free.soundfiy.ir:4554?security=reality&encryption=none&pbk=v-ydSy2Eb-YyiWYd3WyFoJc4Bjs9QPGRTsVac6SyO14&headerType=&fp=firefox&spx=/5262415b26c817e&type=tcp&flow=xtls-rprx-vision&sni=yahoo.com&sid=515ed4da724702#Config
-vless://03707fb7-0990-440f-88f6-b0e0f7242a38@104.16.6.70:443?type=ws&security=tls&path=/&sni=de-new.ariyuz.org#Config
