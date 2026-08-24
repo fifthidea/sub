@@ -1,3 +1,5 @@
+vless://01ea3b87-b7b1-4aef-b24a-9c43fbd3b26f@nl-tx.sbrf-cdn342.ru:443?security=tls&alpn=http%2F1.1&encryption=none&insecure=1&host=%2F&headerType=none&fp=qq&type=tcp&allowInsecure=1&flow=xtls-rprx-vision&sni=sub.sbrf-cdn342.ru#canfingV2rayNG-65
+vless://301f9f35-73c7-4ae0-bbe9-7dd86da19f50@91.107.140.160:443?security=reality&encryption=none&pbk=Efid51phV7wQ6vF48DC97364AyVl7tQa22ILzIOLYgg&headerType=none&fp=chrome&spx=%2FXsnyR2MlsO4oUEr&type=tcp&flow=xtls-rprx-vision&sni=aws.amazon.com&sid=d04733f30a13#canfingV2rayNG-159
 vless://3757a383-ca03-4d85-a4f0-5c9602a8949a@webb.gdsrguydsrghj.ir:1010?security=&encryption=none&headerType=http&type=tcp#canfingV2rayNG-167
 vless://24d49ddd-67c1-4821-b5b9-f12107366978@104.19.250.20:443?encryption=none&security=tls&sni=bahari.kiamobilepart.com&fp=chrome&alpn=h2%2Chttp%2F1.1&insecure=0&allowInsecure=0&type=ws&host=bahari.kiamobilepart.com&path=%2Fapi#canfingV2rayNG-128
 trojan://Mitivpn@151.101.110.219:443?path=%2Fde&security=tls&alpn=http%2F1.1&insecure=0&host=3-mitivpn.global.ssl.fastly.net&fp=chrome&type=ws&allowInsecure=0&sni=global.fastly.com#canfingV2rayNG-46
@@ -79,7 +81,6 @@ vless://3559f1f7-7d70-46c9-82db-d2b46269300b@s2.dipvpn.ru:443?security=reality&e
 vless://e9adbac6-90e1-4c1f-ad17-46226d45a262@85.133.221.48:5001?security=&encryption=none&headerType=none&type=tcp#canfingV2rayNG-472
 vless://5e042049-f74d-4ccc-a3ac-db27bca2ce99@hyst.purplrose.ir:8443?security=tls&alpn=h2%2Chttp%2F1.1&encryption=none&insecure=0&host=bastani.purplrose.ir&fp=random&type=ws&allowInsecure=0&sni=bastani.purplrose.ir#canfingV2rayNG-216
 vless://e4514801-0d5a-42ba-869f-39bd605aef9e@63.187.217.79:22223?encryption=none&security=none&type=tcp#filembad-457
-vless://301f9f35-73c7-4ae0-bbe9-7dd86da19f50@91.107.140.160:443?security=reality&encryption=none&pbk=Efid51phV7wQ6vF48DC97364AyVl7tQa22ILzIOLYgg&headerType=none&fp=chrome&spx=%2FXsnyR2MlsO4oUEr&type=tcp&flow=xtls-rprx-vision&sni=aws.amazon.com&sid=d04733f30a13#canfingV2rayNG-153
 vless://7d2bac5e-6ff9-45c9-844e-6bfc5a384a42@31.76.119.117:443?security=reality&encryption=none&pbk=lHCkAu_DOVFtE-iL2JGrPt44QeTCFijXuRfuGaSni3Q&host=%2F%3F&headerType=none&fp=chrome&type=tcp&flow=xtls-rprx-vision&sni=de.orpheous.ru&sid=9e4eced6e98ed4d4#filembad-261
 vless://7d74eae4-8a06-4306-a923-ad686f30bf26@OV-Germany1.09vpn.com:80?path=%2Fvless%2F&security=&encryption=none&type=ws#canfingV2rayNG-266
 vmess://eyJhZGQiOiJkYXNoYm9hcmQuYWZyYWthbGEudG9wIiwiYWlkIjoiMCIsImFscG4iOiIiLCJmcCI6IiIsImhvc3QiOiIiLCJpZCI6IjEzMGIwZmJmLTRmMTktNDRkMC05MTFmLTk1MzU1ZTk2MzJlNCIsImluc2VjdXJlIjoiMCIsIm5ldCI6InRjcCIsInBhdGgiOiIiLCJwY3MiOiIiLCJwb3J0IjoiNTM4MiIsInBzIjoiZmlsZW1iYWQtNTA2Iiwic2N5IjoiYXV0byIsInNuaSI6IiIsInRscyI6IiIsInR5cGUiOiJub25lIiwidiI6IjIiLCJ2Y24iOiIifQ==
@@ -371,4 +372,3 @@ vless://def62c86-e2f2-4d13-b1f1-b3c197ed4873@cash.qelzino.ir:443?encryption=none
 vless://55ce9e09-5208-541a-29f2-15c35394b168@69.46.46.18:443?path=%2Fws%2F55ce9e09-5208-541a-29f2-15c35394b168&security=tls&alpn=http%2F1.1&encryption=none&insecure=0&host=rvg-production-0a48d.up.railway.app&fp=ios&type=ws&allowInsecure=0&sni=rvg-production-0a48d.up.railway.app#ProxyMtpVPN-174
 vless://e4514801-0d5a-42ba-869f-39bd605aef9e@18.153.151.72:22224?security=none&encryption=none&headerType=none&type=tcp#ProxyMtpVPN-445
 trojan://FH72359861@35.159.21.7:443?security=tls&insecure=0&headerType=none&type=tcp&allowInsecure=0&sni=summary-lemming.rooster465.autos#ProxyMtpVPN-35
-vless://be3960db-f339-0065-be7b-c1a130601141@213.193.255.206:443?flow=xtls-rprx-vision&fp=firefox&headertype=none&pbk=fYAeaCv2jMnzpu7WzQmx38eBRW43kEfpUqj_RwnVnEA&security=reality&sni=gb.cdn.cachefleet.com&type=tcp#filembad-389
