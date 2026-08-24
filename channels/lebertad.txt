@@ -1,3 +1,13 @@
+vless://419f25c1-bc35-412e-93fb-258efee859b5@167.104.223.66:443?security=reality&encryption=none&pbk=WRK4JiKTQ6ygRHh1tRfUzuSO1-v2fKfsFoy3O9pXOi8&headerType=none&fp=chrome&type=tcp&flow=xtls-rprx-vision&sni=167.104.223.66.sslip.io&sid=00e32d694f37c137#Config
+vless://83afd88f-200f-4d89-bfc7-66eff160c1d8@104.16.79.73:443?path=musiclovers85?ed=512&security=tls&encryption=none&insecure=0&host=josni.hoyes.cloudns.ch&ech=ip.gs+udp://8.8.8.8&type=ws&allowInsecure=0&sni=josni.hoyes.cloudns.ch#Config
+vless://4b2a13fb-850d-4966-88cb-04669de5cb3e@amini.daltoonserver.ir:330?security=reality&encryption=none&pbk=x8U_rnyU2FP0EmB7YJ7tbpJOT5JF1f0L6pPUbTnFljg&headerType=none&fp=chrome&spx=/cgO0rpIJXP5Zf9J&type=tcp&sni=yahoo.com&sid=33decb55cc#Config
+vless://83afd88f-200f-4d89-bfc7-66eff160c1d8@cf.levikogjgfdd.ir:443?path=/ed&security=tls&encryption=none&insecure=0&host=josni.hoyes.cloudns.ch&type=ws&allowInsecure=0&sni=josni.hoyes.cloudns.ch#Config
+vless://64bd5231-8c49-44f4-8bc0-998eef787d05@5.42.121.52:2200?path=/v1&security=none&encryption=none&host=rzd.ru&type=ws#Config
+vless://a18f7c2d-9e45-4b8a-af3c-1d5e7f9c8b2a@p2.levikogjgfdd.ir:443?security=reality&encryption=none&pbk=8h8t5eBWL9oERK7xWHQLFJE5j6sZdgNDQAs3EGnNbho&host=Telegram-Leviko_v2ray&headerType=none&fp=chrome&type=tcp&sni=ads.x5.ru&sid=2f49bccf11150ef2#Config
+vless://53c76647-14d1-4df5-99cb-be99ad2e6bd9@fr345.levikogjgfdd.ir:443?security=tls&encryption=none&host=Telegram-Leviko_v2ray&headerType=none&type=tcp&flow=xtls-rprx-vision&sni=fr199.mechvpn.online#Config
+vless://8975546a-375c-4966-8064-19fc0f66f30a@31.76.80.69:2083?mode=auto&path=/&security=reality&encryption=none&pbk=zq3gOJkXi6laNuxMohL3lr-wFOKi4Z9oG7QuMMiTDAk&fp=chrome&spx=/y52f8gp4rv1il6u&type=xhttp&sni=www.amd.com&sid=29b21343ab4d#Config
+vless://603819a3-dd65-408a-abab-15d8dc49887f@174.138.2.19:443?security=none&encryption=none&host=store.steampowered.com&headerType=http&type=tcp#Config
+vless://9972a440-39a6-4672-8883-5dd188863acf@138.226.237.185:52?security=none&encryption=none&headerType=none&type=tcp#Config
 vless://25f3beef-a4b6-40bc-aa74-17a0f89f683c@gr2.levikogjgfdd.ir:443?path=/&security=tls&encryption=none&host=telegram.us&type=ws&sni=finite-node.rtxconfigz.com#Config
 vless://d361072e-9e0e-4e2d-8ec7-2a4189b5b23a@cf.levikogjgfdd.ir:2053?path=/J5aLQOY1R9ONWYCM&security=tls&encryption=none&host=ov.iran-servers.shop&fp=chrome&type=ws&sni=ov.iran-servers.shop#Config
 vless://511c1563-2cb6-4064-abc6-a59ee49818a8@in1.levikogjgfdd.ir:40443?security=reality&encryption=none&pbk=cwmcqsfS7klQlkcoUNuATEk0NiPY-NnRb9z8rCJDQw0&host=Telegram-Leviko_v2ray&headerType=none&fp=qq&type=tcp&flow=xtls-rprx-vision&sni=deepl.com&sid=88b6#Config
@@ -488,13 +498,3 @@ vless://b5ca5ab3-8cbc-4ac3-89da-9cd360589ecb@195.184.247.229:443?security=realit
 vless://44b9c809-f7ca-13d8-e004-784b871de0bf@69.46.46.39:443?path=/ws/44b9c809-f7ca-13d8-e004-784b871de0bf&security=tls&alpn=http/1.1&encryption=none&insecure=0&host=tagh-production-kjdbd.up.railway.app&fp=ios&type=ws&allowInsecure=0&sni=tagh-production-kjdbd.up.railway.app#Config
 vless://ac7fb60f-0b7a-465d-a002-05160ec04ed6@lapa4.api3-max.ru:443?security=tls&alpn=h2,http/1.1&encryption=none&headerType=none&type=tcp&flow=xtls-rprx-vision&sni=lapa4.api3-max.ru#Config
 vless://55dea358-343a-42d4-8a8b-4ddb30a2ec82@176.65.151.52:19819?encryption=none&type=tcp#Config
-vless://14a0c04a-8d53-4dcb-a450-8770a0a1ed1b@176.65.151.52:54334?encryption=none&type=tcp#Config
-vless://904cd6f2-9740-44e5-9353-58207c8e64c7@185.143.232.253:8080?encryption=none&security=none&type=ws&path=/&host=2ja0n7x60a.star2.panelpars.ir#Config
-vless://4fcbd340-8334-4309-941b-5b9c61d43215@web-production-7dfd6.up.railway.app:443?path=/vl-ws&security=tls&alpn=http/1.1&encryption=none&insecure=0&host=web-production-7dfd6.up.railway.app&fp=chrome&type=ws&allowInsecure=0&sni=web-production-7dfd6.up.railway.app#Config
-vless://f36483dd-cf09-4f43-be12-1de5b488fff4@dash.1a6.ir:443?security=reality&encryption=none&pbk=q6xRBkrUDQo8-4rILPgGK_HFytt_1Z0CYgZD7Ywk10c&headerType=none&fp=chrome&type=tcp&flow=xtls-rprx-vision&sni=amp-api-edge.apps.apple.com&sid=3bd577d0bba8c1f7#Config
-vless://83afd88f-200f-4d89-bfc7-66eff160c1d8@104.16.79.73:443?encryption=none&security=tls&sni=josni.hoyes.cloudns.ch&ech=ip.gs+udp://8.8.8.8&type=ws&host=josni.hoyes.cloudns.ch&path=/#Config
-vless://83afd88f-200f-4d89-bfc7-66eff160c1d8@104.18.37.228:443?encryption=none&security=tls&sni=josni.hoyes.cloudns.ch&ech=ip.gs+udp://8.8.8.8&type=ws&host=josni.hoyes.cloudns.ch&path=/?#Config
-vless://83afd88f-200f-4d89-bfc7-66eff160c1d8@104.18.37.228:443?encryption=none&security=tls&sni=josni.hoyes.cloudns.ch&ech=ip.gs+udp://8.8.8.8&type=ws&host=josni.hoyes.cloudns.ch&path=/#Config
-vless://83afd88f-200f-4d89-bfc7-66eff160c1d8@172.66.44.97:443?encryption=none&security=tls&sni=josni.hoyes.cloudns.ch&ech=ip.gs+udp://8.8.8.8&type=ws&host=josni.hoyes.cloudns.ch&path=/#Config
-vless://70d0af29-a027-4d45-ad8d-e0ee1b4232b8@assets.sinafc.ir:8443?security=reality&encryption=none&pbk=9LyZjKAQkh2_FwDS21QVW05gfBRR77KjatFS8EtRyU4&headerType=none&fp=random&spx=/6f698eeb18da71b&type=tcp&sni=www.github.com&sid=ab5b#Config
-vmess://eyJhZGQiOiJkYXNoYm9hcmQuYWZyYXNvZnQudG9wIiwiYWlkIjoiMCIsImhvc3QiOiIiLCJpZCI6Ijc2Y2VmY2Q3LTZiNTMtNGM2NS1hZDI5LTFhOTI3MzRmYzk2OCIsIm5ldCI6InRjcCIsInBhdGgiOiIiLCJwb3J0IjoiNTM4MyIsInBzIjoiQ29uZmlnIDIgLSBAbGViZXJ0YWQiLCJzY3kiOiJhdXRvIiwic25pIjoiIiwidGxzIjoiIiwidHlwZSI6Im5vbmUiLCJ2IjoiMiJ9
