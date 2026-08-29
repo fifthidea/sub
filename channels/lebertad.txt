@@ -1,3 +1,12 @@
+vless://0a2dde28-70da-4863-a06f-35d007d94d35@206.245.132.50:8443?flow=xtls-rprx-vision&encryption=none&security=reality&sni=www.google.com&pbk=ikgjW7sTpGgWMRVewLHLpovWxHa_FFdczKrq8kMiSFQ&sid=f1c868899d48ba08&allowinsecure=0&type=tcp&headerType=none#Config
+vless://b5ca5ab3-8cbc-4ac3-89da-9cd360589ecb@213.130.137.10:443?encryption=none&security=reality&sni=panel.freesavesafe.com&fp=chrome&pbk=BvR2i3CJEL9QwNAWKqkkHY3rnqJdOFLyKw5DZ9sA2C8&sid=812609fa663c57fb&allowinsecure=0&type=xhttp&mode=auto&host=panel.freesavesafe.com&path=/#Config
+trojan://02cd3bac-2a78-4dbb-82b9-6b64084ddd8e@us01.duotg.top:20065?allowInsecure=1&fp=chrome&sni=www.microsoft.com#Config
+trojan://02cd3bac-2a78-4dbb-82b9-6b64084ddd8e@us01.duotg.top:46292?allowInsecure=1&fp=chrome&sni=www.microsoft.com#Config
+trojan://02cd3bac-2a78-4dbb-82b9-6b64084ddd8e@107.150.105.84:20065?security=tls&headerType=none&fp=chrome&type=tcp&sni=www.microsoft.com#Config
+vless://056d58b7-2577-4f82-b7a8-2473202419c2@151.101.193.242:443?path=/ws&security=tls&alpn=http/1.1&encryption=none&host=piracy-android.video-streams.org&fp=chrome&type=ws&sni=piracy-android.video-streams.org#Config
+vmess://eyJhZGQiOiIxMTYuMjAzLjU0LjI0MSIsImFpZCI6IjAiLCJhbHBuIjoiIiwiZnAiOiIiLCJob3N0IjoiIiwiaWQiOiIxNTI0NzcyMC0xN2UxLTRlYTMtOTE1MC1iOTM1MDA5OWQ5ZmEiLCJpbnNlY3VyZSI6IjAiLCJuZXQiOiJ0Y3AiLCJwYXRoIjoiIiwicGNzIjoiIiwicG9ydCI6IjQ0MyIsInBzIjoiQ29uZmlnIDMgLSBAbGViZXJ0YWQiLCJzY3kiOiJhdXRvIiwic25pIjoiIiwidGxzIjoiIiwidHlwZSI6Im5vbmUiLCJ2IjoiMiIsInZjbiI6IiJ9
+vless://0971f6ed-9881-45f4-9cf9-eedd2526aab6@62.238.50.19:44328?encryption=none&security=none&type=grpc&mode=gun&authority=&serviceName=#Config
+vless://1206bad5-dcc9-410e-9595-d9fe9ee54085@5.188.26.176:7443?flow=xtls-rprx-vision&encryption=none&security=reality&sni=max.ru&fp=qq&pbk=kGxErpyTzyh6Md1MLGYaR_0j3X6jrCzgTDRqRbbfOCg&sid=a1b2c3d4&allowinsecure=0&type=tcp&headerType=none#Config
 vless://056d58b7-2577-4f82-b7a8-2473202419c2@151.101.1.242:443?path=/ws&security=tls&alpn=h3,h2,http/1.1&encryption=none&host=minimize-evenness.cdn-content.com&fp=chrome&type=ws&sni=minimize-evenness.cdn-content.com#Config
 vless://4e25f371-acc5-4eb6-afb3-b763ee75537d@72.56.115.125:443?path=/api/user&security=tls&alpn=http/1.1&encryption=none&fp=firefox&type=ws&sni=rotterdam.korgivps.ru#Config
 vless://e4514801-0d5a-42ba-869f-39bd605aef9e@3.11.188.198:22223?security=none&encryption=none&headerType=none&type=tcp#Config
@@ -487,12 +496,3 @@ vless://798c51b2-fc0f-490f-9f49-e4911134d7a7@91.228.227.112:443?security=none&en
 vless://c5b4114c-9a2a-46a2-ab31-ec621719abc1@91.228.227.112:110?security=none&encryption=none&headerType=none&type=tcp#Config
 vless://70fea984-9115-4ffb-bfc8-7438d6bcc976@91.228.227.112:110?security=none&encryption=none&headerType=none&type=tcp#Config
 vless://18fceb73-f848-4103-ab5c-dec28641fdac@91.228.227.112:110?security=none&encryption=none&headerType=none&type=tcp#Config
-vless://69aca58b-b864-41a4-b778-f1c150707001@91.228.227.112:110?security=none&encryption=none&headerType=none&type=tcp#Config
-vless://85fa9e42-59f6-43ed-80fe-d4294290ee7d@91.228.227.112:110?security=none&encryption=none&headerType=none&type=tcp#Config
-vless://e7735d25-f24c-451a-9068-90b4c92d54ce@91.228.227.112:110?security=none&encryption=none&headerType=none&type=tcp#Config
-vless://3302e8e1-40e8-408c-8f39-a5804b150e8d@91.228.227.112:8080?security=none&encryption=none&headerType=none&type=tcp#Config
-vless://aade3e35-8455-476e-ace0-4b44d5d82300@91.228.227.112:8080?security=none&encryption=none&headerType=none&type=tcp#Config
-vless://d2c2a459-257d-47bb-b112-7fbdc28f64f6@91.228.227.112:110?security=none&encryption=none&headerType=none&type=tcp#Config
-vless://e4f2f3ac-11e8-4bb0-8c19-81dc30258e60@t1ti.blazenetwork.ir:443?path=/t/assets&security=tls&alpn=http/1.1&encryption=none&insecure=0&host=t1ti.blazenetwork.ir&fp=random&type=ws&allowInsecure=0&sni=t1ti.blazenetwork.ir#Config
-vless://338d5311-3983-424f-98b2-5adc1b6c023a@91.228.227.112:8080?security=none&encryption=none&headerType=none&type=tcp#Config
-vless://e4514801-0d5a-42ba-869f-39bd605aef9e@13.41.57.97:22224?encryption=none&security=none&type=tcp#Config
