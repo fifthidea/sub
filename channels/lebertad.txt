@@ -1,3 +1,8 @@
+vless://69d8dc73-20ff-4241-bdd8-a9d6d07553b6@91.107.179.8:15001?encryption=none&security=none&type=tcp&headerType=none#Config
+vless://59906cb2-a61b-4cf3-b77b-5762ef61d2b0@64.226.88.143:440?security=none&encryption=none&host=store.steampowered.com&headerType=http&type=tcp#Config
+vless://392058de-bb7e-44f5-b5bf-9184109cb42b@45.133.210.83:443?security=reality&encryption=none&pbk=cttKOS1BlF-u-mvX63PWNPJK6W_RXfx1wo8yjBEt1hI&headerType=none&fp=firefox&type=tcp&flow=xtls-rprx-vision&sni=api-maps.yandex.ru&sid=a2eb8d694a5480ff#Config
+vless://603819a3-dd65-408a-abab-15d8dc49887f@207.154.254.107:8880?security=none&encryption=none&host=store.steampowered.com&headerType=http&type=tcp#Config
+vless://1f4c7f13-223f-45a3-a06c-c8bba3da740e@R.FARS-REMEN.IR:48303?security=none&encryption=mlkem768x25519plus.native.0rtt.dWMfql58Ub0ndEoqBQdMRXE8CsOGsNM3ajPiJDvMoGI&host=amp-api-edge.apps.apple.com&headerType=http&type=tcp#Config
 vless://abdb9efb-a552-4b12-bd95-e56f4820fed8@13.112.217.203:18732?encryption=none&type=tcp&security=reality&sni=www.amd.com&fp=firefox&insecure=1&allowInsecure=1&pbk=lsp2a_PzZnzFtikI5FMkSYh3kpTewVNgU6A0VSZCJUI&sid=7946e1980d32555c&flow=xtls-rprx-vision#Config
 vless://eddee2c9-fdf9-4b55-b8ac-3481a680b060@52.194.245.53:33486?encryption=none&type=tcp&security=reality&sni=www.intel.com&fp=firefox&insecure=1&allowInsecure=1&pbk=0XefSfdaAV77RBJrVSVBIdRNUHUlaMGmFT5mX_Aw6G8&sid=1671781f157ac27e&flow=xtls-rprx-vision#Config
 vless://e4514801-0d5a-42ba-869f-39bd605aef9e@52.47.114.162:22223?encryption=none&security=none&type=tcp#Config
@@ -490,8 +495,3 @@ vless://a18cba96-3525-4723-93c5-bfce661e64aa@shaport2.cloudpooya.ir:8080?path=/y
 vless://a06c31d8-4f7f-9350-f19a-640af069d0ea@prisonvpnc-production-2f95.up.railway.app:443?path=/ws/a06c31d8-4f7f-9350-f19a-640af069d0ea&security=tls&alpn=http/1.1&encryption=none&insecure=0&host=prisonvpnc-production-2f95.up.railway.app&fp=ios&type=ws&allowInsecure=0&sni=prisonvpnc-production-2f95.up.railway.app#Config
 vless://ea3fb423-d86c-461a-9610-cbad189253e2@13.230.140.251:58573?security=reality&encryption=none&pbk=P_qGsMinT163P1KLO6LzedQXEeHimWQ1CrqM4cYkFB8&headerType=none&fp=firefox&type=tcp&flow=xtls-rprx-vision&sni=www.nvidia.com&sid=4de17b381e6af2#Config
 vless://c63c6176-babe-4c03-bfea-87122f686fc1@172.66.47.98:2083?security=tls&sni=dl.tammam.ir&type=ws&host=dl.tammam.ir&path=/ws&fp=chrome&alpn=h2#Config
-vless://a64f0cea-ca89-40e6-b316-b3badff1eb90@104.26.6.112:443?path=/AyF2ZnYOCu2tsaS0?ed=2560&security=tls&encryption=none&alpn=h2,http/1.1&host=ISAa1.PAGeS.deV&fp=randomized&type=ws&sni=IsaA1.pAgEs.DEV#Config
-vless://435bda4c-fe5e-42c9-a3ad-15334943b38a@198.41.212.87:80?security=none&type=ws&host=us3.rtacg.com&path=/#Config
-vless://435bda4c-fe5e-42c9-a3ad-15334943b38a@104.16.238.181:80?security=none&type=ws&host=us3.rtacg.com&path=/#Config
-vless://a13df940-020c-465f-bc89-ee5279b5cd6a@160.123.255.78:443?security=tls&sni=kkg.ylks.link&type=ws&path=/blue#Config
-vless://f001994d-649d-49f4-bada-a942c12bdd77@38.128.251.24:50653?security=reality&encryption=none&pbk=4lp5kcYnQrNUiXBwI4HOWOFtydwZuGF88OECrc7n6To&headerType=none&fp=chrome&type=tcp&flow=xtls-rprx-vision&sni=cdn.jsdelivr.net&sid=3377f10596d510de#Config
