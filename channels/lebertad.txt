@@ -1,3 +1,7 @@
+vless://d2299018-601d-488e-afd6-8f55b3f7439f@151.101.56.7:443?path=/TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER?ed=2053&security=tls&encryption=none&host=pan1.global.ssl.fastly.net&type=ws&sni=ssl.fastly.com#Config
+vless://31f0e05b-2126-46ea-8f47-34e60defaa1b@tr2.diginoisb.ir:54178?type=tcp&security=none&headerType=none&encryption=none#Config
+vless://85223e1a-f55d-4d0d-b27d-39e8be49d220@83.147.246.153:4100?encryption=none&security=none&type=ws&host=live.ok.ru&path=/v1#Config
+vless://50414e45-4c5f-5a45-5553-cfe2811bf0fc@104.25.0.3:443?path=/stream/PANEL_ZEUS/cfe2811bf0fc&security=tls&encryption=none&host=ez-6cdceb.iaznp3e6ujbs.workers.dev&fp=ios&type=ws&sni=ez-6cdceb.iaznp3e6ujbs.workers.dev#Config
 vless://bfb3f06c-e33f-41ac-b101-012c8325a689@gangroot.mrgang.shop:8082?encryption=none&security=none&type=tcp&headerType=none#Config
 vless://b052df40-d51c-456c-9bd6-57af01a87e4e@156.67.63.231:443?flow=xtls-rprx-vision&encryption=none&security=reality&sni=sync-bridge.org&fp=chrome&pbk=PTqeBbbr2xJ1L3V1PyYjKjxanMKKqJHU-wtnpYmFQCI&sid=5606d4a25c99e7af&allowinsecure=0&type=tcp&headerType=none#Config
 vless://95932b13-057a-4907-9b17-123a9e95722d@web-production-63683.up.railway.app:443?path=/ws/vless/95932b13-057a-4907-9b17-123a9e95722d?ed=2048&security=tls&alpn=h3&encryption=none&insecure=0&host=web-production-63683.up.railway.app&fp=ios&type=ws&allowInsecure=0&sni=web-production-63683.up.railway.app#Config
@@ -56,7 +60,6 @@ vless://8fca45ae-908d-4f99-863c-9c2160a31657@dl6.sepid-dl.ir:80?encryption=none&
 vless://b0cf4078-96b8-4e11-80a8-0f9352565a16@199.232.173.242:443?encryption=none&security=tls&sni=piracy-android.video-streams.org&fp=chrome&alpn=http/1.1&type=ws&host=piracy-android.video-streams.org&path=/ws#Config
 vless://66be8be7-ae9b-4944-a91b-6e4b6b058c92@stream.tonblack.app:2053?path=/tr1-cdn&security=tls&encryption=none&insecure=0&host=stream.tonblack.app&type=ws&allowInsecure=0&sni=stream.tonblack.app#Config
 vless://ef4f4c3d-0b16-48ad-a8d8-2d22512b3b36@api-as.data-media-social.org:443?security=reality&encryption=none&pbk=D-lJlqG_tR0QSqyKj4KZRImMRfZbhp88loaf8jP0mhc&headerType=none&fp=chrome&type=tcp&flow=xtls-rprx-vision&sni=api-as.data-media-social.org&sid=f3a9d2b1c7d4f608#Config
-vless://31f0e05b-2126-46ea-8f47-34e60defaa1b@tr2.diginoisb.ir:54178?encryption=none&security=none&type=tcp&headerType=none#Config
 vless://b5ca5ab3-8cbc-4ac3-89da-9cd360589ecb@213.130.137.100:443?encryption=none&security=reality&sni=panel.freesavesafe.com&fp=firefox&pbk=BvR2i3CJEL9QwNAWKqkkHY3rnqJdOFLyKw5DZ9sA2C8&sid=812609fa663c57fb&type=xhttp&host=panel.freesavesafe.com&path=/&mode=auto#Config
 vless://fae272a6-a184-4c91-83ed-771abdcff404@51.77.217.70:2053?encryption=none&security=reality&sni=www.google.com&fp=chrome&pbk=5Me9XEMwr9siyrnV5zPHYfxB3QLqw-OzNAOuzkFu1kw&sid=7af95330630a7327&type=tcp&headerType=none#Config
 vless://b5ca5ab3-8cbc-4ac3-89da-9cd360589ecb@213.130.137.10:443?encryption=none&security=reality&sni=panel.freesavesafe.com&fp=firefox&pbk=BvR2i3CJEL9QwNAWKqkkHY3rnqJdOFLyKw5DZ9sA2C8&sid=812609fa663c57fb&type=xhttp&host=panel.freesavesafe.com&path=/#Config
@@ -489,5 +492,3 @@ vless://a61abe08-05d6-f72d-58ab-b92576abd790@5.75.193.116:6554?encryption=none&s
 vless://50414e45-4c5f-5a45-5553-9df80d553692@0lzw35eluyys.56zv22emuags.workers.dev:80?path=/stream/PANEL_ZEUS/9df80d553692&security=none&encryption=none&host=0lzw35eluyys.56zv22emuags.workers.dev&type=ws#Config
 vless://50414e45-4c5f-5a45-5553-9df80d553692@0lzw35eluyys.56zv22emuags.workers.dev:443?path=/stream/PANEL_ZEUS/9df80d553692&security=tls&encryption=none&insecure=0&host=0lzw35eluyys.56zv22emuags.workers.dev&type=ws&allowInsecure=0&sni=0lzw35eluyys.56zv22emuags.workers.dev#Config
 vless://c77bef3d-4ace-4903-a76a-803e41bf1e38@usa2.sarziva.ir:2015?encryption=none&security=none&type=tcp&headerType=http&path=/&host=amp-api-edge.apps.apple.com#Config
-vless://c77bef3d-4ace-4903-a76a-803e41bf1e38@france2.sarziva.ir:2070?encryption=none&security=none&type=tcp&headerType=http&path=/&host=amp-api-edge.apps.apple.com#Config
-vless://478b47fb-7a04-4550-8110-5d224540da42@trl.awextr.ir:2082?security=&encryption=none&headerType=http&type=tcp#Config
