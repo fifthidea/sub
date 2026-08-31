@@ -1,3 +1,8 @@
+vless://d5530551-5e9a-4ac5-8539-cee87e38d9e2@2.27.43.112:8443?encryption=none&flow=xtls-rprx-vision&security=reality&sni=auto.quattro-tech.ru&fp=qq&pbk=PNofg-BBceWRX1YMelo9Xy5dFnh_vY8J0c54llXfDSk&sid=31e056654ec129aa&type=tcp&headerType=none#Config
+vless://8975546a-375c-4966-8064-19fc0f66f30a@31.76.80.69:443?encryption=none&security=reality&sni=www.amd.com&fp=chrome&pbk=zq3gOJkXi6laNuxMohL3lr-wFOKi4Z9oG7QuMMiTDAk&sid=5caa2ef81132c306&type=tcp&headerType=none&host=/?BIA_TELEGRAM@TOOTFFARANGI#Config
+vless://ef4f4c3d-0b16-48ad-a8d8-2d22512b3b36@130.17.6.235:443?encryption=none&flow=xtls-rprx-vision&security=reality&sni=api-de.data-media-social.org&fp=firefox&pbk=7X8ifHa-K72alW7ly5SRYwotXdjA-gEQoEGUK1EagVM&sid=f3c4d918e7c4f744&type=tcp&headerType=none#Config
+vless://255386a8-aec5-4425-bfe7-ca49b7448deb@5.255.126.104:46142?encryption=none&security=reality&sni=www.yahoo.com&fp=firefox&pbk=l-OE7EwER1Z_jAifGE_UZ3FqHDMGzaR0jQHFYj5RNAk&sid=39feeba3085c&type=tcp&headerType=none#Config
+vless://afcfff39-ef29-4a26-ba94-25d6f0cf5deb@V.FARS-REMEN.IR:37739?encryption=none&security=reality&type=tcp&headerType=none&sni=amp-api-edge.apps.apple.com&fp=edge&pbk=X2via1s2pTcQzUcS1IPI-Yhj6UWZjoRJdclX2z3PeWs&sid=769731e9683ce530#Config
 vless://ed4b9524-0b20-4d1f-94e4-f2840384a166@91.228.227.112:40594?security=none&encryption=none&headerType=none&type=tcp#Config
 vless://4f4e338c-7f35-4917-9aab-107d16c2c9c0@we.paydar.site:443?security=none&encryption=none&host=amp-api-edge.apps.apple.com&headerType=http&type=tcp#Config
 vless://50414e45-4c5f-5a45-5553-3a2eeec5969f@104.16.0.63:443?path=/stream/PANEL_ZEUS/3a2eeec5969f&security=tls&fragment=200-3000,1-2&encryption=none&insecure=0&host=ez-6cdceb.iaznp3e6ujbs.workers.dev&fp=ios&type=ws&allowInsecure=0&sni=ez-6cdceb.iaznp3e6ujbs.workers.dev#Config
@@ -41,7 +46,6 @@ vless://1dd334f9-8730-42fd-9c91-ffc1933c7db3@217.11.164.92:37430?security=realit
 vless://fda82db3-3c0f-4122-87d9-1ed08059bc92@38.107.236.178:443?path=/&security=&encryption=none&type=ws#Config
 vless://18450ff3-1ebb-4665-957b-219aef3d83c7@144.172.119.9:110?security=&encryption=none&headerType=none&type=tcp#Config
 vless://d499fa8c-2e14-4bd5-a3ca-73fae7f04cb5@151.101.56.6:443?path=/?TELEGRAM--KANAL--@mainv2ray--@mainv2ray--@mainv2ray--@mainv2ray--@mainv2ray--@mainv2ray--@mainv2ray--@mainv2ray--@mainv2ray--@mainv2ray--@mainv2ray--@mainv2ray&security=tls&alpn=h2&encryption=none&insecure=0&host=c12.com&fp=firefox&type=ws&allowInsecure=0&sni=ssl.fastly.com#Config
-vless://8975546a-375c-4966-8064-19fc0f66f30a@31.76.80.69:443?security=reality&encryption=none&pbk=zq3gOJkXi6laNuxMohL3lr-wFOKi4Z9oG7QuMMiTDAk&host=/?BIA_TELEGRAM@TOOTFFARANGI&headerType=none&fp=chrome&type=tcp&sni=www.amd.com&sid=5caa2ef81132c306#Config
 vless://be3c103d-2c93-4f8e-adb9-2631537f80eb@de57.tranzit-net.ru:443?sni=d.tranzit-net.ru&security=reality&headerType=none&type=tcp&pbk=IAdOYYmEMPFAhpVUhqfML58AVtYPdAb71R_HAPf0N0k&encryption=none&flow=xtls-rprx-vision#Config
 vless://dabb9a19-03ab-4cdf-8963-d3c45eb0f80d@193.108.112.245:443?pbk=bZpzmeWiEJyJQy0W2hHc34Nr6BuFXj1UDd80Cbwh1Fk&encryption=none&security=reality&sni=alban.freeinternat.com&type=tcp&sid=ff776ff77be48b88&headerType=none&flow=xtls-rprx-vision#Config
 vless://b052df40-d51c-456c-9bd6-57af01a87e4e@156.67.63.231:443?pbk=PTqeBbbr2xJ1L3V1PyYjKjxanMKKqJHU-wtnpYmFQCI&encryption=none&fp=chrome&security=reality&sni=sync-bridge.org&type=tcp&sid=5606d4a25c99e7af&headerType=none&flow=xtls-rprx-vision#Config
@@ -488,7 +492,3 @@ vless://20000024-8788-9182-f000-a35f2e23a020@185.243.218.182:322?security=realit
 trojan://50414e45-4c5f-5a45-5553-9df80d553692@0lzw35eluyys.56zv22emuags.workers.dev:443?path=/stream/PANEL_ZEUS/9df80d553692&security=tls&insecure=0&host=0lzw35eluyys.56zv22emuags.workers.dev&type=ws&allowInsecure=0&sni=0lzw35eluyys.56zv22emuags.workers.dev#Config
 vless://8fb65472-5957-4f64-ba2d-b5812b2f155a@84.235.175.73:62145?#Config
 vless://e4514801-0d5a-42ba-869f-39bd605aef9e@51.45.56.12:22224?encryption=none&security=none&type=tcp#Config
-vless://e4514801-0d5a-42ba-869f-39bd605aef9e@51.45.56.12:22223?encryption=none&security=none&type=tcp#Config
-vless://78c61f86-6229-4994-8389-7d7213ce7f42@140.82.33.78:20827?type=tcp&encryption=none&security=none#Config
-vless://3a9f652d-2155-44e5-8073-7f162212cabe@g1.zarqivo.ir:40485?encryption=mlkem768x25519plus.native.0rtt.PGw9iNrg02jszTlBuHpRqZQ59-j8f8UnH1Q6Sc9xgiI&security=reality&type=xhttp&headerType=none&path=/&mode=auto&sni=amp-api-edge.apps.apple.com&fp=chrome&alpn=h2,http/1.1&pbk=hK9mYPHBMi8T1t7Sg93RcTZQQyWvKn-LmHWeZUY6YEs&sid=86f72734adc80c00#Config
-vless://e4514801-0d5a-42ba-869f-39bd605aef9e@51.45.56.12:22222?encryption=none&security=none&type=tcp#Config
