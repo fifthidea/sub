@@ -1,5 +1,5 @@
 {
-    "updated": "1405/06/18 12:18",
+    "updated": "1405/06/18 12:33",
     "ir_filter": {
         "source": "RIPE NCC",
         "cidr_network_count": 2529,
@@ -7,12 +7,12 @@
         "ipv6_network_count": 571
     },
     "subscriptions": {
-        "sub-full": 8193,
+        "sub-full": 8198,
         "sub-medium": 1500,
         "sub-lite": 750,
         "sub-tiny": 300,
-        "ir": 1789,
-        "ir-actual": 1433
+        "ir": 1787,
+        "ir-actual": 1431
     },
     "channels": {
         "ConfigsHUB2": {
@@ -21,14 +21,14 @@
             "last_config": "1405/04/15 20:37"
         },
         "ConfigsHUB": {
-            "configs": 1018,
+            "configs": 1012,
             "active": true,
-            "last_config": "1405/06/18 12:10"
+            "last_config": "1405/06/18 12:25"
         },
         "TheFreeConfigs": {
             "configs": 1192,
             "active": true,
-            "last_config": "1405/06/18 12:15"
+            "last_config": "1405/06/18 12:28"
         },
         "persianvpnhub": {
             "configs": 450,
@@ -66,9 +66,9 @@
             "last_config": "1405/06/18 11:50"
         },
         "ConfigYab_FREE": {
-            "configs": 1684,
+            "configs": 1685,
             "active": true,
-            "last_config": "1405/06/18 12:14"
+            "last_config": "1405/06/18 12:28"
         },
         "DeamNet_proxy": {
             "configs": 23,
@@ -86,19 +86,19 @@
             "last_config": "1405/06/18 11:14"
         },
         "GalaxyMVPN": {
-            "configs": 1807,
+            "configs": 1808,
             "active": true,
-            "last_config": "1405/06/18 12:02"
+            "last_config": "1405/06/18 12:30"
         },
         "NamazVPN": {
-            "configs": 1861,
+            "configs": 1862,
             "active": true,
-            "last_config": "1405/06/18 12:14"
+            "last_config": "1405/06/18 12:30"
         },
         "SOSkeyNET": {
-            "configs": 1807,
+            "configs": 1808,
             "active": true,
-            "last_config": "1405/06/18 12:02"
+            "last_config": "1405/06/18 12:30"
         },
         "V2rayBaaz": {
             "configs": 267,
@@ -108,27 +108,27 @@
         "chillguy_vpn": {
             "configs": 983,
             "active": true,
-            "last_config": "1405/06/18 12:13"
+            "last_config": "1405/06/18 12:28"
         },
         "filembad": {
             "configs": 968,
             "active": true,
-            "last_config": "1405/06/18 12:10"
+            "last_config": "1405/06/18 12:24"
         },
         "iranconnecting": {
-            "configs": 877,
+            "configs": 879,
             "active": true,
-            "last_config": "1405/06/18 12:10"
+            "last_config": "1405/06/18 12:31"
         },
         "CafeTweetFa": {
             "configs": 921,
             "active": true,
-            "last_config": "1405/06/18 12:14"
+            "last_config": "1405/06/18 12:29"
         },
         "iraniroid": {
-            "configs": 907,
+            "configs": 908,
             "active": true,
-            "last_config": "1405/06/18 12:12"
+            "last_config": "1405/06/18 12:27"
         },
         "lebertad": {
             "configs": 499,
@@ -146,19 +146,19 @@
             "last_config": "1405/06/13 07:18"
         },
         "v2ray_dalghak": {
-            "configs": 960,
+            "configs": 961,
             "active": true,
-            "last_config": "1405/06/18 11:54"
+            "last_config": "1405/06/18 12:25"
         },
         "v2ray_free_conf": {
-            "configs": 386,
+            "configs": 385,
             "active": true,
-            "last_config": "1405/06/18 12:10"
+            "last_config": "1405/06/18 12:28"
         },
         "vpnfail_v2ray": {
             "configs": 957,
             "active": true,
-            "last_config": "1405/06/18 12:12"
+            "last_config": "1405/06/18 12:28"
         },
         "v2ray_configs_pool": {
             "configs": 970,
