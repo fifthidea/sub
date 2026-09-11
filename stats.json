@@ -1,5 +1,5 @@
 {
-    "updated": "1405/06/20 21:34",
+    "updated": "1405/06/20 21:49",
     "ir_filter": {
         "source": "RIPE NCC",
         "cidr_network_count": 2529,
@@ -7,12 +7,12 @@
         "ipv6_network_count": 571
     },
     "subscriptions": {
-        "sub-full": 9087,
+        "sub-full": 9088,
         "sub-medium": 1500,
         "sub-lite": 750,
         "sub-tiny": 300,
-        "ir": 1878,
-        "ir-actual": 1562
+        "ir": 1875,
+        "ir-actual": 1558
     },
     "channels": {
         "ConfigsHUB2": {
@@ -23,7 +23,7 @@
         "ConfigsHUB": {
             "configs": 814,
             "active": true,
-            "last_config": "1405/06/20 21:28"
+            "last_config": "1405/06/20 21:43"
         },
         "TheFreeConfigs": {
             "configs": 1188,
@@ -38,7 +38,7 @@
         "FarahVPN": {
             "configs": 775,
             "active": true,
-            "last_config": "1405/06/20 20:57"
+            "last_config": "1405/06/20 21:37"
         },
         "NamiraConfigs": {
             "configs": 268,
@@ -66,9 +66,9 @@
             "last_config": "1405/06/20 21:10"
         },
         "ConfigYab_FREE": {
-            "configs": 1664,
+            "configs": 1660,
             "active": true,
-            "last_config": "1405/06/20 21:29"
+            "last_config": "1405/06/20 21:42"
         },
         "DeamNet_proxy": {
             "configs": 71,
@@ -113,17 +113,17 @@
         "filembad": {
             "configs": 957,
             "active": true,
-            "last_config": "1405/06/20 21:31"
+            "last_config": "1405/06/20 21:41"
         },
         "iranconnecting": {
-            "configs": 753,
+            "configs": 751,
             "active": true,
-            "last_config": "1405/06/20 21:28"
+            "last_config": "1405/06/20 21:43"
         },
         "CafeTweetFa": {
             "configs": 883,
             "active": true,
-            "last_config": "1405/06/20 21:24"
+            "last_config": "1405/06/20 21:47"
         },
         "iraniroid": {
             "configs": 54,
@@ -153,12 +153,12 @@
         "v2ray_free_conf": {
             "configs": 388,
             "active": true,
-            "last_config": "1405/06/20 21:29"
+            "last_config": "1405/06/20 21:48"
         },
         "vpnfail_v2ray": {
-            "configs": 961,
+            "configs": 960,
             "active": true,
-            "last_config": "1405/06/20 21:28"
+            "last_config": "1405/06/20 21:44"
         },
         "v2ray_configs_pool": {
             "configs": 970,
