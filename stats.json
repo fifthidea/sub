@@ -1,5 +1,5 @@
 {
-    "updated": "1405/06/20 09:34",
+    "updated": "1405/06/20 09:49",
     "ir_filter": {
         "source": "RIPE NCC",
         "cidr_network_count": 2529,
@@ -11,8 +11,8 @@
         "sub-medium": 1500,
         "sub-lite": 750,
         "sub-tiny": 300,
-        "ir": 1917,
-        "ir-actual": 1593
+        "ir": 1914,
+        "ir-actual": 1590
     },
     "channels": {
         "ConfigsHUB2": {
@@ -21,14 +21,14 @@
             "last_config": "1405/04/15 20:37"
         },
         "ConfigsHUB": {
-            "configs": 649,
+            "configs": 647,
             "active": true,
-            "last_config": "1405/06/20 09:25"
+            "last_config": "1405/06/20 09:41"
         },
         "TheFreeConfigs": {
             "configs": 1187,
             "active": true,
-            "last_config": "1405/06/20 09:27"
+            "last_config": "1405/06/20 09:39"
         },
         "persianvpnhub": {
             "configs": 460,
@@ -68,7 +68,7 @@
         "ConfigYab_FREE": {
             "configs": 1655,
             "active": true,
-            "last_config": "1405/06/20 09:27"
+            "last_config": "1405/06/20 09:44"
         },
         "DeamNet_proxy": {
             "configs": 71,
@@ -91,9 +91,9 @@
             "last_config": "1405/06/20 09:24"
         },
         "NamazVPN": {
-            "configs": 1881,
+            "configs": 1880,
             "active": true,
-            "last_config": "1405/06/20 09:17"
+            "last_config": "1405/06/20 09:42"
         },
         "SOSkeyNET": {
             "configs": 1286,
@@ -118,12 +118,12 @@
         "iranconnecting": {
             "configs": 526,
             "active": true,
-            "last_config": "1405/06/20 09:32"
+            "last_config": "1405/06/20 09:47"
         },
         "CafeTweetFa": {
             "configs": 890,
             "active": true,
-            "last_config": "1405/06/20 09:31"
+            "last_config": "1405/06/20 09:44"
         },
         "iraniroid": {
             "configs": 93,
@@ -148,17 +148,17 @@
         "v2ray_dalghak": {
             "configs": 971,
             "active": true,
-            "last_config": "1405/06/20 08:42"
+            "last_config": "1405/06/20 09:42"
         },
         "v2ray_free_conf": {
             "configs": 388,
             "active": true,
-            "last_config": "1405/06/20 09:27"
+            "last_config": "1405/06/20 09:44"
         },
         "vpnfail_v2ray": {
             "configs": 961,
             "active": true,
-            "last_config": "1405/06/20 09:32"
+            "last_config": "1405/06/20 09:42"
         },
         "v2ray_configs_pool": {
             "configs": 970,
