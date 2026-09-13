@@ -1,5 +1,5 @@
 {
-    "updated": "1405/06/23 02:18",
+    "updated": "1405/06/23 02:34",
     "ir_filter": {
         "source": "RIPE NCC",
         "cidr_network_count": 2531,
@@ -7,12 +7,12 @@
         "ipv6_network_count": 571
     },
     "subscriptions": {
-        "sub-full": 8846,
+        "sub-full": 8842,
         "sub-medium": 1500,
         "sub-lite": 750,
         "sub-tiny": 300,
-        "ir": 1824,
-        "ir-actual": 1544
+        "ir": 1825,
+        "ir-actual": 1545
     },
     "channels": {
         "ConfigsHUB2": {
@@ -21,14 +21,14 @@
             "last_config": "1405/04/15 20:37"
         },
         "ConfigsHUB": {
-            "configs": 970,
+            "configs": 968,
             "active": true,
-            "last_config": "1405/06/23 02:16"
+            "last_config": "1405/06/23 02:30"
         },
         "TheFreeConfigs": {
             "configs": 1188,
             "active": true,
-            "last_config": "1405/06/23 02:04"
+            "last_config": "1405/06/23 02:28"
         },
         "persianvpnhub": {
             "configs": 480,
@@ -68,7 +68,7 @@
         "ConfigYab_FREE": {
             "configs": 1664,
             "active": true,
-            "last_config": "1405/06/23 02:09"
+            "last_config": "1405/06/23 02:28"
         },
         "DeamNet_proxy": {
             "configs": 88,
@@ -93,7 +93,7 @@
         "NamazVPN": {
             "configs": 1845,
             "active": true,
-            "last_config": "1405/06/23 02:15"
+            "last_config": "1405/06/23 02:31"
         },
         "SOSkeyNET": {
             "configs": 1689,
@@ -153,12 +153,12 @@
         "v2ray_free_conf": {
             "configs": 389,
             "active": true,
-            "last_config": "1405/06/23 02:17"
+            "last_config": "1405/06/23 02:27"
         },
         "vpnfail_v2ray": {
             "configs": 962,
             "active": true,
-            "last_config": "1405/06/23 02:15"
+            "last_config": "1405/06/23 02:31"
         },
         "v2ray_configs_pool": {
             "configs": 970,
