@@ -1,3 +1,7 @@
+vless://8ab57407-4687-4a1e-bedf-ed8fde84a244@5.223.59.230:443?alpn=h2,http/1.1,h3&encryption=none&fp=chrome&security=tls&sni=5.223.59.230&type=tcp#Config
+vless://c380e22d-ce7a-a214-0e2d-d93c5b741ed9@xtepalopp-production.up.railway.app:443?path=/ws/c380e22d-ce7a-a214-0e2d-d93c5b741ed9&security=tls&alpn=http/1.1&encryption=none&insecure=0&host=xtepalopp-production.up.railway.app&fp=chrome&type=ws&allowInsecure=0&sni=xtepalopp-production.up.railway.app#Config
+vmess://eyJ2IjoiMiIsInBzIjoiQ29uZmlnIDQgLSBAbGViZXJ0YWQiLCJhZGQiOiJpcmMuamFoYW5jbG91ZC5jZmQiLCJwb3J0Ijo0NDMsImlkIjoiYzJjYTk0OWYtYzUwZi00YzhkLWIwZmUtYTRkZmUzOGEwZDllIiwibmV0IjoidGNwIiwidHlwZSI6Im5vbmUiLCJhaWQiOjAsImFscG4iOiIiLCJmcCI6IiIsInRscyI6Im5vbmUifQ==
+vless://e4514801-0d5a-42ba-869f-39bd605aef9e@15.224.160.193:22222?security=&encryption=none&headerType=&type=tcp#Config
 vless://cc3ec459-8d76-4066-ab4b-2614608f1afb@a2.arshia-nova.ir:443?path=/&security=tls&alpn=h2&encryption=none&insecure=0&host=c12.com&fp=firefox&type=ws&allowInsecure=0&sni=ssl.fastly.com#Config
 vless://718ddd1b-c788-4ae1-a5a4-452deef77b6e@66.33.22.235:10958?mode=auto&path=/&security=reality&encryption=none&extra={"mode":"auto","xPaddingBytes":"100-1000"}&pbk=ET23wZN1zJ9KRpLmCAhGStxlivQcNClzAnIXPOS1Vyw&fp=firefox&spx=/2a007939062f9d2&type=xhttp&sni=yahoo.com&sid=15#Config
 vless://44eae030-290b-4083-8102-6f8bab05701b@104.21.63.28:443?encryption=none&security=tls&sni=cfvvv-ev1.pages.dev&fm={"tcp":[{"type":"fragment","settings":{"packets":"tlshello","lengths":["0","104","1"],"delays":["0"],"maxSplit":"0"}},{"type":"fragment","settings":{"packets":"1-1","lengths":["114","1"],"delays":["1"],"maxSplit":"11"}}]}&type=ws&host=cfvvv-ev1.pages.dev&path=/#Config
@@ -491,7 +495,3 @@ vless://bf606534-ee4a-4f86-b69c-d6c2a8a3f84d@disi.netbazshop.ir:33017?security=n
 vless://bf606534-ee4a-4f86-b69c-d6c2a8a3f84d@snapp.ir:2095?path=/pgcfws-r4&security=&encryption=none&host=new2.tonbrownton.com&type=ws#Config
 vless://bf606534-ee4a-4f86-b69c-d6c2a8a3f84d@arvancloud.ir:80?path=/ws&security=none&encryption=none&host=new14.safari-df.ir&type=ws#Config
 vless://bf606534-ee4a-4f86-b69c-d6c2a8a3f84d@xn--mnchen-3ya.de.netbazshop.ir:33017?security=none&encryption=none&host=play-apps-features.googleusercontent.com&headerType=http&type=tcp#Config
-vless://bf606534-ee4a-4f86-b69c-d6c2a8a3f84d@xn--km-wr72a9a49m.netbazshop.ir:33017?security=&encryption=none&host=play-apps-features.googleusercontent.com&headerType=http&type=tcp#Config
-vless://2f35965a-9a9b-45fd-ba32-987296dfb6be@89.35.14.30:443?mode=gun&security=reality&encryption=none&authority=/t.me/V2rayBaaz&pbk=xWejOQUn2koOUorUPSrHMLM-lyHlZ441KzxKc9bLmkY&fp=firefox&type=grpc&serviceName=hub.v1.RelayService&sni=md1.univesalsrv.com&sid=221ba6174224ca5b#Config
-vless://bf606534-ee4a-4f86-b69c-d6c2a8a3f84d@xn--mnchen-3ya.de.netbazshop.ir:33017?security=&encryption=none&host=play-apps-features.googleusercontent.com&headerType=http&type=tcp#Config
-vless://bf606534-ee4a-4f86-b69c-d6c2a8a3f84d@arvancloud.ir:2095?path=/pgcfws-r4&security=&encryption=none&host=box.safari-df.ir&type=ws#Config
