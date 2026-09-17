@@ -1,5 +1,5 @@
 {
-    "updated": "1405/06/26 03:34",
+    "updated": "1405/06/26 03:48",
     "ir_filter": {
         "source": "RIPE NCC",
         "cidr_network_count": 2531,
@@ -7,12 +7,12 @@
         "ipv6_network_count": 571
     },
     "subscriptions": {
-        "sub-full": 9148,
+        "sub-full": 9135,
         "sub-medium": 1500,
         "sub-lite": 750,
         "sub-tiny": 300,
-        "ir": 1549,
-        "ir-actual": 1328
+        "ir": 1547,
+        "ir-actual": 1329
     },
     "channels": {
         "ConfigsHUB2": {
@@ -36,9 +36,9 @@
             "last_config": "1405/06/26 01:58"
         },
         "FarahVPN": {
-            "configs": 794,
+            "configs": 801,
             "active": true,
-            "last_config": "1405/06/26 03:25"
+            "last_config": "1405/06/26 03:44"
         },
         "NamiraConfigs": {
             "configs": 267,
@@ -76,9 +76,9 @@
             "last_config": "1405/06/24 23:24"
         },
         "Farah_VPN": {
-            "configs": 805,
+            "configs": 807,
             "active": true,
-            "last_config": "1405/06/26 03:31"
+            "last_config": "1405/06/26 03:45"
         },
         "FreakConfig": {
             "configs": 931,
@@ -86,19 +86,19 @@
             "last_config": "1405/06/26 01:12"
         },
         "GalaxyMVPN": {
-            "configs": 1863,
+            "configs": 1862,
             "active": true,
-            "last_config": "1405/06/26 03:02"
+            "last_config": "1405/06/26 03:46"
         },
         "NamazVPN": {
-            "configs": 1831,
+            "configs": 1832,
             "active": true,
-            "last_config": "1405/06/26 03:17"
+            "last_config": "1405/06/26 03:46"
         },
         "SOSkeyNET": {
-            "configs": 1863,
+            "configs": 1862,
             "active": true,
-            "last_config": "1405/06/26 03:02"
+            "last_config": "1405/06/26 03:46"
         },
         "V2rayBaaz": {
             "configs": 273,
@@ -108,7 +108,7 @@
         "chillguy_vpn": {
             "configs": 985,
             "active": true,
-            "last_config": "1405/06/26 03:18"
+            "last_config": "1405/06/26 03:33"
         },
         "filembad": {
             "configs": 966,
@@ -116,19 +116,19 @@
             "last_config": "1405/06/26 03:28"
         },
         "iranconnecting": {
-            "configs": 874,
+            "configs": 871,
             "active": true,
-            "last_config": "1405/06/26 03:31"
+            "last_config": "1405/06/26 03:46"
         },
         "CafeTweetFa": {
             "configs": 894,
             "active": true,
-            "last_config": "1405/06/26 02:58"
+            "last_config": "1405/06/26 03:37"
         },
         "iraniroid": {
             "configs": 939,
             "active": true,
-            "last_config": "1405/06/26 03:16"
+            "last_config": "1405/06/26 03:41"
         },
         "lebertad": {
             "configs": 499,
@@ -153,12 +153,12 @@
         "v2ray_free_conf": {
             "configs": 386,
             "active": true,
-            "last_config": "1405/06/26 03:32"
+            "last_config": "1405/06/26 03:46"
         },
         "vpnfail_v2ray": {
             "configs": 962,
             "active": true,
-            "last_config": "1405/06/26 03:27"
+            "last_config": "1405/06/26 03:47"
         },
         "v2ray_configs_pool": {
             "configs": 970,
