@@ -1,3 +1,8 @@
+vless://18f1b94e-35f1-4c7f-953c-7b4681c52339@159.65.123.123:443?security=none&encryption=none&host=store.steampowered.com&headerType=http&type=tcp#Config
+vless://18f1b94e-35f1-4c7f-953c-7b4681c52339@206.189.96.117:443?security=none&encryption=none&host=store.steampowered.com&headerType=http&type=tcp#Config
+vless://60a2998c-cd85-562e-a3fd-396e4925dd3a@web.turbooserver.net.tr:8443?security=&encryption=none&host=dynu.com&headerType=http&type=tcp#Config
+vless://e4514801-0d5a-42ba-869f-39bd605aef9e@13.37.81.71:22223?security=none&encryption=none&headerType=none&type=tcp#Config
+vless://a038b2f5-e826-4c6f-04d0-16faf5d1c5d9@aliopnop-production.up.railway.app:443?path=/ws/a038b2f5-e826-4c6f-04d0-16faf5d1c5d9&security=tls&alpn=http/1.1&encryption=none&host=aliopnop-production.up.railway.app&fp=chrome&type=ws&sni=aliopnop-production.up.railway.app#Config
 vless://0aa8a7cd-eb08-4fa6-a277-c9d95282d4e6@185.143.234.238:80?path=/pgcfws-r4&security=none&encryption=none&host=uu.caroptions.ir&type=ws#Config
 vless://12ade495-4605-4a8a-9b96-83a010faec45@nl.armankhan.shop:8043?encryption=none&fp=chrome&pbk=ZZh7kdIiOal4hm8nkmCdeRDG4hRbhnTFu9XvVpiQuls&security=reality&sid=78a37a3f51&sni=it.nvidia.com&spx=/3e0d2a8e5d1740c&type=tcp#Config
 vless://cbf14ba9-85b0-491c-9f80-839d3f73ea42@199.232.78.159:443?path=/&security=tls&encryption=none&host=lsjaoijji.global.ssl.fastly.neT&type=ws&sni=ssl.fastly.com#Config
@@ -491,8 +496,3 @@ vless://b0c16bd4-9dff-44b5-965a-10ef08c61f97@de.privatevip.ir:80?mode=auto&path=
 vless://10b4de07-9db8-4b46-ab8e-d09761e1a24d@udhdbijwjsj.adidasm10.ir:4030?security=reality&encryption=none&pbk=mKFVs1JhYlBU13ct9lOSymEBK3coPUuQ5hD0Ruzw-QI&headerType=none&fp=chrome&type=tcp&flow=xtls-rprx-vision&sni=amp-api-edge.apps.apple.com&sid=b92537637ea0cdb1#Config
 vless://e4514801-0d5a-42ba-869f-39bd605aef9e@16.60.243.242:22222?security=none&encryption=none&headerType=none&type=tcp#Config
 vless://e4514801-0d5a-42ba-869f-39bd605aef9e@16.60.243.242:22224?security=none&encryption=none&headerType=none&type=tcp#Config
-vless://14b48651-3738-4926-bc09-4c04e87ff80b@5.175.249.149:443?mode=stream-one&path=/Join-JavidnamanIran-on-Telegram&security=tls&alpn=h2&encryption=none&insecure=0&host=static.lotussec.com&fp=firefox&type=xhttp&allowInsecure=0&sni=static.lotussec.com#Config
-vless://5e03bdbb-cb39-4c6e-8ee5-eb549b5e7a70@65.109.193.102:9090?security=&encryption=none&host=play-apps-features.googleusercontent.com&headerType=http&type=tcp#Config
-vless://66ac188b-bd8d-4218-b9ba-0bad0e152cd0@62.60.157.101:443?mode=auto&path=/xh&security=tls&encryption=none&insecure=0&host=fra-04.hello-there.ru&type=xhttp&allowInsecure=0&sni=fra-04.hello-there.ru#Config
-vless://fde66069-56ec-43f8-9d48-d3a96263650e@dlv6.far30bazi.ir:443?encryption=none&security=reality&type=tcp&headerType=none&flow=xtls-rprx-vision&sni=play-apps-features.googleusercontent.com&fp=firefox&alpn=h3,h2,http/1.1&pbk=6yOrgIsMRfTe-Gr9TYgyan-0mnKTNfk6fDBxVOiT4HM&sid=5002b5329814b487#Config
-vless://859d59b8-b432-4a44-bf82-81ac12b24b75@sjzishh-production.up.railway.app:443?path=/ws/vless/859d59b8-b432-4a44-bf82-81ac12b24b75?ed=2048&security=tls&alpn=h3&encryption=none&insecure=0&host=sjzishh-production.up.railway.app&fp=chrome&type=ws&allowInsecure=0&sni=sjzishh-production.up.railway.app#Config
