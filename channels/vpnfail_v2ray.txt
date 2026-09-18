@@ -1,3 +1,4 @@
+vless://3400a61c-7326-4fa2-b006-7e1ba201eacb@82.163.7.27:9090?security=none&encryption=none&host=play-apps-features.googleusercontent.com&headerType=http&type=tcp#ProxyMtpVPN-132
 vless://2bb8b13c-b3f0-2552-da05-d0929bfb36db@104.245.240.6:443?path=%2F&security=reality&encryption=none&pbk=D2SXHZRRYM0WcFChGWd57XB-U73aIsGfMpe2-Gq5XSs&fp=chrome&type=xhttp&sni=download.nvidia.com#filembad-117
 vless://e4514801-0d5a-42ba-869f-39bd605aef9e@15.224.71.221:22222?encryption=none&security=none&type=tcp#filembad-371
 vless://5e042049-f74d-4ccc-a3ac-db27bca2ce99@hyst.purplrose.ir:8443?security=tls&alpn=h2%2Chttp%2F1.1&encryption=none&insecure=0&host=bastani.purplrose.ir&fp=random&type=ws&allowInsecure=0&sni=bastani.purplrose.ir#canfingV2rayNG-181
@@ -163,7 +164,6 @@ vless://13c245fd-ac78-0007-9378-97968a70dac4@ru.axolab.org:443?security=reality&
 vless://89418511-64f9-4e74-ac6b-ffc1b828106f@gyh.manliclouc.ir:44811?security=reality&encryption=none&pbk=5V9UBM3WxVbCvEwW-FOxiBKlQTdMR9aScIfy53zefzM&headerType=none&fp=chrome&type=tcp&sni=app.stiga.com&sid=b53a4597ec327aec#filembad-248
 vless://4fb82973-a7f1-4fc2-9958-cb21f5162f06@ro-xh02.tcp-reset-club.net:8443?mode=stream-one&path=%2Fassets%2Fv2%2Fpkg&security=reality&encryption=none&extra=%7B%22xmux%22%3A%7B%22maxConcurrency%22%3A%2216-32%22%7D%7D&pbk=Gu_QdtOX6E8pZcYvDWgHKA5dxcit7hrpU27sizCEWXg&fp=chrome&type=xhttp&sni=s3.netavex.com&sid=e0#canfingV2rayNG-173
 vless://7a5b8a98-7342-4bc0-9586-c6f6d9faea7e@185.155.8.137:8443?security=reality&encryption=none&pbk=AobSPrJpHPIqf9f2neJ_ZUdD8rH77CjJRt93rkjekiA&headerType=none&fp=chrome&type=tcp&sni=aparat.com&sid=439036d1638e1f73#filembad-229
-vless://3400a61c-7326-4fa2-b006-7e1ba201eacb@82.163.7.27:9090?security=none&encryption=none&host=play-apps-features.googleusercontent.com&headerType=http&type=tcp#ProxyMtpVPN-147
 vless://5d16ac22-6eea-426f-b778-6f4c2961faef@31.184.219.147:9894?mode=gun&security=reality&encryption=none&pbk=sm3E3hjmT6_Gmg_O9rBz4nfXYrHpnl6-LvcCp6T6_xc&fp=qq&type=grpc&serviceName=grpc-tunnel&sni=dl.google.com&sid=aabb#filembad-186
 vless://e4514801-0d5a-42ba-869f-39bd605aef9e@13.39.134.201:22224?encryption=none&security=none&type=tcp#filembad-357
 trojan://MiTiVPN@199.232.78.160:443?path=%40mehrosaboran&security=tls&alpn=http%2F1.1&insecure=0&host=mitivpn---ss--s---mitivpn-44.global.ssl.fastly.net&type=ws&allowInsecure=0&sni=ssl.fastly.com#canfingV2rayNG-38
