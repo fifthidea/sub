@@ -1,5 +1,5 @@
 {
-    "updated": "1405/06/28 07:03",
+    "updated": "1405/06/28 07:18",
     "ir_filter": {
         "source": "RIPE NCC",
         "cidr_network_count": 2532,
@@ -7,7 +7,7 @@
         "ipv6_network_count": 572
     },
     "subscriptions": {
-        "sub-full": 8762,
+        "sub-full": 8760,
         "sub-medium": 1500,
         "sub-lite": 750,
         "sub-tiny": 300,
@@ -21,7 +21,7 @@
             "last_config": "1405/04/15 20:37"
         },
         "ConfigsHUB": {
-            "configs": 957,
+            "configs": 947,
             "active": true,
             "last_config": "1405/06/28 06:47"
         },
@@ -63,7 +63,7 @@
         "RED2RAY": {
             "configs": 290,
             "active": true,
-            "last_config": "1405/06/28 06:45"
+            "last_config": "1405/06/28 07:15"
         },
         "DeamNet_proxy": {
             "configs": 28,
@@ -111,9 +111,9 @@
             "last_config": "1405/06/28 06:10"
         },
         "iranconnecting": {
-            "configs": 868,
+            "configs": 869,
             "active": true,
-            "last_config": "1405/06/28 06:47"
+            "last_config": "1405/06/28 07:16"
         },
         "CafeTweetFa": {
             "configs": 911,
@@ -148,12 +148,12 @@
         "v2ray_free_conf": {
             "configs": 380,
             "active": true,
-            "last_config": "1405/06/28 06:54"
+            "last_config": "1405/06/28 07:12"
         },
         "vpnfail_v2ray": {
             "configs": 949,
             "active": true,
-            "last_config": "1405/06/28 07:00"
+            "last_config": "1405/06/28 07:12"
         },
         "v2ray_configs_pool": {
             "configs": 970,
