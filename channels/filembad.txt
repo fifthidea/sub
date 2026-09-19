@@ -1,3 +1,6 @@
+vless://bb20d3fc-fc15-0935-11c5-82775c39e6b0@130.49.77.7:443?type=xhttp&security=reality&path=/&sni=download.nvidia.com&fp=chrome&pbk=hwwiWVqYq5b7S0JaXNSxjWSEv_1OUFMaWJGHzeAGyRM#%40filembad
+vless://b2cddf0c-4b1e-4c65-9457-8dd331c9fc41@185.204.171.83:14120?security=none&encryption=none&headerType=none&type=tcp#%40filembad
+vless://560ecca1-7e20-4b41-b4d6-781fb3bc179d@trk2.chaqalli.com:8080?path=%2F%3Fed%3D2082&security=&encryption=mlkem768x25519plus.native.0rtt.HZkmJtPesWHuoN7JnEmjat7utDPAEE6gYX0MUvIl-Wk&host=primevideo.com&type=ws#%40filembad
 vless://6202b230-417c-4d8e-b624-0f71afa9c75d@89.116.46.50:8880?security=none&type=ws&path=/?ed&host=vms.lifetime07.workers.dev&packetEncoding=xudp&encryption=none#%40filembad
 vless://560ecca1-7e20-4b41-b4d6-781fb3bc179d@down.chaqalli.com:2082?encryption=mlkem768x25519plus.native.0rtt.Px0rEez31FH9Ten81Og17JMaeLuA6l3iAW-Bfu2_Rh0&security=none&type=ws&headerType=none&path=%2F#%40filembad
 vless://b2141c97-76af-ff6f-839b-70a53e23aad9@130.49.77.6:443?mode=auto&path=%2F&security=reality&encryption=none&pbk=hwwiWVqYq5b7S0JaXNSxjWSEv_1OUFMaWJGHzeAGyRM&fp=chrome&type=xhttp&sni=download.nvidia.com#%40filembad
@@ -68,7 +71,6 @@ vless://f64cbbdc-bd77-4bb5-aaca-97974a677c7e@www.shopify.com:8080?encryption=non
 vless://b2cddf0c-4b1e-4c65-9457-8dd331c9fc41@185.204.171.83:14120?encryption=none&packetEncoding=xudp#%40filembad
 vless://5d16ac22-6eea-426f-b778-6f4c2961faef@176.108.246.110:9830?mode=gun&security=reality&encryption=none&authority=&pbk=bnRIb3Er1i-K6NGGByCO9UbGfOvu43ZoiK7ulPd1SzU&fp=chrome&type=grpc&serviceName=grpc-tunnel&sni=dl.google.com#%40filembad
 vless://bc09b390-9236-46d2-959f-4a5fe5f1b4b4@66.33.22.245:17359?encryption=none&host=&path=%2F&security=none&type=ws#%40filembad
-vless://b2cddf0c-4b1e-4c65-9457-8dd331c9fc41@185.204.171.83:14120?security=none&encryption=none&headerType=none&type=tcp#%40filembad
 vless://a68945bb-25cb-4852-abb9-386b0a31965e@31.56.184.226:8443?security=reality&encryption=none&pbk=caV3E6wBXTZAuyA8l75B4CJErsRhxZ67xpYWZTiHeRY&headerType=none&fp=chrome&type=tcp&flow=xtls-rprx-vision&sni=www.cloudflare.com&sid=930342fdfbf2b239#%40filembad
 vless://34fc6d57-0fd6-42f8-af83-21c9d4d87b3f@93.190.9.3:3090?mode=multi&security=none&encryption=none&type=grpc&serviceName=vless#%40filembad
 vless://34fc6d57-0fd6-42f8-af83-21c9d4d87b3f@93.190.9.14:3090?mode=multi&security=&encryption=none&type=grpc&serviceName=vless#%40filembad
@@ -928,5 +930,3 @@ vless://a42eec3c-9491-0280-04b3-0c9730410bfb@130.49.77.4:443?type=xhttp&fp=chrom
 vless://a42eec3c-9491-0280-04b3-0c9730410bfb@140.235.168.4:8443?mode=gun&security=reality&encryption=none&pbk=tICt4RT_Rw9KAU8hIf05_fzAMZnfUUyMfE-Ept6zcBY&fp=chrome&type=grpc&serviceName=TunService&sni=www.lenovo.com#%40filembad
 vless://a42eec3c-9491-0280-04b3-0c9730410bfb@130.49.77.4:443?path=%2F&security=reality&encryption=none&pbk=hwwiWVqYq5b7S0JaXNSxjWSEv_1OUFMaWJGHzeAGyRM&fp=chrome&type=xhttp&sni=download.nvidia.com#%40filembad
 vless://d6b59299-2f48-4e9b-9130-b9e9cb5d0a51@103.227.84.162:443?security=reality&alpn=v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus&encryption=none&pbk=OEp5OMlE08EaAunays3K7Lbd0JWKOQKZ8HXiytog4EQ&headerType=none&fp=chrome&type=tcp&flow=xtls-rprx-vision&sni=de3.hat.onl&sid=e8d6c07aa30b81fa#%40filembad
-vless://a42eec3c-9491-0280-04b3-0c9730410bfb@130.49.77.4:443?path=%2F&security=reality&encryption=none&pbk=3DYkxUg9fBA6cONioJOPrsklcMQEImEsurR6air4swo&fp=chrome&type=xhttp&sni=cdn.steamstatic.com#%40filembad
-vless://a42eec3c-9491-0280-04b3-0c9730410bfb@130.49.77.4:8443?mode=gun&security=reality&encryption=none&pbk=hwwiWVqYq5b7S0JaXNSxjWSEv_1OUFMaWJGHzeAGyRM&fp=chrome&type=grpc&serviceName=TunService&sni=download.nvidia.com#%40filembad
