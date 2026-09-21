@@ -1,3 +1,5 @@
+vless://bdaf42dd-f75b-4594-d5f8-51c0feeb8406@k2.cloud--vpn.site:443?path=%2F&security=tls&alpn=h2&encryption=none&insecure=0&host=c12.com&fp=firefox&type=ws&allowInsecure=0&sni=ssl.fastly.com#ProxyMtpVPN-326
+vless://ad297a2b-ae17-4d2d-8fce-e2eafb89b145@45.58.126.115:8444?security=reality&encryption=none&pbk=OyUyHy3-04xKvFMvAzUbiVf7tkWX2a_gC2E_sEHGVw8&headerType=none&fp=chrome&type=tcp&flow=xtls-rprx-vision&sni=nbcnews.com&sid=08#filembad-294
 vless://ddf09ad0-02dc-485b-9048-1038de5bebf0@89.125.227.112:443?security=reality&encryption=none&pbk=JoIT56dCrKkeYJWSPA6-rllSqlXYKPg1rC2w7D_xogU&headerType=none&fp=firefox&type=tcp&flow=xtls-rprx-vision&sni=pl.node-edge09.com&sid=212a8beb0ea4817b#filembad-379
 vless://c34c6869-e454-4413-a7b2-052ba4a42fd5@uvgl4cjd0475.vtret.com:32567?encryption=mlkem768x25519plus.native.0rtt.84_DMC6q55hqCTwXssF177Z61CfqlI5CwYzYF6UGgG8&flow=xtls-rprx-vision&security=tls&sni=uvgl4cjd0475.vtret.com&fp=chrome&alpn=h2%2Chttp%2F1.1&insecure=0&allowInsecure=0&type=tcp&headerType=none#canfingV2rayNG-339
 vless://406d8436-0eb9-4eb2-84fb-960e076ffba6@104.16.7.70:443?mode=stream-one&path=%2Fde&security=tls&encryption=none&insecure=0&fp=chrome&type=xhttp&allowInsecure=0&sni=de.xn--q9jyb4c.online@oliver
@@ -159,7 +161,6 @@ vless://0cd84588-2ad1-4c69-ab82-1d3f93d5faa8@176.108.243.140:443?security=realit
 vless://4f54572a-b852-4da3-8823-0ddccc60b5d8@172.67.184.37:8880?path=%2F&security=none&encryption=none&host=icy-snowflake-1f56.147-1ea.workers.dev&type=ws#filembad-154
 vless://ae9bcc43-5fd8-4891-b06e-1c93e2747ed9@45.74.178.41:719?path=%2Fapi%2Fv2%2Fxtrnwqjbkr%3Fed%3D2560&security=&encryption=none&host=play.google.com&type=ws#canfingV2rayNG-263
 vless://e4514801-0d5a-42ba-869f-39bd605aef9e@52.47.98.1:22223?security=none&type=tcp&encryption=none#filembad-352
-vless://bdaf42dd-f75b-4594-d5f8-51c0feeb8406@k2.cloud--vpn.site:443?path=%2F&security=tls&alpn=h2&encryption=none&insecure=0&host=c12.com&fp=firefox&type=ws&allowInsecure=0&sni=ssl.fastly.com#ProxyMtpVPN-289
 vless://73e08fcb-a0c7-45d0-b55d-f78c903c64a6@dl3.gooniforoshi.fun:443?path=%2Fdownload.php&security=tls&encryption=none&insecure=0&host=dl3.gooniforoshi.fun&type=ws&allowInsecure=0&sni=dl3.gooniforoshi.fun#canfingV2rayNG-201
 vless://4f8a1d19-4d21-47f5-816e-a8f475fbd3f7@31.57.18.58:443?security=reality&encryption=none&pbk=qPgl3LmKAKs5K-KzGNRJyr5KTO0KoRNN5m2PTCMscXU&headerType=none&fp=firefox&type=tcp&flow=xtls-rprx-vision&sni=srv-waw.kintecolas.com&sid=22f534c530d37170#filembad-155
 vmess://eyJhZGQiOiJpcmMuamFoYW5zdGFyLnNicyIsImFpZCI6IjAiLCJhbHBuIjoiIiwiZnAiOiIiLCJob3N0IjoiIiwiaWQiOiJkNmEwMGU5Ny1mMjg0LTQ1OGYtYjA2NC1mNDlhMjYxMzRlNmIiLCJpbnNlY3VyZSI6IjAiLCJuZXQiOiJ0Y3AiLCJwYXRoIjoiIiwicGNzIjoiIiwicG9ydCI6IjQ0MyIsInBzIjoiZmlsZW1iYWQtNDIyIiwic2N5IjoiYXV0byIsInNuaSI6IiIsInRscyI6Im5vbmUiLCJ0eXBlIjoibm9uZSIsInYiOiIyIiwidmNuIjoiIn0=
@@ -374,4 +375,3 @@ vless://bcc2f72f-62ea-4d2d-914a-8a6ae5409724@docs.helpscenter.xyz:6443?security=
 vless://6202b230-417c-4d8e-b624-0f71afa9c75d@154.197.75.40:8880?type=ws&host=vms.lifetime37.workers.dev#filembad-203
 vmess://eyJhZGQiOiJpcmMuamFoYW5yb2NrZXQuc2JzIiwiYWlkIjoiMCIsImFscG4iOiIiLCJmcCI6IiIsImhvc3QiOiIiLCJpZCI6IjQxOWE3YTU2LThjNTQtNGQ2NC05NTZkLTZlZWM5MDEzMjU1NiIsImluc2VjdXJlIjoiMCIsIm5ldCI6InRjcCIsInBhdGgiOiIiLCJwY3MiOiIiLCJwb3J0IjoiNDQzIiwicHMiOiJmaWxlbWJhZC00NjIiLCJzY3kiOiJhdXRvIiwic25pIjoiIiwidGxzIjoiIiwidHlwZSI6Im5vbmUiLCJ2IjoiMiIsInZjbiI6IiJ9
 vless://eeb6823c-b926-4ea2-866a-5542edd26e59@162.159.38.119:443?path=%2F&security=tls&encryption=none&insecure=0&host=t1s1.rittbo.kdns.fr&type=ws&allowInsecure=0&sni=t1s1.rittbo.kdns.fr#canfingV2rayNG-428
-vless://e4514801-0d5a-42ba-869f-39bd605aef9e@15.237.34.168:22222?encryption=none&security=none&type=tcp#filembad-399
