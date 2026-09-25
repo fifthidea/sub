@@ -1,5 +1,5 @@
 {
-    "updated": "1405/07/03 05:33",
+    "updated": "1405/07/03 05:48",
     "ir_filter": {
         "source": "RIPE NCC",
         "cidr_network_count": 2538,
@@ -7,12 +7,12 @@
         "ipv6_network_count": 572
     },
     "subscriptions": {
-        "sub-full": 8546,
+        "sub-full": 8543,
         "sub-medium": 1500,
         "sub-lite": 750,
         "sub-tiny": 300,
-        "ir": 1306,
-        "ir-actual": 1101
+        "ir": 1304,
+        "ir-actual": 1100
     },
     "channels": {
         "ConfigsHUB2": {
@@ -23,7 +23,7 @@
         "ConfigsHUB": {
             "configs": 889,
             "active": true,
-            "last_config": "1405/07/03 05:31"
+            "last_config": "1405/07/03 05:44"
         },
         "TheFreeConfigs": {
             "configs": 1188,
@@ -91,9 +91,9 @@
             "last_config": "1405/07/03 05:16"
         },
         "NamazVPN": {
-            "configs": 1803,
+            "configs": 1799,
             "active": true,
-            "last_config": "1405/07/03 05:20"
+            "last_config": "1405/07/03 05:44"
         },
         "SOSkeyNET": {
             "configs": 1698,
@@ -113,12 +113,12 @@
         "filembad": {
             "configs": 953,
             "active": true,
-            "last_config": "1405/07/03 05:26"
+            "last_config": "1405/07/03 05:40"
         },
         "iranconnecting": {
             "configs": 740,
             "active": true,
-            "last_config": "1405/07/03 05:31"
+            "last_config": "1405/07/03 05:44"
         },
         "CafeTweetFa": {
             "configs": 898,
@@ -153,12 +153,12 @@
         "v2ray_free_conf": {
             "configs": 374,
             "active": true,
-            "last_config": "1405/07/03 05:25"
+            "last_config": "1405/07/03 05:41"
         },
         "vpnfail_v2ray": {
             "configs": 947,
             "active": true,
-            "last_config": "1405/07/03 05:17"
+            "last_config": "1405/07/03 05:36"
         },
         "v2ray_configs_pool": {
             "configs": 970,
