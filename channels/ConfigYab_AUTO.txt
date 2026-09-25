@@ -1,3 +1,4 @@
+vless://a44b015b-1b2b-4f3e-b236-79634f674b2d@153.76.185.98:3090?type=grpc&mode=multi&serviceName=vless#@ConfigYab_FREE
 vless://cd1956d7-f803-4e5a-b8a4-f1540bd103d1@151.101.240.148:80?path=%2F&security=none&encryption=none&host=jabaat.global.ssl.fastly.net&type=ws#@ConfigYab_FREE
 vless://fb5058f5-a9ed-424e-9ed7-33d455438286@104.234.239.2:8880?type=ws&host=old-violet-a5ce.29-440.workers.dev#@ConfigYab_FREE
 vless://6202b230-417c-4d8e-b624-0f71afa9c75d@173.245.49.50:8880?type=ws&host=vms.lifetime36.workers.dev&ed=2560#@ConfigYab_FREE
@@ -1607,4 +1608,3 @@ vless://f6b58665-c524-4c60-a939-d8f27123e079@de-3.bnc-gt.co.uk:443?mode=stream-u
 vless://f6b58665-c524-4c60-a939-d8f27123e079@fi-1.bnc-gt.co.uk:443?security=reality&encryption=none&pbk=CegqLjzOImUmYD9ZdpOOG65UgNTGeQfRmpIni8iraB0&headerType=none&fp=qq&type=tcp&flow=xtls-rprx-vision&sni=b.fi-1.bnc-gt.co.uk&sid=7be1e9c243451b14#@ConfigYab_FREE
 vless://f6b58665-c524-4c60-a939-d8f27123e079@cz-1.bnc-gt.co.uk:443?mode=gun&security=tls&alpn=h2&encryption=none&insecure=0&fp=qq&type=grpc&serviceName=grpc&allowInsecure=0&sni=b.cz-1.bnc-gt.co.uk#@ConfigYab_FREE
 vless://f6b58665-c524-4c60-a939-d8f27123e079@kz-1.bnc-gt.co.uk:443?path=%2Fws%2F&security=tls&encryption=none&insecure=0&fp=qq&type=ws&allowInsecure=0&sni=a.kz-1.bnc-gt.co.uk#@ConfigYab_FREE
-vless://5ea9ae84-3274-404e-a070-d8718e36ae11@176.53.146.164:443?mode=gun&security=reality&encryption=none&pbk=tu5lj8_l0P0pC9BBgvdaQJ23l38WnfgugPq0iPxYznY&fp=qq&spx=%2F&type=grpc&serviceName=grp&sni=ru.whotellme.com&sid=b11dedbb394e91e1#@ConfigYab_FREE
