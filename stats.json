@@ -1,5 +1,5 @@
 {
-    "updated": "1405/07/03 08:03",
+    "updated": "1405/07/03 08:18",
     "ir_filter": {
         "source": "RIPE NCC",
         "cidr_network_count": 2538,
@@ -7,12 +7,12 @@
         "ipv6_network_count": 572
     },
     "subscriptions": {
-        "sub-full": 8533,
+        "sub-full": 8528,
         "sub-medium": 1500,
         "sub-lite": 750,
         "sub-tiny": 300,
-        "ir": 1297,
-        "ir-actual": 1094
+        "ir": 1295,
+        "ir-actual": 1093
     },
     "channels": {
         "ConfigsHUB2": {
@@ -21,9 +21,9 @@
             "last_config": "1405/04/15 20:37"
         },
         "ConfigsHUB": {
-            "configs": 881,
+            "configs": 875,
             "active": true,
-            "last_config": "1405/07/03 08:00"
+            "last_config": "1405/07/03 08:15"
         },
         "TheFreeConfigs": {
             "configs": 1188,
@@ -38,7 +38,7 @@
         "FarahVPN": {
             "configs": 826,
             "active": true,
-            "last_config": "1405/07/03 08:00"
+            "last_config": "1405/07/03 08:15"
         },
         "NamiraConfigs": {
             "configs": 267,
@@ -66,9 +66,9 @@
             "last_config": "1405/07/03 02:33"
         },
         "ConfigYab_FREE": {
-            "configs": 1610,
+            "configs": 1611,
             "active": true,
-            "last_config": "1405/07/03 07:53"
+            "last_config": "1405/07/03 08:03"
         },
         "DeamNet_proxy": {
             "configs": 0,
@@ -93,7 +93,7 @@
         "NamazVPN": {
             "configs": 1799,
             "active": true,
-            "last_config": "1405/07/03 07:44"
+            "last_config": "1405/07/03 08:10"
         },
         "SOSkeyNET": {
             "configs": 1700,
@@ -108,7 +108,7 @@
         "chillguy_vpn": {
             "configs": 975,
             "active": true,
-            "last_config": "1405/07/03 07:48"
+            "last_config": "1405/07/03 08:13"
         },
         "filembad": {
             "configs": 954,
@@ -116,9 +116,9 @@
             "last_config": "1405/07/03 07:48"
         },
         "iranconnecting": {
-            "configs": 745,
+            "configs": 736,
             "active": true,
-            "last_config": "1405/07/03 08:00"
+            "last_config": "1405/07/03 08:15"
         },
         "CafeTweetFa": {
             "configs": 898,
@@ -133,7 +133,7 @@
         "lebertad": {
             "configs": 500,
             "active": true,
-            "last_config": "1405/07/03 07:49"
+            "last_config": "1405/07/03 08:04"
         },
         "meliproxyy": {
             "configs": 443,
