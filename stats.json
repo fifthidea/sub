@@ -1,5 +1,5 @@
 {
-    "updated": "1405/07/07 06:03",
+    "updated": "1405/07/07 06:18",
     "ir_filter": {
         "source": "RIPE NCC",
         "cidr_network_count": 2538,
@@ -7,7 +7,7 @@
         "ipv6_network_count": 572
     },
     "subscriptions": {
-        "sub-full": 9196,
+        "sub-full": 9195,
         "sub-medium": 1500,
         "sub-lite": 750,
         "sub-tiny": 300,
@@ -21,7 +21,7 @@
             "last_config": "1405/04/15 20:37"
         },
         "ConfigsHUB": {
-            "configs": 998,
+            "configs": 993,
             "active": true,
             "last_config": "1405/07/07 05:55"
         },
@@ -78,7 +78,7 @@
         "Farah_VPN": {
             "configs": 826,
             "active": true,
-            "last_config": "1405/07/07 05:58"
+            "last_config": "1405/07/07 06:12"
         },
         "FreakConfig": {
             "configs": 934,
@@ -151,14 +151,14 @@
             "last_config": "1405/07/07 02:55"
         },
         "v2ray_free_conf": {
-            "configs": 380,
+            "configs": 381,
             "active": true,
-            "last_config": "1405/07/07 05:54"
+            "last_config": "1405/07/07 06:13"
         },
         "vpnfail_v2ray": {
             "configs": 954,
             "active": true,
-            "last_config": "1405/07/07 05:59"
+            "last_config": "1405/07/07 06:05"
         },
         "v2ray_configs_pool": {
             "configs": 970,
