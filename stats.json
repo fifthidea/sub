@@ -1,5 +1,5 @@
 {
-    "updated": "1405/07/08 09:49",
+    "updated": "1405/07/08 09:56",
     "ir_filter": {
         "source": "RIPE NCC",
         "cidr_network_count": 2542,
@@ -7,11 +7,11 @@
         "ipv6_network_count": 572
     },
     "subscriptions": {
-        "sub-full": 9077,
+        "sub-full": 9073,
         "sub-medium": 1500,
         "sub-lite": 750,
         "sub-tiny": 300,
-        "ir": 1459,
+        "ir": 1458,
         "ir-actual": 1185
     },
     "channels": {
@@ -118,12 +118,12 @@
         "iranconnecting": {
             "configs": 908,
             "active": true,
-            "last_config": "1405/07/08 09:46"
+            "last_config": "1405/07/08 09:54"
         },
         "CafeTweetFa": {
-            "configs": 928,
+            "configs": 925,
             "active": true,
-            "last_config": "1405/07/08 09:47"
+            "last_config": "1405/07/08 09:52"
         },
         "ایرانی ـروید": {
             "configs": 919,
@@ -133,7 +133,7 @@
         "lebertad": {
             "configs": 499,
             "active": true,
-            "last_config": "1405/07/08 09:47"
+            "last_config": "1405/07/08 09:54"
         },
         "meliproxyy": {
             "configs": 474,
@@ -153,7 +153,7 @@
         "v2ray_free_conf": {
             "configs": 378,
             "active": true,
-            "last_config": "1405/07/08 09:40"
+            "last_config": "1405/07/08 09:48"
         },
         "vpnfail_v2ray": {
             "configs": 948,
