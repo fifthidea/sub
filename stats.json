@@ -1,5 +1,5 @@
 {
-    "updated": "1405/07/08 06:04",
+    "updated": "1405/07/08 06:19",
     "ir_filter": {
         "source": "RIPE NCC",
         "cidr_network_count": 2542,
@@ -11,8 +11,8 @@
         "sub-medium": 1500,
         "sub-lite": 750,
         "sub-tiny": 300,
-        "ir": 1470,
-        "ir-actual": 1185
+        "ir": 1471,
+        "ir-actual": 1186
     },
     "channels": {
         "ConfigsHUB2": {
@@ -21,9 +21,9 @@
             "last_config": "1405/04/15 20:37"
         },
         "ConfigsHUB": {
-            "configs": 1127,
+            "configs": 1118,
             "active": true,
-            "last_config": "1405/07/08 05:57"
+            "last_config": "1405/07/08 06:12"
         },
         "TheFreeConfigs": {
             "configs": 1187,
@@ -38,7 +38,7 @@
         "FarahVPN": {
             "configs": 836,
             "active": true,
-            "last_config": "1405/07/08 06:00"
+            "last_config": "1405/07/08 06:15"
         },
         "NamiraConfigs": {
             "configs": 267,
@@ -66,9 +66,9 @@
             "last_config": "1405/07/08 02:33"
         },
         "ConfigYab_FREE": {
-            "configs": 1659,
+            "configs": 1658,
             "active": true,
-            "last_config": "1405/07/08 05:57"
+            "last_config": "1405/07/08 06:05"
         },
         "DeamNet_proxy": {
             "configs": 0,
@@ -78,7 +78,7 @@
         "Farah_VPN": {
             "configs": 817,
             "active": true,
-            "last_config": "1405/07/08 05:52"
+            "last_config": "1405/07/08 06:13"
         },
         "FreakConfig": {
             "configs": 933,
@@ -153,12 +153,12 @@
         "v2ray_free_conf": {
             "configs": 379,
             "active": true,
-            "last_config": "1405/07/08 05:57"
+            "last_config": "1405/07/08 06:15"
         },
         "vpnfail_v2ray": {
             "configs": 948,
             "active": true,
-            "last_config": "1405/07/08 05:56"
+            "last_config": "1405/07/08 06:11"
         },
         "v2ray_configs_pool": {
             "configs": 970,
