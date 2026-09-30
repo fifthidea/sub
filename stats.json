@@ -1,5 +1,5 @@
 {
-    "updated": "1405/07/08 04:34",
+    "updated": "1405/07/08 04:49",
     "ir_filter": {
         "source": "RIPE NCC",
         "cidr_network_count": 2542,
@@ -7,12 +7,12 @@
         "ipv6_network_count": 572
     },
     "subscriptions": {
-        "sub-full": 9100,
+        "sub-full": 9097,
         "sub-medium": 1500,
         "sub-lite": 750,
         "sub-tiny": 300,
-        "ir": 1472,
-        "ir-actual": 1187
+        "ir": 1471,
+        "ir-actual": 1186
     },
     "channels": {
         "ConfigsHUB2": {
@@ -23,12 +23,12 @@
         "ConfigsHUB": {
             "configs": 1131,
             "active": true,
-            "last_config": "1405/07/08 04:24"
+            "last_config": "1405/07/08 04:39"
         },
         "TheFreeConfigs": {
             "configs": 1187,
             "active": true,
-            "last_config": "1405/07/08 04:06"
+            "last_config": "1405/07/08 04:38"
         },
         "persianvpnhub": {
             "configs": 445,
@@ -38,7 +38,7 @@
         "FarahVPN": {
             "configs": 836,
             "active": true,
-            "last_config": "1405/07/08 04:30"
+            "last_config": "1405/07/08 04:45"
         },
         "NamiraConfigs": {
             "configs": 267,
@@ -68,7 +68,7 @@
         "ConfigYab_FREE": {
             "configs": 1660,
             "active": true,
-            "last_config": "1405/07/08 04:25"
+            "last_config": "1405/07/08 04:46"
         },
         "DeamNet_proxy": {
             "configs": 0,
@@ -78,7 +78,7 @@
         "Farah_VPN": {
             "configs": 816,
             "active": true,
-            "last_config": "1405/07/08 04:26"
+            "last_config": "1405/07/08 04:46"
         },
         "FreakConfig": {
             "configs": 933,
@@ -158,7 +158,7 @@
         "vpnfail_v2ray": {
             "configs": 948,
             "active": true,
-            "last_config": "1405/07/08 04:25"
+            "last_config": "1405/07/08 04:45"
         },
         "v2ray_configs_pool": {
             "configs": 970,
