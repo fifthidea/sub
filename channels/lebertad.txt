@@ -1,3 +1,6 @@
+vless://5d16ac22-6eea-426f-b778-6f4c2961faef@176.109.111.154:9881?mode=gun&security=reality&encryption=none&authority=@bored_vpn&pbk=Dfgu8Ey0M8Hz4gXGZAwQ3H9jLt2HByVsjAOTWiuKDB0&fp=chrome&type=grpc&serviceName=grpc-tunnel&sni=dl.google.com&sid=aabbccdd#Config
+vless://5d16ac22-6eea-426f-b778-6f4c2961faef@176.109.111.154:9881?mode=gun&security=reality&encryption=none&authority=@mehrosaboran&pbk=Dfgu8Ey0M8Hz4gXGZAwQ3H9jLt2HByVsjAOTWiuKDB0&fp=chrome&type=grpc&serviceName=grpc-tunnel&sni=dl.google.com&sid=aabbccdd#Config
+vless://3d0a7290-6c7f-455d-8b05-da7be0746289@178.105.218.75:8443?security=none&encryption=none&host=www.google.com&headerType=http&type=tcp#Config
 vless://e6261601-0ba9-465d-9c70-6c8b4e47c7e4@62.109.19.28:443?security=reality&encryption=none&pbk=IxFbqmfuwejYSKYu69qBnzG9yWSuf7UjHujXWOO_w34&headerType=none&fp=firefox&type=tcp&flow=xtls-rprx-vision&sni=duckduckgo.com&sid=9137d914cd770b54#Config
 vless://318c935d-c195-41d3-99ad-9bbcfdab3386@pl.srv.vbuste-bot.com:444?mode=gun&security=reality&encryption=none&pbk=0-or5ogGhYbBgsVSrSC2Fhxyp2BN97Y9pqIdg61Qd08&fp=firefox&type=grpc&sni=pl.srv.vbuste-bot.com&sid=4be4110078ebed4a#Config
 vless://1f7ffcae-2f87-4088-9cca-d472a04fb41b@77.110.105.58:443?security=tls&encryption=none&insecure=0&headerType=none&fp=firefox&type=tcp&allowInsecure=0&flow=xtls-rprx-vision&sni=fast_s24.slopllex.app#Config
@@ -494,6 +497,3 @@ vless://ab41a2ee-be2d-ddd1-9f2b-e7f18317c3e7@app-d6ce10-f27ef3-production.up.rai
 vless://d65cc14c-f53f-4fe2-b262-97856601319c@169.40.42.74:443?sni=yahoo.com&security=reality&sid=c39cc7310a&pbk=e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg&encryption=none&type=tcp&headerType=none&flow=xtls-rprx-vision&fp=ios#Config
 vless://df9f5aca-eda0-428f-a752-e53866153d12@89.185.81.95:8765?security=reality&sid=7bf47eabf939728b&pbk=Da_s-Cgqm5kqaIbCgXVJdrq_KF7fCQveRByRhKUzonc&encryption=none&type=tcp&headerType=none&flow=xtls-rprx-vision&sni=r-b8a34c.vless.monster#Config
 vless://e37b223d-c602-4be9-8ce0-eca27841ec8b@nl-ded.gamma-kvn.com:443?security=tls&encryption=none&insecure=0&headerType=none&type=tcp&allowInsecure=0&flow=xtls-rprx-vision#Config
-vless://fe39b692-d6e6-477e-9a3d-9b43ea6cdcee@172.67.206.98:2087?security=tls&sni=file-io-5621c3-mlm.sre-tools-80c3c2.workers.dev&type=ws&host=file-io-5621c3-mlm.sre-tools-80c3c2.workers.dev&path=/&fp=safari&allowInsecure=0#Config
-vless://adc11f30-e4cb-4985-bf5e-f9ded69c019f@31.76.113.240:443?security=reality&encryption=none&pbk=fNfokzklCF4l_c8k8PciOCjm5ecNoF_sNLjEtaO-xzI&headerType=none&fp=random&type=tcp&flow=xtls-rprx-vision&sni=nvidia.com&sid=db04ce8bdb8900f1#Config
-vless://cd3bb7d9-7df3-4644-ac05-c260990ac277@50.7.5.166:443?encryption=none&flow=xtls-rprx-vision&fp=firefox&security=tls&sni=ekb.eg&type=tcp&allowInsecure=1&insecure=1#Config
