@@ -1,3 +1,6 @@
+vless://2e8cd1fa-0dcc-4402-bb99-be3d623fc1d5@fast.jkerm.com:443?insecure=0&path=/&encryption=none&host=pokerrr.global.ssl.fastly.net.&type=ws&sni=ssl.fastly.com&security=tls&allowInsecure=0#Config
+vless://2e8cd1fa-0dcc-4402-bb99-be3d623fc1d5@199.232.78.159:443?sni=ssl.fastly.com&allowInsecure=0&encryption=none&type=ws&host=pokerrr.global.ssl.fastly.net&insecure=0&path=/&security=tls#Config
+vmess://eyJhZGQiOiIyMDYuMS4xMDMuNTEiLCJhaWQiOiIwIiwiYWxwbiI6IiIsImZwIjoiIiwiaG9zdCI6IiIsImlkIjoiMzM1YWUxOTQtY2U3OS00MDIxLTkwZTItZTAxNjc0MmJmOWM4IiwiaW5zZWN1cmUiOiIwIiwibmV0IjoidGNwIiwicGF0aCI6IiIsInBjcyI6IiIsInBvcnQiOiI0Mjg5NCIsInBzIjoiQ29uZmlnIDMgLSBAbGViZXJ0YWQiLCJzY3kiOiJhdXRvIiwic25pIjoiIiwidGxzIjoiIiwidHlwZSI6Im5vbmUiLCJ2IjoiMiIsInZjbiI6IiJ9
 vless://92032f30-407c-402a-8b8b-9665cd2394bd@107.189.7.176:32752/?type=tcp&encryption=none&flow=&sni=www.apple.com&fp=chrome&security=reality&pbk=pfFcQxKv4EPhCDUoZMCmTjj4FK7HHQg_me-In3bOejA&sid=d758a643034ad90e#Config
 vless://9f15b600-ce52-447f-b388-ef70de75308e@91.107.191.165:2?encryption=none&type=tcp&headerType=none&security=none#Config
 vless://8453bdb7-dd58-419d-b002-9456dd2e73d7@199.232.78.159:443?encryption=none&insecure=0&type=ws&sni=ssl.fastly.com&security=tls&path=/&host=pan2e.global.ssl.fastly.net&allowInsecure=0#Config
@@ -55,7 +58,6 @@ vless://5f6dd489-e29a-4238-a731-b82a440ec780@tr.koomeh.net:80?mode=stream-one&pa
 vless://a06596c3-524d-49fc-8483-dfc4f3f5bb56@104.24.183.2:2087?encryption=none&type=ws&host=loop.shaw-gsm.com&path=/gsm-mobile-9297dh2&security=tls&sni=kop.shaw-gsm.com&fp=chrome#Config
 vless://b1102e09-f8ad-4cb7-9070-1f1f2a7bced1@mainline.proxy.rlwy.net:41469?path=/&security=none&encryption=none&type=httpupgrade#Config
 vless://cec977f2-6e00-40b0-f64f-1cde22823533@net.pluse.vexava.ir:80?path=/&security=none&encryption=none&host=shayanbear.global.ssl.fastly.net&type=ws#Config
-vless://2e8cd1fa-0dcc-4402-bb99-be3d623fc1d5@199.232.78.159:443?path=/&security=tls&encryption=none&insecure=0&host=pokerrr.global.ssl.fastly.net&type=ws&allowInsecure=0&sni=ssl.fastly.com#Config
 vless://c0e8fb58-a60f-4c15-9444-4e7c109797a8@fast.jkerm.com:443?path=/&security=tls&encryption=none&insecure=0&host=pokerrr.global.ssl.fastly.net.&type=ws&allowInsecure=0&sni=ssl.fastly.com#Config
 vless://d0e771ef-b9bb-4d50-8e7a-01a3174df0e3@sub.skyshopnet.ir:443?encryption=mlkem768x25519plus.native.0rtt.ylWaNV7JiVE1OUF1VfMPRL_6Wakrx28Q2J1JLJL0ujU&security=reality&sni=www.sony.co.in&fp=chrome&pbk=hpqn8r_F_YEnWuzRgNtRM5uHgUkrIzx99VEwzJH-PTI&sid=cec1759a8e9f78&spx=/b3046e117f12964&type=xhttp&mode=auto&host=panel.skyshopnet.ir&path=/sky&extra={"mode":"auto","xPaddingBytes":"100-1000"}#Config
 vless://950a82ff-7bad-4884-adeb-f59b331eecad@199.232.78.143:443?encryption=none&security=tls&sni=edge.microsoft.com&alpn=h2&fp=edge&pcs=cd6e838b9bfe31cab8b3d5c858b0d6223fe84ece236c1fdb281be93c302e1e6e&type=xhttp&mode=auto&host=Suporjaz.global.ssl.fastly.net&path=/#Config
@@ -493,5 +495,3 @@ vless://bce11dd1-bbb9-4b98-b4d9-942359dbe71b@snapp.ir:2086?path=/&security=&encr
 vless://536d0d54-53a5-455a-ad7c-a525d8ff629f@45.130.125.160:443?path=/&security=tls&alpn=h2,http/1.1&encryption=none&insecure=1&host=tesdt.arvanabr.xyz&fp=chrome&type=ws&allowInsecure=1&sni=tesdt.arvanabr.xyz#Config
 vless://0f4081e7-612b-425f-8def-eebf144aedba@185.91.54.30:8444?mode=gun&security=reality&encryption=none&pbk=ITd6cmCxudmTvGcwnAzpd0VRe8jS9KJAQ1tmtVN3mCM&fp=ios&type=grpc&serviceName=grpc-reality&sni=ads.x5.ru&sid=9e15546f267baa64#Config
 vless://565507e7-46f2-4d41-9ab7-7e19c21d1e16@benyaminnn.varzeshfotsal.ir:8443?path=/&security=tls&encryption=none&insecure=0&type=ws&allowInsecure=0&sni=benyaminnn.varzeshfotsal.ir#Config
-vless://db0e6f46-5395-4dc9-8e52-3d2d4f1a9768@199.232.78.159:80?path=/&security=none&encryption=none&host=7wwwspeedtestnet.global.ssl.fastly.net&type=ws#Config
-vless://9962cbb5-9fcd-4340-9077-abc67866d549@199.232.78.159:443?path=/&security=tls&encryption=none&insecure=0&host=7wwwspeedtestnet.global.ssl.fastly.net&fp=chrome&type=ws&allowInsecure=0&sni=ssl.fastly.com#Config
