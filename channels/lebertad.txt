@@ -1,3 +1,6 @@
+vless://0e6cd6ca-fba2-4b86-923c-f0a021f7ad15@142.132.140.143:1003?security=none&type=tcp#Config
+vless://372c587c-ca5f-467e-aaf2-07e0fd0ab7bf@31.56.189.89:443?mode=auto&path=/standart/&security=tls&encryption=none&insecure=0&host=de3s.beautysalon1122.online&fp=safari&type=xhttp&allowInsecure=0&sni=de3s.beautysalon1122.online#Config
+vless://90b3475a-d8c8-451b-a906-2d84bd8714cf@78.157.61.72:443?mode=auto&pcs=2F:78:6C:7A:C8:DC:37:D0:49:40:8A:76:50:77:89:D3:EB:B9:D6:4B:66:CA:EA:A7:DC:58:C4:3A:3B:96:76:35&path=/&security=tls&alpn=h2&encryption=mlkem768x25519plus.native.0rtt.SPgO-MsAqBHXg9z1SCObbM3MGVNSj6EiJdHbjSt6n08&insecure=0&fp=chrome&type=xhttp&allowInsecure=0&sni=pishdade9090.myket.ir#Config
 vless://9e8bb5eb-8435-4909-875c-552c010ec6cc@roundhouse.proxy.rlwy.net:40235?encryption=none&host=&path=/&security=none&type=httpupgrade#Config
 vless://bd077f6a-4fed-4b5e-adae-3a5452123eda@151.101.1.194:80?path=/&security=none&encryption=none&host=simorghfr.global.ssl.fastly.net&type=ws#Config
 vless://bd077f6a-4fed-4b5e-adae-3a5452123eda@151.101.65.57:80?path=/&security=none&encryption=none&host=simorghtrr.global.ssl.fastly.net&type=ws#Config
@@ -219,7 +222,6 @@ vless://7610be85-9855-4010-8929-ce16d4993969@195.189.98.123:443?encryption=none&
 vless://91d734be-a3d0-4d50-83ab-74cf7b6966fa@144.31.215.227:443?security=reality&encryption=none&pbk=LEoyslGYLVf2XWq9Bkq8Hod-EsB3ZoTlvR5AKK3rciQ&headerType=none&fp=chrome&type=tcp&flow=xtls-rprx-vision&sni=cdn-de.bulkavpn.top&sid=c885e8f8#Config
 vless://b5b2648a-cc54-4b25-b7d0-92dc6402564d@64.188.115.219:443?pbk=2tjr1gP8eecWi9xlKFB1SmPKOzRgDt40NBQcxhjaKCA&security=reality&type=tcp&sid=19630e492b86c420&sni=www.swift.com&encryption=none&flow=xtls-rprx-vision&fp=safari&headerType=none#Config
 vless://3464a5bd-6a17-4ac3-8ca9-86a54c1aac7b@95.85.254.147:443?mode=gun&security=reality&encryption=none&pbk=tKAYeVSM4yLXiOdKLMFP751fhII6YyqfbMXy_MSuejI&fp=firefox&type=grpc&serviceName=vless-grpc&sni=samsung.com#Config
-vless://372c587c-ca5f-467e-aaf2-07e0fd0ab7bf@31.56.189.89:443?type=xhttp&host=de3s.beautysalon1122.online&insecure=0&security=tls&mode=auto&fp=safari&encryption=none&path=/standart/&sni=de3s.beautysalon1122.online&allowInsecure=0#Config
 vless://37615d66-5467-44a3-bc23-f2c3bef7f761@tk1.high-speed-test-56424.me:443?encryption=none&flow=xtls-rprx-vision&security=reality&sni=aws.amazon.com&fp=chrome&pbk=p8VhFzvFOBAhWAEAeWmwDxT3xBSRsGYixqi0qnLFnBM&sid=21270a66&spx=/a6f16ebc763b16c&type=tcp&headerType=none#Config
 vless://ae0e6518-71ab-4f4b-87d1-7802765f52ba@172.67.178.142:2086?security=none&type=ws&path=/vl/vuHASprDE9HV8y2BnO7UV?ed=2560&host=koq90g5av4kdxunfa.liliane-hilpert.workers.dev&packetEncoding=xudp&sni=koq90g5av4kdxunfa.liliane-hilpert.workers.dev&encryption=none#Config
 vless://94977b19-6720-48a6-92fd-00238757ea30@188.114.97.6:8880?&type=ws&headerType=none&host=fragrant-credit-c4cf.148-e68.workers.dev&path=/#Config
@@ -494,5 +496,3 @@ vless://e688fd38-e84f-4611-965f-97f717233aa7@188.114.96.3:443?path=/eyJqdW5rIjoi
 vless://b0185964-e2a2-4f0a-a33b-e775f7f46b52@de11.bexait.ir:2434?security=reality&encryption=none&pbk=yzCvRpbQ-cRePaJAuQkw42_xEf-R860gFsQwoPki2E0&headerType=none&fp=chrome&type=tcp&sni=icloud.com&sid=9de041877612a718#Config
 vless://b0185964-e2a2-4f0a-a33b-e775f7f46b52@188.114.98.0:8880?path=/?ed=2560&security=none&encryption=none&host=kh8.javanrooo.ir&type=ws#Config
 vless://b0185964-e2a2-4f0a-a33b-e775f7f46b52@199.232.78.159:443?path=/&security=tls&encryption=none&insecure=0&host=yaSharClass.global.ssl.fastly.net&fp=chrome&type=ws&allowInsecure=0&sni=ssl.fastly.com#Config
-vless://b0185964-e2a2-4f0a-a33b-e775f7f46b52@199.232.78.159:80?path=/&security=none&encryption=none&host=yaSharClass.global.ssl.fastly.net&type=ws#Config
-vless://b0185964-e2a2-4f0a-a33b-e775f7f46b52@fn3.bexait.ir:2434?security=reality&encryption=none&pbk=yzCvRpbQ-cRePaJAuQkw42_xEf-R860gFsQwoPki2E0&headerType=none&fp=chrome&type=tcp&sni=icloud.com&sid=9de041877612a718#Config
