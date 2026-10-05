@@ -1,3 +1,6 @@
+vless://8a180a9e-3218-4140-bfd3-56cf230d27f8@50.7.220.123:443?type=tcp&flow=xtls-rprx-vision&security=tls&headerType=none&insecure=0&encryption=none&allowInsecure=0&fp=firefox&sni=xn--80aksgi6f.xn----ctbzfboapgel4j.xn--p1ai#Config
+vless://8a180a9e-3218-4140-bfd3-56cf230d27f8@50.7.220.124:443?fp=firefox&insecure=0&type=tcp&security=tls&encryption=none&flow=xtls-rprx-vision&allowInsecure=0&headerType=none&sni=xn--80aksgi6f.xn----ctbzfboapgel4j.xn--p1ai#Config
+vless://fe467f51-b2cc-4b16-b50b-a78865ed3dd9@188.114.97.6:8880?path=/&security=none&encryption=none&host=crimson-wind-71bc.19-5fd.workers.dev&type=ws#Config
 vless://79ccb156-bfc6-11f1-9811-525400d1d4f7@172.86.111.135:443?pbk=n25FmewpAEsvLl9Vr0bRFcz044f4IE7orWeWOzu8rwk&type=tcp&security=reality&sni=www.nvidia.com&encryption=none&flow=xtls-rprx-vision&fp=safari&headerType=none#Config
 vless://d65cc14c-f53f-4fe2-b262-97856601319c@169.40.42.223:443?security=reality&encryption=none&pbk=e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg&headerType=none&fp=chrome&type=tcp&flow=xtls-rprx-vision&sni=yahoo.com&sid=c39cc7310a#Config
 vless://d7e99010-e7c3-4978-9d30-2e63882dcfbe@lv1d.lynch.ir:4040?encryption=none&security=reality&type=tcp&headerType=none&sni=www.actionvfx.com&fp=chrome&pbk=_OmNcv89o5SDt4H3ButRX9UynGIVwNZR250w4Zie-yk&sid=73693dea6faae051#Config
@@ -59,7 +62,6 @@ vmess://eyJhZGQiOiJ2aXA2LmV6MDUzNS5jb20iLCJhaWQiOiIwIiwiYWxwbiI6IiIsImZwIjoiIiwi
 vless://c53ea5e9-ed8b-4990-805d-7f1d6451426c@du-rov.secureservice.top:8443?security=reality&encryption=none&pbk=fSVfR9NB-6J6smrZlavi0GWd8JfDh0aXuEkKbtuFzUI&headerType=none&fp=chrome&type=tcp&flow=xtls-rprx-vision&sni=du-rov.secureservice.top&sid=3cbc3d737fb9c4af#Config
 vless://6b504c50-8535-44cf-8e4e-f8ee674a922e@172.67.152.71:8880?encryption=none&type=ws&host=old-moon-16d0.156-a25.workers.dev&path=/pyip=ProxyIP.JP.CMLiussss.net&security=none#Config
 vless://38986695-66de-4878-a535-8fc679a70e64@136.243.216.75:20010?security=none&encryption=none&headerType=none&type=tcp#Config
-vless://fe467f51-b2cc-4b16-b50b-a78865ed3dd9@188.114.97.6:8880?encryption=none&type=ws&host=crimson-wind-71bc.19-5fd.workers.dev&path=/&security=none#Config
 vless://b19419fa-8009-455b-b059-765e2856883a@www.speedtest.net:443?path=/vl/3Qe9Fv1V2cqEtXyBQApZYi&security=tls&alpn=http/1.1&encryption=none&host=akbarian34.j9z65ce2uyks.workers.dev&fp=chrome&type=ws&allowInsecure=0&sni=AkbaRiAN34.J9z65CE2UYKs.wORKERS.DEV#Config
 vless://c7e21691-d20d-4c99-b907-9fa16a1d23ac@176.109.107.120:443?security=reality&alpn=http/1.1&encryption=none&pbk=8wdJkt847b6FbdFKpxg5QWJyE7yijdyUYjKIlfE75EI&headerType=none&fp=random&type=tcp&flow=xtls-rprx-vision&sni=2gis.ru&sid=766d197af8a04d7b#Config
 vless://f1e5d738-2e83-4e2f-b6d6-a9013b3e7e48@172.67.134.7:2052?security=none&type=ws&path=/vl/u3oMYZoYUAozPFEA8UhR?ed=2560&host=a6o58qfpwvgrwmz0crtha0r24uyiu2l.x7-f5jb95s0ocjt-0.workers.dev&packetEncoding=xudp&encryption=none#Config
@@ -494,5 +496,3 @@ vless://35a02274-97de-4799-9e25-fb1a287b959f@tun22.videobazi.com:8700?path=/&sec
 vless://35a02274-97de-4799-9e25-fb1a287b959f@tun12.videobazi.com:8700?path=/&security=&encryption=mlkem768x25519plus.native.0rtt.lf7RGaNMgbxzgCSNFaTbEjRGecpamczYdrjdUlQDq30&host=arvancloud.ir&type=ws#Config
 vless://cf39fab0-bb85-42cb-9945-2ad69d78e575@rubifen.adaspoloandco.com:443?path=/GOrbEh&security=tls&encryption=none&insecure=0&type=ws&allowInsecure=0&sni=rubifen.adaspoloandco.com#Config
 vless://10a46e2e-c05e-46c8-c0a6-f55b716d1f1d@94.237.43.11:443?sni=ajax.googleapis.com&security=reality&pbk=y4EAK3C7BjrAhd2eneXeoBHxA2iATHQ7BmkwWFF6v0E&host=ajax.googleapis.com&encryption=none&spx=/&type=tcp&fp=safari&headerType=http#Config
-vless://0f47a872-b140-46f5-aef8-f46993f5fc01@112.49.63.11:33102?security=tls&encryption=none&headerType=none&fp=chrome&type=tcp&flow=xtls-rprx-vision&sni=sgg.knhqf.com#Config
-vmess://eyJhZGQiOiIzOS4xMDguMTEzLjEyNyIsImFpZCI6IjAiLCJhbHBuIjoiIiwiZnAiOiIiLCJob3N0IjoiIiwiaWQiOiJmZGUxMGUzOS00OGJiLTRkY2YtYjNiYS03MWQ3MTEzMjNhNTQiLCJuZXQiOiJ3cyIsInBhdGgiOiIiLCJwb3J0IjoiMTAwODYiLCJwcyI6IkNvbmZpZyAzIC0gQGxlYmVydGFkIiwic2N5IjoiYXV0byIsInNuaSI6IiIsInRscyI6IiIsInR5cGUiOiItLS0iLCJ2IjoiMiJ9
