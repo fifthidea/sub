@@ -1,5 +1,5 @@
 {
-    "updated": "1405/07/14 05:48",
+    "updated": "1405/07/14 06:04",
     "ir_filter": {
         "source": "RIPE NCC",
         "cidr_network_count": 2544,
@@ -7,12 +7,12 @@
         "ipv6_network_count": 572
     },
     "subscriptions": {
-        "sub-full": 9084,
+        "sub-full": 9083,
         "sub-medium": 1500,
         "sub-lite": 750,
         "sub-tiny": 300,
-        "ir": 1669,
-        "ir-actual": 1356
+        "ir": 1667,
+        "ir-actual": 1354
     },
     "channels": {
         "ConfigsHUB2": {
@@ -36,9 +36,9 @@
             "last_config": "1405/07/14 01:51"
         },
         "FarahVPN": {
-            "configs": 888,
+            "configs": 887,
             "active": true,
-            "last_config": "1405/07/14 05:45"
+            "last_config": "1405/07/14 06:00"
         },
         "NamiraConfigs": {
             "configs": 267,
@@ -78,7 +78,7 @@
         "Farah_VPN": {
             "configs": 843,
             "active": true,
-            "last_config": "1405/07/14 05:34"
+            "last_config": "1405/07/14 05:58"
         },
         "FreakConfig": {
             "configs": 925,
@@ -91,7 +91,7 @@
             "last_config": "1405/07/14 05:44"
         },
         "NamazVPN": {
-            "configs": 1691,
+            "configs": 1690,
             "active": true,
             "last_config": "1405/07/14 04:12"
         },
@@ -126,9 +126,9 @@
             "last_config": "1405/07/14 01:28"
         },
         "ایرانی ـروید": {
-            "configs": 913,
+            "configs": 916,
             "active": true,
-            "last_config": "1405/07/14 05:22"
+            "last_config": "1405/07/14 05:52"
         },
         "lebertad": {
             "configs": 498,
@@ -153,12 +153,12 @@
         "v2ray_free_conf": {
             "configs": 366,
             "active": true,
-            "last_config": "1405/07/14 05:47"
+            "last_config": "1405/07/14 05:57"
         },
         "vpnfail_v2ray": {
             "configs": 937,
             "active": true,
-            "last_config": "1405/07/14 05:39"
+            "last_config": "1405/07/14 06:01"
         },
         "v2ray_configs_pool": {
             "configs": 970,
