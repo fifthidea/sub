@@ -1,3 +1,4 @@
+vless://c1c95983-50a7-44b1-99ac-a062284939d0@2.26.171.40:8443?encryption=none&flow=xtls-rprx-vision&type=tcp&security=reality&sni=kelvra.pro&fp=qq&pbk=cynncQk7kKzEQaExg-FN7pMqFaZPSXEi_Ggy7AXXmVg&sid=44103f58&spx=/HesarWeb#Config
 vless://37f39851-b5b7-4b99-b5c2-b558c38204f2@91.224.74.19:8628?security=tls&encryption=none&insecure=0&headerType=none&fp=chrome&type=tcp&allowInsecure=0&sni=91.224.74.19#Config
 vless://ca9a858a-277f-4940-ace2-556ff041ad93@plus-wg.kariba.ir:80?encryption=none&host=farshekashan.saminpcm.ir&path=/&security=none&type=ws#Config
 vless://eb77b97e-931a-4b6e-a2b0-55be2660f9c8@sub.skyshopnet.ir:80?mode=auto&path=/sky&security=reality&encryption=mlkem768x25519plus.native.0rtt.LkWPSIfsDWtJMYMInME1hyNGJ4fA6qT9qPshjgYrT3c&extra={"mode":"auto","xPaddingBytes":"100-1000"}&pbk=hWQNka_B_4CBdrU608qJ0ukLPsxVoR9pCBnmy35EGX0&host=panel.skyshopnet.ir&fp=chrome&spx=/2eb11a7ed48c873&type=xhttp&sni=download.amd.com&sid=f143a0b6ebe3#Config
@@ -494,4 +495,3 @@ vless://d6828805-5608-44d7-a44b-976d4c3ac2d0@188.114.97.3:443?path=/vl/5ibXbgAYx
 vless://50414e45-4c5f-5a45-5553-0d996018badd@104.36.195.97:443?path=/stream/PANEL_ZEUS/0d996018badd&security=tls&encryption=none&host=2hzkgpeaujns.rjwn948.workers.dev&type=ws&insecure=0&fp=unsafe&allowInsecure=0&sni=2hzkgpeaujns.rjwn948.workers.dev#Config
 vless://a44768a4-f613-4083-a76d-0df966efdd7e@194.62.105.40:36379?encryption=none&fp=firefox&pbk=21eKBpFrgi_Knuo_mmEm3wUXXEi-tY2pDkf1eYM2qzQ&security=reality&sid=2faaf9&sni=play.google.com&spx=/191f5a9a42b4af7&support-x25519mlkem768=true&type=tcp#Config
 vless://a44768a4-f613-4083-a76d-0df966efdd7e@194.62.105.40:37387?encryption=none&headerType=http&host=play.google.com&path=/&security=none&type=tcp#Config
-vless://df53b6c2-8005-475c-9eb9-74e1be785dc8@2.27.69.117:443?encryption=none&flow=xtls-rprx-vision&security=reality&sni=addons.mozilla.org&fp=chrome&pbk=-bn-69fLm8-ZIN4AWcFJTvliohVXnevdOK6E0HJF90Y&sid=123c2bff&type=tcp&headerType=none#Config
