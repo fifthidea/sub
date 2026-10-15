@@ -1,3 +1,5 @@
+vless://80de563a-cac8-40ea-8cb0-4cb082dd92f9@5.178.109.174:14430?sni=5.178.109.174&type=ws&headerType=none&host=5.178.109.174&path=/vless#Config
+vless://d65cc14c-f53f-4fe2-b262-97856601319c@169.40.42.224:443?security=reality&encryption=none&pbk=e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg&headerType=none&fp=ios&type=tcp&flow=xtls-rprx-vision&sni=yahoo.com&sid=c39cc7310a#Config
 vmess://eyJhZGQiOiIxODUuMTkuMzMuOTciLCJhaWQiOiIwIiwiYWxwbiI6IiIsImZwIjoiIiwiaG9zdCI6IiIsImlkIjoiZTRiMmI3MDMtNWE4OC00MDc0LWI5N2UtYmYzNzdkZTQ1M2E5IiwiaW5zZWN1cmUiOiIwIiwibmV0IjoidGNwIiwicGF0aCI6IiIsInBjcyI6IiIsInBvcnQiOiIzNzM5MSIsInBzIjoiQ29uZmlnIDEgLSBAbGViZXJ0YWQiLCJzY3kiOiJhdXRvIiwic25pIjoiIiwidGxzIjoiIiwidHlwZSI6Im5vbmUiLCJ2IjoiMiIsInZjbiI6IiJ9
 vless://c5ff0c78-b144-461d-910e-c1b8e8438726@213.156.152.22:8443?security=&encryption=mlkem768x25519plus.native.0rtt.DnfZyaOkXGuK9M8sZ6gQ1Z31K92-PdqOy8o5SXUQvwk&host=play.google.com&headerType=http&type=tcp#Config
 vless://560ecca1-7e20-4b41-b4d6-781fb3bc179d@dnld.chaqalli.com:8180?path=/&security=none&encryption=mlkem768x25519plus.native.0rtt.PdwZJuxIVUGHGbEzz3Q39ZoRqqxfF0lFg22yCLQvaWk&type=ws#Config
@@ -494,5 +496,3 @@ vless://c0dd6d59-1573-43af-8b70-1470b2632a6d@208.69.78.217:2053?type=tcp&securit
 vless://6ead3f4c-023f-4322-b5c4-ac4e327d259d@199.232.78.159:443?path=/?Telegram---PLANB_NET---PLANB_NET---PLANB_NET---PLANB_NET&security=tls&encryption=none&insecure=0&host=pannn1.global.ssl.fastly.net&type=ws&allowInsecure=0&sni=default.ssl.fastly.net#Config
 vless://6ead3f4c-023f-4322-b5c4-ac4e327d259d@199.232.78.159:443?security=tls&encryption=none&insecure=0&host=pannn1.global.ssl.fastly.net&type=ws&allowInsecure=0&sni=default.ssl.fastly.net#Config
 vless://20ef7310-0b50-4943-98a6-3d0856b383b1@api.ferrin.uk:443?path=/&security=tls&encryption=none&insecure=0&host=api.ferrin.uk&type=xhttp&allowInsecure=0&sni=20ef7310.ferrin.uk#Config
-vless://db4fb2a7-a31d-46d8-b6d2-76eafe8cfe2a@fr2.vip-get.ru:443?path=/api/download&security=tls&encryption=none&insecure=0&fp=firefox&type=ws&allowInsecure=0&sni=fr2.vip-get.ru#Config
-vless://43244398-a7f4-49c9-8c6e-5cff05c53260@87.120.106.155:443?security=tls&encryption=none&insecure=0&headerType=none&fp=firefox&type=tcp&allowInsecure=0&sni=stvcdnb7f202.dop69.com#Config
