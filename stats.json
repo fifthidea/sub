@@ -1,5 +1,5 @@
 {
-    "updated": "1405/07/24 03:05",
+    "updated": "1405/07/24 03:21",
     "ir_filter": {
         "source": "RIPE NCC",
         "cidr_network_count": 2547,
@@ -11,8 +11,8 @@
         "sub-medium": 1500,
         "sub-lite": 750,
         "sub-tiny": 300,
-        "ir": 1902,
-        "ir-actual": 1672
+        "ir": 1903,
+        "ir-actual": 1673
     },
     "channels": {
         "ConfigsHUB2": {
@@ -38,7 +38,7 @@
         "FarahVPN": {
             "configs": 884,
             "active": true,
-            "last_config": "1405/07/24 03:00"
+            "last_config": "1405/07/24 03:15"
         },
         "NamiraConfigs": {
             "configs": 267,
@@ -78,7 +78,7 @@
         "Farah_VPN": {
             "configs": 843,
             "active": true,
-            "last_config": "1405/07/24 02:32"
+            "last_config": "1405/07/24 03:03"
         },
         "FreakConfig": {
             "configs": 924,
@@ -93,7 +93,7 @@
         "NamazVPN": {
             "configs": 1770,
             "active": true,
-            "last_config": "1405/07/24 03:03"
+            "last_config": "1405/07/24 03:15"
         },
         "SOSkeyNET": {
             "configs": 1787,
@@ -116,7 +116,7 @@
             "last_config": "1405/07/24 02:38"
         },
         "iranconnecting": {
-            "configs": 864,
+            "configs": 859,
             "active": true,
             "last_config": "1405/07/24 02:15"
         },
@@ -128,7 +128,7 @@
         "ایرانی ـروید": {
             "configs": 953,
             "active": true,
-            "last_config": "1405/07/24 02:52"
+            "last_config": "1405/07/24 03:07"
         },
         "lebertad": {
             "configs": 500,
@@ -153,12 +153,12 @@
         "v2ray_free_conf": {
             "configs": 379,
             "active": true,
-            "last_config": "1405/07/24 02:59"
+            "last_config": "1405/07/24 03:09"
         },
         "vpnfail_v2ray": {
             "configs": 920,
             "active": true,
-            "last_config": "1405/07/24 03:00"
+            "last_config": "1405/07/24 03:16"
         },
         "cryptobooster2026": {
             "configs": 970,
