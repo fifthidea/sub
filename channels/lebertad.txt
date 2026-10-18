@@ -1,3 +1,6 @@
+vless://e13cf851-b4fd-413b-8d49-146e6eb8e5d4@130.94.67.40:80?path=/platform118&security=none&type=ws#Config
+vless://9ef61079-6f7d-4911-9608-943da85d8e6f@vpn.networkforexir.site:2053?security=none&type=tcp#Config
+vless://c010cadf-c454-4df1-a857-fc123b446776@bmjuu30hbh.apppas.ir:43234?encryption=none&security=reality&type=tcp&headerType=none&sni=www.apple.com&fp=chrome&pbk=A-WcezAbYc6GrL7gqM9Kg89OAgLBp2nxC_wrpenGlDg&sid=b7e45d3a65bfc319#Config
 vless://c010cadf-c454-4df1-a857-fc123b446776@2rn616ds24.codesystem.ir:2019?encryption=none&security=reality&type=tcp&headerType=none&sni=booking.com&fp=chrome&pbk=484wYbkS2hs2WSdXmk2-bOeKZkdBbzdD7uZ1WmRIEj8&sid=ca930e5d4a603c6a#Config
 vless://87404fe1-3d14-4c0a-8af4-189b51baa664@188.114.97.6:443?path=/ws&security=tls&encryption=none&insecure=0&host=tmcompany.dpdns.org&fp=chrome&ech=cloudflare-ech.com+udp://8.8.8.8&type=ws&allowInsecure=0&sni=tmcompany.dpdns.org#Config
 vmess://eyJhZGQiOiI4Ny4xMjAuMTA2LjEzMCIsImFpZCI6IjAiLCJhbHBuIjoiIiwiZnAiOiIiLCJob3N0IjoiIiwiaWQiOiI2ZmFiODlkZi1kNWMzLTRkNzMtOGRmNS04OTdjYTM1MmJmZTgiLCJpbnNlY3VyZSI6IjAiLCJuZXQiOiJ0Y3AiLCJwYXRoIjoiIiwicG9ydCI6IjIwODMiLCJwcyI6IkNvbmZpZyAxIC0gQGxlYmVydGFkIiwic2N5IjoiYXV0byIsInNuaSI6InBxcm81bWxiNGM4OC5kb3B3aXouY29tIiwidGxzIjoidGxzIiwidHlwZSI6Im5vbmUiLCJ2IjoiMiJ9
@@ -489,6 +492,3 @@ vless://ba52cc43-700d-4040-9444-29214c98e6e0@213.176.92.168:14430?encryption=non
 vless://6fab89df-d5c3-4d73-8df5-897ca352bfe8@87.120.106.130:443?encryption=none&security=tls&sni=pqro5mlb4c88.dopwiz.com&type=tcp&headerType=none#Config
 vless://ba52cc43-700d-4040-9444-29214c98e6e0@213.176.92.168:14430?encryption=none&security=none&sni=213.176.92.168&type=ws&host=213.176.92.168&path=/vless#Config
 vless://36c3dcc2-17b6-4478-b8a7-3978e6d5afe9@23.81.36.148:1222?encryption=none&security=reality&sni=play.google.com&fp=chrome&pbk=zpLKK8HuwXJDH9D0O3t5Z_tO3ajkj7VRtXdr6UGy1zE&sid=a25d0f&type=tcp&headerType=none#Config
-vless://8a9c586c-4b2c-49e5-9e78-97408bf58500@revers.bachidze.com:443?encryption=none&flow=xtls-rprx-vision&security=reality&sni=poland.travel&fp=chrome&pbk=TIKEWdxQBblFGWMQmQWserNef8P1rqJCfCLLi-KB32s&type=tcp&headerType=none#Config
-vless://b5bbbeb0-6a34-4653-b669-84c814c8996b@4a14f47a4d56d7d8.tunvi.w-ert.org:444?security=reality&encryption=none&pbk=woId47r1U8pEuDwHoC026bJHVWha2RHjufq1Kw3QoRU&headerType=none&fp=chrome&type=tcp&sni=www.microsoft.com&sid=ca4134a0ed2592b6#Config
-vless://604da395-ae3c-46b3-bc83-f04d7ece4fcc@m1de1y.gezluno.ir:18680?type=xhttp&security=reality&sni=www.numpy.org&host=m1de1y.gezluno.ir&fp=chrome&encryption=none&pbk=IDhyPZCGwdMb3z3WblP-2K-wy7VF3Oed1HhLWoWVaCA&path=/root&mode=packet-up&extra={"xPaddingBytes":"100-1000","xPaddingObfsMode":true}&sid=b24b0119a5f00814#Config
