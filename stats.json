@@ -1,5 +1,5 @@
 {
-    "updated": "1405/07/29 03:48",
+    "updated": "1405/07/29 04:03",
     "ir_filter": {
         "source": "RIPE NCC",
         "cidr_network_count": 2547,
@@ -7,12 +7,12 @@
         "ipv6_network_count": 575
     },
     "subscriptions": {
-        "sub-full": 9801,
+        "sub-full": 9819,
         "sub-medium": 1500,
         "sub-lite": 750,
         "sub-tiny": 300,
-        "ir": 2168,
-        "ir-actual": 1934
+        "ir": 2165,
+        "ir-actual": 1931
     },
     "channels": {
         "ConfigsHUB2": {
@@ -38,7 +38,7 @@
         "FarahVPN": {
             "configs": 880,
             "active": true,
-            "last_config": "1405/07/29 03:45"
+            "last_config": "1405/07/29 04:00"
         },
         "NamiraConfigs": {
             "configs": 267,
@@ -78,7 +78,7 @@
         "Farah_VPN": {
             "configs": 854,
             "active": true,
-            "last_config": "1405/07/29 03:33"
+            "last_config": "1405/07/29 04:00"
         },
         "FreakConfig": {
             "configs": 922,
@@ -91,9 +91,9 @@
             "last_config": "1405/07/29 03:07"
         },
         "NamazVPN": {
-            "configs": 1842,
+            "configs": 1847,
             "active": true,
-            "last_config": "1405/07/29 03:45"
+            "last_config": "1405/07/29 03:58"
         },
         "SOSkeyNET": {
             "configs": 1762,
@@ -133,7 +133,7 @@
         "lebertad": {
             "configs": 500,
             "active": true,
-            "last_config": "1405/07/29 03:42"
+            "last_config": "1405/07/29 03:55"
         },
         "meliproxyy": {
             "configs": 449,
@@ -153,12 +153,12 @@
         "v2ray_free_conf": {
             "configs": 360,
             "active": true,
-            "last_config": "1405/07/29 03:40"
+            "last_config": "1405/07/29 03:57"
         },
         "vpnfail_v2ray": {
             "configs": 926,
             "active": true,
-            "last_config": "1405/07/29 03:44"
+            "last_config": "1405/07/29 04:00"
         },
         "cryptobooster2026": {
             "configs": 904,
