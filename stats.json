@@ -1,5 +1,5 @@
 {
-    "updated": "1405/07/30 05:04",
+    "updated": "1405/07/30 05:19",
     "ir_filter": {
         "source": "RIPE NCC",
         "cidr_network_count": 2547,
@@ -7,12 +7,12 @@
         "ipv6_network_count": 575
     },
     "subscriptions": {
-        "sub-full": 9611,
+        "sub-full": 9609,
         "sub-medium": 1500,
         "sub-lite": 750,
         "sub-tiny": 300,
-        "ir": 2223,
-        "ir-actual": 1986
+        "ir": 2224,
+        "ir-actual": 1987
     },
     "channels": {
         "ConfigsHUB2": {
@@ -28,7 +28,7 @@
         "TheFreeConfigs": {
             "configs": 1182,
             "active": true,
-            "last_config": "1405/07/30 03:27"
+            "last_config": "1405/07/30 05:05"
         },
         "persianvpnhub": {
             "configs": 430,
@@ -38,7 +38,7 @@
         "FarahVPN": {
             "configs": 880,
             "active": true,
-            "last_config": "1405/07/30 05:00"
+            "last_config": "1405/07/30 05:15"
         },
         "NamiraConfigs": {
             "configs": 267,
@@ -66,9 +66,9 @@
             "last_config": "1405/07/30 02:31"
         },
         "ConfigYab_FREE": {
-            "configs": 800,
+            "configs": 801,
             "active": true,
-            "last_config": "1405/07/30 03:30"
+            "last_config": "1405/07/30 05:05"
         },
         "DeamNet_proxy": {
             "configs": 50,
@@ -78,7 +78,7 @@
         "Farah_VPN": {
             "configs": 852,
             "active": true,
-            "last_config": "1405/07/30 04:59"
+            "last_config": "1405/07/30 05:10"
         },
         "FreakConfig": {
             "configs": 921,
@@ -93,7 +93,7 @@
         "NamazVPN": {
             "configs": 1846,
             "active": true,
-            "last_config": "1405/07/30 03:46"
+            "last_config": "1405/07/30 05:11"
         },
         "SOSkeyNET": {
             "configs": 1750,
@@ -153,12 +153,12 @@
         "v2ray_free_conf": {
             "configs": 356,
             "active": true,
-            "last_config": "1405/07/30 04:59"
+            "last_config": "1405/07/30 05:17"
         },
         "vpnfail_v2ray": {
             "configs": 912,
             "active": true,
-            "last_config": "1405/07/30 05:01"
+            "last_config": "1405/07/30 05:18"
         },
         "cryptobooster2026": {
             "configs": 855,
