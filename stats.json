@@ -1,5 +1,5 @@
 {
-    "updated": "1405/08/01 05:49",
+    "updated": "1405/08/01 06:04",
     "ir_filter": {
         "source": "RIPE NCC",
         "cidr_network_count": 2547,
@@ -7,12 +7,12 @@
         "ipv6_network_count": 575
     },
     "subscriptions": {
-        "sub-full": 9810,
+        "sub-full": 9813,
         "sub-medium": 1500,
         "sub-lite": 750,
         "sub-tiny": 300,
-        "ir": 2293,
-        "ir-actual": 2072
+        "ir": 2294,
+        "ir-actual": 2073
     },
     "channels": {
         "ConfigsHUB2": {
@@ -36,9 +36,9 @@
             "last_config": "1405/08/01 03:47"
         },
         "FarahVPN": {
-            "configs": 879,
+            "configs": 880,
             "active": true,
-            "last_config": "1405/08/01 05:45"
+            "last_config": "1405/08/01 06:00"
         },
         "NamiraConfigs": {
             "configs": 267,
@@ -78,7 +78,7 @@
         "Farah_VPN": {
             "configs": 852,
             "active": true,
-            "last_config": "1405/08/01 05:33"
+            "last_config": "1405/08/01 05:56"
         },
         "FreakConfig": {
             "configs": 920,
@@ -126,9 +126,9 @@
             "last_config": "1405/08/01 02:56"
         },
         "ایرانی ـروید": {
-            "configs": 907,
+            "configs": 912,
             "active": true,
-            "last_config": "1405/08/01 05:43"
+            "last_config": "1405/08/01 05:58"
         },
         "lebertad": {
             "configs": 499,
@@ -153,12 +153,12 @@
         "v2ray_free_conf": {
             "configs": 363,
             "active": true,
-            "last_config": "1405/08/01 05:45"
+            "last_config": "1405/08/01 06:00"
         },
         "vpnfail_v2ray": {
             "configs": 910,
             "active": true,
-            "last_config": "1405/08/01 05:40"
+            "last_config": "1405/08/01 05:59"
         },
         "CryptoBooster2026": {
             "configs": 835,
