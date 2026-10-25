@@ -1,3 +1,5 @@
+vless://80f660eb-c161-4b5a-8463-6368a35c7d3d@85.198.97.155:443?security=reality&encryption=none&pbk=SaImbTlBTEGJOdghqZ6dNg3TY3WfnlvP8PgewUeokgE&headerType=none&fp=edge&type=tcp&flow=xtls-rprx-vision&sni=yandex.ru#Config
+vless://0e6cd6ca-fba2-4b86-923c-f0a021f7ad15@142.132.140.143:1003?security=&encryption=none&headerType=none&type=tcp#Config
 vless://6202b230-417c-4d8e-b624-0f71afa9c75d@104.254.140.40:8880?security=none&type=ws&path=/?ed=2560&host=vms.lifetime54.workers.dev&packetEncoding=xudp&encryption=none#Config
 vless://6202b230-417c-4d8e-b624-0f71afa9c75d@185.158.133.30:8880?security=none&type=ws&path=/&host=vms.lifetime58.workers.dev&packetEncoding=xudp#Config
 vless://109ce6c1-e188-44df-bf63-6795261f793b@fi.salfetkastroy.ru:443?security=reality&encryption=none&pbk=QTTneNQLYl_-Q0JbPyQWe2GpLUeL7JPl4P-5h0El6S8&headerType=none&fp=firefox&type=tcp&flow=xtls-rprx-vision&sni=fi.salfetkastroy.ru&sid=f9989b69a77d0f3c#Config
@@ -495,5 +497,3 @@ vless://4054fdc2-ee80-4419-8a8e-d937df4719e2@78.159.250.214:443?security=reality
 vless://42a64b9a-ab79-4094-8656-30366a7c2ea3@pl.peregrine-sub.net:1443?security=reality&encryption=none&pbk=PUj1la__ltNjv_ASE5n4HJY7GiRs--N-0aYhkcAApCI&headerType=none&fp=chrome&type=tcp&flow=xtls-rprx-vision&sni=pl.peregrine-sub.net&sid=7b6803a79bba5c52#Config
 vless://659ffdfa-47d2-47d7-af40-5afe0907eead@162.55.242.208:2053?encryption=none&fp=&pbk=jeS6Zu-p1Gf6GtraIAbpgQoSeT26Xq3GqgqVxccbVhY&security=reality&sid=4d14da19b19cfc8c&sni=www.cloudflare.com&type=tcp#Config
 vless://680e92ac-1688-49e0-af96-7327fbc30ce8@45.128.78.176:443?encryption=none&flow=xtls-rprx-vision&fp=&pbk=SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc&security=reality&sni=ozon.ru&type=tcp#Config
-vless://6cc745e3-4eb9-46c8-a4a1-85dee7b87edc@138.124.70.41:14430?encryption=none&path=/vless&security=none&type=ws#Config
-vless://91ad30e9-ab06-4b4c-9fb9-1c2aa97d8b3a@165.154.63.139:443?security=reality&encryption=none&pbk=AE81BrwMc8-kwGEIA1LhzaL03er0Qwt2V-fFy76F5jQ&headerType=none&fp=chrome&type=tcp&flow=xtls-rprx-vision&sni=www.amazon.com&sid=ca4aedd4#Config
