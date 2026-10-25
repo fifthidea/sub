@@ -1,5 +1,5 @@
 {
-    "updated": "1405/08/03 04:04",
+    "updated": "1405/08/03 04:19",
     "ir_filter": {
         "source": "RIPE NCC",
         "cidr_network_count": 2547,
@@ -7,12 +7,12 @@
         "ipv6_network_count": 575
     },
     "subscriptions": {
-        "sub-full": 9642,
+        "sub-full": 9640,
         "sub-medium": 1500,
         "sub-lite": 750,
         "sub-tiny": 300,
-        "ir": 2391,
-        "ir-actual": 2125
+        "ir": 2392,
+        "ir-actual": 2126
     },
     "channels": {
         "ConfigsHUB2": {
@@ -28,12 +28,12 @@
         "TheFreeConfigs": {
             "configs": 1186,
             "active": true,
-            "last_config": "1405/08/03 03:52"
+            "last_config": "1405/08/03 04:05"
         },
         "persianvpnhub": {
             "configs": 404,
             "active": true,
-            "last_config": "1405/08/03 02:24"
+            "last_config": "1405/08/03 04:10"
         },
         "FarahVPN": {
             "configs": 884,
@@ -68,7 +68,7 @@
         "ConfigYab_FREE": {
             "configs": 1573,
             "active": true,
-            "last_config": "1405/08/03 03:53"
+            "last_config": "1405/08/03 04:07"
         },
         "DeamNet_proxy": {
             "configs": 22,
@@ -78,7 +78,7 @@
         "Farah_VPN": {
             "configs": 853,
             "active": true,
-            "last_config": "1405/08/03 03:58"
+            "last_config": "1405/08/03 04:07"
         },
         "FreakConfig": {
             "configs": 921,
@@ -93,7 +93,7 @@
         "NamazVPN": {
             "configs": 1786,
             "active": true,
-            "last_config": "1405/08/03 03:48"
+            "last_config": "1405/08/03 04:07"
         },
         "SOSkeyNET": {
             "configs": 1707,
@@ -113,7 +113,7 @@
         "filembad": {
             "configs": 865,
             "active": true,
-            "last_config": "1405/08/03 03:34"
+            "last_config": "1405/08/03 04:12"
         },
         "iranconnecting": {
             "configs": 862,
@@ -133,7 +133,7 @@
         "lebertad": {
             "configs": 500,
             "active": true,
-            "last_config": "1405/08/03 03:42"
+            "last_config": "1405/08/03 04:07"
         },
         "meliproxyy": {
             "configs": 408,
@@ -156,9 +156,9 @@
             "last_config": "1405/08/03 04:02"
         },
         "vpnfail_v2ray": {
-            "configs": 901,
+            "configs": 900,
             "active": true,
-            "last_config": "1405/08/03 04:00"
+            "last_config": "1405/08/03 04:16"
         },
         "CryptoBooster2026": {
             "configs": 778,
