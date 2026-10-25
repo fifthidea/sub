@@ -1,5 +1,5 @@
 {
-    "updated": "1405/08/03 06:19",
+    "updated": "1405/08/03 06:34",
     "ir_filter": {
         "source": "RIPE NCC",
         "cidr_network_count": 2547,
@@ -7,12 +7,12 @@
         "ipv6_network_count": 575
     },
     "subscriptions": {
-        "sub-full": 9605,
+        "sub-full": 9603,
         "sub-medium": 1500,
         "sub-lite": 750,
         "sub-tiny": 300,
-        "ir": 2391,
-        "ir-actual": 2129
+        "ir": 2392,
+        "ir-actual": 2130
     },
     "channels": {
         "ConfigsHUB2": {
@@ -28,7 +28,7 @@
         "TheFreeConfigs": {
             "configs": 1186,
             "active": true,
-            "last_config": "1405/08/03 06:04"
+            "last_config": "1405/08/03 06:28"
         },
         "persianvpnhub": {
             "configs": 404,
@@ -68,7 +68,7 @@
         "ConfigYab_FREE": {
             "configs": 1581,
             "active": true,
-            "last_config": "1405/08/03 06:05"
+            "last_config": "1405/08/03 06:28"
         },
         "DeamNet_proxy": {
             "configs": 22,
@@ -153,15 +153,15 @@
         "v2ray_free_conf": {
             "configs": 362,
             "active": true,
-            "last_config": "1405/08/03 06:12"
+            "last_config": "1405/08/03 06:29"
         },
         "vpnfail_v2ray": {
             "configs": 899,
             "active": true,
-            "last_config": "1405/08/03 06:16"
+            "last_config": "1405/08/03 06:32"
         },
         "CryptoBooster2026": {
-            "configs": 778,
+            "configs": 777,
             "active": false,
             "last_config": "1405/05/27 01:58"
         }
