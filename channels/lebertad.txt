@@ -1,3 +1,7 @@
+vless://cd07ae0d-f31d-4209-a0a4-d9d9cfcca1ad@wwww.qarvian.ir:443?type=ws&insecure=1&host=copy_az_channel_NUFiLTER_7i.global.ssl.fastly.net.&sni=cdn.akamai.steamstatic.com&allowInsecure=1&security=tls&encryption=none#Config
+vless://cd07ae0d-f31d-4209-a0a4-d9d9cfcca1ad@199.232.78.160:443?host=copy_az_channel_NUFiLTER_10i.global.ssl.fastly.net.&encryption=none&security=tls&type=ws&insecure=0&allowInsecure=0&pcs=CD6E838B9BFE31CAB8B3D5C858B0D6223FE84ECE236C1FDB281BE93C302E1E6E&sni=firefox.com#Config
+vless://10c3b62f-59da-55cb-b24f-2072ecb4348c@69.46.46.215:443?security=tls&alpn=http/1.1&type=ws&path=/ws/Default&fp=chrome&sni=service-453728-7467c1-production.up.railway.app&encryption=none&allowInsecure=0&host=service-453728-7467c1-production.up.railway.app&insecure=0#Config
+vless://9c5a98e3-8c6f-42a1-8e7d-c53ec93d5b2e@94.182.145.175:37311?security=&encryption=mlkem768x25519plus.native.0rtt.Y_GFOgnyqynLFKHJjXwhbFSdNPhveAlV-uhTUMx8Q20&headerType=none&type=tcp#Config
 vless://eeb6823c-b926-4ea2-866a-5542edd26e59@da.mfa.gov.ua:443?path=/&security=tls&encryption=none&insecure=0&host=t1s1.rittbo.kdns.fr&type=ws&allowInsecure=0&sni=t1s1.rittbo.kdns.fr#Config
 vless://16188ecf-2dcd-40d7-898b-60461f125978@api.onlinernet.ir:2082?path=/&security=none&encryption=mlkem768x25519plus.native.0rtt.Dm0nLB6u6ah0RxWNMqaXYOd5F8hyUvkFsGeLwydS6So&host=xn--alspeedtest.net.onlinerwebsite.ir.&type=httpupgrade&flow=xtls-rprx-vision#Config
 vless://2b0e5676-fb62-4bf0-9607-6e7818421e8e@pl2.pad-sservice.lat:8443?path=/PL2W&security=tls&encryption=none&insecure=0&host=pl2.pad-service.com&type=ws&allowInsecure=0&sni=pl2.pad-sservice.lat#Config
@@ -493,7 +497,3 @@ vless://7f6adf9d-42f1-4fec-ab22-fb7f66bf3adc@2.27.244.55:443?sni=qbak5xqeb.hat.o
 vless://9f0285ee-20ca-4953-bcdb-86a920652923@204.216.216.23:10086?security=none&encryption=none&headerType=none&type=tcp#Config
 vless://e4514801-0d5a-42ba-869f-39bd605aef9e@52.47.119.246:22222?encryption=none&security=none&type=tcp#Config
 vless://e4514801-0d5a-42ba-869f-39bd605aef9e@52.47.119.246:22223?encryption=none&security=none&type=tcp#Config
-vless://e4514801-0d5a-42ba-869f-39bd605aef9e@52.47.119.246:22224?encryption=none&security=none&type=tcp#Config
-vless://2b821829-5b53-4421-949c-9147b65d1d51@45.38.60.17:2083?security=reality&encryption=mlkem768x25519plus.native.0rtt.bsTS-GAZcH7zZAnY4SyOV5Fhvr9tIAhpQ0hWwhzEljw&pbk=qu9yjh7bIhWf-clw9fNLM7NqenR-xTJPQKIz6E-96z0&headerType=none&fp=chrome&type=tcp&sni=apps.apple.com&sid=6c07cc96c42506ed#Config
-vless://a1d262a9-6d57-4ff0-99e4-594782c2ca7c@5.75.207.247:2886?security=reality&encryption=none&pbk=cKOOhuCGj6qHK3znJDGnoG9DTJOJK_GZ_r7A68xi_DM&headerType=none&fp=chrome&spx=/0mqMX2AD4eAGzhI&type=tcp&flow=xtls-rprx-vision&sni=www.oracle.com&sid=e19da077d7#Config
-vless://b054e267-e2d8-4ca2-b95e-79ca5cb7cf9a@support.zoom.us:443?path=/&security=tls&encryption=none&insecure=0&host=cloud.ghostdev.lk&fp=chrome&type=ws&allowInsecure=0&sni=cloud.ghostdev.lk#Config
