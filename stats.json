@@ -1,5 +1,5 @@
 {
-    "updated": "1405/08/05 11:03",
+    "updated": "1405/08/05 11:20",
     "ir_filter": {
         "source": "RIPE NCC",
         "cidr_network_count": 2550,
@@ -7,12 +7,12 @@
         "ipv6_network_count": 578
     },
     "subscriptions": {
-        "sub-full": 9166,
+        "sub-full": 9159,
         "sub-medium": 1500,
         "sub-lite": 750,
         "sub-tiny": 300,
-        "ir": 2201,
-        "ir-actual": 1850
+        "ir": 2204,
+        "ir-actual": 1852
     },
     "channels": {
         "ConfigsHUB2": {
@@ -21,14 +21,14 @@
             "last_config": "1405/04/15 20:37"
         },
         "ConfigsHUB": {
-            "configs": 1027,
+            "configs": 1038,
             "active": true,
-            "last_config": "1405/08/05 10:53"
+            "last_config": "1405/08/05 11:10"
         },
         "TheFreeConfigs": {
             "configs": 1188,
             "active": true,
-            "last_config": "1405/08/05 10:41"
+            "last_config": "1405/08/05 11:05"
         },
         "persianvpnhub": {
             "configs": 404,
@@ -68,7 +68,7 @@
         "ConfigYab_FREE": {
             "configs": 1563,
             "active": true,
-            "last_config": "1405/08/05 11:01"
+            "last_config": "1405/08/05 11:05"
         },
         "DeamNet_proxy": {
             "configs": 29,
@@ -78,7 +78,7 @@
         "Farah_VPN": {
             "configs": 856,
             "active": true,
-            "last_config": "1405/08/05 10:56"
+            "last_config": "1405/08/05 11:17"
         },
         "FreakConfig": {
             "configs": 918,
@@ -86,19 +86,19 @@
             "last_config": "1405/08/05 09:05"
         },
         "GalaxyMVPN": {
-            "configs": 1705,
+            "configs": 1704,
             "active": true,
-            "last_config": "1405/08/05 10:23"
+            "last_config": "1405/08/05 11:06"
         },
         "NamazVPN": {
-            "configs": 1782,
+            "configs": 1781,
             "active": true,
-            "last_config": "1405/08/05 11:01"
+            "last_config": "1405/08/05 11:18"
         },
         "SOSkeyNET": {
-            "configs": 1705,
+            "configs": 1704,
             "active": true,
-            "last_config": "1405/08/05 10:23"
+            "last_config": "1405/08/05 11:06"
         },
         "V2rayBaaz": {
             "configs": 214,
@@ -108,7 +108,7 @@
         "chillguy_vpn": {
             "configs": 978,
             "active": true,
-            "last_config": "1405/08/05 10:48"
+            "last_config": "1405/08/05 11:03"
         },
         "filembad": {
             "configs": 859,
@@ -116,14 +116,14 @@
             "last_config": "1405/08/05 11:00"
         },
         "iranconnecting": {
-            "configs": 790,
+            "configs": 793,
             "active": true,
-            "last_config": "1405/08/05 10:54"
+            "last_config": "1405/08/05 11:10"
         },
         "CafeTweetFa": {
             "configs": 856,
             "active": true,
-            "last_config": "1405/08/05 10:58"
+            "last_config": "1405/08/05 11:15"
         },
         "ایرانی ـروید": {
             "configs": 874,
@@ -146,22 +146,22 @@
             "last_config": "1405/06/13 07:18"
         },
         "v2ray_dalghak": {
-            "configs": 927,
+            "configs": 926,
             "active": true,
-            "last_config": "1405/08/05 10:38"
+            "last_config": "1405/08/05 11:09"
         },
         "v2ray_free_conf": {
             "configs": 356,
             "active": true,
-            "last_config": "1405/08/05 10:59"
+            "last_config": "1405/08/05 11:17"
         },
         "vpnfail_v2ray": {
-            "configs": 891,
+            "configs": 890,
             "active": true,
-            "last_config": "1405/08/05 11:02"
+            "last_config": "1405/08/05 11:08"
         },
         "CryptoBooster2026": {
-            "configs": 613,
+            "configs": 610,
             "active": false,
             "last_config": "1405/05/27 01:58"
         }
