@@ -1,18 +1,18 @@
 {
-    "updated": "1405/08/06 10:18",
+    "updated": "1405/08/06 10:33",
     "ir_filter": {
-        "source": "RIPE NCC",
-        "cidr_network_count": 2550,
+        "source": "IPDeny",
+        "cidr_network_count": 1972,
         "ipv4_network_count": 1972,
-        "ipv6_network_count": 578
+        "ipv6_network_count": 0
     },
     "subscriptions": {
-        "sub-full": 8412,
+        "sub-full": 8391,
         "sub-medium": 1500,
         "sub-lite": 750,
         "sub-tiny": 300,
-        "ir": 1824,
-        "ir-actual": 1512
+        "ir": 1813,
+        "ir-actual": 1501
     },
     "channels": {
         "ConfigsHUB2": {
@@ -21,14 +21,14 @@
             "last_config": "1405/04/15 20:37"
         },
         "ConfigsHUB": {
-            "configs": 1037,
+            "configs": 1050,
             "active": true,
-            "last_config": "1405/08/06 10:08"
+            "last_config": "1405/08/06 10:18"
         },
         "TheFreeConfigs": {
             "configs": 1196,
             "active": true,
-            "last_config": "1405/08/06 10:05"
+            "last_config": "1405/08/06 10:28"
         },
         "persianvpnhub": {
             "configs": 356,
@@ -38,7 +38,7 @@
         "FarahVPN": {
             "configs": 884,
             "active": true,
-            "last_config": "1405/08/06 10:15"
+            "last_config": "1405/08/06 10:30"
         },
         "NamiraConfigs": {
             "configs": 267,
@@ -66,9 +66,9 @@
             "last_config": "1405/08/06 02:32"
         },
         "ConfigYab_FREE": {
-            "configs": 1554,
+            "configs": 1555,
             "active": true,
-            "last_config": "1405/08/06 10:14"
+            "last_config": "1405/08/06 10:29"
         },
         "DeamNet_proxy": {
             "configs": 42,
@@ -78,7 +78,7 @@
         "Farah_VPN": {
             "configs": 854,
             "active": true,
-            "last_config": "1405/08/06 10:14"
+            "last_config": "1405/08/06 10:27"
         },
         "FreakConfig": {
             "configs": 915,
@@ -91,9 +91,9 @@
             "last_config": "1405/08/06 10:14"
         },
         "NamazVPN": {
-            "configs": 1703,
+            "configs": 1704,
             "active": true,
-            "last_config": "1405/08/06 10:11"
+            "last_config": "1405/08/06 10:29"
         },
         "SOSkeyNET": {
             "configs": 1679,
@@ -103,17 +103,17 @@
         "V2rayBaaz": {
             "configs": 214,
             "active": true,
-            "last_config": "1405/08/06 03:30"
+            "last_config": "1405/08/06 10:27"
         },
         "chillguy_vpn": {
             "configs": 973,
             "active": true,
-            "last_config": "1405/08/06 09:53"
+            "last_config": "1405/08/06 10:23"
         },
         "filembad": {
             "configs": 830,
             "active": true,
-            "last_config": "1405/08/06 09:50"
+            "last_config": "1405/08/06 10:21"
         },
         "iranconnecting": {
             "configs": 791,
@@ -133,7 +133,7 @@
         "lebertad": {
             "configs": 494,
             "active": true,
-            "last_config": "1405/08/06 10:11"
+            "last_config": "1405/08/06 10:29"
         },
         "meliproxyy": {
             "configs": 418,
@@ -146,19 +146,19 @@
             "last_config": "1405/06/13 07:18"
         },
         "v2ray_dalghak": {
-            "configs": 862,
+            "configs": 863,
             "active": true,
-            "last_config": "1405/08/06 10:17"
+            "last_config": "1405/08/06 10:18"
         },
         "v2ray_free_conf": {
             "configs": 342,
             "active": true,
-            "last_config": "1405/08/06 10:15"
+            "last_config": "1405/08/06 10:32"
         },
         "vpnfail_v2ray": {
-            "configs": 875,
+            "configs": 874,
             "active": true,
-            "last_config": "1405/08/06 10:14"
+            "last_config": "1405/08/06 10:31"
         },
         "CryptoBooster2026": {
             "configs": 573,
