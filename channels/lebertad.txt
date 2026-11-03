@@ -1,3 +1,4 @@
+vless://ea06f2c7-625a-4e1e-8a9e-fe89a729f2cf@ir.yones13.ir:3040?security=none&encryption=mlkem768x25519plus.native.0rtt.PNgtj7EAOI__75xYtdUGesC9VSTLgtxRAkP0w2ICFyw&headerType=none&type=tcp#Config
 vless://ea06f2c7-625a-4e1e-8a9e-fe89a729f2cf@ir.yones13.ir:9090?security=none&encryption=mlkem768x25519plus.native.0rtt.u9NaaKZMqN7rjeIoxiZaWQI-nyq6cznrAnasVfYQPRQ&headerType=none&type=tcp#Config
 vless://25cf9bc5-bc2c-45d2-feba-9c37ac3c47b7@game.celvixo.ir:2087?path=/&security=none&encryption=none&host=cp.xelzano.ir&type=ws#Config
 vmess://eyJhZGQiOiJpci55b25lczEzLmlyIiwiYWlkIjoiMCIsImFscG4iOiIiLCJmcCI6IiIsImhvc3QiOiIiLCJpZCI6ImI4OGQ3NmM1LTE2MGItNGZhOC1hYzMzLWIyMmM0NDE2M2MzOSIsIm5ldCI6InRjcCIsInBhdGgiOiIiLCJwb3J0IjoiMjA4NSIsInBzIjoiQ29uZmlnIDEgLSBAbGViZXJ0YWQiLCJzY3kiOiJhdXRvIiwic25pIjoiIiwidGxzIjoiIiwidHlwZSI6Im5vbmUiLCJ2IjoiMiJ9
@@ -493,4 +494,3 @@ vless://782ba1d2-1241-418e-9054-463c08a424bc@151.241.88.81:19606?encryption=none
 vless://f8d52ece-fad4-478d-875d-df6eed3befa7@fr.golangwikito.cfd:443?encryption=none&flow=xtls-rprx-vision&fp=&pbk=isYQuhKDrgc7IQ7G0LHywFnt57wffrkZ-er18DkVsBA&security=reality&sid=e6d589857d1cec5e&sni=fr.golangwikito.cfd&type=tcp#Config
 vless://418ddc75-aa9c-4e5d-a9a3-82c50a5a02b6@51.75.118.5:20222?encryption=none&security=none&type=ws&host=51.75.118.5&path=/parham-confing-ws?ed=2048&u=kma_vqHvj6gOpirojyJf5Q85P44FJpu7NnnYnhYNtCuKI7Sh6QFdZRnkYjsy8E6dgcMq8nNoGA#Config
 vless://418ddc75-aa9c-4e5d-a9a3-82c50a5a02b6@51.75.118.5:20222?encryption=none&security=none&type=httpupgrade&path=/parham-confing-hu?u=kma_vqHvj6gOpirojyJf5Q85P44FJpu7NnnYnhYNtCuKI7Sh6QFdZRnkYjsy8E6dgcMq8nNoGA#Config
-vless://418ddc75-aa9c-4e5d-a9a3-82c50a5a02b6@51.75.118.5:20222?encryption=none&security=none&type=grpc&serviceName=parham-confing-grpc#Config
