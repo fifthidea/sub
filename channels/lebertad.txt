@@ -1,3 +1,5 @@
+vless://913dc759-8639-4890-9bfc-a9acdc5090cf@89.110.64.15:443?security=reality&encryption=none&pbk=YWhH3_lunQFxpqA29GF-Hq1K78hdSsy0h3E5dVbxImA&host=/@Net2ray&headerType=none&type=tcp&sni=graphs.4cdn.de&sid=371f6e#Config
+vless://86a83d11-d751-4b60-aa4e-1dca5cff7028@85.155.179.206:443?security=tls&alpn=h2,http/1.1&encryption=none&insecure=0&host=/@Net2ray&headerType=none&fp=firefox&type=tcp&allowInsecure=0&sni=us3.shtil.io#Config
 vless://01e61db7-9e0b-4431-a995-a5288a01b951@147.45.66.60:43000?security=reality&encryption=none&pbk=DbL9RJFvJrnxBu6fFhWkHF8nsD6cK_DKMuMV00RmlWg&headerType=none&fp=chrome&spx=/&type=tcp&flow=xtls-rprx-vision&sid=4d3d8e15#Config
 vless://72881b3f-76f7-4cae-912d-e95e602a5ca4@199.232.78.159:443?security=tls&encryption=none&insecure=1&host=copy_az_channel_NUFiLTER_8i.global.ssl.fastly.net.&type=ws&allowInsecure=1&sni=cdn.akamai.steamstatic.com#Config
 vless://72881b3f-76f7-4cae-912d-e95e602a5ca4@146.75.59.186:443?security=tls&encryption=none&insecure=1&host=copy_az_channel_NUFiLTER_6i.global.ssl.fastly.net.&type=ws&allowInsecure=1&sni=community.fastly.steamstatic.com#Config
@@ -486,5 +488,3 @@ vless://85a86449-5911-41ea-81d6-f2d0894f20ba@2.144.21.68:19870?encryption=none&s
 vless://d342d11e-d224-4463-b982-532309285094@104.18.47.73:443?encryption=none&security=tls&sni=ccc.010304.xyz&type=ws&host=ccc.010304.xyz&path=/#Config
 vless://d342d11e-d224-4463-b982-532309285094@8.47.69.60:443?path=/fp&security=tls&encryption=none&insecure=0&host=ccc.010304.xyz&type=ws&allowInsecure=0&sni=ccc.010304.xyz#Config
 vless://15125378-ed73-4ee3-4a60-49154961e5c1@146.75.57.111:443?security=tls&type=xhttp&headerType=none&encryption=none&path=&host=loging.global.ssl.fastly.net&sni=cdn.akamai.steamstatic.com&fp=chrome&alpn=h2&vcn=cdn.akamai.steamstatic.com&pcs=CD6E838B9BFE31CAB8B3D5C858B0D6223FE84ECE236C1FDB281BE93C302E1E6E#Config
-vless://15125378-ed73-4ee3-4a60-49154961e5c1@14.102.228.76:2087?security=tls&type=xhttp&headerType=none&encryption=none&path=&mode=auto&sni=air.tl-gram.ir&fp=firefox&alpn=h2,http/1.1,h3#Config
-vless://15125378-ed73-4ee3-4a60-49154961e5c1@fla.1mkar.com:2087?security=tls&type=xhttp&headerType=none&encryption=none&path=&mode=auto&sni=sod1.tl-germ.ir&fp=chrome&alpn=h2,http/1.1,h3#Config
