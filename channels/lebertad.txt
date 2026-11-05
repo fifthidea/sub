@@ -1,3 +1,7 @@
+vless://e1acad9b-e14e-4995-b2d6-5721823cb0a7@mein-1.octavia.dpdns.org:6000?security=none&encryption=mlkem768x25519plus.random.0rtt.0hyW1XvQeYqdlsMRw1O7zOvfdRtndSIMP8v_Bk5RCmc&host=amp-api-edge.apps.apple.com&headerType=http&type=tcp#Config
+vless://4a923161-156f-4914-8cac-762fb2433bfb@116.206.95.231:43000?security=reality&encryption=none&pbk=CG0mVPuvPcfZjplA21zehlqoDpGHihJBK8K_u1zfhgQ&headerType=none&fp=chrome&spx=/&type=tcp&flow=xtls-rprx-vision&sid=ee4ea980#Config
+vless://9b5b6204-5668-457b-8b96-f1df873043cc@95.135.125.202:33575?security=none&encryption=none&headerType=none&type=tcp#Config
+vless://a8f77620-a7fd-4f53-b8b2-4ab7b34fd0d7@2.31.84.12:18392?encryption=none&security=none&type=tcp#Config
 vless://fb37d713-0ed3-4146-b085-a5c879a9aafa@game.betust.net:443?security=reality&encryption=none&pbk=7dxSNJKvSZNySuiKjuv6wwddd3hYJeJy6X55OcwOPDk&headerType=none&fp=firefox&type=tcp&flow=xtls-rprx-vision&sni=api14.betust.net&sid=16fbc56c#Config
 vless://2f35965a-9a9b-45fd-ba32-987296dfb6be@45.9.156.42:443?mode=gun&security=reality&encryption=none&pbk=RDWvDEygSk1eyAQhIK95H9EteFbrS2d9JEjBrco54Bw&fp=chrome&type=grpc&serviceName=gw.v2.RelayService&sni=bg5.univesalsrv.com&sid=1a3102bb8e51399e#Config
 vless://727a9178-d7f0-4142-8205-b0d19959ded0@130.49.177.193:443?security=reality&encryption=none&pbk=DCpi9-1rSXxBnEIAQ9U3mTqHivk7vHJRV_T2pWw5vCc&headerType=none&fp=chrome&type=tcp&flow=xtls-rprx-vision&sni=de-2.ffpn.pro&sid=681fc2dd643bc2f3#Config
@@ -489,7 +493,3 @@ vless://c04522c4-3d53-4eab-b5b5-25385d5f11b1@193.160.208.240:443/?type=tcp&encry
 vless://67952583-8572-42e1-943d-0602794f885b@510.150333.xyz:21003/?type=tcp&encryption=none&flow=&sni=www.cloudflare.com&security=reality&pbk=IRaSB0ImgMO7fsrIbh9i3Pz-bgo5F1jKeC51Fpfs9AA&sid=f3602a3a1cf928b7#Config
 vless://e8a432c8-5d84-49a5-b822-67ed761a58f9@54.37.136.194:2053/?type=tcp&encryption=none&flow=&sni=www.cloudflare.com&security=reality&pbk=Vemd9Jjk5xKO8qSC3g8VVagwcb4J1BcTvp86CswQC0A&sid=50ba05992b05c1c3#Config
 vless://e8a432c8-5d84-49a5-b822-67ed761a58f9@54.37.136.194:2053/?type=tcp&encryption=none&flow=&sni=www.cloudflare.com&fp=firefox&security=reality&pbk=Vemd9Jjk5xKO8qSC3g8VVagwcb4J1BcTvp86CswQC0A&sid=50ba05992b05c1c3#Config
-vless://e9a8144e-5237-488a-afb1-9ca3d8d54c80@108.61.119.63:18580/?type=tcp&encryption=none&flow=&security=tls&sni=us007.zestapp778.com&fp=firefox#Config
-vless://20b98028-53c9-4f76-9bc9-b6b16b8a9152@54.39.96.233:8080/?type=tcp&encryption=none&flow=xtls-rprx-vision&sni=icloud.com&fp=firefox&security=reality&pbk=sQ_YHzotqhVJoUDAZl5kTzUqVN6ksh-MTikz_ixsZWc&sid=2b30#Config
-vless://3bb97d46-789b-4229-88f6-9beb222a4137@147.45.148.6:443/?type=tcp&encryption=none&flow=xtls-rprx-vision&sni=yoy-api.bachidze.com&fp=chrome&security=reality&pbk=ZJlfiMh4ebjrTl2_kwAk_zXMAaCiwNS7yMd5XzlUgmI&sid=#Config
-vless://ea277838-a188-44f1-a2e8-94aa110c4f27@185.178.208.140:443/?type=xhttp&encryption=none&flow=&security=tls&sni=api.bakarova-top.ru&fp=firefox#Config
