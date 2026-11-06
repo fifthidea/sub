@@ -1,3 +1,5 @@
+vless://2f35965a-9a9b-45fd-ba32-987296dfb6be@45.9.156.27:443?encryption=none&security=reality&sni=bg3.univesalsrv.com&fp=chrome&pbk=XBfCioniAKXgKYBUVnvBXu80AIaIa4SpAB3w8qeF7Gk&sid=1be1bd931c98c84a&type=grpc&authority=/?TELEGRAM-leviconfigs&serviceName=home.v1.ApiService&mode=gun#Config
+vless://2f35965a-9a9b-45fd-ba32-987296dfb6be@rs4.univesalsrv.com:443?encryption=none&security=reality&fp=chrome&pbk=sXsJ4ET-50TYqlhKZf03nPQr2JIy1F0D4m6lOsI0cAs&sid=861ac7d66953e55f&type=grpc&authority=MTMVPN&serviceName=media.v1.StreamService&mode=gun#Config
 vless://8f704ed6-9a1a-4d04-94dd-1bff501716de@85.90.197.220:443?encryption=none&flow=xtls-rprx-vision&security=reality&sni=www.cloudflare.com&fp=chrome&pbk=biNcdU5mywtNw-KyPpLHindBxdEyAolT1WJ26N0b7y4&sid=94acb54627612d43&type=tcp&headerType=none#Config
 vless://e5bfbdaf-b48e-492e-ba75-4278c437a0ec@107.181.151.128:443?encryption=none&flow=xtls-rprx-vision&security=reality&sni=www.mozilla.org&fp=firefox&pbk=zfsjt2A8ur0qHWIuCG7F9W4wZN3VTuL6fkTljC-9R0s&sid=6765a8f49c21&type=tcp&headerType=none#Config
 vless://2f35965a-9a9b-45fd-ba32-987296dfb6be@bg5.univesalsrv.com:443?encryption=none&security=reality&sni=bg5.univesalsrv.com&fp=chrome&pbk=RDWvDEygSk1eyAQhIK95H9EteFbrS2d9JEjBrco54Bw&sid=1a3102bb8e51399e&type=grpc&authority=&serviceName=gw.v2.RelayService&mode=gun#Config
@@ -493,5 +495,3 @@ vless://fed54c61-b3f9-4d0c-aaf0-3628125966bc@100.55.27.211:10413?security=realit
 trojan://8deb189a-3aed-4865-843b-b72dae954c46@172.233.91.12:443?sni=api.85s.me&type=ws&allowInsecure=1#Config
 trojan://8deb189a-3aed-4865-843b-b72dae954c46@179.255.141.28:443?sni=api.85s.me&allowInsecure=1#Config
 trojan://8deb189a-3aed-4865-843b-b72dae954c46@179.255.141.59:443?sni=api.85s.me&allowInsecure=1#Config
-trojan://8deb189a-3aed-4865-843b-b72dae954c46@83.147.15.84:8443?sni=api.85s.me&type=ws&allowInsecure=1#Config
-vmess://eyJhZGQiOiJqb2x5b3Qua2ltam8uaXIiLCJhaWQiOiIwIiwiYWxwbiI6IiIsImZwIjoiIiwiaG9zdCI6IiIsImlkIjoiNmFiODg3ZDYtMjQ3Ny00MzRkLWEwNGItNTY3NGJlNmNlODdmIiwiaW5zZWN1cmUiOiIwIiwibmV0IjoidGNwIiwicGF0aCI6IiIsInBjcyI6IiIsInBvcnQiOiIxNzE4IiwicHMiOiJDb25maWcgMSAtIEBsZWJlcnRhZCIsInNjeSI6ImF1dG8iLCJzbmkiOiIiLCJ0bHMiOiIiLCJ0eXBlIjoibm9uZSIsInYiOiIyIiwidmNuIjoiIn0=
