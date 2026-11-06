@@ -1,3 +1,4 @@
+vmess://eyJhZGQiOiIxODUuMTkuMzMuMTE3IiwiYWlkIjoiMCIsImFscG4iOiIiLCJmcCI6IiIsImhvc3QiOiIiLCJpZCI6ImExYTEwNTVkLWVmYjAtNDExOC1hZmY2LWQ1YjQ5YTY0ZjAyMSIsImluc2VjdXJlIjoiMCIsIm5ldCI6InRjcCIsInBhdGgiOiIiLCJwY3MiOiIiLCJwb3J0IjoiNTQ3NDYiLCJwcyI6IkNvbmZpZyAxIC0gQGxlYmVydGFkIiwic2N5IjoiYXV0byIsInNuaSI6IiIsInRscyI6IiIsInR5cGUiOiJub25lIiwidiI6IjIiLCJ2Y24iOiIifQ==
 vless://c1fd8fa8-44ad-4618-8430-203fef0befe7@5.149.248.151:443?encryption=none&fp=firefox&pbk=pR39Vv5qhk8r6akOicoy6mMs4-ppSWUez8MyAXG7wwQ&security=reality&serviceName=neurex&sid=27350908de933e09&sni=nla.kosmosapp.net&type=grpc#Config
 vless://8b3241d8-0d8e-4f8b-a43a-052a80957840@5.149.248.151:443?mode=gun&security=reality&encryption=none&pbk=pR39Vv5qhk8r6akOicoy6mMs4-ppSWUez8MyAXG7wwQ&type=grpc&serviceName=neurex&sni=nla.kosmosapp.net&sid=27350908de933e09#Config
 vless://2f35965a-9a9b-45fd-ba32-987296dfb6be@45.9.156.27:443?encryption=none&security=reality&sni=bg3.univesalsrv.com&fp=chrome&pbk=XBfCioniAKXgKYBUVnvBXu80AIaIa4SpAB3w8qeF7Gk&sid=1be1bd931c98c84a&type=grpc&authority=/?TELEGRAM-leviconfigs&serviceName=home.v1.ApiService&mode=gun#Config
@@ -494,4 +495,3 @@ vless://e4514801-0d5a-42ba-869f-39bd605aef9e@13.36.94.5:22222?encryption=none&se
 vless://e4514801-0d5a-42ba-869f-39bd605aef9e@13.36.94.5:22223?encryption=none&security=none&type=tcp#Config
 vless://e4514801-0d5a-42ba-869f-39bd605aef9e@13.36.94.5:22224?encryption=none&security=none&type=tcp#Config
 vless://fed54c61-b3f9-4d0c-aaf0-3628125966bc@100.55.27.211:10413?security=reality&type=tcp&sni=yahoo.com&fp=firefox&sid=79a1e14b&pbk=WfkCF0eEuIoO0MyJsKOddU89QrTzCZ4y2dzCJbH99CQ#Config
-trojan://8deb189a-3aed-4865-843b-b72dae954c46@172.233.91.12:443?sni=api.85s.me&type=ws&allowInsecure=1#Config
