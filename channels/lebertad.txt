@@ -1,3 +1,5 @@
+vless://667016ca-f02e-4b5f-bfc3-3d8ed81e9bec@base.hosamobenl.co.uk:443?security=tls&alpn=http/1.1&encryption=none&insecure=0&headerType=none&fp=edge&type=tcp&allowInsecure=0&sni=base.hosamobenl.co.uk#Config
+vless://6daa0b95-9210-4f29-be40-8c6db00bc5bb@3.96.148.231:80?security=none&encryption=none&host=/?Telegram---@pirozi_ArGaP---@pirozi_ArGaP---@pirozi_ArGaP---@pirozi_ArGaP&headerType=none&type=tcp#Config
 vless://ec23f217-23a1-4f62-b98d-ba56070de89c@www.speedtest.net:443?encryption=none&fp=chrome&host=wallweb4.pages.dev&path=/&security=tls&sni=wallweb4.pages.dev&type=ws#Config
 vless://0d4a33f9-04db-4ee9-b949-b34174908fee@16.16.173.242:8443?encryption=mlkem768x25519plus.native.0rtt.rF_cl48Yv8W4QWB0GzBSa56xN0ZNZFHjvuxddubsEzw&fp=chrome&pbk=OVvzlEBdZN0zHuJB2IgMg24EPD5MSbvwIJEnWlZiqEM&security=reality&sid=8fa328&sni=blog.api.www.cloudflare.com&spx=/a9ca3b7bf06bd84&support-x25519mlkem768=true&type=tcp#Config
 vless://a52ac672-0f5f-4070-b8fd-6b5685fc8004@199.7.140.201:443?security=reality&encryption=none&pbk=LRAkgKlj5BPtVAGEIZfO5LvDZ5Eg91X0CBKIYhBC1jE&headerType=none&fp=firefox&type=tcp&sni=www.cloudflare.com#Config
@@ -493,5 +495,3 @@ vless://d806a58b-33aa-42e0-b170-395e49c16b37@sql.popmintxo.cc:443?security=reali
 vless://db80088c-32a1-4cb8-a907-0f3cb7844152@193.233.252.43:443?security=reality&encryption=none&pbk=zEntiD6D81wY__YHPvIw78e09CBIgYkyQ5meIo7c_hg&headerType=none&fp=firefox&type=tcp&flow=xtls-rprx-vision&sni=se1.japancase.site&sid=41ae8e266bc3346f#Config
 vless://db80088c-32a1-4cb8-a907-0f3cb7844152@se1.japancase.site:443?security=reality&encryption=none&pbk=zEntiD6D81wY__YHPvIw78e09CBIgYkyQ5meIo7c_hg&headerType=none&fp=firefox&type=tcp&flow=xtls-rprx-vision&sni=se1.japancase.site&sid=41ae8e266bc3346f#Config
 vless://db80088c-32a1-4cb8-a907-0f3cb7844152@us2.japancase.site:443?security=reality&encryption=none&pbk=zEntiD6D81wY__YHPvIw78e09CBIgYkyQ5meIo7c_hg&headerType=none&fp=chrome&type=tcp&flow=xtls-rprx-vision&sni=us2.japancase.site&sid=41ae8e266bc3346f#Config
-trojan://883e3cc8-9613-4f2d-8c42-0dd3d429db55@188.114.98.0:443?path=/order/ads/&security=tls&alpn=http/1.1&fm={"tcp":
-vless://01e61db7-9e0b-4431-a995-a5288a01b951@147.45.66.60:43000?security=reality&encryption=none&pbk=DbL9RJFvJrnxBu6fFhWkHF8nsD6cK_DKMuMV00RmlWg&headerType=none&fp=chrome&spx=/&type=tcp&flow=xtls-rprx-vision&sid=4d3d8e15#Config
