@@ -1,0 +1,58 @@
+name: Update V2Ray Subscription
+
+on:
+  #schedule:
+    #- cron: "*/15 * * * *"
+    
+    #thanks to githubs cron trigger delay, i switched to cloudflare worker for better reliability of triggering the workflow on time.
+    #however, the github cron trigger works (with a delay). uncomment two lines after on: if you want this.
+  workflow_dispatch:
+  
+concurrency:
+  group: update-subscription
+  cancel-in-progress: true
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15 #workflow will be killed if 15 minutes is reached on usage
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install telethon jdatetime pytz dnspython
+
+      - name: Generate subscription
+        env:
+          TG_API_ID: ${{ secrets.TG_API_ID }}
+          TG_API_HASH: ${{ secrets.TG_API_HASH }}
+          TG_SESSION: ${{ secrets.TG_SESSION }}
+        run: |
+          python update.py
+
+      - name: Commit and push if changed
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add sub/*.txt channels/*.txt stats.json dns_cache.json 2>/dev/null || true
+          git reset -- commit_message.txt
+
+          if git diff --cached --quiet; then
+            echo "No changes."
+          else
+            git commit -F commit_message.txt
+            git push
+          fi
