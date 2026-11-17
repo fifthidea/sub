@@ -15,7 +15,7 @@ The extractor currently supports the following proxy protocols:
 
 # Validation `(validator.py)`
 
-Every extracted configuration is validated before deduplication or subscription generation. The validator checks only the minimum fields required for V2Ray-compatible clients to parse a configuration.
+Every extracted configuration is validated after deduplication. The validator checks only the minimum fields required for V2Ray-compatible clients to parse a configuration.
 
 > Currently only **VLESS**, **VMess**, and **Trojan** are validated, as they make up the vast majority of extracted nodes.
 
@@ -31,12 +31,6 @@ The validator is intentionally conservative. It only rejects configurations that
 
 It does **not** validate optional fields such as `host`, `path`, `sni`, `flow`, `fp`, or `sid`, nor does it check whether servers are online. This minimizes false positives and avoids discarding potentially working configurations.
 
-***To Do Later: validate configs through xray-core***
-
-## Why Validation Exists
-
-Some clients (such as **Exclave** and **v2rayNG**) fail to initialize **Balancer** profiles if even one malformed outbound exists in the subscription. Although working nodes can still be selected manually through URL Test or Real Delay, malformed configs may prevent automatic balancing from functioning correctly.
-
 #  Deduplication
 
 Deduplication happens in two stages:
@@ -44,8 +38,6 @@ Deduplication happens in two stages:
 - **Per-channel:** each Telegram channel is deduplicated before its own subscription is generated.
 - **Global:** all channels are merged and deduplicated again before generating the combined subscriptions.
 - **On Extraction** if `LIMIT_MODE = "UNIQUE"`
-
-> `sub-tiny`, `sub-lite`, and `sub-medium` are generated from the already deduplicated merged subscription.
 
 ## Duplicate detection
 
@@ -75,9 +67,6 @@ vless://...?type=ws&sni=B.Com&host=a.com#Server B
 | `sub/*-plaintxt.txt`          | Configs from merge pool in plaintext                                                |
 | `channels/*.txt`              | Validated and deduplicated configs collected from that channel.                     |
 | `stats.json`                  | Update time, subscription sizes, per-channel statistics and activity information.   |
-| `sub/sub-tiny-*.txt`          | includes 300 newest unique configs from merge pool.                                 |
-| `sub/sub-lite-*.txt`          | includes 750 newest unique configs from merge pool.                                 |
-| `sub/sub-medium-*.txt`        | includes 1500 newest unique configs from merge pool.                                |
 | `sub/sub-full-*.txt`          | includes all configs from merge pool.                                               |
 | `sub/ir.txt`                  | includes configs from merge pool in plaintext, where `server`, `host`, or `sni` is an Iranian IP, a domain resolving to an Iranian IP, or a `.ir` domain. atleast one condition has to match for a config to be included in `ir.txt`             |
 | `sub/ir-actual.txt`           | includes configs from merge pool in plaintext, where only `server` is an Iranian IP, a domain resolving to an Iranian IP, or a `.ir` domain. atleast one condition has to match for a config to be included in `ir-actual.txt`   |
@@ -96,9 +85,6 @@ Example:
     "updated": "1405/04/13 09:02",
     "subscriptions": {
         "sub-full": 1871,
-        "sub-medium": 1500,
-        "sub-lite": 750,
-        "sub-tiny": 300,
         "ir": 271,
         "ir-actual": 149
     },

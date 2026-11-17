@@ -1,3 +1,4 @@
+import math
 import time
 import json
 import jdatetime
@@ -100,7 +101,8 @@ CHANNEL_WORKERS = 5
 # =========================
 
 PATTERN = re.compile(
-    r'((?:vmess|vless|trojan|ss|ssr|hy2|hysteria|tuic)://\S+)'
+    r"((?:vmess|vless|trojan|ss|ssr|hy2|hysteria|tuic)://[^\s<>\"']+)",
+    re.IGNORECASE
 )
 
 WINDOWS_RESERVED_NAMES = {
@@ -235,58 +237,141 @@ def extract_configs(text):
     configs = []
 
     for config in PATTERN.findall(text):
-        config = config.rstrip("`")      # Remove trailing backticks
-        config = config.replace("`", "") # Remove any remaining backticks
-        configs.append(config)
+        config = config.replace("`", "").strip()
+
+        # Remove trailing punctuation.
+        config = config.rstrip(".,;!?")
+
+        # Remove unmatched closing brackets.
+        closing_to_opening = {
+            ")": "(",
+            "]": "[",
+            "}": "{"
+        }
+
+        while config and config[-1] in closing_to_opening:
+            closing = config[-1]
+            opening = closing_to_opening[closing]
+
+            if config.count(closing) > config.count(opening):
+                config = config[:-1]
+            else:
+                break
+
+        if config:
+            configs.append(config)
 
     return configs
+
     
+def normalize_host_address(host: str) -> str:
+    """Normalize DNS names and IP address text for duplicate comparison."""
+    host = host.strip().lower().rstrip(".")
+
+    try:
+        return ipaddress.ip_address(host).compressed
+    except ValueError:
+        return host
+
+
+def normalize_server_netloc(netloc: str) -> str:
+    """Normalize the server host while preserving credentials and port."""
+    userinfo, separator, hostport = netloc.rpartition("@")
+
+    # Do not modify Base64 authorities without an @ separator.
+    if not separator:
+        return netloc
+
+    if hostport.startswith("["):
+        closing_bracket = hostport.find("]")
+
+        if closing_bracket == -1:
+            return netloc
+
+        host = hostport[1:closing_bracket]
+        suffix = hostport[closing_bracket + 1:]
+
+        normalized_host = normalize_host_address(host)
+        normalized_hostport = f"[{normalized_host}]{suffix}"
+
+    else:
+        host, colon, port = hostport.rpartition(":")
+
+        if colon and port.isdigit():
+            normalized_host = normalize_host_address(host)
+            normalized_hostport = f"{normalized_host}:{port}"
+        else:
+            normalized_hostport = normalize_host_address(hostport)
+
+    return f"{userinfo}@{normalized_hostport}"
+
+
 def normalize_config(config: str) -> str:
-    """
-    Normalize a config for duplicate detection.
-
-    Removes:
-      - remark (#...)
-      - backticks
-      - whitespace
-
-    Canonicalizes:
-      - query parameter order
-
-    Keeps:
-      - protocol
-      - host/IP
-      - port
-      - path
-      - sni
-      - host
-      - uuid/password
-      - every functional parameter
-    """
-
+    """Build a canonical comparison key without changing the output config."""
     config = config.replace("`", "").strip()
-
     parts = urlsplit(config)
+    scheme = parts.scheme.lower()
 
-    # Parse query parameters and sort them alphabetically
+    # VMess stores its connection settings in Base64-encoded JSON.
+    if scheme == "vmess":
+        try:
+            payload = parts.netloc or parts.path.lstrip("/")
+            padding = "=" * (-len(payload) % 4)
+
+            decoded = base64.urlsafe_b64decode(payload + padding)
+            obj = json.loads(decoded.decode("utf-8"))
+
+            if not isinstance(obj, dict):
+                raise ValueError("VMess payload is not a JSON object")
+
+            # "ps" is only a display remark.
+            obj.pop("ps", None)
+
+            # Normalize address-like fields.
+            for key in ("add", "host", "sni"):
+                value = obj.get(key)
+
+                if isinstance(value, str) and value.strip():
+                    obj[key] = normalize_host_address(value)
+
+            canonical_json = json.dumps(
+                obj,
+                sort_keys=True,
+                separators=(",", ":"),
+                ensure_ascii=False
+            )
+
+            canonical_payload = base64.urlsafe_b64encode(
+                canonical_json.encode("utf-8")
+            ).decode("ascii").rstrip("=")
+
+            return f"vmess://{canonical_payload}"
+
+        except Exception:
+            pass
+
+    # Normalize query parameters.
     params = parse_qsl(parts.query, keep_blank_values=True)
+
     params = [
-    (k, v.lower() if k.lower() in ("host", "sni") else v)
-    for k, v in params
+        (key, value.lower() if key.lower() in ("host", "sni") else value)
+        for key, value in params
     ]
+
     params.sort()
 
     normalized_query = urlencode(params)
+    normalized_netloc = normalize_server_netloc(parts.netloc)
 
-    # Remove remark (#...)
     return urlunsplit((
-        parts.scheme,
-        parts.netloc,
+        scheme,
+        normalized_netloc,
         parts.path,
         normalized_query,
         ""
     ))
-    
+
+
 def deduplicate_configs(configs):
     seen = set()
     result = []
@@ -299,6 +384,7 @@ def deduplicate_configs(configs):
             result.append(config)
 
     return result
+
 
 def add_unique_config(config, configs, seen):
     key = normalize_config(config)
@@ -329,7 +415,7 @@ def load_ir_networks_ripe():
         if len(parts) < 7:
             continue
 
-        registry, cc, typ, start, value = parts[:5]
+        _, cc, typ, start, value = parts[:5]
 
         cc = cc.strip().upper()
         typ = typ.strip().lower()
@@ -387,21 +473,71 @@ def load_ir_networks_local():
 
 DNS_CACHE_FILE = "dns_cache.json"
 DNS_CACHE = {}
+cache_migrated = False
 
 if os.path.exists(DNS_CACHE_FILE):
     try:
         with open(DNS_CACHE_FILE, "r", encoding="utf-8") as f:
-            DNS_CACHE = json.load(f)
+            loaded_cache = json.load(f)
+
+        if isinstance(loaded_cache, dict):
+            DNS_CACHE = loaded_cache
 
             for domain, value in list(DNS_CACHE.items()):
+
+                # Remove invalid domain keys.
+                if not isinstance(domain, str) or not domain.strip():
+                    del DNS_CACHE[domain]
+                    cache_migrated = True
+                    continue
+
+                # Migrate old Boolean format.
                 if isinstance(value, bool):
                     DNS_CACHE[domain] = {
                         "is_ir": value,
                         "checked": time.time()
                     }
+
+                    cache_migrated = True
+                    continue
+
+                if isinstance(value, dict):
+                    is_ir = value.get("is_ir")
+                    checked = value.get("checked")
+
+                    try:
+                        valid_checked = (
+                            isinstance(checked, (int, float))
+                            and not isinstance(checked, bool)
+                            and math.isfinite(float(checked))
+                        )
+                    except (OverflowError, TypeError, ValueError):
+                        valid_checked = False
+
+                    if isinstance(is_ir, bool) and valid_checked:
+                        DNS_CACHE[domain] = {
+                            "is_ir": is_ir,
+                            "checked": float(checked)
+                        }
+                    else:
+                        del DNS_CACHE[domain]
+                        cache_migrated = True
+
+                    continue
+
+                # Remove unsupported or malformed entries.
+                del DNS_CACHE[domain]
+                cache_migrated = True
+
+        else:
+            DNS_CACHE = {}
+            cache_migrated = True
+
         print(f"Loaded {len(DNS_CACHE)} cached DNS entries")
+
     except Exception:
         DNS_CACHE = {}
+        cache_migrated = True
 
 IR_NETWORK_SOURCE = None
 
@@ -529,8 +665,6 @@ def config_iran_flags(config):
     return False, False
     
 
-channel_lock = Lock()
-
 
 async def process_channel(channel_ref, info, cutoff, tehran):
 
@@ -617,7 +751,8 @@ async def process_channel(channel_ref, info, cutoff, tehran):
                     break
 
 
-        channel_configs = channel_configs[:limit]
+        if LIMIT_MODE != "MESSAGES":
+            channel_configs = channel_configs[:limit]
 
         channel_configs = [
             cfg for cfg in channel_configs
@@ -812,7 +947,7 @@ async def main():
                 ir_actual_configs.append(cfg)
     print(f"config_iran_flags took {time.time()-x:.2f}s") ##might remove later
     
-    if new_domains:
+    if new_domains or cache_migrated:
         with open(DNS_CACHE_FILE, "w", encoding="utf-8") as f:
             json.dump(DNS_CACHE, f, indent=2, sort_keys=True)
     
@@ -831,20 +966,16 @@ async def main():
             f.write("\n".join(configs))
 
     write_subscription(os.path.join(SUB_OUTPUT_DIR, "sub-full-base64.txt"), merged)
-    write_subscription(os.path.join(SUB_OUTPUT_DIR, "sub-medium-base64.txt"), merged[:1500])
-    write_subscription(os.path.join(SUB_OUTPUT_DIR, "sub-lite-base64.txt"), merged[:750])
-    write_subscription(os.path.join(SUB_OUTPUT_DIR, "sub-tiny-base64.txt"), merged[:300])
 
-    merged_echless = [
+    merged_echless = deduplicate_configs([
         remove_ech_parameter(cfg)
         for cfg in merged
-    ]
+    ])
+
+    ir_configs_echless = deduplicate_configs(ir_configs_echless)
 
     write_plaintext(os.path.join(SUB_OUTPUT_DIR, "sub-full-plaintxt.txt"), merged)
     write_plaintext(os.path.join(SUB_OUTPUT_DIR, "sub-full-plaintxt-echless.txt"), merged_echless)
-    write_plaintext(os.path.join(SUB_OUTPUT_DIR, "sub-medium-plaintxt.txt"), merged[:1500])
-    write_plaintext(os.path.join(SUB_OUTPUT_DIR, "sub-lite-plaintxt.txt"), merged[:750])
-    write_plaintext(os.path.join(SUB_OUTPUT_DIR, "sub-tiny-plaintxt.txt"), merged[:300])
     
     write_plaintext(os.path.join(SUB_OUTPUT_DIR, "ir.txt"), ir_configs)
     write_plaintext(os.path.join(SUB_OUTPUT_DIR, "ir-echless.txt"), ir_configs_echless)
@@ -869,10 +1000,9 @@ async def main():
         },
         "subscriptions": {
             "sub-full": len(merged),
-            "sub-medium": min(1500, len(merged)),
-            "sub-lite": min(750, len(merged)),
-            "sub-tiny": min(300, len(merged)),
+            "sub-full-echless": len(merged_echless),
             "ir": len(ir_configs),
+            "ir-echless": len(ir_configs_echless),
             "ir-actual": len(ir_actual_configs)
         },
         "channels": channel_stats

@@ -22,10 +22,10 @@ jobs:
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
 
       - name: Set up Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v7
         with:
           python-version: "3.11"
 
@@ -47,8 +47,11 @@ jobs:
           git config --global user.name "github-actions[bot]"
           git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
-          git add sub/*.txt channels/*.txt stats.json dns_cache.json 2>/dev/null || true
-          git reset -- commit_message.txt
+          git add -A -- sub/ channels/ stats.json
+
+          if [ -f dns_cache.json ]; then
+            git add -A -- dns_cache.json
+          fi
 
           if git diff --cached --quiet; then
             echo "No changes."

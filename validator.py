@@ -187,6 +187,15 @@ def validate(config):
         if scheme == "trojan":
             return validate_trojan(parts)
 
+        if scheme in {
+            "ss",
+            "ssr",
+            "hy2",
+            "hysteria",
+            "tuic"
+        }:
+            return True
+
         return False
 
     except Exception:
