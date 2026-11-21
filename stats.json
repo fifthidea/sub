@@ -1,5 +1,5 @@
 {
-    "updated": "1405/08/30 20:48",
+    "updated": "1405/08/30 21:03",
     "ir_filter": {
         "source": "RIPE NCC",
         "cidr_network_count": 2554,
@@ -7,11 +7,11 @@
         "ipv6_network_count": 579
     },
     "subscriptions": {
-        "sub-full": 8885,
-        "sub-full-echless": 8885,
-        "ir": 1518,
-        "ir-echless": 1518,
-        "ir-actual": 1278
+        "sub-full": 8880,
+        "sub-full-echless": 8880,
+        "ir": 1519,
+        "ir-echless": 1519,
+        "ir-actual": 1279
     },
     "channels": {
         "ConfigsHUB2": {
@@ -20,9 +20,9 @@
             "last_config": "1405/04/15 20:37"
         },
         "ConfigsHUB": {
-            "configs": 1302,
+            "configs": 1312,
             "active": true,
-            "last_config": "1405/08/30 20:43"
+            "last_config": "1405/08/30 20:58"
         },
         "TheFreeConfigs": {
             "configs": 1183,
@@ -37,12 +37,12 @@
         "FarahVPN": {
             "configs": 994,
             "active": true,
-            "last_config": "1405/08/30 20:45"
+            "last_config": "1405/08/30 21:00"
         },
         "NamiraConfigs": {
             "configs": 298,
             "active": true,
-            "last_config": "1405/08/30 20:41"
+            "last_config": "1405/08/30 20:51"
         },
         "vpnfreev2rayconfig": {
             "configs": 296,
@@ -87,17 +87,17 @@
         "GalaxyMVPN": {
             "configs": 1971,
             "active": true,
-            "last_config": "1405/08/30 20:44"
+            "last_config": "1405/08/30 20:50"
         },
         "NamazVPN": {
             "configs": 1937,
             "active": true,
-            "last_config": "1405/08/30 20:39"
+            "last_config": "1405/08/30 21:00"
         },
         "SOSkeyNET": {
             "configs": 1971,
             "active": true,
-            "last_config": "1405/08/30 20:44"
+            "last_config": "1405/08/30 20:50"
         },
         "V2rayBaaz": {
             "configs": 298,
@@ -107,32 +107,32 @@
         "chillguy_vpn": {
             "configs": 957,
             "active": true,
-            "last_config": "1405/08/30 20:36"
+            "last_config": "1405/08/30 20:52"
         },
         "filembad": {
             "configs": 953,
             "active": true,
-            "last_config": "1405/08/30 20:34"
+            "last_config": "1405/08/30 20:49"
         },
         "iranconnecting": {
-            "configs": 909,
+            "configs": 915,
             "active": true,
-            "last_config": "1405/08/30 20:44"
+            "last_config": "1405/08/30 20:58"
         },
         "CafeTweetFa": {
             "configs": 977,
             "active": true,
-            "last_config": "1405/08/30 20:46"
+            "last_config": "1405/08/30 21:01"
         },
         "ایرانی ـروید": {
-            "configs": 988,
+            "configs": 989,
             "active": true,
-            "last_config": "1405/08/30 20:44"
+            "last_config": "1405/08/30 20:54"
         },
         "lebertad": {
             "configs": 492,
             "active": true,
-            "last_config": "1405/08/30 20:39"
+            "last_config": "1405/08/30 20:55"
         },
         "meliproxyy": {
             "configs": 488,
@@ -147,20 +147,20 @@
         "v2ray_dalghak": {
             "configs": 1000,
             "active": true,
-            "last_config": "1405/08/30 20:43"
+            "last_config": "1405/08/30 20:57"
         },
         "v2ray_free_conf": {
             "configs": 390,
             "active": true,
-            "last_config": "1405/08/30 20:45"
+            "last_config": "1405/08/30 20:55"
         },
         "vpnfail_v2ray": {
             "configs": 978,
             "active": true,
-            "last_config": "1405/08/30 20:33"
+            "last_config": "1405/08/30 20:57"
         },
         "CryptoBooster2026": {
-            "configs": 244,
+            "configs": 243,
             "active": false,
             "last_config": "1405/05/27 01:58"
         }
