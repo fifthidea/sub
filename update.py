@@ -363,6 +363,53 @@ def normalize_config(config: str) -> str:
     normalized_query = urlencode(params)
     normalized_netloc = normalize_server_netloc(parts.netloc)
 
+
+    # Normalize query parameters.
+    params = parse_qsl(parts.query, keep_blank_values=True)
+
+    # Get transport and header type.
+    param_values = {
+        key.lower(): value
+        for key, value in params
+    }
+
+    transport = param_values.get("type", "").lower()
+    header_type = param_values.get("headertype", "").lower()
+
+    normalized_params = []
+
+    for key, value in params:
+        key_lower = key.lower()
+
+        # Treat empty security as security=none for VLESS.
+        if (
+            scheme == "vless"
+            and key_lower == "security"
+            and value.strip().lower() in ("", "none")
+        ):
+            value = "none"
+
+        # Remove default root path for TCP with HTTP header.
+        if (
+            scheme == "vless"
+            and key_lower == "path"
+            and value == "/"
+            and transport == "tcp"
+            and header_type == "http"
+        ):
+            continue
+
+        # Normalize hostname-related parameters.
+        if key_lower in ("host", "sni"):
+            value = value.lower()
+
+        normalized_params.append((key, value))
+
+    normalized_params.sort()
+
+    normalized_query = urlencode(normalized_params)
+    normalized_netloc = normalize_server_netloc(parts.netloc)
+
     return urlunsplit((
         scheme,
         normalized_netloc,
@@ -370,6 +417,7 @@ def normalize_config(config: str) -> str:
         normalized_query,
         ""
     ))
+
 
 
 def deduplicate_configs(configs):
