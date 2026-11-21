@@ -350,8 +350,21 @@ def normalize_config(config: str) -> str:
         except Exception:
             pass
 
+
     # Normalize query parameters.
     params = parse_qsl(parts.query, keep_blank_values=True)
+
+    # Ignore default VLESS parameters.
+    if scheme == "vless":
+        params = [
+            (key, value)
+            for key, value in params
+            if not (
+                (key.lower() == "encryption" and value.strip().lower() == "none")
+                or
+                (key.lower() == "type" and value.strip().lower() == "tcp")
+            )
+        ]
 
     params = [
         (key, value.lower() if key.lower() in ("host", "sni") else value)
@@ -359,6 +372,7 @@ def normalize_config(config: str) -> str:
     ]
 
     params.sort()
+
 
     normalized_query = urlencode(params)
     normalized_netloc = normalize_server_netloc(parts.netloc)
