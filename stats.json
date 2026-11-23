@@ -1,5 +1,5 @@
 {
-    "updated": "1405/09/02 06:03",
+    "updated": "1405/09/02 06:18",
     "ir_filter": {
         "source": "RIPE NCC",
         "cidr_network_count": 2554,
@@ -7,11 +7,11 @@
         "ipv6_network_count": 579
     },
     "subscriptions": {
-        "sub-full": 10789,
-        "sub-full-echless": 10789,
-        "ir": 1704,
-        "ir-echless": 1704,
-        "ir-actual": 1423
+        "sub-full": 10786,
+        "sub-full-echless": 10786,
+        "ir": 1705,
+        "ir-echless": 1705,
+        "ir-actual": 1424
     },
     "channels": {
         "ConfigsHUB2": {
@@ -22,12 +22,12 @@
         "ConfigsHUB": {
             "configs": 1671,
             "active": true,
-            "last_config": "1405/09/02 05:56"
+            "last_config": "1405/09/02 06:11"
         },
         "TheFreeConfigs": {
             "configs": 1188,
             "active": true,
-            "last_config": "1405/09/02 05:51"
+            "last_config": "1405/09/02 06:15"
         },
         "persianvpnhub": {
             "configs": 491,
@@ -37,12 +37,12 @@
         "FarahVPN": {
             "configs": 995,
             "active": true,
-            "last_config": "1405/09/02 06:00"
+            "last_config": "1405/09/02 06:15"
         },
         "NamiraConfigs": {
             "configs": 298,
             "active": true,
-            "last_config": "1405/09/02 05:58"
+            "last_config": "1405/09/02 06:07"
         },
         "vpnfreev2rayconfig": {
             "configs": 296,
@@ -117,7 +117,7 @@
         "iranconnecting": {
             "configs": 969,
             "active": true,
-            "last_config": "1405/09/02 05:56"
+            "last_config": "1405/09/02 06:11"
         },
         "CafeTweetFa": {
             "configs": 984,
@@ -152,12 +152,12 @@
         "v2ray_free_conf": {
             "configs": 390,
             "active": true,
-            "last_config": "1405/09/02 05:56"
+            "last_config": "1405/09/02 06:13"
         },
         "vpnfail_v2ray": {
             "configs": 974,
             "active": true,
-            "last_config": "1405/09/02 06:02"
+            "last_config": "1405/09/02 06:10"
         },
         "CryptoBooster2026": {
             "configs": 241,
