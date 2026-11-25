@@ -1,5 +1,5 @@
 {
-    "updated": "1405/09/05 02:18",
+    "updated": "1405/09/05 02:33",
     "ir_filter": {
         "source": "RIPE NCC",
         "cidr_network_count": 2555,
@@ -7,8 +7,8 @@
         "ipv6_network_count": 579
     },
     "subscriptions": {
-        "sub-full": 9256,
-        "sub-full-echless": 9256,
+        "sub-full": 9255,
+        "sub-full-echless": 9255,
         "ir": 1678,
         "ir-echless": 1678,
         "ir-actual": 1445
@@ -20,14 +20,14 @@
             "last_config": "1405/04/15 20:37"
         },
         "ConfigsHUB": {
-            "configs": 1243,
+            "configs": 1240,
             "active": true,
-            "last_config": "1405/09/05 02:03"
+            "last_config": "1405/09/05 02:17"
         },
         "TheFreeConfigs": {
             "configs": 1196,
             "active": true,
-            "last_config": "1405/09/05 02:15"
+            "last_config": "1405/09/05 02:27"
         },
         "persianvpnhub": {
             "configs": 487,
@@ -37,12 +37,12 @@
         "FarahVPN": {
             "configs": 995,
             "active": true,
-            "last_config": "1405/09/05 02:15"
+            "last_config": "1405/09/05 02:30"
         },
         "NamiraConfigs": {
             "configs": 296,
             "active": true,
-            "last_config": "1405/09/05 02:15"
+            "last_config": "1405/09/05 02:25"
         },
         "vpnfreev2rayconfig": {
             "configs": 296,
@@ -92,7 +92,7 @@
         "NamazVPN": {
             "configs": 1961,
             "active": true,
-            "last_config": "1405/09/05 01:58"
+            "last_config": "1405/09/05 02:19"
         },
         "SOSkeyNET": {
             "configs": 1975,
@@ -152,7 +152,7 @@
         "v2ray_free_conf": {
             "configs": 386,
             "active": true,
-            "last_config": "1405/09/05 02:13"
+            "last_config": "1405/09/05 02:27"
         },
         "vpnfail_v2ray": {
             "configs": 968,
