@@ -1,5 +1,5 @@
 {
-    "updated": "1405/09/06 06:48",
+    "updated": "1405/09/06 07:03",
     "ir_filter": {
         "source": "RIPE NCC",
         "cidr_network_count": 2554,
@@ -7,11 +7,11 @@
         "ipv6_network_count": 578
     },
     "subscriptions": {
-        "sub-full": 8719,
-        "sub-full-echless": 8719,
-        "ir": 1675,
-        "ir-echless": 1675,
-        "ir-actual": 1441
+        "sub-full": 8718,
+        "sub-full-echless": 8718,
+        "ir": 1674,
+        "ir-echless": 1674,
+        "ir-actual": 1440
     },
     "channels": {
         "ConfigsHUB2": {
@@ -20,14 +20,14 @@
             "last_config": "1405/04/15 20:37"
         },
         "ConfigsHUB": {
-            "configs": 1281,
+            "configs": 1284,
             "active": true,
-            "last_config": "1405/09/06 06:32"
+            "last_config": "1405/09/06 06:47"
         },
         "TheFreeConfigs": {
             "configs": 1197,
             "active": true,
-            "last_config": "1405/09/06 06:39"
+            "last_config": "1405/09/06 06:51"
         },
         "persianvpnhub": {
             "configs": 485,
@@ -37,7 +37,7 @@
         "FarahVPN": {
             "configs": 995,
             "active": true,
-            "last_config": "1405/09/06 06:45"
+            "last_config": "1405/09/06 07:00"
         },
         "NamiraConfigs": {
             "configs": 299,
@@ -117,7 +117,7 @@
         "iranconnecting": {
             "configs": 914,
             "active": true,
-            "last_config": "1405/09/06 06:32"
+            "last_config": "1405/09/06 06:48"
         },
         "CafeTweetFa": {
             "configs": 964,
@@ -132,7 +132,7 @@
         "lebertad": {
             "configs": 492,
             "active": true,
-            "last_config": "1405/09/06 05:53"
+            "last_config": "1405/09/06 06:53"
         },
         "meliproxyy": {
             "configs": 497,
